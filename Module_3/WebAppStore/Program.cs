@@ -8,7 +8,7 @@ using WebAppVNPayment.Repository;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<IdentityOptions>(p =>
 {
-    p.Password.RequireNonAlphanumeric = false; 
+    p.Password.RequireNonAlphanumeric = true; 
     p.Password.RequireUppercase = false;
     p.Password.RequireLowercase = false;
     p.Password.RequireUppercase = false;
