@@ -1,0 +1,1465 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebAppVNPayment.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebAppVNPayment.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\Loai11.jpeg",
+      "PackagePath": "staticwebassets\\images\\Loai11.jpeg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\Loaiimages.jpeg",
+      "PackagePath": "staticwebassets\\images\\Loaiimages.jpeg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Accept.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Accept.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Alarm.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Alarm.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Anchor.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Anchor.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Bell.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Bell.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Best.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Best.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Billboard.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Billboard.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Bomb.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Bomb.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Brick house.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Brick house.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Bricks.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Bricks.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Buddy.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Buddy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Certificate.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Certificate.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Dice.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Dice.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Dollar.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Dollar.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Favourites.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Favourites.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Funny.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Funny.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Heart.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Heart.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Microsoft.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Microsoft.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\Unlock.png",
+      "PackagePath": "staticwebassets\\images\\categories\\Unlock.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\categories\\agenda_1.jpg",
+      "PackagePath": "staticwebassets\\images\\categories\\agenda_1.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\customers\\Author.jpg",
+      "PackagePath": "staticwebassets\\images\\customers\\Author.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\customers\\Penguins.jpg",
+      "PackagePath": "staticwebassets\\images\\customers\\Penguins.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\customers\\android_300200.png",
+      "PackagePath": "staticwebassets\\images\\customers\\android_300200.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\customers\\man.jpg",
+      "PackagePath": "staticwebassets\\images\\customers\\man.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\customers\\woman.jpg",
+      "PackagePath": "staticwebassets\\images\\customers\\woman.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\divider.gif",
+      "PackagePath": "staticwebassets\\images\\divider.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Accept.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Accept.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Add to basket.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Add to basket.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Add.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Add.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Address book.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Address book.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Alarm.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Alarm.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Anchor.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Anchor.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Application form.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Application form.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bar chart.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bar chart.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Basket.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Basket.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bell.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bell.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Best.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Best.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Billboard.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Billboard.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bluetooth.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bluetooth.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bomb.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bomb.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Book.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Book.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bookmark.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bookmark.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Box.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Box.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Boy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Boy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Brick house.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Brick house.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bricks.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bricks.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Brief case.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Brief case.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Brightness.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Brightness.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Bubble.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Bubble.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Buddy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Buddy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Cable.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Cable.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Calculator.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Calculator.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Calendar.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Calendar.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Call.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Call.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Camera.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Camera.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Card file.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Card file.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Cash register.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Cash register.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Cat.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Cat.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Certificate.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Certificate.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Clien list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Clien list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Clipboard.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Clipboard.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Clock.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Clock.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Closed door.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Closed door.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Closed folder.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Closed folder.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Coin.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Coin.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Coins.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Coins.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Color wheel.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Color wheel.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Comment.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Comment.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Comments.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Comments.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Company.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Company.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Computer.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Computer.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Conference.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Conference.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Connect.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Connect.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Construction.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Construction.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Contrast.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Contrast.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Control panel.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Control panel.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Create.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Create.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Database.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Database.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Date.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Date.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Delete.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Delete.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Desktop.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Desktop.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Diagram.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Diagram.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Dice.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Dice.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Disconnect.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Disconnect.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Discussion.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Discussion.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Document.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Document.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Documents.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Documents.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Dog.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Dog.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Dollar.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Dollar.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Down.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Down.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Download.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Download.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Edit.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Edit.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Euro.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Euro.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Exit button.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Exit button.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Exit.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Exit.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Favourites.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Favourites.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Fax.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Fax.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Flash drive.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Flash drive.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Flow block.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Flow block.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Free.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Free.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Friends.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Friends.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Full basket.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Full basket.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Funny.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Funny.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Game controller.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Game controller.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Gear.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Gear.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Genealogy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Genealogy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Gift.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Gift.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Girl.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Girl.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Globe.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Globe.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Handshake.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Handshake.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Happy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Happy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Hard disk.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Hard disk.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Heart.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Heart.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Help.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Help.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Hierarchy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Hierarchy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Home.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Home.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Hungup.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Hungup.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Industry.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Industry.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Info.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Info.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Key.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Key.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Label.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Label.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Left.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Left.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Lego brick.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Lego brick.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Letter.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Letter.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\List.png",
+      "PackagePath": "staticwebassets\\images\\icons\\List.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Lists.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Lists.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Lock.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Lock.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Log out.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Log out.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Login.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Login.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Mail.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Mail.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Microsoft.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Microsoft.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Mobile phone.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Mobile phone.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Money.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Money.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Monitor.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Monitor.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Mouse.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Mouse.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Music.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Music.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\No.png",
+      "PackagePath": "staticwebassets\\images\\icons\\No.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Notes.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Notes.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Numbered list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Numbered list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\OK.png",
+      "PackagePath": "staticwebassets\\images\\icons\\OK.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Online.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Online.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Open door.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Open door.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Open file.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Open file.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Open folder.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Open folder.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Open letter.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Open letter.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Open lock.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Open lock.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Payment.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Payment.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Peace.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Peace.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Pets.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Pets.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Phone.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Phone.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Piggy bank.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Piggy bank.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Piggy.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Piggy.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Pointer.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Pointer.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Pound.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Pound.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Price list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Price list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Print preview.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Print preview.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Print.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Print.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Printer.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Printer.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Problem.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Problem.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Properties.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Properties.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\RSS.png",
+      "PackagePath": "staticwebassets\\images\\icons\\RSS.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Red star.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Red star.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Refresh.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Refresh.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Remove from basket.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Remove from basket.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Report.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Report.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Right.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Right.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Rouble.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Rouble.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Sad.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Sad.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Safe.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Safe.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Save as.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Save as.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Save.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Save.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Scroll list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Scroll list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Search.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Search.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Shield.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Shield.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Smile.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Smile.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Software.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Software.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Statistics.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Statistics.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Stop.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Stop.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Task list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Task list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Telephone.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Telephone.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Text.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Text.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Tick.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Tick.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\To do list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\To do list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Trash.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Trash.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Unknown person.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Unknown person.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Unlock.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Unlock.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Unordered list.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Unordered list.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Up.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Up.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Upload.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Upload.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\User group.png",
+      "PackagePath": "staticwebassets\\images\\icons\\User group.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\User.png",
+      "PackagePath": "staticwebassets\\images\\icons\\User.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Users.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Users.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Wallet.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Wallet.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Warning.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Warning.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Weather.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Weather.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Wireless.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Wireless.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Wizard.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Wizard.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Yen.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Yen.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Yin-Yang.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Yin-Yang.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Zoom in.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Zoom in.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Zoom out.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Zoom out.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\Zoom.png",
+      "PackagePath": "staticwebassets\\images\\icons\\Zoom.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\eng.gif",
+      "PackagePath": "staticwebassets\\images\\icons\\eng.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\icons\\vit.gif",
+      "PackagePath": "staticwebassets\\images\\icons\\vit.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\others\\shopping_cart.png",
+      "PackagePath": "staticwebassets\\images\\others\\shopping_cart.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\1009.gif",
+      "PackagePath": "staticwebassets\\images\\products\\1009.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\21meTyhQebL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\21meTyhQebL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31EPGSm2s1L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31EPGSm2s1L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31LAnW1JFqL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31LAnW1JFqL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31TB6tC6BOL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31TB6tC6BOL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31YOss-gC-L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31YOss-gC-L._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31hCgES5GXL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31hCgES5GXL._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31ioCUUFnoL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31ioCUUFnoL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31jsjfVfH9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31jsjfVfH9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31ncPnMYCxL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31ncPnMYCxL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31pAGovVENL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31pAGovVENL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31pT+SdvQXL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31pT+SdvQXL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\31yxRemzRLL._SS350_ (1).jpg",
+      "PackagePath": "staticwebassets\\images\\products\\31yxRemzRLL._SS350_ (1).jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41-yvkFqVZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41-yvkFqVZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\410PjzqoC8L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\410PjzqoC8L._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\415cOCbey.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\415cOCbey.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\415cOCbeyML.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\415cOCbeyML.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\416OcTXFfeL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\416OcTXFfeL._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\416pdroSEkL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\416pdroSEkL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\419WCoqfamL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\419WCoqfamL._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41A9R5KXCXL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41A9R5KXCXL._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41BiMx1FKyL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41BiMx1FKyL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41CIcYRxJKL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41CIcYRxJKL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41G38jC0ajL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41G38jC0ajL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41GVLtgNngL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41GVLtgNngL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41IPLmZIKhL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41IPLmZIKhL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41KALboJKuL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41KALboJKuL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41LMouG6j7L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41LMouG6j7L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41MJUdI2jdL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41MJUdI2jdL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41Pg1ahql8L._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41Pg1ahql8L._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41RxtSQOd2L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41RxtSQOd2L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41TexqWVkHL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41TexqWVkHL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41V4Ds2PtZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41V4Ds2PtZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41WvZnGYUkL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41WvZnGYUkL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41XX7Pi240L.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41XX7Pi240L.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41Ymq8fjbOL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41Ymq8fjbOL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41Z43OmFHjL._SX342_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41Z43OmFHjL._SX342_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41ZE9SmWdzL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41ZE9SmWdzL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41brDHtPY9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41brDHtPY9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41iDo0HDhbL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41iDo0HDhbL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41iji4-9UsL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41iji4-9UsL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41lffECD-sL._SY445_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41lffECD-sL._SY445_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41qfgTvFBwL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41qfgTvFBwL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41qlcUEhNmL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41qlcUEhNmL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41riQRGf-6L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41riQRGf-6L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41sd2DTD8EL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41sd2DTD8EL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41sdBTtnUDL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41sdBTtnUDL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41sl3FN6NpL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41sl3FN6NpL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41sw9ASUvBL._SX342_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41sw9ASUvBL._SX342_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41w4TlVPhGL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41w4TlVPhGL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41wHu2N4tVL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41wHu2N4tVL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41yh1vBmqsL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41yh1vBmqsL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\41zxxR71G+L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\41zxxR71G+L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51+4d3VBFvL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51+4d3VBFvL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\513UnnRfFML._SL1001_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\513UnnRfFML._SL1001_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\515p1IeP0-L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\515p1IeP0-L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\5195-l+nflL._AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\5195-l+nflL._AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51GBNkHO6vL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51GBNkHO6vL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51JhyHtnEgL._SL1001_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51JhyHtnEgL._SL1001_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51Lj5bxbNtL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51Lj5bxbNtL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51Z9tfgl4aL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51Z9tfgl4aL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51czOOat0OL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51czOOat0OL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51l46qQB50L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51l46qQB50L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51nukXFJLJL.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51nukXFJLJL.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51pvLIvb6ZL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51pvLIvb6ZL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51s6pbRlNyL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51s6pbRlNyL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51uJ-pWfc9L._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51uJ-pWfc9L._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51vxcBS1sQL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51vxcBS1sQL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51w+JqOnmSL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51w+JqOnmSL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51y46IslQkL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51y46IslQkL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\51yomC0EodL._SL500_AA300_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\51yomC0EodL._SL500_AA300_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\71bJrFAys9L._SL1280_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\71bJrFAys9L._SL1280_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\71cBwWAgvIL._SL1430_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\71cBwWAgvIL._SL1430_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\816zGZv1ORL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\816zGZv1ORL._SL1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\81Q1DvOnnoL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\81Q1DvOnnoL._SL1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\81k1XbQ6nQL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\81k1XbQ6nQL._SL1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\91FM0Hog9FL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\91FM0Hog9FL._SL1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\91JUBDf1jTL._AA1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\91JUBDf1jTL._AA1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\91T2BjUkYmL._SL1500_.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\91T2BjUkYmL._SL1500_.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\Camera1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\Camera1.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\products\\To.gif",
+      "PackagePath": "staticwebassets\\images\\products\\To.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\Acer_logo-300x300.gif",
+      "PackagePath": "staticwebassets\\images\\suppliers\\Acer_logo-300x300.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\amd-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\amd-logo.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\apple.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\apple.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\dell-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\dell-logo.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\dell-logo2.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\dell-logo2.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\hp-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\hp-logo.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\intel-logo.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\intel-logo.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\motorola.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\motorola.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\nokia.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\nokia.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\samsung-logo-2.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\samsung-logo-2.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\samsung.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\samsung.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\shopping_cart.png",
+      "PackagePath": "staticwebassets\\images\\suppliers\\shopping_cart.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\images\\suppliers\\sonny-ericsson.jpg",
+      "PackagePath": "staticwebassets\\images\\suppliers\\sonny-ericsson.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\WebAppVNPayment\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAppVNPayment.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebAppVNPayment.props",
+      "PackagePath": "build\\WebAppVNPayment.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAppVNPayment.props",
+      "PackagePath": "buildMultiTargeting\\WebAppVNPayment.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebAppVNPayment.props",
+      "PackagePath": "buildTransitive\\WebAppVNPayment.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

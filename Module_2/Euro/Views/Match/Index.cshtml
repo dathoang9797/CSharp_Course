@@ -1,0 +1,62 @@
+﻿@model List<Match>
+<a href="/match/add">Add</a>
+<table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <th>Team 1</th>
+        <th>Team 2</th>
+        <th>Round</th>
+        <th>Score 1</th>
+        <th>Score 2</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Team1.TeamName</td>
+            <td>@item.Team2.TeamName</td>
+            <td>@item.Round.RoundName</td>
+            <td>@item.Score1</td>
+            <td>@item.Score2</td>
+            <td>@item.StartTime.ToString("dd/MM/yyyy")</td>
+            <td>@item.EndTime?.ToString("dd/MM/yyyy")</td>
+            <td>
+                <a class="btn btn-outline-primary" href="/Match/edit/@item.MatchId">Edit</a>
+                <span class="del btn btn-outline-primary">Delete</span>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="/round/delete" class="modal-content" method="post">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure delete</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="id"/>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(".del").click(function (){
+        const id = $(this).closest('tr').attr('v');
+        console.log({id});
+        $("#delModal input[name='id']").val(id);
+        $("#delModal").modal('show');
+    })
+</script>

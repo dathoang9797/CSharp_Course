@@ -1,0 +1,7 @@
+﻿@model Euro.Models.Club
+<form method="post">
+    <input type="hidden" value="@Model.Logo" name="logo"/>
+    <h1>@Model.Name</h1>
+    <img width="400" src="/images/@Model.Logo" alt="@Model.Name"/>
+    <button>Are you sure Delete</button>
+</form>

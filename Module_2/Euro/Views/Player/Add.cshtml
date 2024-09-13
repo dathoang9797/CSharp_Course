@@ -1,0 +1,49 @@
+﻿@model Player;
+
+<div asp-validation-summary="All"></div>
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <div>
+            <label asp-for="TeamId">TeamId</label>
+            <select asp-for="TeamId" asp-items="@ViewBag.Teams">
+
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="ClubId">ClubId</label>
+            <select asp-for="ClubId" asp-items="@ViewBag.Clubs">
+
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="PositionId">PositionId</label>
+            <select asp-for="PositionId"  asp-items="@ViewBag.Positions">
+
+            </select>
+        </div>
+
+        <div>
+            <label asp-for="FirstName">FirstName</label>
+            <input asp-for="FirstName"/>
+        </div>
+
+        <div>
+            <label asp-for="LastName">LastName</label>
+            <input asp-for="LastName"/>
+        </div>
+
+        <div>
+            <label asp-for="Number">Number</label>
+            <input asp-for="Number" type="number" min="1" max="100"/>
+        </div>
+        <div>
+            <label> Photo</label>
+            <input type="file" name="file" id="file"/>
+        </div>
+        <button class="btn btn-primary" type="submit">
+            Save Changes
+        </button>
+    </div>
+</form>

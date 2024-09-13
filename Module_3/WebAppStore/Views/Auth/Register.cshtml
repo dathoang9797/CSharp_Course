@@ -1,0 +1,25 @@
+﻿@model WebAppStore.Model.RegisterModel;
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="Username">Username</label>
+        <input type="text" asp-for="Username"/>
+    </div>
+    <div>
+        <label asp-for="Email">Email</label>
+        <input type="email" asp-for="Email"/>
+    </div>
+    <div>
+        <label asp-for="Password">Password</label>
+        <input type="password" asp-for="Password"/>
+    </div>
+    <div>
+        <label asp-for="PhoneNumber">PhoneNumber</label>
+        <input type="number" asp-for="PhoneNumber"/>
+    </div>
+    <div>
+        <button>Register</button>
+        <a href="/auth/login">Login</a>
+    </div>
+</form>

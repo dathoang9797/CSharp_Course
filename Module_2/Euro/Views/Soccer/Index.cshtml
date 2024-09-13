@@ -1,0 +1,78 @@
+﻿@model List<Soccer>
+<a href="/soccer/import">Import</a>
+
+<form action="/soccer/search">
+    <input type="search" name="q" placeholder="Enter Keyword"/>
+    <button>Search</button>
+</form>
+
+
+@* @{ *@
+@* var page = ViewContext.RouteData.Values["id"] != null ? Convert.ToInt32(ViewContext.RouteData.Values["id"]) : 1; *@
+@* } *@
+
+@* @{ *@
+@*     var page = ViewContext.GetPage("id"); *@
+@* } *@
+
+@if (Model != null)
+{
+    <ul class="pagination">
+        @for (var i = 1; i <= ViewBag.Pages; i++)
+        {
+            @* if (i == page) *@
+            @* { *@
+            @*     <li class="page-item active"> *@
+            @*         <a class="page-link" href="/soccer/index/@i">@i</a> *@
+            @*     </li>   *@
+            @* } *@
+            @* else *@
+            @* { *@
+            @*     <li class="page-item"> *@
+            @*         <a class="page-link" href="/soccer/index/@i">@i</a> *@
+            @*     </li> *@
+            @* } *@
+            <li class="page-item">
+                <a class="page-link" href="/soccer/index/@i">@i</a>
+            </li>
+        }
+    </ul>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Age</th>
+            <th>Club</th>
+            <th>Height</th>
+            <th>Foot</th>
+            <th>Caps</th>
+            <th>Goals</th>
+            <th>Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.SoccerId</td>
+                <td>@item.Name</td>
+                <td>@item.Position</td>
+                <td>@item.Age</td>
+                <td>@item.Club</td>
+                <td>@item.Height</td>
+                <td>@item.Foot</td>
+                <td>@item.Caps</td>
+                <td>@item.Goals</td>
+                <td>@item.MarketValue</td>
+                <td>@item.Country</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+<script>
+    $($("ul.pagination li.page-item")[@(ViewContext.GetPage("id") - 1)]).addClass("active");
+</script>

@@ -1,0 +1,19 @@
+﻿<h2>Xin chao cac ban</h2>
+
+<a href="/home/contact">Contact</a>
+<br/>
+<a href="/team">Team</a>
+
+<h2>Bảng thi đấu</h2>
+<table class="table">
+    @foreach (IGrouping<string, Team> group in ViewBag.Teams)
+    {
+        <tr>
+            <td>@group.Key</td>
+            @foreach (var item in group.ToList())
+            {
+                <td><img width="40" src="/flags/@(item.TeamName.Replace(" ","")).png" alt="@item.TeamName"/></td>
+            }
+        </tr>
+    }
+</table>

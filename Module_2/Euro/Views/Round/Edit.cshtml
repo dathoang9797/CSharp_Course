@@ -1,0 +1,13 @@
+﻿@model Round
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="RoundName">Name</label>
+        <div>
+            <input type="text" asp-for="RoundName"/>
+        </div>
+        <div>
+            <button>Save Changes</button>
+        </div>
+    </div>
+</form>

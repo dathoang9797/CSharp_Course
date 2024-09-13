@@ -1,0 +1,17 @@
+﻿@model Euro.Models.Club
+
+<form enctype="multipart/form-data" method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="@Model.Name">
+    </div>
+    <div>
+        <label for="file">Logo</label>
+        <input type="hidden" accept="image/*" name="logo" value="@Model.Logo">
+        <img src="/images/@Model.Logo" alt="@Model.Name" width="70">
+        <input type="file" name="file">
+    </div>
+    <div>
+        <button>Save Changes</button>
+    </div>
+</form>

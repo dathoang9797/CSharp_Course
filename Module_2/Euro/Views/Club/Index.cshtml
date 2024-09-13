@@ -1,0 +1,74 @@
+﻿<a class="btn btn-primary" href="/club/add">Add club</a>
+<table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <th>ClubId</th>
+        <th>Name</th>
+        <th>Logo</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Club item in Model)
+    {
+        <tr v="@item.Id">
+            <td> @item.Id</td>
+            <td> @item.Name</td>
+            <td>
+                <img class="img-thumbnail" src="images/@item.Logo" width="100"/>
+            </td>
+            <td>
+                <a class="del btn btn-primary" href="/club/delete/@item.Id">
+                    <i class="fa-3x fa-sharp-duotone fa-solid fa-trash"></i>
+                </a>
+                <a class="btn btn-primary" href="/club/update/@item.Id">
+                    <i class="fa-3x fa-sharp-duotone fa-solid fa-pen-nib"></i>
+                </a>
+                <a class="btn btn-primary" href="/club/edit/@item.Id">
+                    <i class="fa-3x fa-sharp-duotone fa-solid fa-pen-to-square"></i>
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<form method="post">
+    <input type="hidden" name="id"/>
+    <input class="d-none" type="file" id="f" accept="image/*"/>
+    <button>Save</button>
+</form>
+
+<script>
+    $("#f").change((function(){
+        const fd = new FormData();
+        const file = this.files[0];
+        const id = $('input[name="id"]').val();
+        fd.append('file', file);
+        fd.append('id',id);
+        console.log({fd,file,id});
+        $.ajax({
+        url:"/club/updatelogo",
+        method:"post",
+        data:fd, 
+        processData: false,
+        contentType:false,
+        success:function (result){
+        console.log('success');
+        if (result>0){
+        window.location.reload();
+        }
+        }
+     });
+        
+    }))
+    
+    $(".del").click((function(){
+        return window.confirm("Are you sure delete?");
+    }))
+
+    $(".img-thumbnail").click((function(){
+        $("#f").click();
+        $("input[name='id']").val($(this).closest('tr').attr("v"));
+    }))
+
+</script>

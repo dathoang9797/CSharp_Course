@@ -1,0 +1,47 @@
+﻿@model List<WebAppVNPayment.Models.Cart>;
+
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>ProductId</td>
+        <td>Image</td>
+        <td>Quantity</td>
+        <td>Price</td>
+        <td>Amount</td>
+        <td>Command</td>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CartId</td>
+            <td>@item.Product?.ProductName</td>
+            <td>@item.ProductId</td>
+            <td>
+                <img width="70" src="/images/products/@item.Product?.Image" alt="@item.Product?.Image"/>
+            </td>
+            <td>@item.Quantity</td>
+            <td>@item.Product?.Price</td>
+            <td>@(item.Product?.Price * item.Quantity)</td>
+            <td>
+                <button class="btn btn-primary">
+                    Edit
+                </button>
+                <button class="btn btn-danger">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    }
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="7">Total</td>
+        <td>@Model.Sum(p => p.Quantity * p.Product?.Price)</td>
+    </tr>
+    </tfoot>
+</table>

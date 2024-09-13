@@ -1,0 +1,265 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Albania.png",
+      "PackagePath": "staticwebassets\\flags\\Albania.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Austria.png",
+      "PackagePath": "staticwebassets\\flags\\Austria.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Belgium.png",
+      "PackagePath": "staticwebassets\\flags\\Belgium.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Croatia.png",
+      "PackagePath": "staticwebassets\\flags\\Croatia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\CzechRepublic.png",
+      "PackagePath": "staticwebassets\\flags\\CzechRepublic.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Czechia.png",
+      "PackagePath": "staticwebassets\\flags\\Czechia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Denmark.png",
+      "PackagePath": "staticwebassets\\flags\\Denmark.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\England.png",
+      "PackagePath": "staticwebassets\\flags\\England.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\France.png",
+      "PackagePath": "staticwebassets\\flags\\France.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Georgia.png",
+      "PackagePath": "staticwebassets\\flags\\Georgia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Germany.png",
+      "PackagePath": "staticwebassets\\flags\\Germany.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Hungary.png",
+      "PackagePath": "staticwebassets\\flags\\Hungary.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Italy.png",
+      "PackagePath": "staticwebassets\\flags\\Italy.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Netherlands.png",
+      "PackagePath": "staticwebassets\\flags\\Netherlands.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Poland.png",
+      "PackagePath": "staticwebassets\\flags\\Poland.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Portugal.png",
+      "PackagePath": "staticwebassets\\flags\\Portugal.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Romania.png",
+      "PackagePath": "staticwebassets\\flags\\Romania.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Scotland.png",
+      "PackagePath": "staticwebassets\\flags\\Scotland.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Serbia.png",
+      "PackagePath": "staticwebassets\\flags\\Serbia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Slovakia.png",
+      "PackagePath": "staticwebassets\\flags\\Slovakia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Slovenia.png",
+      "PackagePath": "staticwebassets\\flags\\Slovenia.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Spain.png",
+      "PackagePath": "staticwebassets\\flags\\Spain.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Switzerland.png",
+      "PackagePath": "staticwebassets\\flags\\Switzerland.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Turkey.png",
+      "PackagePath": "staticwebassets\\flags\\Turkey.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\flags\\Ukraine.png",
+      "PackagePath": "staticwebassets\\flags\\Ukraine.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\779yl8hduwgr.jpg",
+      "PackagePath": "staticwebassets\\images\\779yl8hduwgr.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\7ayzncxtpgcqaqiu1l9hecmgc1bv.jpg",
+      "PackagePath": "staticwebassets\\images\\7ayzncxtpgcqaqiu1l9hecmgc1bv.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\ag7vvtg0cexy.jpg",
+      "PackagePath": "staticwebassets\\images\\ag7vvtg0cexy.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\arsenal.png",
+      "PackagePath": "staticwebassets\\images\\arsenal.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\baxjnu01uvy.jpeg",
+      "PackagePath": "staticwebassets\\images\\baxjnu01uvy.jpeg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\dv1ap779rdt.jpeg",
+      "PackagePath": "staticwebassets\\images\\dv1ap779rdt.jpeg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\dycej70kw7mx.jpg",
+      "PackagePath": "staticwebassets\\images\\dycej70kw7mx.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\g87tzdy0arc.jpeg",
+      "PackagePath": "staticwebassets\\images\\g87tzdy0arc.jpeg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\hrmxfyrwubosprdipcweykxkcfp0.jpg",
+      "PackagePath": "staticwebassets\\images\\hrmxfyrwubosprdipcweykxkcfp0.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\icrdzybsiewb.jpg",
+      "PackagePath": "staticwebassets\\images\\icrdzybsiewb.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\jornesdfd8p.webp",
+      "PackagePath": "staticwebassets\\images\\jornesdfd8p.webp"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\kfxmj1aktjeu.jpg",
+      "PackagePath": "staticwebassets\\images\\kfxmj1aktjeu.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\kijayussui1ynixszkzbt97zi70e.jpg",
+      "PackagePath": "staticwebassets\\images\\kijayussui1ynixszkzbt97zi70e.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\liverpool.png",
+      "PackagePath": "staticwebassets\\images\\liverpool.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\lxuivqudvx8p.jpg",
+      "PackagePath": "staticwebassets\\images\\lxuivqudvx8p.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\mu.png",
+      "PackagePath": "staticwebassets\\images\\mu.png"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\rgj9f87osnqx.jpg",
+      "PackagePath": "staticwebassets\\images\\rgj9f87osnqx.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\s7k9bvdqc0ah.jpg",
+      "PackagePath": "staticwebassets\\images\\s7k9bvdqc0ah.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\tjvt9hp1mshwhnbuhz9cikkocgaf.jpg",
+      "PackagePath": "staticwebassets\\images\\tjvt9hp1mshwhnbuhz9cikkocgaf.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\ttwaxrxzrvlj.jpg",
+      "PackagePath": "staticwebassets\\images\\ttwaxrxzrvlj.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\vbpny9lbagab.jpg",
+      "PackagePath": "staticwebassets\\images\\vbpny9lbagab.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\images\\vymygdppnfnf.jpg",
+      "PackagePath": "staticwebassets\\images\\vymygdppnfnf.jpg"
+    },
+    {
+      "Id": "E:\\TTTH\\WebApp1\\wwwroot\\js\\jquery-3.7.1.slim.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.7.1.slim.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApp1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebApp1.props",
+      "PackagePath": "build\\WebApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApp1.props",
+      "PackagePath": "buildMultiTargeting\\WebApp1.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebApp1.props",
+      "PackagePath": "buildTransitive\\WebApp1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

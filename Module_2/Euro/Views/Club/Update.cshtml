@@ -1,0 +1,38 @@
+﻿@model Euro.Models.Club
+
+<form method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" value="@Model.Name">
+    </div>
+    <div>
+        <label for="file">Logo</label>
+        <input type="hidden" accept="image/*" name="logo" value="@Model.Logo">
+        <input type="hidden" accept="image/*" name="newLogo">
+        <img src="/images/@Model.Logo" alt="@Model.Name" width="70" id="img">
+        <input accept="image/*" type="file" id="file">
+    </div>
+    <div>
+        <button>Save Changes</button>
+    </div>
+</form>
+
+<script>
+        $("#file").change(function(){
+            const formData = new FormData();
+            formData.append("file",this.files[0]);
+            $.ajax({
+                method:"post",
+                url:"/club/upload",
+                data:formData,
+                contentType:false,
+                processData:false,
+                success:function (result){
+                if (result){
+                    $(img).attr("src",`/images/${result}`);
+                    $('input[name="newLogo"]').val(result);
+                    }
+                }
+            });
+        });
+</script>

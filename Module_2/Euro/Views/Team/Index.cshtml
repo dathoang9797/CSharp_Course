@@ -1,0 +1,31 @@
+﻿Team controller
+<a class="btn btn-primary" href="/team/add">Add team</a>
+<table class="table table-bordered">
+    <thead class="table-dảk">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Team item in Model)
+    {
+        <tr>
+            <td> @item.TeamId</td>
+            <td> @item.TeamName</td>
+            <td>
+                <a class="del btn btn-primary" href="/team/delete/@item.TeamId">Delete</a>
+                <a class="btn btn-primary" href="/team/edit/@item.TeamId">Edit</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<script>
+    $(".del").click((function(){
+    console.log('Click')
+        return window.confirm("Are you sure delete?");
+    }))
+</script>

@@ -1,0 +1,56 @@
+﻿@model List<Soccer>
+<form action="/soccer/search">
+    <input type="search" name="q" placeholder="Enter Keyword" value="@Context.Request.Query["q"]"/>
+    <button>Search</button>
+</form>
+
+@if (ViewBag.Pages > 1)
+{
+    <ul class="pagination">
+        @for (var i = 1; i <= ViewBag.Pages; i++)
+        {
+        <li class="page-item">
+            <a class="page-link" href="/soccer/search/@i?q=@Context.Request.Query["q"]">@i</a>
+        </li>
+        }
+    </ul>
+}
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Age</th>
+        <th>Club</th>
+        <th>Height</th>
+        <th>Foot</th>
+        <th>Caps</th>
+        <th>Goals</th>
+        <th>Country</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.SoccerId</td>
+            <td>@item.Name</td>
+            <td>@item.Position</td>
+            <td>@item.Age</td>
+            <td>@item.Club</td>
+            <td>@item.Height</td>
+            <td>@item.Foot</td>
+            <td>@item.Caps</td>
+            <td>@item.Goals</td>
+            <td>@item.MarketValue</td>
+            <td>@item.Country</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<script>
+    $($("ul.pagination li.page-item")[@(ViewContext.GetPage("page") - 1)]).addClass("active");
+</script>

@@ -1,0 +1,50 @@
+﻿@using WebAppVNPayment.Models
+@model List<Product>
+<a href="/cart/checkout">Checkout</a>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @foreach (Category item in ViewBag.Categories)
+            {
+                <li>
+                    <a href="/home/category/@item.CategoryId">
+                        <span>
+                            <img src="/images/categories/@item.ImageUrl"/>
+                        </span>
+                        @item.CategoryName
+                    </a>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="col-9">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-4">
+                    <h3>
+                        <a href="/home/details/@item.ProductId">@item.ProductName</a>
+                    </h3>
+                    <div>
+                        <img class="img-fluid" src="images/products/@item.Image" alt="@item.ProductName"/>
+                    </div>
+                    <p>Gía: <b>@item.Price</b></p>
+                    <form action="/cart/add" method="post">
+                        <input type="hidden" value="@item.ProductId" name="productId"/>
+                        <div class="row">
+                            <div class="col">
+                                <input type="number"value="1" class="form-control" name="quantity"/>
+                            </div>
+                            <div class="col">
+                                <button class="btn btn-primary">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            }
+        </div>
+    </div>
+</div>
