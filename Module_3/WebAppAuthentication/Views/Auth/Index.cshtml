@@ -1,0 +1,10 @@
+﻿@using System.Security.Claims
+
+@if (User.Identity != null)
+{
+    <p>@User.Identity.Name</p>
+    <p>@User.FindFirstValue(ClaimTypes.Email)</p>
+    <p>@User.FindFirstValue(ClaimTypes.GivenName)</p>
+    <p>@User.FindFirstValue(ClaimTypes.Surname)</p>
+    <p>@User.FindFirstValue(ClaimTypes.NameIdentifier)</p>
+}

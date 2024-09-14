@@ -1,0 +1,141 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\WebAppAuthentication.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebAppAuthentication.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\img\\user.jpg"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\wwwroot\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebAppAuthentication.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.WebAppAuthentication.props",
+      "PackagePath": "build\\WebAppAuthentication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAppAuthentication.props",
+      "PackagePath": "buildMultiTargeting\\WebAppAuthentication.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.WebAppAuthentication.props",
+      "PackagePath": "buildTransitive\\WebAppAuthentication.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
