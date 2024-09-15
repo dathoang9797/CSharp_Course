@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebAppVNPayment.Repository;
+using WebAppStore.Repository;
 
 namespace WebAppStore.Areas.Dashboard;
 

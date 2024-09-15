@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using WebAppStore.Model;
 
-namespace WebAppVNPayment.Repository;
+namespace WebAppStore.Repository;
 
 public class UserRepository
 {
@@ -27,6 +27,21 @@ public class UserRepository
             PhoneNumber = obj.PhoneNumber,
             EmailConfirmed = true
         }, obj.Password);
+    }
+
+    public async Task<int> Add(IdentityUser user)
+    {
+        var obj = await Manager.FindByIdAsync(user.Id);
+        if (obj is null)
+        {
+            var result = await Manager.CreateAsync(user);
+            if (result.Succeeded)
+                return 1;
+
+            return 0;
+        }
+
+        return 1;
     }
 
     public async Task<string?> GenerateEmailConfirmToken(string id)

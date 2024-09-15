@@ -1,4 +1,13 @@
-﻿<h2>Welcome: @User.Identity?.Name</h2>
+﻿@using System.Security.Claims
+<h2>Welcome: @User.Identity?.Name</h2>
 
 <a href="/auth/logout">Logout</a> <br/>
 <a href="/auth/change">Change password</a>
+
+
+@if (User.Identity != null)
+{
+    <p>@User.Identity.Name</p>
+    <p>@User.FindFirstValue(ClaimTypes.Email)</p>
+    <p>@User.FindFirstValue(ClaimTypes.NameIdentifier)</p>
+}

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using WebAppStore.Model;
 
-namespace WebAppVNPayment.Repository;
+namespace WebAppStore.Repository;
 
 public class RoleRepository
 {

@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using WebAppStore.Model;
 using WebAppStore.Services;
-using WebAppVNPayment.Repository;
+using WebAppStore.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.Configure<IdentityOptions>(p =>
 {
-    p.Password.RequireNonAlphanumeric = false; 
+    p.Password.RequireNonAlphanumeric = false;
     p.Password.RequireUppercase = false;
     p.Password.RequireLowercase = false;
     p.Password.RequireUppercase = false;
@@ -17,15 +17,26 @@ builder.Services.Configure<IdentityOptions>(p =>
     p.Password.RequiredLength = 3;
 });
 
+builder.Services.AddAuthentication(IdentityConstants.BearerScheme).AddGoogle(p =>
+{
+    p.SignInScheme = IdentityConstants.ExternalScheme;
+    p.SaveTokens = true;
+    p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? "";
+    p.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? "";
+});
+
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 
 // Add services to the container.
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<RoleRepository>();
-builder.Services.AddDbContext<StoreContext>(p => p.UseSqlServer(builder.Configuration.GetConnectionString("Store")));
+builder.Services.AddScoped<MemberRepository>();
+builder.Services.AddDbContext<StoreContext>(p => p.UseSqlServer(builder.Configuration.GetConnectionString("Store") ?? ""));
+
 builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<StoreContext>()
     .AddDefaultTokenProviders();
+
 builder.Services.AddMvc();
 
 var app = builder.Build();

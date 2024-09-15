@@ -1,27 +1,82 @@
 ﻿using System.Net;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using WebAppStore.Model;
-using WebAppStore.Services;
-using WebAppVNPayment.Repository;
+using WebAppStore.Repository;
 
 namespace WebAppStore;
 
 public class AuthController : Controller
 {
-    private IEmailSender Sender { get; set; }
-    private UserRepository UserRepository { get; set; }
-    private SignInManager<IdentityUser> SignInManager { get; set; }
+    private IEmailSender _Sender { get; set; }
+    private UserRepository _UserRepository { get; set; }
+    private MemberRepository _MemberRepository { get; set; }
+    private SignInManager<IdentityUser> _SignInManager { get; set; }
 
-    public AuthController(UserManager<IdentityUser> manager, SignInManager<IdentityUser> signInManager,
-        IEmailSender sender)
+    public AuthController(
+        UserManager<IdentityUser> manager,
+        SignInManager<IdentityUser> signInManager,
+        IEmailSender sender,
+        MemberRepository memberRepository
+    )
     {
-        UserRepository = new UserRepository(manager);
-        SignInManager = signInManager;
-        Sender = sender;
+        _UserRepository = new UserRepository(manager);
+        _SignInManager = signInManager;
+        _Sender = sender;
+        _MemberRepository = memberRepository;
+    }
+
+    public IActionResult GoogleSignIn()
+    {
+        var properties = _SignInManager.ConfigureExternalAuthenticationProperties(
+            GoogleDefaults.AuthenticationScheme, "https://localhost:7235/auth/googleresponse"
+        );
+        return Challenge(properties, GoogleDefaults.AuthenticationScheme);
+    }
+
+    public async Task<IActionResult> GoogleResponse()
+    {
+        var user = new IdentityUser();
+        _SignInManager.AuthenticationScheme = IdentityConstants.BearerScheme;
+        var results = await _SignInManager.GetExternalLoginInfoAsync();
+        if (results != null)
+        {
+            foreach (var item in results.Principal.Claims)
+            {
+                switch (item.Type)
+                {
+                    case ClaimTypes.NameIdentifier:
+                        user.Id = item.Value;
+                        break;
+                    case ClaimTypes.Email:
+                        user.Email = item.Value;
+                        break;
+                    case ClaimTypes.Name:
+                        user.UserName = item.Value;
+                        break;
+                }
+            }
+
+            user.UserName = user.Email;
+            var result = await _UserRepository.Add(user);
+            if (result == 1)
+            {
+                await _SignInManager.SignInAsync(user, new AuthenticationProperties { IsPersistent = true },
+                    CookieAuthenticationDefaults.AuthenticationScheme);
+                return Redirect("/auth");
+            }
+
+            TempData["Msg"] = "Failed";
+            return Redirect("/auth/error");
+        }
+
+        return Json(user);
     }
 
     [Authorize]
@@ -33,7 +88,7 @@ public class AuthController : Controller
     [Authorize]
     public async Task<IActionResult> Logout()
     {
-        await SignInManager.SignOutAsync();
+        await _SignInManager.SignOutAsync();
         return Redirect("/auth/login");
     }
 
@@ -51,7 +106,7 @@ public class AuthController : Controller
         if (ModelState.IsValid && !string.IsNullOrWhiteSpace(userId))
         {
             obj.UserId = userId;
-            var result = await UserRepository.Change(obj);
+            var result = await _UserRepository.Change(obj);
             if (result != null)
             {
                 if (result.Succeeded)
@@ -78,10 +133,10 @@ public class AuthController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(LoginModel obj)
     {
-        var (user, status) = await UserRepository.Login(obj);
+        var (user, status) = await _UserRepository.Login(obj);
         if (status > 0 && user != null)
         {
-            await SignInManager.SignInAsync(user, obj.Remember);
+            await _SignInManager.SignInAsync(user, obj.Remember);
             return Redirect("/auth");
         }
 
@@ -96,7 +151,7 @@ public class AuthController : Controller
 
     public async Task<IActionResult> ConfirmEmail(string id, string token)
     {
-        var result = await UserRepository.ConfirmEmail(id, WebUtility.UrlDecode(token));
+        var result = await _UserRepository.ConfirmEmail(id, WebUtility.UrlDecode(token));
         if (result != null)
         {
             if (result.Succeeded)
@@ -124,10 +179,10 @@ public class AuthController : Controller
         obj.Id = Guid.NewGuid().ToString().Replace("-", "");
         if (ModelState.IsValid)
         {
-            var result = await UserRepository.Add(obj);
+            var result = await _UserRepository.Add(obj);
             if (result.Succeeded)
             {
-                var token = await UserRepository.GenerateEmailConfirmToken(obj.Id);
+                var token = await _UserRepository.GenerateEmailConfirmToken(obj.Id);
                 if (string.IsNullOrWhiteSpace(token))
                 {
                     ModelState.AddModelError("Error", "Not found token");
@@ -145,7 +200,7 @@ public class AuthController : Controller
                     {
                         if (obj.Email != null)
                         {
-                            await Sender.SendEmailAsync(obj.Email, "Confirm Email",
+                            await _Sender.SendEmailAsync(obj.Email, "Confirm Email",
                                 $"<a href=\"{url}\">Please click link to active your Email</a>");
                             TempData["Msg"] =
                                 $"Register Success, Please check your email: {obj.Email} for active email";
