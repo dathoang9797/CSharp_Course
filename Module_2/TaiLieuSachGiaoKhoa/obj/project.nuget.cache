@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Bc4RPvtO+oSgV9Jk1lkW+Zg2bAzAD9jW1BJz6UgMF9cIFlWaNmifBk9Tpzk4Pm8I/a4pBE/ixGqwVIju3l1Jcg==",
+  "dgSpecHash": "HZrlnEmBYduzXGBA0gYbQ/niTEFmRIb6+jpfNNJI/gM27QyMqXrVDAi0BKg4afq85q3G+6zY0TiLB2rQGAhUww==",
   "success": true,
   "projectFilePath": "E:\\CShrap-Course\\TTTH\\Module_2\\TaiLieuSachGiaoKhoa\\TaiLieuSachGiaoKhoa.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

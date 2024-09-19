@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/8nIDZrtE9njz4BlLiN6/O52NFpSwDDQdjvb7bNzBGmR8eh9s0jSYJdU4jpXyGufU/H8ZNdtPyOwgkTntEP7pg==",
+  "dgSpecHash": "otTtYtAWRfbmVSZnDf8rF3k4FJeu8cLhwy35FBKKnAOoxPCwOr/ygt9tuc4SVsqpb++MANRQSLflQYp9h14haQ==",
   "success": true,
   "projectFilePath": "E:\\CShrap-Course\\TTTH\\Module_3\\WebAppAuthentication\\WebAppAuthentication.csproj",
   "expectedPackageFiles": [
@@ -49,11 +49,7 @@
     "C:\\Users\\datho\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\datho\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\datho\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.31\\microsoft.netcore.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.31\\microsoft.windowsdesktop.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.31\\microsoft.aspnetcore.app.ref.6.0.31.nupkg.sha512",
-    "C:\\Users\\datho\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.31\\microsoft.netcore.app.host.win-x64.6.0.31.nupkg.sha512"
+    "C:\\Users\\datho\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }
