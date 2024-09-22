@@ -60,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/ConfirmTwoFactor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDb25maXJtVHdvRmFjdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/Forgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +78,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/CShrap-Course/TTTH/Module_3/WebAppStore/Views/Auth/Success.cshtml]
