@@ -32,10 +32,65 @@ public class AuthController : Controller
         _MemberRepository = memberRepository;
     }
 
+    public IActionResult ResetPassword() => View();
+
+    [HttpPost]
+    public async Task<IActionResult> ResetPassword(ResetPassword obj)
+    {
+        var result = await _UserRepository.ResetPassword(obj);
+        if (result != null)
+        {
+            if (result.Succeeded)
+            {
+                TempData["Msg"] = "Please Login with new Password";
+                return Redirect("/auth/login");
+            }
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(error.Code, error.Description);
+            }
+        }
+        else
+        {
+            ModelState.AddModelError("Error", "Your token invalid");
+        }
+
+        return View();
+    }
+
+    public IActionResult Forgot() => View();
+
+    [HttpPost]
+    public async Task<IActionResult> Forgot(string email)
+    {
+        var obj = await _UserRepository.GeneratePasswordResetToken(email);
+        if (obj != null)
+        {
+            var url = Url.Action("resetpassword", "auth", new { id = obj.Id, token = obj.Token },
+                protocol: Request.Scheme);
+            if (!string.IsNullOrEmpty(url))
+            {
+                var body = $"<a href=\"{url}\">Click here to Reset your password</a>";
+                await _Sender.SendEmailAsync(email, "Web Store Reset Password", body);
+                TempData["Msg"] = $"Please check your email: {email} to reset your password";
+                return Redirect("/auth/success");
+            }
+        }
+
+        ModelState.AddModelError("Error", "Email Invalid");
+        return View();
+    }
+
     public IActionResult GoogleSignIn()
     {
+        // "https://localhost:7235/auth/googleresponse";
+        var url = Url.Action("googleresponse", "auth", null, protocol: Request.Scheme);
+        if (string.IsNullOrWhiteSpace(url))
+            return Redirect("/auth/error");
+
         var properties = _SignInManager.ConfigureExternalAuthenticationProperties(
-            GoogleDefaults.AuthenticationScheme, "https://localhost:7235/auth/googleresponse"
+            GoogleDefaults.AuthenticationScheme, url
         );
         return Challenge(properties, GoogleDefaults.AuthenticationScheme);
     }
@@ -43,7 +98,7 @@ public class AuthController : Controller
     public async Task<IActionResult> GoogleResponse()
     {
         var user = new IdentityUser();
-        _SignInManager.AuthenticationScheme = IdentityConstants.BearerScheme;
+        // _SignInManager.AuthenticationScheme = IdentityConstants.BearerScheme;
         var results = await _SignInManager.GetExternalLoginInfoAsync();
         if (results != null)
         {
@@ -65,7 +120,7 @@ public class AuthController : Controller
 
             user.UserName = user.Email;
             var result = await _UserRepository.Add(user);
-            if (result == 1)
+            if (result != null)
             {
                 await _SignInManager.SignInAsync(user, new AuthenticationProperties { IsPersistent = true },
                     CookieAuthenticationDefaults.AuthenticationScheme);
@@ -136,13 +191,52 @@ public class AuthController : Controller
         var (user, status) = await _UserRepository.Login(obj);
         if (status > 0 && user != null)
         {
-            await _SignInManager.SignInAsync(user, obj.Remember);
-            return Redirect("/auth");
+            var isUseTwoFactor = true;
+            if (isUseTwoFactor)
+            {
+                var token = await _UserRepository.GenerateTwoFactorTokenAsync(user, "Email");
+                if (token != null)
+                {
+                    // var url = Url.Action("confirmtwofactor", "auth", new { id = user.Id },
+                    //     protocol: Request.Scheme);
+                    // if (!string.IsNullOrEmpty(url))
+                    // {
+                    var body = $"Your OPT IS:{token}";
+                    if (user.Email != null)
+                    {
+                        await _Sender.SendEmailAsync(user.Email, "Confirm Email to login", body);
+                        TempData["Msg"] = $"Login Success Please check your email: {user.Email}";
+                        return Redirect($"/auth/confirmtwofactor/{user.Id}");
+                    }
+                    // }
+                    // else
+                    // {
+                    //     ModelState.AddModelError("Error", "Url Invalid");
+                    // }
+                }
+                else
+                {
+                    ModelState.AddModelError("Error", "Token Invalid");
+                }
+            }
+            else
+            {
+                await _SignInManager.SignInAsync(user, obj.Remember);
+                return Redirect("/auth");
+            }
+
+            ModelState.AddModelError("Error", "Login Failed");
+            return View(obj);
         }
 
         string[] arr = { "Username not found", "Password Failed" };
         ModelState.AddModelError("Error", arr[status + 1]);
         return View(obj);
+    }
+
+    public IActionResult ConfirmTwoFactor(string id)
+    {
+        return View();
     }
 
     public IActionResult Register() => View();
