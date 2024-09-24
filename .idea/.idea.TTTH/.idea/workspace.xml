@@ -27,19 +27,142 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Error.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Error.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Home/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Index.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Privacy.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Privacy.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/_ViewStart.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Privacy.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/_ViewImports.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/bin/Debug/net6.0/WebAppFruitables.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/ref/WebAppFruitables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/ref/WebAppFruitables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/refint/WebAppFruitables.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/refint/WebAppFruitables.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets.pack.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets/msbuild.WebAppFruitables.Microsoft.AspNetCore.StaticWebAssets.props" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/staticwebassets/msbuild.WebAppFruitables.Microsoft.AspNetCore.StaticWebAssets.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/baner-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/banner-fruits.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/best-product-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/cart-page-header-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/featur-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/featur-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/featur-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/fruite-item-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/hero-img-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/hero-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/hero-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/payment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/single-item.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/testimonial-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/img/vegetable-item-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/easing/easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/css/lightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/images/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/images/next.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/images/prev.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/lightbox/js/lightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/owlcarousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/waypoints/links.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/fruitables-1.0.0/lib/waypoints/waypoints.min.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +210,7 @@
     <setting file="mock://E:/CShrap-Course/TTTH/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -438,7 +562,7 @@
       <workItem from="1726903578833" duration="112000" />
       <workItem from="1726903702894" duration="10652000" />
       <workItem from="1726983119567" duration="9399000" />
-      <workItem from="1727178702163" duration="2331000" />
+      <workItem from="1727178702163" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -568,7 +692,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727178861341</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Up">
+      <option name="closed" value="true" />
+      <created>1727183320767</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727183320767</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

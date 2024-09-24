@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppFruitables")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c29fc7d1d61016a767ce7bf64b390dff26450ae5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a085e8efa49003446260edbd17d2d1d5be855dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppFruitables")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppFruitables")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

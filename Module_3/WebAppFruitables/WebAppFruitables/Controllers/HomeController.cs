@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebAp;
+namespace WebAppFruitables;
 
 public class HomeController : Controller
 {
     public IActionResult Index() => View();
+    
+    public IActionResult Shop() => View();
 }
