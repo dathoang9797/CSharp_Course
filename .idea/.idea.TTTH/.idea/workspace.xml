@@ -27,28 +27,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="up">
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/Views/Home/Testimonial.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="8841abc5-154b-4138-912b-ed2714a81480" name="ChangesAnother" comment="">
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +75,6 @@
     <setting file="file://$PROJECT_DIR$/Module_1/Buoi1/Buoi1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebAppFruitables/WebAppFruitables/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -115,31 +96,37 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
-    ".NET Project.Module_1.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.WebAppAuthentication.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppFruitables.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppStore.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_1.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\datho\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
+    ],
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebAppFruitables">
     <configuration name="ConsoleApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -450,6 +437,7 @@
       <workItem from="1726903702894" duration="10652000" />
       <workItem from="1726983119567" duration="9399000" />
       <workItem from="1727178702163" duration="4715000" />
+      <workItem from="1727191122657" duration="1256000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -595,7 +583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727187463358</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="up">
+      <option name="closed" value="true" />
+      <created>1727191555545</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1727191555545</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
