@@ -1,7 +1,7 @@
 ﻿using WebAppAuthentication.Model;
 using WebAppFruitables.Repository;
 
-namespace WebApplication1.Models;
+namespace WebAppFruitables.Models;
 
 public class SiteProvider
 {
@@ -10,8 +10,9 @@ public class SiteProvider
 
     private CategoryRepository category = null!;
     private SlideRepository slide = null!;
+    private TestimonialRepository testimonial = null!;
 
     public CategoryRepository Category => category ??= new CategoryRepository(context);
     public SlideRepository Slide => slide ??= new SlideRepository(context);
-
+    public TestimonialRepository Testimonial => testimonial ??= new TestimonialRepository(context);
 }

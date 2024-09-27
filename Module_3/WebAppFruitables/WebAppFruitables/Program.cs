@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebAppAuthentication.Model;
-using WebApplication1.Models;
+using WebAppFruitables.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

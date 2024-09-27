@@ -7,6 +7,7 @@ public class HomeController : BaseController
     public IActionResult Index()
     {
         ViewBag.Slides = Provider.Slide.GetSlide();
+        ViewBag.Testimonials = Provider.Testimonial.GetTestimonial();
         return View();
     }
 

@@ -9,5 +9,7 @@ public class FruitableContext : DbContext
 
     public DbSet<Category> Categories { get; set; }
     public DbSet<Slide> Slide { get; set; }
+    public DbSet<Testimonial> Testimonial { get; set; }
+
 
 }

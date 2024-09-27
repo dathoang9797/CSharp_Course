@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using WebAppAuthentication.Model;
-using WebApplication1.Models;
+using WebAppFruitables.Models;
 
 namespace WebAppFruitables;
 
