@@ -1,5 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using WebAppAuthentication.Model;
+using WebApplication1.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddDbContext<FruitableContext>(
+    p => p.UseSqlServer(builder.Configuration.GetConnectionString("Fruitables"))
+);
+builder.Services.AddScoped<SiteProvider>();
 // Add services to the container.
 builder.Services.AddRazorPages();
 
