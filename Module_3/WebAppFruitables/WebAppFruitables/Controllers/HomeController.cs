@@ -8,12 +8,14 @@ public class HomeController : BaseController
     {
         ViewBag.Slides = Provider.Slide.GetSlide();
         ViewBag.Testimonials = Provider.Testimonial.GetTestimonial();
+        ViewBag.Categories = Provider.Category.GetCategories();
         return View();
     }
 
     public IActionResult Shop()
     {
-        ViewBag.Categories = Provider.Category.GetCategories();
+        // ViewBag.Categories = Provider.Category.GetCategories(); 
+        ViewBag.Categories = Provider.Category.GetCategoryCounts();
         return View();
     }
 
