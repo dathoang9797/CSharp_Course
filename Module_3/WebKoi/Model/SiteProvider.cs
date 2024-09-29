@@ -24,4 +24,10 @@ public class SiteProvider : BaseProvider
 
     private NumberOfOrderRepository numberofOrder;
     public NumberOfOrderRepository NumberofOrder => numberofOrder ??= new NumberOfOrderRepository(Context);
+    
+    private MemberRepository memberRepository;
+    public MemberRepository MemberRepository => memberRepository ??= new MemberRepository(Context);
+    
+    private ArticleRepository article;
+    public ArticleRepository Article => article ??= new ArticleRepository(Context);
 }

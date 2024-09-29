@@ -14,4 +14,6 @@ public class KoiContext : DbContext
     public DbSet<Role> Roles { get; set; }
     public DbSet<Service> Services { get; set; }
     public DbSet<NumberOfOrder> NumberOfOrders { get; set; }
+    public DbSet<Article> Article { get; set; }
+    public DbSet<Member> Member { get; set; }
 }
