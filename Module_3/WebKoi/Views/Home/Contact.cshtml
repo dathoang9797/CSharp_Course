@@ -1,0 +1,79 @@
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using WebKoi.Model
+@model WebKoi.Model.Customer;
+
+<form method="post">
+    <div class="row">
+        <div class="col">
+            <label class="form-label" asp-for="FullName">Full Name</label>
+            <input class="form-control" type="text" asp-for="FullName"/>
+        </div>
+        <div class="col">
+            <label class="form-label" asp-for="Email">Email</label>
+            <input class="form-control" type="text" asp-for="Email"/>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <div class="col">
+            <label class="form-label" asp-for="Phone">Phone</label>
+            <input class="form-control" type="text" asp-for="Phone"/>
+        </div>
+        <div class="col">
+            <label class="form-label" asp-for="Job">Job</label>
+            <input class="form-control" type="text" asp-for="Job"/>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col">
+            <label class="form-label" asp-for="RoleId">Roles</label>
+            <div>
+                @foreach (Role item in ViewBag.Roles)
+                {
+                    <label>
+                        <input type="radio" name="roleId" value="@item.Id"/>
+                        @item.Name
+                    </label>
+                    <br/>
+                }
+            </div>F
+        </div>
+        <div class="col">
+            <label class="form-label" asp-for="ServiceId">Service</label>
+            <div>
+                @foreach (Service item in ViewBag.Services)
+                {
+                    <label>
+                        <input type="radio" name="roleId" value="@item.Id"/>
+                        @item.Name
+                    </label>
+                    <br/>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <div class="col">
+            <label class="form-label">Business</label>
+            <select class="form-select" asp-for="BusinessId" asp-items="@ViewBag.Businesses">@ViewBag.Businesses</select>
+        </div>
+        <div class="col">
+            <label class="form-label">Number Of Order</label>
+            <select class="form-select" asp-for="NumberOfOrderId" asp-items="@ViewBag.NumberOfOrder"></select>
+        </div>
+    </div>
+
+    <div class="mt-1">
+        <label class="form-label" asp-for="Description"></label>
+        <div>
+            <textarea class="form-control" asp-for="Description"></textarea>
+        </div>
+    </div>
+
+    <div class="mt-1">
+        <button class="btn btn-primary">
+            Save Change
+        </button>
+    </div>
+</form>

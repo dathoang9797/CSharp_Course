@@ -1,14 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
-
+using WebKoi.Models;
 namespace WebKoi;
 
 public abstract class BaseController : Controller
 {
-    // private SiteProvider? provicer;
+    private SiteProvider? _provicer;
+    private IHttpContextAccessor _accessor;
 
-    //Cach 1 khong can AddScoped vo file program
-    // protected SiteProvider Provider =>
-    //     provicer ??= new SiteProvider(HttpContext.RequestServices.GetRequiredService<FruitableContext>());
-
-    // protected SiteProvider Provider => provicer ??= HttpContext.RequestServices.GetRequiredService<SiteProvider>();
+    public BaseController(IHttpContextAccessor accessor) => _accessor = accessor;
+    
+    protected SiteProvider Provider => _provicer ??= new SiteProvider(_accessor);
 }

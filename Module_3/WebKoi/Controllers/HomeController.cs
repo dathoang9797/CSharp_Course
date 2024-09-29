@@ -1,26 +1,25 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace WebAppFruitables;
+namespace WebKoi;
 
 public class HomeController : BaseController
 {
+    public HomeController(IHttpContextAccessor accessor) : base(accessor)
+    {
+    }
+
     public IActionResult Index()
     {
-        ViewBag.Slides = Provider.Slide.GetSlide();
-        ViewBag.Testimonials = Provider.Testimonial.GetTestimonial();
-        ViewBag.Categories = Provider.Category.GetCategories();
         return View();
     }
 
-    public IActionResult Shop()
+    public IActionResult Contact()
     {
-        // ViewBag.Categories = Provider.Category.GetCategories(); 
-        ViewBag.Categories = Provider.Category.GetCategoryCounts();
+        ViewBag.Services = Provider.Service.GetService();
+        ViewBag.Roles = Provider.Role.GetRoles();
+        ViewBag.NumberOfOrder = new SelectList(Provider.NumberofOrder.GetNumberOfOrder(), "Id", "Name");
+        ViewBag.Businesses = new SelectList(Provider.Business.GetBusiness(), "Id", "Name");
         return View();
     }
-
-    public IActionResult Details() => View();
-    public IActionResult Contact() => View();
-    public IActionResult Testimonial() => View();
-    public IActionResult Error404() => View();
 }
