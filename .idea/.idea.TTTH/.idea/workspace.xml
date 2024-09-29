@@ -31,10 +31,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +84,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebKoi/Model/Customer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -496,7 +493,7 @@
       <workItem from="1727191122657" duration="305000" />
       <workItem from="1727414151305" duration="1973000" />
       <workItem from="1727439300964" duration="5421000" />
-      <workItem from="1727514855609" duration="17775000" />
+      <workItem from="1727514855609" duration="18893000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -730,7 +727,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727613117844</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Up">
+      <option name="closed" value="true" />
+      <created>1727616317868</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1727616317868</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
