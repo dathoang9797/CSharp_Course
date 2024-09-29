@@ -29,149 +29,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="up">
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/BaseProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/SiteProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Home/Contact.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Index.cshtml" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/avatar.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/baner-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/baner-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/banner-fruits.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/banner-fruits.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/best-product-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/best-product-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/cart-page-header-img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/cart-page-header-img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/featur-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/featur-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/featur-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/featur-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/featur-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/featur-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/fruite-item-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/fruite-item-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/hero-img-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/hero-img-1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/hero-img-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/hero-img-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/hero-img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/hero-img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/payment.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/payment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/single-item.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/single-item.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/testimonial-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/testimonial-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/img/vegetable-item-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/img/vegetable-item-6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/easing/easing.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/easing/easing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/easing/easing.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/easing/easing.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/css/lightbox.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/css/lightbox.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/images/close.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/images/close.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/images/loading.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/images/loading.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/images/next.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/images/prev.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/lightbox/js/lightbox.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/lightbox/js/lightbox.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/ajax-loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.theme.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.theme.green.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/assets/owl.video.play.png" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/assets/owl.video.play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/owl.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/owl.carousel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/owlcarousel/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/waypoints/links.php" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/waypoints/links.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/wwwroot/lib/waypoints/waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/waypoints/waypoints.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/BaseController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Service.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Service.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Error.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Error.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Error.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Error.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Index.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Privacy.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Privacy.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Privacy.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Privacy.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Shared/_Layout.cshtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/_ViewImports.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/_ViewImports.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Pages/_ViewStart.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/_ViewStart.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BusinessRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Customer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/NumberOfOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/NumberOfOrderRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/RoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/RoleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ServiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ServiceRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/WebKoi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/WebKoi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/css/site.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/js/site.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +75,9 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/73adbdc34d00e8fc71cb835171ee5ba73cc9e53f/src/EFCore.Relational/Query/Internal/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/73adbdc34d00e8fc71cb835171ee5ba73cc9e53f/src/EFCore/Infrastructure/ModelValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore.Relational/Query/Internal/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c7b4b3ba204ed69df46e319b9a634b838a0/db/266acf9f/SignInManager`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06c046bf69aa4f768c77e50706275b1b26a820/40/4514b66c/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2ddb3c71c78b44299276a3aa179a9997176b0/7a/2745cdd1/OAuthOptions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5d205bae5e75409db59a39c83000a983838a0/42/719e6719/IEmailSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Buoi1/Buoi1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -631,7 +496,7 @@
       <workItem from="1727191122657" duration="305000" />
       <workItem from="1727414151305" duration="1973000" />
       <workItem from="1727439300964" duration="5421000" />
-      <workItem from="1727514855609" duration="15769000" />
+      <workItem from="1727514855609" duration="17775000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -857,7 +722,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727520834305</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Up">
+      <option name="closed" value="true" />
+      <created>1727613117844</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1727613117844</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -871,9 +744,9 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.TTTH/.idea/workspace.xml&#10;#&#9;Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" />
-    <MESSAGE value="Up" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

@@ -11,12 +11,12 @@ public class CustomerRepository : BaseRepository
 
     public List<Customer> GetCustomers()
     {
-        return Context.Customers.ToList();
+        return Context.Customer.ToList();
     }
 
     public int Add(Customer obj)
     {
-        Context.Customers.Add(obj);
+        Context.Customer.Add(obj);
         return Context.SaveChanges();
     }
 }

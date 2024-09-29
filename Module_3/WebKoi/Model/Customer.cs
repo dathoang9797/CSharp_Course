@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace WebKoi.Model;
 
+[Table("Customer")]
 public class Customer
 {
-    public int Id { get; set; }
+    [Column("CustomerId")] public int Id { get; set; }
     public string? FullName { get; set; }
     public string? Email { get; set; }
     public string? Phone { get; set; }

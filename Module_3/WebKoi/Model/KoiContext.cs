@@ -9,7 +9,7 @@ public class KoiContext : DbContext
     {
     }
 
-    public DbSet<Customer> Customers { get; set; }
+    public DbSet<Customer> Customer { get; set; }
     public DbSet<Business> Business { get; set; }
     public DbSet<Role> Roles { get; set; }
     public DbSet<Service> Services { get; set; }
