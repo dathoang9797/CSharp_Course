@@ -9,23 +9,23 @@
     </div>
     <div>
         <label class="col-2 form-label" asp-for="Description">Description</label>
-        <div class="col-10 form-control">
-            <textarea  asp-for="Description"></textarea>
+        <div class="col-10">
+            <textarea class=" form-control"   asp-for="Description"></textarea>
         </div>
     </div>
     <div>
         <label class="col-2 form-label" asp-for="Content">Content</label>
-        <div class="col-10 form-control">
-            <input type="text" asp-for="Content"/>
+        <div class="col-10">
+            <textarea class="editor form-control" asp-for="Content"></textarea>
         </div>
     </div>
     <div>
         <label class="col-2 form-label" asp-for="Body">Body</label>
-        <div class="col-10 form-control">
-            <input type="text" asp-for="Body"/>
+        <div class="col-10">
+            <textarea class="editor form-control" asp-for="Body"></textarea>
         </div>
-    </div>
-    <div class="mt-1">
-        <button class="btn btn-primary">Save Changes</button>
+        <div class="mt-1">
+            <button class="btn btn-primary">Save Changes</button>
+        </div>
     </div>
 </form>

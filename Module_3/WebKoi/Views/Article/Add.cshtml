@@ -1,1 +1,60 @@
-﻿<a href="/article/add">Add</a>
+﻿@model WebKoi.Model.Article
+
+<form method="post">
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="ArticleName">Name</label>
+        <div class="col-6">
+            <input class="form-control" type="text" asp-for="ArticleName"/>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="Description">Description</label>
+        <div class="col-10">
+            <textarea class="form-control" asp-for="Description"></textarea>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="Content">Content</label>
+        <div class="col-10 ">
+            <textarea class="editor form-control" asp-for="Description"></textarea>
+        </div>
+    </div>
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="Body">Body</label>
+        <div class="col-10">
+            <textarea class="editor form-control" asp-for="Body"></textarea>
+        </div>
+    </div>
+    <div class="mt-1">
+        <button class="btn btn-primary">Save Changes</button>
+    </div>
+</form>
+
+
+<!-- Place the first <script> tag in your HTML's <head> -->
+<script src="https://cdn.tiny.cloud/1/y8a337fmhbw20gt0agf8073d1tatsujnzato4h00pp91g0vd/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+
+<!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+<script>
+  tinymce.init({
+    selector: 'textarea.editor',
+    plugins: [
+      // Core editing features
+      'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+      // Your account includes a free trial of TinyMCE premium features
+      // Try the most popular premium features until Oct 14, 2024:
+      'checklist', 'mediaembed', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown',
+    ],
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+    tinycomments_mode: 'embedded',
+    tinycomments_author: 'Author name',
+    mergetags_list: [
+      { value: 'First.Name', title: 'First Name' },
+      { value: 'Email', title: 'Email' },
+    ],
+    ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+  });
+</script>
+<textarea>
+  Welcome to TinyMCE!
+</textarea>
