@@ -12,5 +12,5 @@ public class Article
     public string? ImageUrl { get; set; }
     public string? Content { get; set; }
     public string? Body { get; set; }
-    public DateTime ArticleDate { get; set; }
+    public DateTime? ArticleDate { get; set; }
 }

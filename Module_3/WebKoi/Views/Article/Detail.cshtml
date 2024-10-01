@@ -1,0 +1,14 @@
+﻿@model WebKoi.Model.Article;
+
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            @Model.ArticleName
+        </div>
+    </div>
+    <div class="card-body">
+        <h3>Nội dung chính</h3>
+        <div>@Html.Raw(Model.Content)</div>
+        <div>@Html.Raw(Model.Body)</div>
+    </div>
+</div>
