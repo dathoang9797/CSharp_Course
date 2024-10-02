@@ -1,3 +1,6 @@
+using System.Security.Cryptography;
+using System.Text;
+
 namespace WebKoi.Services;
 
 public static class Helper
@@ -25,5 +28,11 @@ public static class Helper
         file.CopyTo(stream);
 
         return fileName;
+    }
+
+    public static byte[] Hash(string plainText)
+    {
+        var algorith = SHA512.Create();
+        return algorith.ComputeHash(Encoding.ASCII.GetBytes(plainText));
     }
 }

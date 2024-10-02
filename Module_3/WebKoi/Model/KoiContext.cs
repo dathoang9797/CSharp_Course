@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebKoi.Model;
+using WebKoi.Models;
 
-namespace WebAppAuthentication.Model;
+namespace WebKoi.Model;
 
 public class KoiContext : DbContext
 {
@@ -16,4 +16,6 @@ public class KoiContext : DbContext
     public DbSet<NumberOfOrder> NumberOfOrders { get; set; }
     public DbSet<Article> Article { get; set; }
     public DbSet<Member> Member { get; set; }
+    public DbSet<Invoice> Invoice { get; set; }
+    public DbSet<Status> Status { get; set; }
 }

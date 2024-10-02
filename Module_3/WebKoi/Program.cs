@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
+using WebKoi.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 

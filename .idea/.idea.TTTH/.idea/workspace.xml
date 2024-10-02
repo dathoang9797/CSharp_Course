@@ -29,7 +29,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Invoice.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/LoginModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Register.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Status.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/InvoiceRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/StatusRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/shelf/Uncommitted_changes_before_Update_at_9_24_2024_10_46_PM__ChangesAnother_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/shelf/Uncommitted_changes_before_Update_at_9_24_2024_10_46_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/BaseProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/BaseProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/KoiContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/SiteProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ArticleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ArticleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BusinessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/BusinessRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/CustomerRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/NumberOfOrderRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/NumberOfOrderRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/RoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/RoleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ServiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/ServiceRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,7 +110,6 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebKoi/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -497,6 +523,7 @@
       <workItem from="1727705737043" duration="3000" />
       <workItem from="1727705750608" duration="4286000" />
       <workItem from="1727781339743" duration="5711000" />
+      <workItem from="1727870989098" duration="4646000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -778,7 +805,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727792331707</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Up">
+      <option name="closed" value="true" />
+      <created>1727871371866</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1727871371866</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -800,9 +835,9 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.TTTH/.idea/workspace.xml&#10;#&#9;Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" />
-    <MESSAGE value="Up" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

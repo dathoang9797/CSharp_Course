@@ -1,5 +1,4 @@
-﻿using WebAppAuthentication.Model;
-using WebKoi.Model;
+﻿using WebKoi.Model;
 using WebKoi.Repository;
 
 namespace WebKoi.Models;
@@ -25,9 +24,15 @@ public class SiteProvider : BaseProvider
     private NumberOfOrderRepository numberofOrder;
     public NumberOfOrderRepository NumberofOrder => numberofOrder ??= new NumberOfOrderRepository(Context);
     
-    private MemberRepository memberRepository;
-    public MemberRepository MemberRepository => memberRepository ??= new MemberRepository(Context);
+    private MemberRepository member;
+    public MemberRepository Member => member ??= new MemberRepository(Context);
     
     private ArticleRepository article;
     public ArticleRepository Article => article ??= new ArticleRepository(Context);
+    
+    private StatusRepository status;
+    public StatusRepository Status => status ??= new StatusRepository(Context);
+    
+    private InvoiceRepository invoice;
+    public InvoiceRepository Invoice => invoice ??= new InvoiceRepository(Context);
 }

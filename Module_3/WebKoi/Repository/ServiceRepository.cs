@@ -1,4 +1,3 @@
-using WebAppAuthentication.Model;
 using WebKoi.Model;
 
 namespace WebKoi.Repository;

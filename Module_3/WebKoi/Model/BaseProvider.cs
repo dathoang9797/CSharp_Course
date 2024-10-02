@@ -1,5 +1,3 @@
-using WebAppAuthentication.Model;
-
 namespace WebKoi.Model;
 
 public abstract class BaseProvider
