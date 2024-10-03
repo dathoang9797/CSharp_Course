@@ -1,0 +1,27 @@
+﻿@model IEnumerable<WebKoi.Model.Invoice>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Status</th>
+        <th>Date</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.InvoiceId</td>
+            <td>@item.Status?.StatusName</td>
+            <td>@item.InvoiceDate.ToString("dd/MM/yyyy hh:mm:ss")</td>
+            <td>
+                <a class="btn btn-outline-primary" href="/article/detail/@item.InvoiceId">Detail</a>
+                <a class="btn btn-outline-primary" href="/article/delete/@item.InvoiceId">Delete</a>
+                <a class="btn btn-outline-primary" href="/article/edit/@item.InvoiceId">Edit</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

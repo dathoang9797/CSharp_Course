@@ -1,10 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebKoi.Models;
+namespace WebKoi.Model;
 
 [Table("Status")]
 public class Status
 {
-    public byte StatusId { get; set; }
+    public short StatusId { get; set; }
     public string? StatusName { get; set; }
 }

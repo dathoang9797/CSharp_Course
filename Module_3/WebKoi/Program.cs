@@ -13,7 +13,10 @@ builder.Services.AddDbContext<KoiContext>(
 );
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(p => { p.LoginPath = "/auth/login"; })
+    .AddCookie(p =>
+    {
+        p.LoginPath = "/auth/login";
+    })
     .AddGoogle(p =>
     {
         p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? string.Empty;

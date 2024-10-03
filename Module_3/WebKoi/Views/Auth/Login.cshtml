@@ -1,1 +1,31 @@
-﻿<a href="/auth/googlelogin?returnUrl=@Context.Request.Query["ReturnUrl"]">Google Login</a>
+﻿@model WebKoi.Model.LoginModel;
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="Eml">Email</label>
+        <div class="col-6">
+            <input class="form-control" type="text" asp-for="Eml"/>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="Pwd">Password</label>
+        <div class="col-6">
+            <input class="form-control" type="password" asp-for="Pwd"/>
+        </div>
+    </div>
+
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="R">Remember me!</label>
+        <div class="col-6">
+            <input type="checkbox" asp-for="R"/>
+        </div>
+    </div>
+
+    <div class="mt-1">
+        <button class="btn btn-primary">Login</button>
+    </div>
+</form>
+
+<a href="/auth/googlelogin?returnUrl=@Context.Request.Query["ReturnUrl"]">Google Login</a>

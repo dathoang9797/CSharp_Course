@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using WebKoi.Model;
 using WebKoi.Models;
 
@@ -11,7 +12,7 @@ public class InvoiceRepository : BaseRepository
 
     public List<Invoice> GetInvoices()
     {
-        return Context.Invoice.ToList();
+        return Context.Invoice.Include(p => p.Status).ToList();
     }
 
     public Invoice? GetInvoice(int id)
