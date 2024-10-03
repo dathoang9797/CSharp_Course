@@ -1,3 +1,4 @@
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WebKoi.Model;
 using WebKoi.Models;
@@ -18,5 +19,14 @@ public class InvoiceRepository : BaseRepository
     public Invoice? GetInvoice(int id)
     {
         return Context.Invoice.Find(id);
+    }
+
+    public int UpdateStatus(Invoice obj)
+    {
+        return Context.Database.ExecuteSqlRaw("UPDATE Invoice SET StatusId = @StatusId WHERE  InvoiceId = @InvoiceId",
+        [
+            new SqlParameter("@StatusId", obj.StatusId),
+            new SqlParameter("@InvoiceId", obj.InvoiceId)
+        ]);
     }
 }

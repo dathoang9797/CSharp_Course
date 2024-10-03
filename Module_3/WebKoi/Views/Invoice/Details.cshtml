@@ -1,0 +1,24 @@
+﻿@model WebKoi.Model.Invoice;
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div class="row mt-1">
+        <span class="col-2">Id</span>
+        <div class="col-10">@Model.InvoiceId</div>
+    </div>
+
+    <div class="row mt-1">
+        <span class="col-2">Date</span>
+        <div class="col-10">@Model.InvoiceDate.ToString("dd/MM/yyyy")</div>
+    </div>
+
+    <div class="row mt-1">
+        <label class="col-2 form-label" asp-for="StatusId">Name</label>
+        <div class="col-6">
+            <select class="form-select" asp-items="@ViewBag.Statuses" asp-for="StatusId"></select>
+        </div>
+    </div>
+    <div class="mt-1">
+        <button class="btn btn-primary">Update</button>
+    </div>
+</form>

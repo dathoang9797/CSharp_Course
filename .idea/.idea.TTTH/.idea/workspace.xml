@@ -29,16 +29,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/InvoiceController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Invoice/Index.cshtml" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="up">
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Invoice/Details.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_3/WebKoi/wwwroot/js/jquery-3.7.1.slim.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Invoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Invoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Model/Status.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Model/Status.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/InvoiceController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Controllers/InvoiceController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Repository/InvoiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Repository/InvoiceRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Views/Invoice/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Invoice/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +77,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/73adbdc34d00e8fc71cb835171ee5ba73cc9e53f/src/EFCore.Relational/Query/Internal/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/73adbdc34d00e8fc71cb835171ee5ba73cc9e53f/src/EFCore/Infrastructure/ModelValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore.Relational/Query/Internal/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore.Relational/Storage/RelationalCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/efcore/90d079985f33ae91c05b98ecf65e0ce38270ba55/src/EFCore/DbSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c7b4b3ba204ed69df46e319b9a634b838a0/db/266acf9f/SignInManager`1.cs" root0="SKIP_HIGHLIGHTING" />
@@ -509,7 +507,7 @@
       <workItem from="1727705737043" duration="3000" />
       <workItem from="1727705750608" duration="4286000" />
       <workItem from="1727781339743" duration="5711000" />
-      <workItem from="1727870989098" duration="9978000" />
+      <workItem from="1727870989098" duration="14498000" />
     </task>
     <task id="LOCAL-00001" summary="Up">
       <option name="closed" value="true" />
@@ -807,7 +805,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727877091717</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="up">
+      <option name="closed" value="true" />
+      <created>1727965609220</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1727965609221</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -829,9 +835,9 @@
     </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.TTTH/.idea/workspace.xml&#10;#&#9;Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" />
-    <MESSAGE value="up" />
     <MESSAGE value="Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Up" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

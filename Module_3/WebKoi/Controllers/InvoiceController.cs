@@ -12,6 +12,7 @@ public class InvoiceController : BaseController
 
     public IActionResult Index()
     {
+        ViewBag.Statuses = new SelectList(Provider.Status.GetStatus(), "StatusId", "StatusName");
         return View(Provider.Invoice.GetInvoices());
     }
 
@@ -21,6 +22,23 @@ public class InvoiceController : BaseController
         ViewBag.Roles = Provider.Role.GetRoles();
         ViewBag.NumberOfOrder = new SelectList(Provider.NumberofOrder.GetNumberOfOrder(), "Id", "Name");
         ViewBag.Businesses = new SelectList(Provider.Business.GetBusiness(), "Id", "Name");
+    }
+
+    public IActionResult Details(int id)
+    {
+        ViewBag.Statuses = new SelectList(Provider.Status.GetStatus(), "StatusId", "StatusName");
+        return View(Provider.Invoice.GetInvoice(id));
+    }
+
+    [HttpPost]
+    public IActionResult Details(int id, Invoice obj)
+    {
+        obj.InvoiceId = id;
+        var ret = Provider.Invoice.UpdateStatus(obj);
+        if (ret > 0)
+            return Redirect("/invoice");
+
+        return Details(id);
     }
 
     public IActionResult Contact()
