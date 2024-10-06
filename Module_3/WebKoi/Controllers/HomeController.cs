@@ -1,13 +1,17 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using WebKoi.Model;
+using WebKoi.Services;
 
 namespace WebKoi;
 
 public class HomeController : BaseController
 {
-    public HomeController(IHttpContextAccessor accessor) : base(accessor)
+    private Notification Notification;
+
+    public HomeController(IHttpContextAccessor accessor, Notification notification) : base(accessor)
     {
+        Notification = notification;
     }
 
     public IActionResult Index()
@@ -30,7 +34,7 @@ public class HomeController : BaseController
     }
 
     [HttpPost]
-    public IActionResult Contact(Customer obj)
+    public async Task<IActionResult> Contact(Customer obj)
     {
         if (ModelState.IsValid)
         {
@@ -38,6 +42,7 @@ public class HomeController : BaseController
             if (ret > 0)
             {
                 TempData["Msg"] = "You Contact Success";
+                await Notification.SendAsync("Contact Success", obj);
                 return Redirect("/home/success");
             }
 

@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebKoi.Model;
+using WebKoi.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddSingleton<Notification>();
+builder.Services.AddSignalR();
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddMvc();
@@ -13,10 +15,7 @@ builder.Services.AddDbContext<KoiContext>(
 );
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(p =>
-    {
-        p.LoginPath = "/auth/login";
-    })
+    .AddCookie(p => { p.LoginPath = "/auth/login"; })
     .AddGoogle(p =>
     {
         p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? string.Empty;
@@ -24,6 +23,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 
 var app = builder.Build();
+app.MapHub<Notification>(pattern: "/notify");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.MapDefaultControllerRoute();
