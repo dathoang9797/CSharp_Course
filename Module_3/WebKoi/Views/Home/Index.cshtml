@@ -3,3 +3,34 @@
         <a href="/home/contact">Contact</a>
     </li>
 </ul>
+
+<!-- Modal -->
+<div class="modal fade" id="recModal" tabindex="-1" aria-labelledby="recModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="frm" method="post" action="/home/recommend" class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="recModalLabel">Tư vấn</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mt-1">
+                    <input class="form-control" type="text" placeholder="Tên của bạn" name="fullname"/>
+                </div>
+                <div class="mt-1">
+                    <input class="form-control" type="text" placeholder="Email của bạn" name="email"/>
+                </div>
+                <div class="mt-1">
+                    <input class="form-control" type="text" placeholder="Số điện thoại của bạn" name="phone"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Bắt đầu trò chuyện</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="position-absolute bottom-0 end-0">
+    <img id="btnRec" src="img/pngtree-free-consultation-png-image_4227868.png" alt="Recommend" width="100"/>
+</div>

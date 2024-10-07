@@ -52,4 +52,10 @@ public class HomeController : BaseController
         LoadData();
         return View(obj);
     }
+
+    [HttpPost]
+    public IActionResult Recommend(Recommend obj)
+    {
+        return Json(Provider.Recommend.Add(obj));
+    }
 }

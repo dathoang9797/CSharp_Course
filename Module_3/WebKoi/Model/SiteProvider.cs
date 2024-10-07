@@ -35,4 +35,7 @@ public class SiteProvider : BaseProvider
     
     private InvoiceRepository invoice;
     public InvoiceRepository Invoice => invoice ??= new InvoiceRepository(Context);
+    
+    private RecommendRepository recommend;
+    public RecommendRepository Recommend => recommend ??= new RecommendRepository(Context);
 }

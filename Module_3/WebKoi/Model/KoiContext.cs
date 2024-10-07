@@ -18,4 +18,6 @@ public class KoiContext : DbContext
     public DbSet<Member> Member { get; set; }
     public DbSet<Invoice> Invoice { get; set; }
     public DbSet<Status> Status { get; set; }
+    public DbSet<Recommend> Recommend { get; set; }
+
 }
