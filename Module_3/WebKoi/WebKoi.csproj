@@ -16,4 +16,9 @@
       <_ContentIncludedByDefault Remove="wwwroot\css\site.css" />
     </ItemGroup>
 
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Cart\Details.cshtml" />
+      <AdditionalFiles Include="Views\Cart\Index.cshtml" />
+    </ItemGroup>
+
 </Project>

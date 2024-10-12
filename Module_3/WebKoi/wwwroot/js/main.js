@@ -30,6 +30,10 @@
             $($("input[name='roleId']")[0]).prop("checked", true);
             $($("input[name='serviceId']")[0]).prop("checked", true);
 
+
+            // $("#statusId").change(function () {
+            //     window.location.href = `/invoice/select/${$(this).val()}`;
+            // });
         } catch (err) {
             console.log(err);
             setTimeout(start, 5000);

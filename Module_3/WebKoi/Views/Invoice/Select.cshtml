@@ -1,0 +1,63 @@
+﻿@using WebKoi.Model
+<div asp-validation-summary="All"></div>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @foreach (Status item in ViewBag.List)
+            {
+                <li>
+                    <a href="/invoice/select/@item.StatusId">@item.StatusName</a>
+                </li>
+            }
+        </ul>
+    </div>
+    <div class="col-9">
+        <form method="post">
+            <div class="row mt-1">
+                <label class="col-2 form-label" for="statusId">Status</label>
+                <div class="col-10">
+                    <select class="form-select" name="statusId" id="statusId" asp-items="@ViewBag.Statuses"></select>
+                </div>
+            </div>
+
+            <div class="mt-1 mb-1">
+                <button class="btn btn-primary">
+                    Save Changes
+                </button>
+            </div>
+
+            <table class="table table-bordered mt-1">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Id</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Command</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr v="@item.InvoiceId">
+                        <td>
+                            <input type="checkbox" value="@item.InvoiceId" name="ids"/>
+                        </td>
+                        <td>@item.InvoiceId</td>
+                        <td>
+                            <span v="@item.StatusId" class="btn btn-outline-primary stat">
+                                @item.Status?.StatusName
+                            </span>
+                        </td>
+                        <td>@item.InvoiceDate.ToString("dd/MM/yyyy hh:mm:ss")</td>
+                        <td>
+                            <a class="btn btn-outline-primary" href="/invoice/details/@item.InvoiceId">Detail</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

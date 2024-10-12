@@ -1,0 +1,40 @@
+﻿@model WebKoi.Model.Invoice?
+
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title">
+            @if (Model != null)
+            {
+                @:@Model.InvoiceId - @Model.InvoiceDate.ToString("dd/MM/yyyy")
+            }
+        </h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            @if (Model?.InvoiceDetails != null)
+            {
+                foreach (var item in Model?.InvoiceDetails)
+                {
+                    <tr>
+                        <td>@item.ProductId</td>
+                        <td></td>
+                        <td>@item.Price</td>
+                        <td>@item.Quantity</td>
+                        <td>@(item.Price * item.Quantity)</td>
+                    </tr>
+                }
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

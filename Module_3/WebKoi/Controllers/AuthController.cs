@@ -39,6 +39,12 @@ public class AuthController : BaseController
     {
         return View();
     }
+    
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return Redirect("/auth/login");
+    }
 
     [HttpPost]
     public async Task<IActionResult> Login(LoginModel obj, string? returnUrl)

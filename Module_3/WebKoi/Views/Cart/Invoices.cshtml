@@ -1,0 +1,27 @@
+﻿@model List<WebKoi.Model.InvoiceTotal>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Date</th>
+        <th>Total</th>
+        <th>Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.InvoiceId</td>
+            <td>@item.InvoiceDate.ToString("dd/MM/yyyy hh:mm:ss")</td>
+            <td class="text-end">
+                @item.Total.ToString("#.00")
+            </td>
+            <td>
+                <a href="/cart/invoice/@item.InvoiceId">Detail</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -65,4 +65,19 @@ public class InvoiceController : BaseController
         LoadData();
         return View(obj);
     }
+
+    public IActionResult Select(short id = 1)
+    {
+        var list = Provider.Status.GetStatus();
+        ViewBag.List = list;
+        ViewBag.Statuses = new SelectList(Provider.Status.GetStatus(), "StatusId", "StatusName", id);
+        return View(Provider.Invoice.GetInvoiceByStatus(id));
+    }
+
+    [HttpPost]
+    public IActionResult Select(int[] ids, short statusId = 1)
+    {
+        Provider.Invoice.UpdateStatus(ids, statusId);
+        return Redirect($"/invoice/select/{statusId}");
+    }
 }

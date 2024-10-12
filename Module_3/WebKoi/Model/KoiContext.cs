@@ -20,4 +20,11 @@ public class KoiContext : DbContext
     public DbSet<Status> Status { get; set; }
     public DbSet<Recommend> Recommend { get; set; }
 
+    public DbSet<InvoiceDetail> InvoiceDetail { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+        modelBuilder.Entity<InvoiceDetail>(p => p.HasKey(q => new { q.InvoiceId, q.ProductId }));
+    }
 }
