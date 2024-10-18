@@ -36,7 +36,14 @@ public class UploadController : BaseController
     public IActionResult Multiple(IFormFile[] files)
     {
         var list = Helper.Uploads(files);
-        var ret = Provider.Upload.AddMulti(list);
+        if (list == null)
+            return View();
+
+        var enumerable = list.ToList();
+        if (enumerable.Count == 0)
+            return View();
+
+        var ret = Provider.Upload.AddMulti(enumerable);
         if (ret > 0)
             return Redirect("/upload");
 

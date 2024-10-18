@@ -22,10 +22,16 @@ public class UploadRepository : BaseRepository
         return Connection.Execute(sql, new { obj.OriginalName, obj.ImageUrl, obj.Type, obj.Size });
     }
 
-    public long AddMulti(IEnumerable<Upload> files)
+    public long AddMulti(List<Upload?>? files)
     {
-        const string sql =
-            "INSERT INTO Upload(OriginalName, ImageUrl, Type, Size) VALUES (@OriginalName, @ImageUrl, @Type, @Size)";
-        return Connection.Execute(sql, files.Select(obj => new { obj.OriginalName, obj.ImageUrl, obj.Type, obj.Size }));
+        if (files != null)
+        {
+            const string sql =
+                "INSERT INTO Upload(OriginalName, ImageUrl, Type, Size) VALUES (@OriginalName, @ImageUrl, @Type, @Size)";
+            return Connection.Execute(sql,
+                files.Select(obj => new { obj.OriginalName, obj.ImageUrl, obj.Type, obj.Size }));
+        }
+
+        return -1;
     }
 }

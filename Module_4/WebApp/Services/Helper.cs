@@ -43,13 +43,13 @@ public static class Helper
         return Upload(file, root, folder, sub, len);
     }
 
-    public static IEnumerable<Upload?> Uploads(IEnumerable<IFormFile> files, string root, string folder = "images",
+    public static IEnumerable<Upload?>? Uploads(IEnumerable<IFormFile> files, string root, string folder = "images",
         string sub = "", int len = 32)
     {
         return files.Select(file => Upload(file, root, folder, sub, len));
     }
 
-    public static IEnumerable<Upload?> Uploads(IEnumerable<IFormFile> files, string folder = "images", string sub = "",
+    public static IEnumerable<Upload?>? Uploads(IEnumerable<IFormFile> files, string folder = "images", string sub = "",
         int len = 32)
     {
         var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
