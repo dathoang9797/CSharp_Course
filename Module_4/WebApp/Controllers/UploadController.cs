@@ -32,6 +32,33 @@ public class UploadController : BaseController
         return View();
     }
 
+    [HttpPost]
+    public IActionResult Multiple(IFormFile[] files)
+    {
+        var list = Helper.Uploads(files);
+        var ret = Provider.Upload.AddMulti(list);
+        if (ret > 0)
+            return Redirect("/upload");
+
+        return View();
+    }
+
+    public IActionResult Folder()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Folder(IFormFile[] files)
+    {
+        var list = Helper.UploadFolder(files);
+        var ret = Provider.Upload.AddMulti(list);
+        if (ret > 0)
+            return Redirect("/upload");
+
+        return View();
+    }
+    
     public IActionResult Ajax()
     {
         return View();

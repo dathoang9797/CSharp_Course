@@ -1,4 +1,4 @@
-@model IEnumerator<Upload>
+@model IEnumerable<Upload>
 
 <div>
     <ul>
@@ -41,10 +41,17 @@
     {
         {
             <tr>
-                <td>@item.</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>@item.UploadId</td>
+                <td>@item.OriginalName</td>
+                <td>
+                    <img width="300" height="200" src="images/@item.ImageUrl" alt="@item.OriginalName"/>
+                </td>
+                <td>@item.Type</td>
+                <td>@item.Size</td>
+                <td>@item.UploadDate</td>
+                <td>
+                    <a href="/upload/delete/@item.UploadId">Delete</a>
+                </td>
             </tr>
         }
     }
