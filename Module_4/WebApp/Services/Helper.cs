@@ -56,9 +56,13 @@ public static class Helper
         return Uploads(files, root, folder, sub, len);
     }
 
-    private static IEnumerable<Upload?> UploadFolder(IEnumerable<IFormFile> files, string root, string folder = "images",
+    private static IEnumerable<Upload?>? UploadFolder(IEnumerable<IFormFile>? files, string root,
+        string folder = "images",
         int len = 32)
     {
+        if (files == null)
+            return null;
+
         return files.Select(file =>
         {
             var child = Path.GetDirectoryName(file.FileName);
@@ -75,7 +79,7 @@ public static class Helper
         });
     }
 
-    public static IEnumerable<Upload> UploadFolder(IEnumerable<IFormFile> files, string folder = "images",
+    public static IEnumerable<Upload?>? UploadFolder(IEnumerable<IFormFile> files, string folder = "images",
         int len = 32)
     {
         var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
