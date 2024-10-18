@@ -1,5 +1,10 @@
+@model IEnumerator<Upload>
+
 <div>
     <ul>
+        <li>
+            <a href="/upload/simple">Upload Simple</a>
+        </li>
         <li>
             <a href="/upload/multiple">Upload Multiple</a>
         </li>
@@ -18,3 +23,30 @@
         </li>
     </ul>
 </div>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Original</th>
+        <th>Image</th>
+        <th>Type</th>
+        <th>Size</th>
+        <th>Date</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        {
+            <tr>
+                <td>@item.</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>

@@ -1,17 +1,30 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApp.Models;
+using WebApp.Services;
 
 namespace WebApp.Controllers;
 
-public class UploadController : Controller
+public class UploadController : BaseController
 {
     public IActionResult Index()
     {
-        return View();
+        return View(Provider.Upload.GetUploads());
     }
-    
+
     public IActionResult Simple()
     {
         return View();
+    }
+
+    [HttpPost]
+    public IActionResult Simple(IFormFile file)
+    {
+        var obj = Helper.Upload(file);
+        var ret = Provider.Upload.Add(obj);
+        if (ret > 0)
+            return Redirect("/upload");
+
+        return View(obj);
     }
 
     public IActionResult Multiple()

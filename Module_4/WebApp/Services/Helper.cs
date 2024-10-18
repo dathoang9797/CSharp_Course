@@ -33,4 +33,22 @@ public static class Helper
             Type = file.ContentType,
         };
     }
+
+    public static Upload Upload(IFormFile file, string folder = "images", int len = 32)
+    {
+        var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        return Upload(file, root, folder, len);
+    }
+
+    public static IEnumerable<Upload> Uploads(IEnumerable<IFormFile> files, string root, string folder = "images",
+        int len = 32)
+    {
+        return files.Select(file => Upload(file, root, folder, len));
+    }
+
+    public static IEnumerable<Upload> Uploads(IEnumerable<IFormFile> files, string folder = "images", int len = 32)
+    {
+        var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        return Uploads(files, root, folder, len);
+    }
 }

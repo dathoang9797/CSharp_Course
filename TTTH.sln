@@ -25,6 +25,19 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppStore", "Module_3\WebAppStore\WebAppStore.csproj", "{8DD87BA0-6BAF-4070-A6B1-3F270AA46620}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module_4", "Module_4", "{CC8E4E24-98A8-458D-A088-7576CCC10A16}"
+	ProjectSection(SolutionItems) = preProject
+		Repository\BaseRepository.cs = Repository\BaseRepository.cs
+		Repository\CustomerRepository.cs = Repository\CustomerRepository.cs
+		Repository\RoleRepository.cs = Repository\RoleRepository.cs
+		Repository\BusinessRepository.cs = Repository\BusinessRepository.cs
+		Repository\ServiceRepository.cs = Repository\ServiceRepository.cs
+		Repository\NumberOfOrderRepository.cs = Repository\NumberOfOrderRepository.cs
+		Repository\MemberRepository.cs = Repository\MemberRepository.cs
+		Repository\ArticleRepository.cs = Repository\ArticleRepository.cs
+		Repository\StatusRepository.cs = Repository\StatusRepository.cs
+		Repository\InvoiceRepository.cs = Repository\InvoiceRepository.cs
+		Repository\RecommendRepository.cs = Repository\RecommendRepository.cs
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Module_5", "Module_5", "{4199C829-856E-4451-B4DE-5F9897BB938B}"
 EndProject
