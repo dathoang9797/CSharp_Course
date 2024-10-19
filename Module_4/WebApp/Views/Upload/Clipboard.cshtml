@@ -1,18 +1,23 @@
-@model dynamic
+<div id="rs"></div>
+<input type="text" id="file"/>
 
-@{
-    Layout = null;
+@section Scripts
+{
+    <script>
+        document.getElementById("file").onpaste = function (e){
+                const file = e.clipboardData.files[0];
+                const formData = new FormData();
+                formData.append("file", file, file.name);
+                $.ajax({
+                        url:"/upload/ajax",
+                        method:"post",
+                        data:formData,
+                        processData:false,
+                        contentType:false,
+                        success: function (d) {
+                        $("#rs").html(`<img src="/images/${d['imageUrl']}"  width="100" alt="${d['originalName']}">`)
+                        }
+                })
+        }
+</script>
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>

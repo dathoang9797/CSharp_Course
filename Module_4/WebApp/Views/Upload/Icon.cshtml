@@ -21,8 +21,8 @@
               processData:false,
               contentType:false,
               success: function (d){
-                  $("#rs").html(`<img src="/images/${d['imageUrl']}"  width="100" alt="">`)
-              }
+                  $("#rs").html(`<img src="/images/${d['imageUrl']}"  width="100" alt="${d['originalName']}">`)
+                  }
           })
         })
     </script>

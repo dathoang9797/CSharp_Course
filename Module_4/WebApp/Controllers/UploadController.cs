@@ -11,6 +11,18 @@ public class UploadController : BaseController
         return View(Provider.Upload.GetUploads());
     }
 
+    [HttpPost] 
+    public async Task<IActionResult> UploadUrl(string url)
+    {
+        var fileName = await Helper.UploadUrl(url, 32);
+        return View(model: fileName);
+    }
+
+    public IActionResult UploadUrl()
+    {
+        return View();
+    }
+
     public IActionResult Icon()
     {
         return View();
@@ -77,6 +89,29 @@ public class UploadController : BaseController
             return Redirect("/upload");
 
         return View();
+    }
+
+    public IActionResult AjaxMultiple()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult AjaxMultiple(IFormFile[] files)
+    {
+        var list = Helper.UploadFolder(files);
+        if (list == null)
+            return View();
+
+        var enumerable = list.ToList();
+        if (enumerable.Count == 0)
+            return View();
+
+        var ret = Provider.Upload.AddMulti(enumerable);
+        if (ret > 0)
+            return Json(enumerable);
+
+        return Json(null);
     }
 
     public IActionResult Ajax()

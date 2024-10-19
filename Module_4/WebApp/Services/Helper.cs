@@ -4,6 +4,23 @@ namespace WebApp.Services;
 
 public static class Helper
 {
+    public static async Task<string?> UploadUrl(string url, int len)
+    {
+        var extension = Path.GetExtension(url);
+        var fileName = RandomString(len - extension.Length) + extension;
+        var client = new HttpClient();
+        var message = await client.GetAsync(url);
+        if (!message.IsSuccessStatusCode)
+            return null;
+
+        var stream = await message.Content.ReadAsStreamAsync();
+        var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        await using Stream fileStream = new FileStream(Path.Combine(root, "images", fileName), FileMode.Create);
+        await stream.CopyToAsync(fileStream);
+
+        return fileName;
+    }
+
     static string RandomString(int len)
     {
         var pattern = "qwertyuiopasdfghjklzxcvbnm17890";

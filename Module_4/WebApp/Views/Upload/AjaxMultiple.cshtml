@@ -1,0 +1,34 @@
+<div id="rs"></div>
+
+<form name="form" method="post">
+    <div>
+        <label class="col-2 form-label" for="files"></label>
+        <div class="col-10">
+            <input class="form-control" multiple type="file" name="files" id="files" accept="image/*"/>
+        </div>
+    </div>
+</form>
+
+@section Scripts
+{
+    <script>
+        $("#files").change(function () {
+            const formData = new FormData();
+            for (const file of this.files) {
+                formData.append("files", file, file.name);
+            }
+              $.ajax({
+              url:"/upload/ajaxmultiple",
+              method:"post",
+              data:formData,
+              processData:false,
+              contentType:false,
+              success: function (data){
+                  for (const item of data) {
+                      $("#rs").append(`<img src="/images/${item['imageUrl']}"  width="100" alt="">`)
+                  }
+              }
+          })
+        })
+    </script>
+}

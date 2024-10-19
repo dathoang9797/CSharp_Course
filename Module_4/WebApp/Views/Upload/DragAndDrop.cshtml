@@ -1,18 +1,36 @@
-@model dynamic
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+<div id="rs"></div>
+<div id="drop-zone" ondrop="dropHandle(event)" ondragover="dragHandle(event)">
+    Drop here
 </div>
-</body>
-</html>
+
+@section Scripts
+{
+    <script>
+        function dropHandle(event) {
+            console.log({event});
+            event.preventDefault();
+            const formData = new FormData();
+            const files = event.dataTransfer.files;
+            for (const file of files) {
+                formData.append("files", file, file.name);
+            }
+
+            $.ajax({
+                url:"/upload/ajaxmultiple",
+                method:"post",
+                data:formData,
+                processData:false,
+                contentType:false,
+                success: function (data) {
+                    for (const item of data) {
+                        $("#rs").append(`<img src="/images/${item['imageUrl']}"  width="100" alt="">`)
+                    }                }
+                })
+        }
+
+        function dragHandle(event) {
+            console.log({event});
+            event.preventDefault();
+        }
+    </script>
+}
