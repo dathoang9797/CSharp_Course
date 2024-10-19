@@ -1,17 +1,15 @@
 <div id="rs"></div>
 
-<form name="form" method="post">
-    <div>
-        <label class="col-2 form-label" for="files"></label>
-        <div class="col-10">
-            <input class="form-control" type="file" name="file" id="file" accept="image/*"/>
-        </div>
-    </div>
-</form>
+<i class="fa-solid fa-image"></i>
+<input type="file" id="file" class="d-none" accept="image/*"/>
 
 @section Scripts
 {
     <script>
+        $('.fa-image').click(function(){
+            $("#file").click();
+        })
+        
         $("#file").change(function () {
             const formData = new FormData();
             const file = this.files[0];
@@ -23,7 +21,7 @@
               processData:false,
               contentType:false,
               success: function (d){
-                $("#rs").html(`<img src="/images/${d['imageUrl']}"  width="100" alt="">`)
+                  $("#rs").html(`<img src="/images/${d['imageUrl']}"  width="100" alt="">`)
               }
           })
         })

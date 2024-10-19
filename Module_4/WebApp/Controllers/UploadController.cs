@@ -11,6 +11,12 @@ public class UploadController : BaseController
         return View(Provider.Upload.GetUploads());
     }
 
+    public IActionResult Icon()
+    {
+        return View();
+    }
+
+
     public IActionResult Simple()
     {
         return View();
@@ -76,6 +82,17 @@ public class UploadController : BaseController
     public IActionResult Ajax()
     {
         return View();
+    }
+
+    [HttpPost]
+    public IActionResult Ajax(IFormFile file)
+    {
+        var obj = Helper.Upload(file);
+        var ret = Provider.Upload.Add(obj);
+        if (ret > 0)
+            return Json(obj);
+
+        return Json(null);
     }
 
     public IActionResult DragAndDrop()
