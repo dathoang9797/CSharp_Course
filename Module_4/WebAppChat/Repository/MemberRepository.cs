@@ -13,13 +13,15 @@ public class MemberRepository : BaseRepository
 
     public Member? Login(Login obj)
     {
-        return Connection.QueryFirstOrDefault<Member>(
-            "SELECT * FROM Member WHERE Email= @Email AND Password = @Password",
-            new
-            {
-                Email = obj.Eml,
-                Password = Helper.HashString(obj.Pwd)
-            });
+        const string sql = "SELECT * FROM Member WHERE Email = @Email AND Password = @Password";
+        var email = obj.Eml;
+        var hashPassword = Helper.HashString(obj.Pwd);
+        var objQuery = new
+        {
+            Email = email,
+            Password = hashPassword
+        };
+        return Connection.QueryFirstOrDefault<Member>(sql, objQuery);
     }
 
     public IEnumerable<Member> GetEmployees()
