@@ -1,9 +1,26 @@
-﻿<h2>Welcome @User.Identity?.Name</h2>
+﻿@model IEnumerable<WebAppChat.Model.Member>
 
-<form name="frm" method="post">
-    <input type="hidden" name="userId"/>
-    <input class="form-control" type="text" placeholder="Enter your Message" name="msg"/>
-</form>
-<ul id="rs">
-    
-</ul>
+<h2>Welcome @User.Identity?.Name</h2>
+<a href="/auth/logout">Logout</a>
+
+<div class="row">
+    <div class="col-3">
+        <ul>
+            @foreach (var item in Model)
+            {
+                <li class="info" val="@item.MemberId">@item.GivenName</li>
+            }
+        </ul>
+    </div>
+    <div class="col-9">
+        <h2 id="info">
+
+        </h2>
+        <form id="frm" method="post">
+            <input type="hidden" name="userId"/>
+            <input class="form-control" type="text" placeholder="Enter your Message" name="msg"/>
+        </form>
+
+        <ul id="rs"></ul>
+    </div>
+</div>

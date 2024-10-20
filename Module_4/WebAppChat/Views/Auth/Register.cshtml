@@ -1,0 +1,11 @@
+@model WebAppChat.Model.Member
+
+<form method="post">
+    <input asp-for="Email" placeholder="Enter your email"/>
+    <input asp-for="Password" placeholder="Enter your password"/>
+    <input asp-for="GivenName" placeholder="Enter your GivenName"/>
+    <input asp-for="SurName" placeholder="Enter your Subname"/>
+    <input asp-for="Phone" placeholder="Enter your Phone"/>
+    <button>Register</button>
+    <a href="/auth/login">Login member</a>
+</form>

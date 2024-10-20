@@ -5,10 +5,9 @@ using WebAppChat.Models;
 
 namespace WebAppChat.Services;
 
-public class ChatHub : Hub
+public class ChatHub(IConfiguration configuration) : Hub
 {
-    private IConfiguration Configuration;
-    public ChatHub(IConfiguration configuration) => Configuration = configuration;
+    private IConfiguration Configuration = configuration;
 
     public async Task SendMessageAsync(string userId, string msg)
     {

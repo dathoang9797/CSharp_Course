@@ -24,8 +24,21 @@ public class MemberRepository : BaseRepository
         return Connection.QueryFirstOrDefault<Member>(sql, objQuery);
     }
 
+    public int Register(Member obj)
+    {
+        var sql =
+            "INSERT INTO Member (MemberId, GivenName, Surname, Email, Password, Phone, Role) " +
+            "VALUES (@MemberId, @GivenName, @Surname, @Email, @Password, @Phone, @Role)";
+        return Connection.Execute(sql, obj);
+    }
+
     public IEnumerable<Member> GetEmployees()
     {
-        return Connection.Query<Member>("SELECT * FROM Member WHERE Role = Employee");
+        return Connection.Query<Member>("SELECT * FROM Member WHERE Role = 'Employee'");
+    }
+    
+    public IEnumerable<Member> GetMembers()
+    {
+        return Connection.Query<Member>("SELECT * FROM Member WHERE Role = 'Member'");
     }
 }

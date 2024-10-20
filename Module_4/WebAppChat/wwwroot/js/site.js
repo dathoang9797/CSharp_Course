@@ -9,6 +9,17 @@
         try {
             await connection.start();
             console.log("SignalR Connected.");
+
+            $(".info").click(function () {
+                $("#info").text($(this).text());
+                $(frm['userId']).val($(this).attr("val"));
+            });
+
+            $(frm).submit(function (e) {
+                e.preventDefault();
+                connection.invoke("SendMessageAsync", $(this['userId']).val(), $(this['msg']).val());
+                $(this['msg']).val(null);
+            });
         } catch (err) {
             console.log(err);
             setTimeout(start, 5000);
@@ -20,8 +31,8 @@
     });
 
     connection.on("receiveMsg", function (obj) {
-        console.log({msg, obj})
-        $("#rs").appendTo(`
+        console.log({obj})
+        $("#rs").append(`
          <li>
             ${obj['sender']}: <span>${obj['msg']}</span>
         </li>
