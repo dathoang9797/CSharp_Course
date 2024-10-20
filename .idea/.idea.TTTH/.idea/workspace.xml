@@ -27,13 +27,19 @@
     <projectFile profileName="IIS Express">Module_4/WebApp/WebApp.csproj</projectFile>
     <projectFile profileName="http">Module_4/WebApp/WebApp.csproj</projectFile>
     <projectFile profileName="https">Module_4/WebApp/WebApp.csproj</projectFile>
+    <projectFile profileName="IIS Express">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
+    <projectFile profileName="http">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
+    <projectFile profileName="https">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="up">
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Member.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,6 +352,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="WebAppChat: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppChat/WebAppChat.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebAppChat: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppChat/WebAppChat.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebAppChat: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppChat/WebAppChat.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="WebAppFruitables" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -567,15 +618,7 @@
       <workItem from="1728481204822" duration="179000" />
       <workItem from="1728707014751" duration="12248000" />
       <workItem from="1729085109894" duration="29713000" />
-      <workItem from="1729407918486" duration="1004000" />
-    </task>
-    <task id="LOCAL-00008" summary="Up">
-      <option name="closed" value="true" />
-      <created>1726228977622</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1726228977622</updated>
+      <workItem from="1729407918486" duration="2803000" />
     </task>
     <task id="LOCAL-00009" summary="Up">
       <option name="closed" value="true" />
@@ -961,7 +1004,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729409209471</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="up">
+      <option name="closed" value="true" />
+      <created>1729409319686</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1729409319686</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
