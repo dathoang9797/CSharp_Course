@@ -32,26 +32,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/UploadBase64Controller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/UploadBase64.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/UploadBase64Repository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/AjaxMultiple.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/UploadUrl.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/UploadBase64/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/UploadBase64/Upload.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/UploadController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/UploadController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/Upload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/Upload.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Services/Helper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Clipboard.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Clipboard.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/DragAndDrop.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/DragAndDrop.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Icon.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Icon.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Upload/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/wwwroot/css/site.css" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +97,7 @@
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Services/Helper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Upload/Folder.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -590,15 +572,7 @@
       <workItem from="1728299559309" duration="6914000" />
       <workItem from="1728481204822" duration="179000" />
       <workItem from="1728707014751" duration="12248000" />
-      <workItem from="1729085109894" duration="29278000" />
-    </task>
-    <task id="LOCAL-00005" summary="Up">
-      <option name="closed" value="true" />
-      <created>1726228793340</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1726228793340</updated>
+      <workItem from="1729085109894" duration="29713000" />
     </task>
     <task id="LOCAL-00006" summary="Up">
       <option name="closed" value="true" />
@@ -984,7 +958,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729306831465</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Up">
+      <option name="closed" value="true" />
+      <created>1729314612749</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1729314612749</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
