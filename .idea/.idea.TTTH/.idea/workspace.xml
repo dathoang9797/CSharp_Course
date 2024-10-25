@@ -35,7 +35,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -616,14 +626,7 @@
       <workItem from="1729085109894" duration="29713000" />
       <workItem from="1729407918486" duration="14060000" />
       <workItem from="1729430394442" duration="4247000" />
-    </task>
-    <task id="LOCAL-00014" summary="Up">
-      <option name="closed" value="true" />
-      <created>1727014705359</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1727014705360</updated>
+      <workItem from="1729857824891" duration="5404000" />
     </task>
     <task id="LOCAL-00015" summary="Up">
       <option name="closed" value="true" />
@@ -1009,7 +1012,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729481919527</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Up">
+      <option name="closed" value="true" />
+      <created>1729858001247</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1729858001247</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

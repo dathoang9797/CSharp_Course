@@ -12,6 +12,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     p.ExpireTimeSpan = TimeSpan.FromDays(30);
 });
 
+builder.Services.AddSingleton<ChatHub>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSignalR();
 builder.Services.AddMvc();

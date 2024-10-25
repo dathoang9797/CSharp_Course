@@ -8,7 +8,7 @@
         <ul>
             @foreach (var item in Model)
             {
-                <li class="info" val="@item.MemberId">@item.GivenName</li>
+                <li class="info" val="@item.MemberId">@item.GivenName <span>@item.IsOnline</span></li>
             }
         </ul>
     </div>

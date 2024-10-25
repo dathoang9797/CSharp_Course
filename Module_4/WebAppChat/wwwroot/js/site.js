@@ -41,6 +41,10 @@
         $("#liveToast div.toast-body").text(msg);
         new bootstrap.Toast(liveToast).show();
     })
+    
+    connection.on("loginMsg",(obj)=>{
+        console.log({obj})
+    })
 
 // Start the connection.
     start();

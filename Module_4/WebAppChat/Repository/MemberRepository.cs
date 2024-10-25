@@ -13,7 +13,8 @@ public class MemberRepository : BaseRepository
 
     public Member? Login(Login obj)
     {
-        const string sql = "SELECT * FROM Member WHERE Email = @Email AND Password = @Password";
+        // const string sql = "SELECT * FROM Member WHERE Email = @Email AND Password = @Password";
+        const string sql = "LoginMember";
         var email = obj.Eml;
         var hashPassword = Helper.HashString(obj.Pwd);
         var objQuery = new
@@ -21,7 +22,7 @@ public class MemberRepository : BaseRepository
             Email = email,
             Password = hashPassword
         };
-        return Connection.QueryFirstOrDefault<Member>(sql, objQuery);
+        return Connection.QueryFirstOrDefault<Member>(sql, objQuery, commandType: CommandType.StoredProcedure);
     }
 
     public int Register(Member obj)
@@ -36,7 +37,7 @@ public class MemberRepository : BaseRepository
     {
         return Connection.Query<Member>("SELECT * FROM Member WHERE Role = 'Employee'");
     }
-    
+
     public IEnumerable<Member> GetMembers()
     {
         return Connection.Query<Member>("SELECT * FROM Member WHERE Role = 'Member'");

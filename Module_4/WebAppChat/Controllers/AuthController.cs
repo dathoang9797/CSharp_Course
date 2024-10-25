@@ -9,6 +9,10 @@ namespace WebAppChat.Controllers;
 
 public class AuthController : BaseController
 {
+     ChatHub _chatHub;
+
+    public AuthController(ChatHub chatHub) => _chatHub = chatHub;
+
     public IActionResult Login()
     {
         return View();
@@ -31,6 +35,8 @@ public class AuthController : BaseController
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity),
             new AuthenticationProperties { IsPersistent = obj.Remember });
+
+        await _chatHub.LoginSuccessAsync(member);
         return Redirect("/");
     }
 

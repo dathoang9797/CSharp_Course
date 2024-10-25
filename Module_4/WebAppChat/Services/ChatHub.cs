@@ -9,6 +9,11 @@ public class ChatHub(IConfiguration configuration) : Hub
 {
     private IConfiguration Configuration = configuration;
 
+    public async Task LoginSuccessAsync(Member obj)
+    {
+        await Clients.All.SendAsync("loginMsg", obj);
+    }
+
     public async Task SendMessageAsync(string userId, string msg)
     {
         if (Context.User is null)

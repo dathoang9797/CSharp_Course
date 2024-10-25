@@ -1,9 +1,28 @@
 @model WebAppChat.Model.Login
 
 <form method="post">
-    <input asp-for="Eml" placeholder="Enter your email"/>
-    <input asp-for="Pwd" placeholder="Enter your password"/>
-    <input asp-for="Remember" type="checkbox"/>
-    <button>Login</button>
-    <a href="/auth/register">Register member</a>
+    <div class="row mb-1">
+        <label class="form-label col-2" asp-for="Eml">Email</label>
+        <div class="col-10">
+            <input class="form-control" asp-for="Eml" placeholder="Enter your email"/>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <label class="form-label col-2" asp-for="Pwd">Password</label>
+        <div class="col-10">
+            <input class="form-control" asp-for="Pwd" placeholder="Enter your password"/>
+        </div>
+    </div>
+    <div class="row mb-1">
+        <label class="form-label col-2" asp-for="Remember">Remember me</label>
+        <div class="col-10">
+            <input class="form-check" asp-for="Remember" type="checkbox"/>
+        </div>
+    </div>
+    <div>
+        <button class="offset-2 btn btn-primary">Login</button>
+        <a class="btn btn-outline-primary" href="/auth/register">
+            Register member
+        </a>
+    </div>
 </form>
