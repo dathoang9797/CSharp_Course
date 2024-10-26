@@ -19,4 +19,9 @@ public class MessageRepository : BaseRepository
                 obj.SenderId, obj.ReceiveId, obj.Content
             });
     }
+
+    public IEnumerable<Message> GetMessages(string id)
+    {
+        return Connection.Query<Message>("GetMessages", new { Id = id }, commandType: CommandType.StoredProcedure);
+    }
 }

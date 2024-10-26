@@ -5,10 +5,14 @@
 
 <div class="row">
     <div class="col-3">
-        <ul>
+        <ul id="members">
             @foreach (var item in Model)
             {
-                <li class="info" val="@item.MemberId">@item.GivenName <span>@item.IsOnline</span></li>
+                <li class="info" val="@item.MemberId">
+                    @item.GivenName
+                    <span class="status">@item.IsOnline</span>
+                    <span class="cnt"></span>
+                </li>
             }
         </ul>
     </div>
@@ -18,7 +22,7 @@
         </h2>
         <form id="frm" method="post">
             <input type="hidden" name="userId"/>
-            <input class="form-control" type="text" placeholder="Enter your Message" name="msg"/>
+            <input class="form-control" type="text" placeholder="Enter your Message" name="msg" disabled/>
         </form>
 
         <ul id="rs"></ul>

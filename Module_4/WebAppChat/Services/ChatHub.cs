@@ -9,9 +9,10 @@ public class ChatHub(IConfiguration configuration) : Hub
 {
     private IConfiguration Configuration = configuration;
 
-    public async Task LoginSuccessAsync(Member obj)
+    public async Task LoginSuccessAsync(string msg, Member obj)
     {
-        await Clients.All.SendAsync("loginMsg", obj);
+        if (Clients != null)
+            await Clients.All.SendAsync("successMsg", msg, obj);
     }
 
     public async Task SendMessageAsync(string userId, string msg)
@@ -34,6 +35,6 @@ public class ChatHub(IConfiguration configuration) : Hub
             });
         }
 
-        await Clients.User(userId).SendAsync("receiveMsg", new { Sender = senderName, Msg = msg });
+        await Clients.User(userId).SendAsync("receiveMsg", new { SenderId = senderId, Sender = senderName, Msg = msg });
     }
 }

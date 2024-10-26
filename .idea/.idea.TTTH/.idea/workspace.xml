@@ -38,12 +38,11 @@
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Member.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MessageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MessageRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Login.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,43 +127,42 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppAuthentication.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppChat: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppFruitables.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppStore.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: IIS Express.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.Module_1.executor&quot;: &quot;Debug&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.9358974&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;frontend.inlay.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.WebApp: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppChat: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: IIS Express.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: https.executor": "Debug",
+    ".NET Project.Module_1.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowExplorer.ShowToolbar": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "frontend.inlay.settings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\datho\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\datho\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebAppChat: https">
     <configuration name="ConsoleApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -626,15 +624,7 @@
       <workItem from="1729085109894" duration="29713000" />
       <workItem from="1729407918486" duration="14060000" />
       <workItem from="1729430394442" duration="4247000" />
-      <workItem from="1729857824891" duration="5404000" />
-    </task>
-    <task id="LOCAL-00015" summary="Up">
-      <option name="closed" value="true" />
-      <created>1727178814162</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1727178814162</updated>
+      <workItem from="1729857824891" duration="16968000" />
     </task>
     <task id="LOCAL-00016" summary="Up">
       <option name="closed" value="true" />
@@ -1020,7 +1010,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729858001247</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Up">
+      <option name="closed" value="true" />
+      <created>1729866656369</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1729866656369</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1074,6 +1072,12 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js</url>
+          <line>53</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -10,9 +10,27 @@
             await connection.start();
             console.log("SignalR Connected.");
 
-            $(".info").click(function () {
+            // $(".info").click(function () {
+            //     $("#info").text($(this).text());
+            //     $(frm['userId']).val($(this).attr("val"));
+            // });
+
+            $("#members").on("click", "li.info", function () {
+                $(frm['msg']).removeAttr("disabled")
                 $("#info").text($(this).text());
-                $(frm['userId']).val($(this).attr("val"));
+                const uid = $(this).attr("val");
+                $(frm['userId']).val(uid);
+                $("#rs").empty();
+
+                $.post("/home/messages", {id: uid}, (data) => {
+                    for (const obj of data) {
+                        $("#rs").append(`
+                         <li>
+                            ${obj['senderName']}: <span>${obj['content']}</span>
+                             <span class="cnt"></span>
+                        </li>`)
+                    }
+                })
             });
 
             $(frm).submit(function (e) {
@@ -31,19 +49,39 @@
     });
 
     connection.on("receiveMsg", function (obj) {
-        console.log({obj})
-        $("#rs").append(`
-         <li>
-            ${obj['sender']}: <span>${obj['msg']}</span>
-        </li>
+            const uid = obj['senderId'];
+            const userId = $(frm['userId']).val();
+            if (uid !== userId) {
+                const cnt = $(`#members li[val="${uid}"] span.cnt`);
+                if (cnt.text() === "") {
+                    cnt.text("1");
+                } else {
+                    const text = cnt.text();
+                    cnt.text(Number(text) + 1);
+                }
+            } else {
+                $("#rs").append(`
+             <li>
+                ${obj['sender']}: <span>${obj['msg']}</span>
+            </li>
         `)
+            }
+        }
+    )
 
-        $("#liveToast div.toast-body").text(msg);
-        new bootstrap.Toast(liveToast).show();
-    })
-    
-    connection.on("loginMsg",(obj)=>{
-        console.log({obj})
+    connection.on("successMsg", (msg, obj) => {
+        if (msg === "register") {
+            $("#members").append(`
+             <li class="info"
+                 val="${obj["memberId"]}"
+              >
+            ${obj["givenName"]}  <span>false</span>
+            </li>
+          `)
+        } else if (msg === "login") {
+            const status = `#members li[val="${obj['memberId']}"] span.status`;
+            $(status).text("true");
+        }
     })
 
 // Start the connection.

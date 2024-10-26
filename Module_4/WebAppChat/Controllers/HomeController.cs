@@ -5,7 +5,6 @@ namespace WebAppChat.Controllers;
 
 public class HomeController : BaseController
 {
-
     public HomeController()
     {
     }
@@ -17,6 +16,13 @@ public class HomeController : BaseController
         {
             return View(Provider.Member.GetEmployees());
         }
+
         return View(Provider.Member.GetMembers());
+    }
+
+    [HttpPost]
+    public IActionResult Messages(string id)
+    {
+        return Json(Provider.Message.GetMessages(id));
     }
 }

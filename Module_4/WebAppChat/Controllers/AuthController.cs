@@ -9,7 +9,7 @@ namespace WebAppChat.Controllers;
 
 public class AuthController : BaseController
 {
-     ChatHub _chatHub;
+    ChatHub _chatHub;
 
     public AuthController(ChatHub chatHub) => _chatHub = chatHub;
 
@@ -36,7 +36,7 @@ public class AuthController : BaseController
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity),
             new AuthenticationProperties { IsPersistent = obj.Remember });
 
-        await _chatHub.LoginSuccessAsync(member);
+        await _chatHub.LoginSuccessAsync("login", member);
         return Redirect("/");
     }
 
@@ -52,12 +52,17 @@ public class AuthController : BaseController
     }
 
     [HttpPost]
-    public IActionResult Register(Member obj)
+    public async Task<IActionResult> Register(Member obj)
     {
         obj.MemberId = Guid.NewGuid().ToString().Replace("-", string.Empty);
         obj.Role = "Member";
         obj.Password = Helper.HashString(obj.Password);
-        Provider.Member.Register(obj);
+        var ret = Provider.Member.Register(obj);
+        if (ret > 0)
+        {
+            await _chatHub.LoginSuccessAsync("register", obj);
+        }
+
         return Redirect("/auth/login");
     }
 }
