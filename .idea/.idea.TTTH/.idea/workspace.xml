@@ -35,16 +35,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Model/Message.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MessageRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Repository/MessageRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Services/ChatHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/wwwroot/js/site.js" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,6 +97,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppChat/Controllers/AuthController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -624,15 +616,7 @@
       <workItem from="1729085109894" duration="29713000" />
       <workItem from="1729407918486" duration="14060000" />
       <workItem from="1729430394442" duration="4247000" />
-      <workItem from="1729857824891" duration="16968000" />
-    </task>
-    <task id="LOCAL-00016" summary="Up">
-      <option name="closed" value="true" />
-      <created>1727178861341</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1727178861341</updated>
+      <workItem from="1729857824891" duration="17019000" />
     </task>
     <task id="LOCAL-00017" summary="Up">
       <option name="closed" value="true" />
@@ -1018,7 +1002,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729866656369</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Up">
+      <option name="closed" value="true" />
+      <created>1729925844860</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1729925844860</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
