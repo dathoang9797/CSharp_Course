@@ -35,7 +35,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Resources/Controllers/HomeControllers.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Resources/Controllers/HomeControllers.vi-VN.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Home/Index.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +144,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;frontend.inlay.settings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -622,14 +628,7 @@
       <workItem from="1730466930625" duration="951000" />
       <workItem from="1730469691504" duration="1217000" />
       <workItem from="1730471302075" duration="16409000" />
-    </task>
-    <task id="LOCAL-00019" summary="up">
-      <option name="closed" value="true" />
-      <created>1727192943297</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1727192943297</updated>
+      <workItem from="1730529954158" duration="4388000" />
     </task>
     <task id="LOCAL-00020" summary="Up">
       <option name="closed" value="true" />
@@ -1015,7 +1014,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730527072000</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Up">
+      <option name="closed" value="true" />
+      <created>1730530001267</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1730530001268</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1069,19 +1076,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs</url>
-          <line>46</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebAppChat\Controllers\AuthController.cs" containingFunctionPresentation="Method 'Logout'">
-            <startOffsets>
-              <option value="1486" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1527" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

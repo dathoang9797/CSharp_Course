@@ -45,17 +45,24 @@
                 if (item.IsOnline)
                 {
                     <li class="info" val="@item.MemberId">
-                        <div class="online-indicator">
-                            <span class="blink"></span>
-                        </div>
-                        @item.GivenName
+                        <span class="status">
+                            <div class="online-indicator">
+                                <span class="blink"></span>
+                            </div>
+                        </span>
+                        <span class="name">
+                             @item.GivenName
+                        </span>
                         <span class="cnt"></span>
                     </li>
                 }
                 else
                 {
-                    <li class="info" val="@item.MemberId">
-                        @item.GivenName
+                    <li val="@item.MemberId">
+                        <div class="status"></div>
+                        <span class="name">
+                             @item.GivenName
+                        </span>
                         <span class="cnt"></span>
                     </li>
                 }
@@ -103,7 +110,7 @@
 
         $("#members").on("click", "li.info", function () {
             $(frm['msg']).removeAttr("disabled")
-            $("#info").text($(this).text());
+            $("#info").text($(".name").text());
             const uid = $(this).attr("val");
             $(frm['userId']).val(uid);
             $("#rs").empty();
@@ -130,7 +137,7 @@
 
                     } else {
                         $("#rs").append(`
-                            <div class="text-end" xmlns="http://www.w3.org/1999/html">
+                            <div  xmlns="http://www.w3.org/1999/html">
                             ${obj['senderName']}: ${content}
                             <span class="cnt"></span> <br/>
                             <span>${obj['date']}</span>
@@ -186,26 +193,29 @@
                 }
             }
         )
-
-        connection.on("logout", function (obj) {
-               console.log({obj})
-            }
-        )
-
-        connection.on("successMsg", (msg, obj) => {
-            if (msg === "register") {
-                $("#members").append(`
-             <li class="info"
-                 val="${obj["memberId"]}"
-              >
-            ${obj["givenName"]}  <span>false</span>
+        
+        connection.on("register", function (obj) {
+            console.log({obj})
+            $("#members").append(`
+             <li class="info" val="${obj["memberId"]}">
+             <div class="status"> </div>
+                ${obj["givenName"]} 
             </li>
           `)
-            } else if (msg === "login") {
-                const status = `#members li[val="${obj['memberId']}"] span.status`;
-                $(status).text("true");
-            }
         })
+
+        connection.on("login", function (obj)  {
+            console.log({obj})
+            const status = `#members li[val="${obj['memberId']}"] span.status`;
+            $(status).html(`<div class="online-indicator"><span class="blink"></span></div>`);
+        })
+
+        connection.on("logout", function (obj) {
+                console.log({obj})
+                const status = `#members li[val="${obj['memberId']}"] span.status`;
+                $(status).html(null);
+            }
+        )
 
         $(".fa-image").click(function () {
             if ($(frm['userId']).val() !== "")

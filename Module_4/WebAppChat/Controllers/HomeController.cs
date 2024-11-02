@@ -1,19 +1,24 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Localization;
 using WebAppChat.Services;
 
 namespace WebAppChat.Controllers;
 
 public class HomeController : BaseController
 {
-    public HomeController()
+    private IStringLocalizer<HomeController> Localizer;
+
+    public HomeController(IStringLocalizer<HomeController> localizer)
     {
+        Localizer = localizer;
     }
 
     [Authorize]
     public IActionResult Index()
     {
+        ViewData["Title"] = Localizer["Title"];
         if (User.IsInRole("Member"))
         {
             return View(Provider.Member.GetEmployees());
@@ -33,17 +38,18 @@ public class HomeController : BaseController
     }
 
     [HttpPost]
-    public  IActionResult Upload(IFormFile? f)
+    public IActionResult Upload(IFormFile? f)
     {
         if (f != null)
         {
             var extension = Path.GetExtension(f.FileName);
             var fileName = Helper.RandomString(32 - extension.Length) + extension;
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","images",fileName);
-            using (Stream stream = new FileStream(path,FileMode.Create))
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+            using (Stream stream = new FileStream(path, FileMode.Create))
             {
                 f.CopyTo(stream);
             }
+
             return Json(fileName);
         }
 

@@ -1,7 +1,22 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using WebAppChat.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddLocalization(o => o.ResourcesPath = "Resources");
+builder.Services.Configure<RequestLocalizationOptions>((opt) =>
+{
+    opt.SetDefaultCulture("vi-VN");
+    opt.AddSupportedCultures("en-US", "vi-VN");
+    opt.FallBackToParentCultures = true;
+    opt.RequestCultureProviders = new List<IRequestCultureProvider>
+    {
+        new QueryStringRequestCultureProvider(),
+        new CookieRequestCultureProvider(),
+    };
+});
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
 {
@@ -15,11 +30,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddSingleton<ChatHub>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSignalR();
-builder.Services.AddMvc();
+builder.Services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.SubFolder)
+    .AddDataAnnotationsLocalization();
 
 var app = builder.Build();
 app.MapHub<ChatHub>("/chathub");
 
+app.UseRequestLocalization();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.UseAuthorization();
