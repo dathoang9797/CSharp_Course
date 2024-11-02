@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppAuthentication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f91d466e9ec56bcf10adae05c0df7b250717dc9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6aeb8845f31dcaeadb859ff7d270c5a3f673cdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppAuthentication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppAuthentication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

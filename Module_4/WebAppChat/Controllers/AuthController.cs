@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebAppChat.Model;
 using WebAppChat.Services;
@@ -40,9 +41,13 @@ public class AuthController : BaseController
         return Redirect("/");
     }
 
+    [Authorize]
     public async Task<IActionResult> Logout()
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
+        if (string.IsNullOrEmpty(userId))
+            return Redirect("/auth/login");
+        
         var userEmail = User.FindFirstValue(ClaimTypes.Email) ?? string.Empty;
         var ret = Provider.Member.Logout(userId);
         if (ret > 0)
