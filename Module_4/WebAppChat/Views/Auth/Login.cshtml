@@ -1,28 +1,29 @@
 @model WebAppChat.Model.Login
+@inject IViewLocalizer Localizer
 
 <form method="post">
     <div class="row mb-1">
-        <label class="form-label col-2" asp-for="Eml">Email</label>
+        <label class="form-label col-2" asp-for="Eml"></label>
         <div class="col-10">
-            <input class="form-control" asp-for="Eml" placeholder="Enter your email"/>
+            <input class="form-control" asp-for="Eml" placeholder="@Localizer["EnterEmail"]"/>
         </div>
     </div>
     <div class="row mb-1">
-        <label class="form-label col-2" asp-for="Pwd">Password</label>
+        <label class="form-label col-2" asp-for="Pwd"></label>
         <div class="col-10">
-            <input class="form-control" asp-for="Pwd" placeholder="Enter your password"/>
+            <input class="form-control" asp-for="Pwd" placeholder="@Localizer["EnterPassword"]"/>
         </div>
     </div>
     <div class="row mb-1">
-        <label class="form-label col-2" asp-for="Remember">Remember me</label>
+        <label class="form-label col-2" asp-for="Remember"></label>
         <div class="col-10">
             <input class="form-check" asp-for="Remember" type="checkbox"/>
         </div>
     </div>
     <div>
-        <button class="offset-2 btn btn-primary">Login</button>
+        <button class="offset-2 btn btn-primary">@Localizer["Login"]</button>
         <a class="btn btn-outline-primary" href="/auth/register">
-            Register member
+            @Localizer["Register"]
         </a>
     </div>
 </form>
