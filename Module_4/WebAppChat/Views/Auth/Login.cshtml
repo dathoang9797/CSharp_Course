@@ -1,17 +1,29 @@
 @model WebAppChat.Model.Login
 @inject IViewLocalizer Localizer
 
+<style>
+    .validation-summary-errors {
+        color: red;
+    }
+
+    span.field-validation-error {
+        color: red;
+    }
+</style>
+<div asp-validation-summary="All"></div>
 <form method="post">
     <div class="row mb-1">
         <label class="form-label col-2" asp-for="Eml"></label>
         <div class="col-10">
             <input class="form-control" asp-for="Eml" placeholder="@Localizer["EnterEmail"]"/>
+            <span asp-validation-for="Eml"></span>
         </div>
     </div>
     <div class="row mb-1">
         <label class="form-label col-2" asp-for="Pwd"></label>
         <div class="col-10">
             <input class="form-control" asp-for="Pwd" placeholder="@Localizer["EnterPassword"]"/>
+            <span asp-validation-for="Pwd"></span>
         </div>
     </div>
     <div class="row mb-1">

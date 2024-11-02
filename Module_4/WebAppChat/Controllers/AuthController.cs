@@ -2,15 +2,29 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using WebAppChat.Model;
 using WebAppChat.Services;
+using CookieOptions = Microsoft.AspNetCore.Http.CookieOptions;
 
 namespace WebAppChat.Controllers;
 
 public class AuthController : BaseController
 {
     ChatHub _chatHub;
+
+    [HttpPost]
+    public IActionResult ChangeLanguage(string cul)
+    {
+        Response.Cookies.Append
+        (
+            CookieRequestCultureProvider.DefaultCookieName,
+            CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(cul)),
+            new CookieOptions() { Expires = DateTimeOffset.UtcNow.AddMonths(1) }
+        );
+        return Json(cul);
+    }
 
     public AuthController(ChatHub chatHub) => _chatHub = chatHub;
 
@@ -22,23 +36,28 @@ public class AuthController : BaseController
     [HttpPost]
     public async Task<IActionResult> Login(Login obj)
     {
-        var member = Provider.Member.Login(obj);
-        if (member is null)
-            return View(obj);
-
-        var claims = new List<Claim>()
+        if (ModelState.IsValid)
         {
-            new Claim(ClaimTypes.NameIdentifier, member.MemberId),
-            new Claim(ClaimTypes.Name, member.GivenName),
-            new Claim(ClaimTypes.Email, member.Email),
-            new Claim(ClaimTypes.Role, member.Role)
-        };
-        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        await HttpContext.SignInAsync(new ClaimsPrincipal(identity),
-            new AuthenticationProperties { IsPersistent = obj.Remember });
+            var member = Provider.Member.Login(obj);
+            if (member is null)
+                return View(obj);
 
-        await _chatHub.SuccessAsync("login", member);
-        return Redirect("/");
+            var claims = new List<Claim>()
+            {
+                new Claim(ClaimTypes.NameIdentifier, member.MemberId),
+                new Claim(ClaimTypes.Name, member.GivenName),
+                new Claim(ClaimTypes.Email, member.Email),
+                new Claim(ClaimTypes.Role, member.Role)
+            };
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignInAsync(new ClaimsPrincipal(identity),
+                new AuthenticationProperties { IsPersistent = obj.Remember });
+
+            await _chatHub.SuccessAsync("login", member);
+            return Redirect("/");
+        }
+
+        return View(obj);
     }
 
     [Authorize]
@@ -47,7 +66,7 @@ public class AuthController : BaseController
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
         if (string.IsNullOrEmpty(userId))
             return Redirect("/auth/login");
-        
+
         var userEmail = User.FindFirstValue(ClaimTypes.Email) ?? string.Empty;
         var ret = Provider.Member.Logout(userId);
         if (ret > 0)

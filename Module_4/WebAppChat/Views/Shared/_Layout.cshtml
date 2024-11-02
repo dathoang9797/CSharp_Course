@@ -1,13 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - WebAppChat</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/WebAppChat.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/css/site.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="/WebAppChat.styles.css" asp-append-version="true"/>
 
 </head>
 <body>
@@ -36,6 +38,15 @@
     </nav>
 </header>
 <div class="container">
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            @Localizer["Language"]
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <a class="dropdown-item cul" cul="en-US" href="#">@Localizer["English"]</a>
+            <a class="dropdown-item cul" cul="vi-VN" href="#">@Localizer["Vietnam"]</a>
+        </ul>
+    </div>
     <main role="main" class="pb-3">
         @RenderBody()
     </main>
@@ -47,9 +58,22 @@
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.1/signalr.js"></script>
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+<script src="/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js" asp-append-version="true"></script>
+
+<script>
+    $(".cul").click(function (){
+        const val = $(this).attr("cul");
+        $.post("/Auth/ChangeLanguage",{
+        cul: val
+        },(d)=> {
+           d && window.location.reload();
+        })
+    })
+</script>
+
 @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
