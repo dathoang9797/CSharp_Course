@@ -19,6 +19,10 @@ builder.Services.AddMvc();
 
 var app = builder.Build();
 app.MapHub<ChatHub>("/chathub");
+
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthorization();
 app.UseStaticFiles();
 app.MapDefaultControllerRoute();
 app.Run();

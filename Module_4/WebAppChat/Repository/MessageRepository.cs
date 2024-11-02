@@ -14,14 +14,15 @@ public class MessageRepository : BaseRepository
     public int? Add(Message obj)
     {
         return Connection.Execute(
-            "INSERT INTO Message(SenderId, ReceiveId, Content) VALUES (@SenderId, @ReceiveId, @Content)", new
+            "INSERT INTO Message(SenderId, ReceiveId, Content, Type) VALUES (@SenderId, @ReceiveId, @Content, @Type)", new
             {
-                obj.SenderId, obj.ReceiveId, obj.Content
+                obj.SenderId, obj.ReceiveId, obj.Content, obj.Type
             });
     }
 
-    public IEnumerable<Message> GetMessages(string id)
+    public IEnumerable<Message> GetMessages(string senderId, string receiveId)
     {
-        return Connection.Query<Message>("GetMessages", new { Id = id }, commandType: CommandType.StoredProcedure);
+        return Connection.Query<Message>("GetMessages", new { SenderId = senderId, ReceiveId = receiveId },
+            commandType: CommandType.StoredProcedure);
     }
 }

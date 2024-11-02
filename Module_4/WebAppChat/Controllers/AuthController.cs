@@ -36,13 +36,28 @@ public class AuthController : BaseController
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity),
             new AuthenticationProperties { IsPersistent = obj.Remember });
 
-        await _chatHub.LoginSuccessAsync("login", member);
+        await _chatHub.SuccessAsync("login", member);
         return Redirect("/");
     }
 
     public async Task<IActionResult> Logout()
     {
-        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? string.Empty;
+        var userEmail = User.FindFirstValue(ClaimTypes.Email) ?? string.Empty;
+        var ret = Provider.Member.Logout(userId);
+        if (ret > 0)
+        {
+            var member = new Member()
+            {
+                MemberId = userId,
+                IsOnline = false,
+                Email = userEmail,
+            };
+
+            await _chatHub.SuccessAsync("logout", member);
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        }
+
         return Redirect("/auth/login");
     }
 
@@ -60,7 +75,7 @@ public class AuthController : BaseController
         var ret = Provider.Member.Register(obj);
         if (ret > 0)
         {
-            await _chatHub.LoginSuccessAsync("register", obj);
+            await _chatHub.SuccessAsync("register", obj);
         }
 
         return Redirect("/auth/login");

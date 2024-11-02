@@ -9,13 +9,13 @@ public class ChatHub(IConfiguration configuration) : Hub
 {
     private IConfiguration Configuration = configuration;
 
-    public async Task LoginSuccessAsync(string msg, Member obj)
+    public async Task SuccessAsync(string msg, Member obj)
     {
         if (Clients != null)
-            await Clients.All.SendAsync("successMsg", msg, obj);
+            await Clients.All.SendAsync(msg, obj);
     }
 
-    public async Task SendMessageAsync(string userId, string msg)
+    public async Task SendMessageAsync(string userId, string msg, string type = "text")
     {
         if (Context.User is null)
             return;
@@ -32,9 +32,11 @@ public class ChatHub(IConfiguration configuration) : Hub
                 SenderId = senderId,
                 ReceiveId = userId,
                 Content = msg,
+                Type = type
             });
         }
 
-        await Clients.User(userId).SendAsync("receiveMsg", new { SenderId = senderId, Sender = senderName, Msg = msg });
+        await Clients.User(userId).SendAsync("receiveMsg",
+            new { SenderId = senderId, Sender = senderName, Msg = msg, Type = type });
     }
 }

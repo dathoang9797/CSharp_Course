@@ -1,30 +1,249 @@
-﻿@model IEnumerable<WebAppChat.Model.Member>
+﻿@using System.Security.Claims
+@model IEnumerable<WebAppChat.Model.Member>
 
-<h2>Welcome @User.Identity?.Name</h2>
+<style>
+    div.online-indicator {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+        background-color: #0fcc45;
+        border-radius: 50%;
+        position: relative;
+    }
+    
+    span.blink{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #0fcc45;
+        opacity: 0.7;
+        border-radius: 50%;
+        animation: blink 1s linear infinite;
+    }
+    
+    @@keyframes blink{
+    100%{
+        transform: scale(2,2);
+        opacity: 0;
+    }
+    }
+</style>
+
+<h2>
+    Welcome
+    <span id="usr">
+        @User.Identity?.Name
+    </span>
+</h2>
 <a href="/auth/logout">Logout</a>
-
 <div class="row">
     <div class="col-3">
         <ul id="members">
             @foreach (var item in Model)
             {
-                <li class="info" val="@item.MemberId">
-                    @item.GivenName
-                    <span class="status">@item.IsOnline</span>
-                    <span class="cnt"></span>
-                </li>
+                if (item.IsOnline)
+                {
+                    <li class="info" val="@item.MemberId">
+                        <div class="online-indicator">
+                            <span class="blink"></span>
+                        </div>
+                        @item.GivenName
+                        <span class="cnt"></span>
+                    </li>
+                }
+                else
+                {
+                    <li class="info" val="@item.MemberId">
+                        @item.GivenName
+                        <span class="cnt"></span>
+                    </li>
+                }
             }
         </ul>
     </div>
     <div class="col-9">
-        <h2 id="info">
-
-        </h2>
+        <h2 id="info"></h2>
+        <i class="fas fa-image"></i>
         <form id="frm" method="post">
             <input type="hidden" name="userId"/>
             <input class="form-control" type="text" placeholder="Enter your Message" name="msg" disabled/>
         </form>
 
-        <ul id="rs"></ul>
+        <div id="rs"></div>
     </div>
 </div>
+<form>
+    <input type="file" name="f" id="f" class="d-none" accept="image/*"/>
+</form>
+
+@section Scripts
+{
+    <script>
+    (function ($) {
+        "use strict";
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl("/chathub")
+            .build();
+
+        async function start() {
+            try {
+                await connection.start();
+                console.log("SignalR Connected.");
+            } catch (err) {
+                console.log(err);
+                setTimeout(start, 5000);
+            }
+        }
+
+        connection.onclose(async () => {
+            await start();
+        });
+
+        $("#members").on("click", "li.info", function () {
+            $(frm['msg']).removeAttr("disabled")
+            $("#info").text($(this).text());
+            const uid = $(this).attr("val");
+            $(frm['userId']).val(uid);
+            $("#rs").empty();
+
+            $(this).find("span.cnt").empty();
+
+            $.post("/home/messages", {id: uid}, (data) => {
+                console.log({data})
+                for (const obj of data) {
+                    const senderId = obj['senderId'];
+                    const userId = '@User.FindFirstValue(ClaimTypes.NameIdentifier)';
+                    const type = obj['type'];
+                    const content = type === "img"
+                        ? `<img width="200" alt="" src="/images/${obj['content']}"/>`
+                        : `<span>${obj['content']}</span>`;
+
+                    if (senderId === userId) {
+                        $("#rs").append(`
+                            <div class="text-end" xmlns="http://www.w3.org/1999/html">
+                            ${obj['senderName']}: ${content}
+                            <span class="cnt"></span> <br/>
+                            <span>${obj['date']}</span>
+                            </div>`);
+
+                    } else {
+                        $("#rs").append(`
+                            <div class="text-end" xmlns="http://www.w3.org/1999/html">
+                            ${obj['senderName']}: ${content}
+                            <span class="cnt"></span> <br/>
+                            <span>${obj['date']}</span>
+                            </div>`)
+                    }
+                }
+            })
+        });
+
+        $(frm).submit(function (e) {
+            e.preventDefault();
+            const user = $(usr).text();
+            const msg = $(this['msg']).val();
+            $("#rs").prepend(
+                `<div class="text-end">
+                ${user}: 
+                <span>${msg}</span><br/>
+                <span>${getTime()}</span>
+                </div>`);
+            connection.invoke("SendMessageAsync", $(this['userId']).val(), msg, 'text');
+            $(this['msg']).val(null);
+        });
+
+        connection.on("receiveMsg", function (obj) {
+                const uid = obj['senderId'];
+                const userId = $(frm['userId']).val();
+                if (uid !== userId) {
+                    const cnt = $(`#members li[val="${uid}"] span.cnt`);
+                    if (cnt.text() === "") {
+                        cnt.text("1");
+                    } else {
+                        const text = cnt.text();
+                        cnt.text(Number(text) + 1);
+                    }
+                } else {
+                    var type = obj['type'];
+                    console.log({obj})
+                    if (type === "img") {
+                        $("#rs").prepend(`
+                             <div>
+                              ${obj['sender']}: <img width="200" alt="" src="/images/${obj['msg']}"/> <br/>
+                              <span>${getTime()}</span>
+                              </div>
+                         `)
+                    } else {
+                        $("#rs").prepend(`
+                             <div>
+                              ${obj['sender']}: <span>${obj['msg']}</span> <br/>
+                              <span>${getTime()}</span>
+                              </div>
+                         `)
+                    }
+                }
+            }
+        )
+
+        connection.on("logout", function (obj) {
+               console.log({obj})
+            }
+        )
+
+        connection.on("successMsg", (msg, obj) => {
+            if (msg === "register") {
+                $("#members").append(`
+             <li class="info"
+                 val="${obj["memberId"]}"
+              >
+            ${obj["givenName"]}  <span>false</span>
+            </li>
+          `)
+            } else if (msg === "login") {
+                const status = `#members li[val="${obj['memberId']}"] span.status`;
+                $(status).text("true");
+            }
+        })
+
+        $(".fa-image").click(function () {
+            if ($(frm['userId']).val() !== "")
+                $("#f").click();
+        });
+
+        $("#f").change(function () {
+            const fd = new FormData();
+            const file = this.files[0];
+            const user = $(usr).text();
+            fd.append('f', file, file.name);
+            $.ajax({
+                method: "post",
+                data: fd,
+                url: "/home/upload",
+                contentType: false,
+                processData: false,
+                success: function (d) {
+                    console.log({d})
+                    connection.invoke("SendMessageAsync", $(frm['userId']).val(), d, 'img');
+                    $("#rs").prepend(
+                        `<div class="text-end">
+                        ${user}: : <img width="200" alt="" src="/images/${d}"/>
+                        <span>${getTime()}</span>
+                        </div>`);
+                }
+            });
+        })
+
+        function getTime() {
+            const date = new Date();
+            const time = date.getHours() + ":" + date.getMinutes();
+            return time;
+        }
+
+// Start the connection.
+        start();
+    })(jQuery);
+
+</script>
+}

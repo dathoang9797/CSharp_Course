@@ -25,6 +25,12 @@ public class MemberRepository : BaseRepository
         return Connection.QueryFirstOrDefault<Member>(sql, objQuery, commandType: CommandType.StoredProcedure);
     }
 
+    public int? Logout(string? id)
+    {
+        const string sql = "UPDATE Member SET IsOnline = 0 WHERE MemberId = @Id";
+        return Connection.Execute(sql, new { Id = id });
+    }
+
     public int Register(Member obj)
     {
         var sql =

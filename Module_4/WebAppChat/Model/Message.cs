@@ -10,5 +10,8 @@ public class Message
     public string ReceiveName { get; set; }
 
     public string Content { get; set; }
-    public DateTime CreateDate { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public string Type { get; set; }
+
+    public string Date => CreatedDate.ToString("hh:mm");
 }
