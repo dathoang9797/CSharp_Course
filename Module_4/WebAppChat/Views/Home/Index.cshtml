@@ -1,4 +1,7 @@
 ﻿@using System.Security.Claims
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 @model IEnumerable<WebAppChat.Model.Member>
 
 <style>
@@ -31,12 +34,12 @@
 </style>
 
 <h2>
-    Welcome
+    @Localizer["Welcome"]
     <span id="usr">
         @User.Identity?.Name
     </span>
 </h2>
-<a href="/auth/logout">Logout</a>
+<a href="/auth/logout">@Localizer["Logout"]</a>
 <div class="row">
     <div class="col-3">
         <ul id="members">
