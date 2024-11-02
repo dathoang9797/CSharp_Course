@@ -1,11 +1,42 @@
 @model WebAppChat.Model.Member
 
-<form method="post">
-    <input asp-for="Email" placeholder="Enter your email"/>
-    <input asp-for="Password" placeholder="Enter your password"/>
-    <input asp-for="GivenName" placeholder="Enter your GivenName"/>
-    <input asp-for="SurName" placeholder="Enter your Subname"/>
-    <input asp-for="Phone" placeholder="Enter your Phone"/>
-    <button>Register</button>
+<form name="frm" method="post">
+    <div class="row mb-1">
+        <input class="form-control" asp-for="Email" placeholder="Enter your email"/>
+    </div>
+    <div class="row mb-1">
+        <input class="form-control" asp-for="Password" placeholder="Enter your password"/>
+    </div>
+    <div class="row mb-1">
+        <input class="form-control" asp-for="GivenName" placeholder="Enter your GivenName"/>
+    </div>
+    <div class="row mb-1">
+        <input class="form-control" asp-for="SurName" placeholder="Enter your Subname"/>
+    </div>
+    <div class="row mb-1">
+        <input class="form-control" asp-for="Phone" placeholder="Enter your Phone"/>
+    </div>
+    <button class="btn btn-primary">Register</button>
     <a href="/auth/login">Login member</a>
 </form>
+
+
+@section Scripts {
+    <script>
+    $(frm).validate({
+        rules:{
+            'Email':{
+                required: true,
+                email: true,
+                remote:"/auth/checkemail"
+            },
+        },
+        messages:{
+            Email: {
+                required:" Enter your email",
+                remote:" Email is already in use"
+            }
+        }
+    })
+</script>
+}

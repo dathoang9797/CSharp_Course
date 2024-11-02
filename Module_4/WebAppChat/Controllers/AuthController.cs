@@ -26,6 +26,12 @@ public class AuthController : BaseController
         return Json(cul);
     }
 
+    
+    public IActionResult CheckEmail(string email)
+    {
+        return Json(!email.Equals("dathoang9797@gmail.com"));
+    }
+
     public AuthController(ChatHub chatHub) => _chatHub = chatHub;
 
     public IActionResult Login()

@@ -9,6 +9,7 @@ public class Login
     [DisplayName("Email")]
     public string Eml { get; set; }
 
+    [StringLength(16,MinimumLength = 3,ErrorMessage = "MinMaxPassword")]
     [Required(ErrorMessage = "Required")]
     [DisplayName("Password")]
     public string Pwd { get; set; }
