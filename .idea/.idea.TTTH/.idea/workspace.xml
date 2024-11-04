@@ -35,12 +35,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Auth/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +100,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppChat/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppChat/Views/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
@@ -633,15 +629,7 @@
       <workItem from="1730471302075" duration="16409000" />
       <workItem from="1730529954158" duration="4388000" />
       <workItem from="1730534549062" duration="389000" />
-      <workItem from="1730537483719" duration="8342000" />
-    </task>
-    <task id="LOCAL-00024" summary="up">
-      <option name="closed" value="true" />
-      <created>1727446790851</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1727446790851</updated>
+      <workItem from="1730537483719" duration="8682000" />
     </task>
     <task id="LOCAL-00025" summary="Up">
       <option name="closed" value="true" />
@@ -1027,7 +1015,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730545678494</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="Up">
+      <option name="closed" value="true" />
+      <created>1730547196399</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1730547196399</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1082,19 +1078,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebAppChat/Controllers/AuthController.cs</url>
-          <line>31</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebAppChat\Controllers\AuthController.cs" containingFunctionPresentation="Method 'CheckEmail'">
-            <startOffsets>
-              <option value="911" />
-            </startOffsets>
-            <endOffsets>
-              <option value="964" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
