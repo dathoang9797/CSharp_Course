@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Configuration;
 using WebAppChat.Repository;
 
 namespace WebAppChat.Models;

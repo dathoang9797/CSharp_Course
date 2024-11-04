@@ -1,4 +1,5 @@
-﻿using DAL;
+﻿using System;
+using DAL;
 
 var repository = new ProductRepository();
 var list = await repository.GetProducts();

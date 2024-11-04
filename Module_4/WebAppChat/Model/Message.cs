@@ -1,3 +1,5 @@
+using System;
+
 namespace WebAppChat.Model;
 
 public class Message

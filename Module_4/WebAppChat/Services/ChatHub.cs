@@ -1,5 +1,7 @@
 using System.Security.Claims;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Configuration;
 using WebAppChat.Model;
 using WebAppChat.Models;
 

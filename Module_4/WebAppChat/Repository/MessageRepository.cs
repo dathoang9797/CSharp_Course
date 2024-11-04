@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System.Collections.Generic;
+using System.Data;
 using Dapper;
 using WebAppChat.Model;
 using WebAppChat.Services;
