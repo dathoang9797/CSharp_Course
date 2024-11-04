@@ -24,18 +24,30 @@
     <projectFile profileName="IIS Express">Module_3/WebKoi/WebKoi.csproj</projectFile>
     <projectFile profileName="http">Module_3/WebKoi/WebKoi.csproj</projectFile>
     <projectFile profileName="https">Module_3/WebKoi/WebKoi.csproj</projectFile>
+    <projectFile>Module_4/AppTest/AppTest.csproj</projectFile>
     <projectFile profileName="IIS Express">Module_4/WebApp/WebApp.csproj</projectFile>
     <projectFile profileName="http">Module_4/WebApp/WebApp.csproj</projectFile>
     <projectFile profileName="https">Module_4/WebApp/WebApp.csproj</projectFile>
     <projectFile profileName="IIS Express">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
     <projectFile profileName="http">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
     <projectFile profileName="https">Module_4/WebAppChat/WebAppChat.csproj</projectFile>
+    <projectFile profileName="IIS Express">Module_4/WebAppClassLib/WebAppClassLib.csproj</projectFile>
+    <projectFile profileName="http">Module_4/WebAppClassLib/WebAppClassLib.csproj</projectFile>
+    <projectFile profileName="https">Module_4/WebAppClassLib/WebAppClassLib.csproj</projectFile>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/DAL.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/Data.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/Product.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,6 +111,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_4/DAL/Class1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -157,7 +170,25 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebAppChat: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebAppClassLib: https">
+    <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Module_4/AppTest/AppTest.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="ConsoleApp" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -674,15 +705,7 @@
       <workItem from="1730534549062" duration="389000" />
       <workItem from="1730537483719" duration="8682000" />
       <workItem from="1730720052082" duration="65000" />
-      <workItem from="1730720134379" duration="1207000" />
-    </task>
-    <task id="LOCAL-00027" summary="Up">
-      <option name="closed" value="true" />
-      <created>1727519991624</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1727519991624</updated>
+      <workItem from="1730720134379" duration="2533000" />
     </task>
     <task id="LOCAL-00028" summary="up">
       <option name="closed" value="true" />
@@ -1068,7 +1091,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730727886757</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Up">
+      <option name="closed" value="true" />
+      <created>1730728018923</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1730728018923</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
