@@ -2,12 +2,12 @@ using System.Net.Http.Json;
 
 namespace DAL;
 
-public class ProductRepository
+public class DataRepository
 {
-    public async Task<List<Product>?> GetProducts()
+    public async Task<List<Data>?> GetDataAsync()
     {
         using var client = new HttpClient();
         const string url = "https://raw.githubusercontent.com/algolia/datasets/refs/heads/master/ecommerce/bestbuy_seo.json";
-        return await client.GetFromJsonAsync<List<Product>>(url);
+        return await client.GetFromJsonAsync<List<Data>>(url);
     }
 }
