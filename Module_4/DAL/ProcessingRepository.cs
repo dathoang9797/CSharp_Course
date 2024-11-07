@@ -1,3 +1,7 @@
+using System.Data;
+using System.Data.SqlClient;
+using Dapper;
+
 namespace DAL;
 
 public class ProcessingRepository
@@ -5,10 +9,10 @@ public class ProcessingRepository
     private string connectionString;
     public ProcessingRepository(string connectionString) => this.connectionString = connectionString;
 
-    public async Task<int> Add()
+    public async Task<int> AddAsync()
     {
         var listProduct = new List<Product>();
-        var listManuFacture = new List<Manufacture>();
+        var listManuFacture = new List<Manufacturer>();
         var listCategory = new List<Category>();
         var listProductType = new List<ProductType>();
         var listProductCategory = new List<ProductCategory>();
@@ -32,12 +36,12 @@ public class ProcessingRepository
                     ProductName = item.Name,
                     BestSellingRank = item.BestSellingRank,
                     CustomerReviewCount = item.CustomerReviewCount,
-                    Image = item.Image,
+                    Image = Path.GetFileName(item.Image),
                     Shipping = item.Shipping,
                     SalePrice = item.SalePrice,
                     SalePriceRange = item.SalePriceRange,
                     ShortDescription = item.ShortDescription,
-                    ThumbnailImage = item.ThumbnailImage,
+                    ThumbnailImage = Path.GetFileName(item.ThumbnailImage)
                 };
 
                 listProduct.Add(product);
@@ -46,15 +50,15 @@ public class ProcessingRepository
                     if (!dictManufacture.ContainsKey(item.Manufacturer))
                     {
                         dictManufacture[item.Manufacturer] = countManufacture++;
-                        var manufacture = new Manufacture
+                        var manufacturer = new Manufacturer
                         {
-                            ManufactureId = dictManufacture[item.Manufacturer],
-                            ManufactureName = item.Manufacturer
+                            ManufacturerId = dictManufacture[item.Manufacturer],
+                            ManufacturerName = item.Manufacturer
                         };
-                        listManuFacture.Add(manufacture);
-                    }
+                        listManuFacture.Add(manufacturer);
 
-                    product.ManufacturerId = dictCategory[item.Manufacturer];
+                        product.ManufacturerId = dictManufacture[item.Manufacturer];
+                    }
                 }
 
                 if (item.Type != null)
@@ -68,15 +72,18 @@ public class ProcessingRepository
                             ProductTypeName = item.Type
                         };
                         listProductType.Add(productType);
-                    }
 
-                    product.ProductTypeId = dictCategory[item.Type];
+                        product.ProductTypeId = dictProductType[item.Type];
+                    }
                 }
 
                 if (item.Categories.Count != 0)
                 {
                     foreach (var cat in item.Categories)
                     {
+                        if (cat == null)
+                            continue;
+
                         if (!dictCategory.ContainsKey(cat))
                         {
                             dictCategory[cat] = countCategory++;
@@ -86,19 +93,41 @@ public class ProcessingRepository
                                 CategoryName = cat
                             };
                             listCategory.Add(category);
-                        }
 
-                        var productCategory = new ProductCategory
-                        {
-                            ProductId = product.ProductId,
-                            CategoryId = dictCategory[cat]
-                        };
-                        listProductCategory.Add(productCategory);
+                            var productCategory = new ProductCategory
+                            {
+                                ProductId = product.ProductId,
+                                CategoryId = dictCategory[cat]
+                            };
+                            listProductCategory.Add(productCategory);
+                        }
                     }
                 }
             }
         }
 
-        return 0;
+        var ret = 0;
+        await using var connection = new SqlConnection(connectionString);
+        // const string sql1 = "INSERT INTO Manufacturer (ManufacturerId, ManufacturerName) VALUES (@ManufacturerId, @ManufacturerName)";
+        // ret += await connection.ExecuteAsync(sql1, listManuFacture);
+
+        // const string sql2 = "INSERT INTO ProductType (ProductTypeId, ProductTypeName) VALUES (@ProductTypeId, @ProductTypeName)";
+        // ret += await connection.ExecuteAsync(sql2, listProductType);
+
+        // const string sql3 = "INSERT INTO Category (CategoryId, CategoryName) VALUES (@CategoryId, @CategoryName)";
+        // ret += await connection.ExecuteAsync(sql3, listCategory);
+
+        // const string sql4 =
+        //     "INSERT INTO Product (ProductId, ProductName, ShortDescription, SalePrice, ManufacturerId, ProductTypeId, Image, ThumbnailImage, CustomerReviewCount, BestSellingRank, Shipping, SalePriceRange)" +
+        //     " VALUES (@ProductId, @ProductName, @ShortDescription, @SalePrice, @ManufacturerId, @ProductTypeId, @Image, @ThumbnailImage, @CustomerReviewCount, @BestSellingRank, @Shipping, @SalePriceRange)";
+        // ret += await connection.ExecuteAsync(sql4, listProduct);
+
+        ret += await connection.ExecuteAsync("AddProduct", listProduct, commandType: CommandType.StoredProcedure);
+
+        // const string sql5 =
+        //     "INSERT INTO ProductCategory (CategoryId, ProductId) VALUES (@CategoryId, @ProductId)";
+        // ret += await connection.ExecuteAsync(sql5, listProductCategory);
+
+        return ret;
     }
 }

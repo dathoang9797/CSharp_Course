@@ -5,7 +5,7 @@ using WebAppClassLib.Models;
 
 namespace WebAppClassLib.Controllers;
 
-public class HomeController : Controller
+public class HomeController : BaseController
 {
     private readonly ILogger<HomeController> _logger;
 
@@ -16,6 +16,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.Manufacturers = Provider.Manufacturer.GetManufacturers();
         return View();
     }
 

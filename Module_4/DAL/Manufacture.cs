@@ -1,7 +1,7 @@
 namespace DAL;
 
-public class Manufacture
+public class Manufacturer
 {
-    public int ManufactureId { get; set; }
-    public string? ManufactureName { get; set; }
+    public int ManufacturerId { get; set; }
+    public string? ManufacturerName { get; set; }
 }

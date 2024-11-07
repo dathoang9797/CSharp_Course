@@ -10,7 +10,6 @@ public class Data
     public int? BestSellingRank { get; set; }
     public string? ThumbnailImage { get; set; }
     public string? Manufacturer { get; set; }
-    public string? Url { get; set; }
     public string? Image { get; set; }
     public string? Type { get; set; }
     public string? Shipping { get; set; }
