@@ -8,6 +8,9 @@ public class SiteProvider : BaseProvider
     {
     }
 
-    private ManufactureRepository manufacture;
-    public ManufactureRepository Manufacture => manufacture ??= new ManufactureRepository(Connection);
+    private ManufactureRepository _manufacture;
+    public ManufactureRepository Manufacture => _manufacture ??= new ManufactureRepository(Connection);
+
+    private CategoryRepository _category;
+    public CategoryRepository Category => _category ??= new CategoryRepository(Connection);
 }

@@ -40,20 +40,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_4/DAL/Calculator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/CategoryRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/DAL/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/DAL/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/BaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/DAL/DataRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/DataRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/DAL/ManufactureRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/ManufactureRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/DAL/ProcessingRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/ProcessingRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/DAL/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/UploadBase64Controller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/UploadBase64Controller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/BaseProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/BaseProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/Upload.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/Upload.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Models/UploadBase64.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/UploadBase64.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/UploadBase64Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/UploadBase64Repository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/WebBaseProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/WebBaseProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/WebProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/WebProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +119,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Controllers/BaseController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -723,15 +721,7 @@
       <workItem from="1730810600322" duration="5458000" />
       <workItem from="1730897185740" duration="8250000" />
       <workItem from="1730983987839" duration="6854000" />
-      <workItem from="1731126775163" duration="1413000" />
-    </task>
-    <task id="LOCAL-00038" summary="up">
-      <option name="closed" value="true" />
-      <created>1727965609220</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1727965609221</updated>
+      <workItem from="1731126775163" duration="5374000" />
     </task>
     <task id="LOCAL-00039" summary="Up">
       <option name="closed" value="true" />
@@ -1117,7 +1107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731127004387</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="Up">
+      <option name="closed" value="true" />
+      <created>1731128335825</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1731128335825</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

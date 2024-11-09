@@ -9,6 +9,6 @@ public class WebProvider : WebBaseProvider
     {
     }
 
-    private ManufactureService manufacturer;
-    public ManufactureService Manufacturer => manufacturer ??= new ManufactureService(Cache, Provider);
+    private ManufactureService _manufacturer;
+    public ManufactureService Manufacturer => _manufacturer ??= new ManufactureService(Cache, Provider);
 }

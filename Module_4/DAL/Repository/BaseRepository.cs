@@ -4,9 +4,10 @@ namespace DAL;
 
 public abstract class BaseRepository
 {
+    //constructor internal vs public
     protected IDbConnection Connection { get; set; }
 
-    public BaseRepository(IDbConnection connection)
+    internal BaseRepository(IDbConnection connection)
     {
         Connection = connection;
     }

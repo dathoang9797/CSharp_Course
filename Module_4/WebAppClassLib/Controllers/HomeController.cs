@@ -1,4 +1,6 @@
+using System.Data.SqlClient;
 using System.Diagnostics;
+using DAL;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebAppClassLib.Models;
@@ -17,6 +19,11 @@ public class HomeController : BaseController
     public IActionResult Index()
     {
         ViewBag.Manufacturers = Provider.Manufacturer.GetManufacturers();
+        ViewBag.Categories = SiteProvider.Category.GetCategories();
+        
+        //Dùng internal sẽ không gọi được code dưới
+        // var repository = new CategoryRepository(new SqlConnection());
+        // ViewBag.Categories = repository.GetCategories();
         return View();
     }
 

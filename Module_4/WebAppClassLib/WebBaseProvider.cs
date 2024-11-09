@@ -3,7 +3,7 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace WebAppClassLib;
 
-public abstract class WebBaseProvider
+public abstract class  WebBaseProvider
 {
     private SiteProvider? provicer;
     private IMemoryCache? cache;
