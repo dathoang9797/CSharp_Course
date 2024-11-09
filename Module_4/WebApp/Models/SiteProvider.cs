@@ -1,4 +1,3 @@
-using Microsoft.Extensions.Configuration;
 using WebApp.Repository;
 
 namespace WebApp.Models;
