@@ -39,16 +39,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Home/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/DAL/Repository/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/DAL/Repository/CategoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Home/Category.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Home/Category.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -720,15 +711,7 @@
       <workItem from="1730810600322" duration="5458000" />
       <workItem from="1730897185740" duration="8250000" />
       <workItem from="1730983987839" duration="6854000" />
-      <workItem from="1731126775163" duration="12049000" />
-    </task>
-    <task id="LOCAL-00042" summary="Up">
-      <option name="closed" value="true" />
-      <created>1728301152990</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1728301152990</updated>
+      <workItem from="1731126775163" duration="12110000" />
     </task>
     <task id="LOCAL-00043" summary="Up">
       <option name="closed" value="true" />
@@ -1114,7 +1097,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731138547041</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Up">
+      <option name="closed" value="true" />
+      <created>1731140540503</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1731140540503</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
