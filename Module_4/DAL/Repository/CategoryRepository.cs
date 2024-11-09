@@ -13,4 +13,9 @@ public class CategoryRepository : BaseRepository
     {
         return Connection.Query<Category>("SELECT * FROM Category");
     }
+
+    public Category? GetCategory(int id)
+    {
+        return Connection.QuerySingleOrDefault<Category>("SELECT * FROM Category WHERE CategoryId = @Id", new { id });
+    }
 }
