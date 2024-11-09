@@ -6,10 +6,18 @@
     <h1 class="display-4">Welcome</h1>
 
     <ul>
-        @foreach (Manufacturer item in ViewBag.Manufacturers)
+        @* @foreach (Manufacturer item in ViewBag.Manufacturers) *@
+        @* { *@
+        @*     <li> *@
+        @*         <a href="/home/manufacturer/@item.ManufacturerId">@item.ManufacturerName </a> *@
+        @*     </li> *@
+        @* } *@
+
+
+        @foreach (Category item in ViewBag.Categories)
         {
             <li>
-                <a href="/home/manufacturer/@item.ManufacturerId">@item.ManufacturerName </a>
+                <a href="/home/category/@item.CategoryId">@item.CategoryName </a>
             </li>
         }
     </ul>

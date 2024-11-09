@@ -1,16 +1,20 @@
 using DAL;
 using Microsoft.Extensions.Caching.Memory;
+using Serilog;
 using WebAppClassLib;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(builder.Configuration).CreateLogger();
 
+// Add services to the container.
+builder.Services.AddSerilog();
+builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<SiteProvider>();
 builder.Services.AddSingleton<IMemoryCache, MemoryCache>();
 builder.Services.AddScoped<WebProvider>();
+
 
 var app = builder.Build();
 

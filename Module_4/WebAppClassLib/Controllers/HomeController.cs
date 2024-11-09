@@ -9,11 +9,11 @@ namespace WebAppClassLib.Controllers;
 
 public class HomeController : BaseController
 {
-    private readonly ILogger<HomeController>? _logger;
+    private ILogger<HomeController>? Logger { get; set; }
 
     public HomeController(ILogger<HomeController>? logger, IConfiguration configuration) : base(configuration)
     {
-        _logger = logger;
+        Logger = logger;
     }
 
     public IActionResult Index()
@@ -32,7 +32,7 @@ public class HomeController : BaseController
         ViewBag.Categories = SiteProviderTest.Category.GetCategories();
         return View();
     }
-    
+
     public IActionResult Privacy()
     {
         return View();
@@ -50,14 +50,47 @@ public class HomeController : BaseController
         if (obj != null)
             return View(obj);
 
+        if (Logger != null)
+            Logger.LogInformation($"Not found {id}");
+
         return Redirect("/");
     }
-    
+
     public IActionResult CategoryTest(int id)
     {
         var obj = SiteProviderTest.Category.GetCategory(id);
         if (obj != null)
             return View(obj);
+
+        if (Logger != null)
+            Logger.LogInformation($"Not found {id}");
+        return Redirect("/");
+    }
+
+    public IActionResult Add()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Add(Category obj)
+    {
+        if (ModelState.IsValid)
+        {
+            try
+            {
+                var ret = SiteProvider.Category.Add(obj);
+                if (ret > 0)
+                {
+                    Logger?.LogInformation($"Insert Category {obj.CategoryName} Success");
+                }
+            }
+            catch (Exception e)
+            {
+                Logger?.LogInformation($"Insert Category {obj.CategoryName} Failed");
+                return View(obj);
+            }
+        }
 
         return Redirect("/");
     }

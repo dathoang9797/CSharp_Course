@@ -18,4 +18,10 @@ public class CategoryRepository : BaseRepository
     {
         return Connection.QuerySingleOrDefault<Category>("SELECT * FROM Category WHERE CategoryId = @Id", new { id });
     }
+
+    public int Add(Category obj)
+    {
+        const string sql = "INSERT INTO Category(CategoryId, CategoryName) VALUES (@CategoryId, @CategoryName)";
+        return Connection.Execute(sql, obj);
+    }
 }
