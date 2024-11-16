@@ -1,0 +1,482 @@
+{
+  "id": 103512039,
+  "master_id": 103512039,
+  "sku": "9933402736342",
+  "name": "Sách Đường Đến Thành Công - Napoleon Hill",
+  "url_key": "sach-duong-den-thanh-cong-napoleon-hill-p103512039",
+  "url_path": "sach-duong-den-thanh-cong-napoleon-hill-p103512039.html?spid=103512040",
+  "short_url": "https://tiki.vn/product-p103512039.html?spid=103512040",
+  "type": "simple",
+  "book_cover": null,
+  "short_description": "“ĐƯỜNG ĐẾN THÀNH CÔNG”15 biển báo từ Napoleon Hill giúp bạn không bị lạc đường trên hành trình tìm kiếm sự thành công trong cuộc sống Tại sao thành công luôn mỉm cười với tất cả mọi người, còn với mì...",
+  "price": 107000,
+  "list_price": 138000,
+  "original_price": 138000,
+  "badges": [
+    {
+      "code": "has_book_preview",
+      "text": "Đọc thử"
+    },
+    {
+      "code": "new_pdp",
+      "text": "v1"
+    }
+  ],
+  "badges_new": [
+    {
+      "placement": "left_authentic",
+      "code": "is_hero",
+      "type": "is_hero",
+      "index": 1,
+      "icon": "https://salt.tikicdn.com/ts/upload/94/36/e7/c5297f3fad0a83fb56f98be877904467.png",
+      "icon_width": 76,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    },
+    {
+      "placement": "text_overlay_product_image",
+      "code": "text_badge",
+      "type": "text_badge",
+      "index": 0,
+      "icon": null,
+      "icon_width": 0,
+      "icon_height": 0,
+      "text_color": "#FFF0F1",
+      "background_color": "#D93843",
+      "href": null,
+      "text": "15-11"
+    },
+    {
+      "placement": "left_brand",
+      "code": "is_authentic",
+      "type": "is_authentic",
+      "index": 4,
+      "icon": "https://salt.tikicdn.com/ts/upload/d7/56/04/b93b8c666e13f49971483596ef14800f.png",
+      "icon_width": 89,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    },
+    {
+      "placement": "right_authentic",
+      "code": "return_policy",
+      "type": "return_policy",
+      "index": 3,
+      "icon": "https://salt.tikicdn.com/ts/ta/b1/3f/4e/cc3d0a2dd751a7b06dd97d868d6afa56.png",
+      "icon_width": 114,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    }
+  ],
+  "badges_v3": [
+    {
+      "placement": "pdp_badge",
+      "code": "text_badge",
+      "type": "text_badge",
+      "index": 0,
+      "icon": null,
+      "icon_width": 0,
+      "icon_height": 0,
+      "text_color": "#FFF0F1",
+      "background_color": "#D93843",
+      "href": null,
+      "text": "15-11"
+    },
+    {
+      "placement": "pdp_badge",
+      "code": "is_hero",
+      "type": "pdp_icon_badge",
+      "index": 1,
+      "icon": "https://salt.tikicdn.com/ts/upload/94/36/e7/c5297f3fad0a83fb56f98be877904467.png",
+      "icon_width": 76,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    },
+    {
+      "placement": "pdp_badge",
+      "code": "return_policy",
+      "type": "pdp_icon_badge",
+      "index": 3,
+      "icon": "https://salt.tikicdn.com/ts/ta/b1/3f/4e/cc3d0a2dd751a7b06dd97d868d6afa56.png",
+      "icon_width": 114,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    },
+    {
+      "placement": "pdp_badge",
+      "code": "is_authentic",
+      "type": "pdp_icon_badge",
+      "index": 4,
+      "icon": "https://salt.tikicdn.com/ts/upload/d7/56/04/b93b8c666e13f49971483596ef14800f.png",
+      "icon_width": 89,
+      "icon_height": 20,
+      "text_color": null,
+      "background_color": null,
+      "href": null,
+      "text": null
+    }
+  ],
+  "tracking_info": {
+    "amplitude": {
+      "is_authentic": true,
+      "is_freeship_xtra": false,
+      "is_hero": true,
+      "is_top_brand": false,
+      "return_reason": "any_reason"
+    }
+  },
+  "discount": 31000,
+  "discount_rate": 22,
+  "rating_average": 5,
+  "review_count": 60,
+  "review_text": "(60)",
+  "favourite_count": 0,
+  "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg",
+  "has_ebook": false,
+  "inventory_status": "available",
+  "inventory_type": "instock",
+  "productset_group_name": "",
+  "is_fresh": false,
+  "seller": null,
+  "is_flower": false,
+  "has_buynow": true,
+  "is_gift_card": false,
+  "salable_type": null,
+  "data_version": 3300,
+  "day_ago_created": 1261,
+  "all_time_quantity_sold": 392,
+  "meta_title": "",
+  "meta_description": "",
+  "meta_keywords": "",
+  "is_baby_milk": false,
+  "is_acoholic_drink": false,
+  "description": "\u003cp style=\"text-align: justify;\"\u003e\u003cstrong\u003e“ĐƯỜNG ĐẾN THÀNH CÔNG”\u003c/strong\u003e\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003e15 biển báo từ Napoleon Hill giúp bạn không bị lạc đường trên hành trình tìm kiếm sự thành công trong cuộc sống \u003cbr /\u003eTại sao thành công luôn mỉm cười với tất cả mọi người, còn với mình thì lại không? Tại sao việc đạt được điều bản thân mong muốn luôn trông dễ dàng với người khác, còn mình dù có nỗ lực bao nhiêu thì hai từ “thành công” vẫn cứ xa tầm với? \u003cbr /\u003eCó bao giờ trong phút giây chán nản vì những thất bại, bạn đã than thở những điều trên? Hãy khoan thất vọng, sự thành công không phải là điều quá xa xỉ nếu như bạn nắm bắt được cách vận hành của mọi thứ diễn ra quanh mình, cũng như biết được cách thay đổi bản thân để có thể thích ứng với chúng.\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003eTrăn trở này cũng đã từng lóe lên trong đầu Napoleon Hill khi ông còn là một cậu thiếu niên. Nó đã ngự trị trong tâm trí ông một thời gian rất dài. Có lẽ cũng vì vậy mà Napoleon Hill đã dành cả đời mình để theo đuổi và tìm đáp án cho câu hỏi ấy. Kết quả là, ông không những đã đi được đến tận cùng của vấn đề, mà bản thân ông còn trở thành một người có sức ảnh hưởng sâu sắc và mạnh mẽ nhất trong lĩnh vực truyền cảm hứng thành công trong lịch sử thế giới. Ông nói: “Chúng ta không thất bại khi cố gắng thực hiện nhiệm vụ của mình, chúng ta chỉ thất bại khi xao nhãng nhiệm vụ đó”.\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003e“Đường đến thành công” là cuốn sách chứa đựng những ghi chép của Napoleon Hill, về những giá trị cốt lõi mà ông đã tìm thấy và chiêm nghiệm được khi theo đuổi sự thành công. Cuốn sách gồm bốn phần. Trong đó, phần một là trọng tâm, chứa đựng 15 biển báo, tượng trưng cho 15 sự chỉ dẫn, giúp bạn đọc không bị lạc đường trên hành trình khám phá cuộc sống và mưu cầu sự thành công của mình. Phần hai, ba và bốn đem lại cho độc giả nhiều thông tin bổ ích khi bàn luận chuyên sâu về việc lãnh đạo, sự thành công trong lãnh đạo, cũng như khả năng nhìn xa trông rộng về những điều sẽ xảy đến trong đời mình. \u003cbr /\u003e“Những điều vĩ đại đạt được dễ dàng, nhưng chính những năm, những giờ, những thời khắc chuẩn bị mới là điều quan trọng”. Thomas Edison phải dành cả đời mình để khám phá ra loại dây tóc tốt nhất và thất bại cả ngàn lần trước đó. Vậy nên, muốn chinh phục được đỉnh thành công, bạn phải chấp nhận đi trên một hành trình dài, và không phải bạn cứ ra sức tiến về phía trước là sẽ đạt được nó ở nơi cuối con đường. Điều bạn cần phải làm là chuẩn bị cho mình những hành trang cần thiết, đó là một phương hướng đã được hoạch định một cách rõ ràng.\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003eVới tư duy của một tác giả được mệnh danh là “người tạo ra các nhà triệu phú” nhờ những chia sẻ về triết lý thành công, cùng những câu chuyện có thật từ cuộc đời của những người có tên tuổi trong lịch sử nhân loại, như nhà bác học Edison, hay nhà phát minh và khai thác dầu bông vải Eli Whitney… độc giả có thể tự mình vạch ra một lộ trình rõ ràng với những mục tiêu cụ thể, cũng như hướng đi chi tiết để chinh phục được những ước mơ của đời mình thông qua cuốn sách “Đường đến thành công”.\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003e\u003cstrong\u003eVề tác giả:\u003c/strong\u003e\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003eNapoleon Hill (1883-1970) là tác giả có ảnh hưởng sâu rộng và mạnh mẽ nhất trong lĩnh vực thành công cá nhân, hơn bất kỳ nhân vật nào trong lịch sử.\u003c/p\u003e\n\u003cp style=\"text-align: justify;\"\u003eVới công trình nghiên cứu kéo dài gần 30 năm của mình, ông trở thành nhà truyền cảm hứng nổi tiếng bậc nhất thế giới khi chia sẻ triết lý thành công dựa trên phương pháp Tư duy tích cực cho hàng triệu người trên toàn cầu. Các tác phẩm của ông bổ sung và phát triển triết lý này, trở thành những cuốn sách kinh điển, không thể bỏ lỡ trong lĩnh vực phát triển bản thân, tiêu biểu như “Nghĩ giàu và Làm giàu”, “Tư duy làm giàu”, “Để thế giới biết bạn là ai”, “Phụ nữ hiện đại - Nghĩ giàu và Làm giàu”, và “Những nguyên tắc vàng của Napoleon Hill”.\u003c/p\u003e\u003cp\u003eGiá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....\u003c/p\u003e",
+  "images": [
+    {
+      "base_url": "https://salt.tikicdn.com/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg",
+      "is_gallery": true,
+      "label": null,
+      "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg",
+      "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg",
+      "position": null,
+      "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a3/18/f1/369afb1a55bcfd6b116967e81af2712d.jpg"
+    },
+    {
+      "base_url": "https://salt.tikicdn.com/ts/product/19/c5/d0/a9bd0421fb5918ac204b83eb6c2106f0.jpg",
+      "is_gallery": true,
+      "label": null,
+      "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/19/c5/d0/a9bd0421fb5918ac204b83eb6c2106f0.jpg",
+      "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/19/c5/d0/a9bd0421fb5918ac204b83eb6c2106f0.jpg",
+      "position": null,
+      "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/19/c5/d0/a9bd0421fb5918ac204b83eb6c2106f0.jpg",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/19/c5/d0/a9bd0421fb5918ac204b83eb6c2106f0.jpg"
+    },
+    {
+      "base_url": "https://salt.tikicdn.com/ts/product/87/2f/69/eb1a930800ae6adad992521d3e473c68.jpg",
+      "is_gallery": true,
+      "label": null,
+      "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/87/2f/69/eb1a930800ae6adad992521d3e473c68.jpg",
+      "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/87/2f/69/eb1a930800ae6adad992521d3e473c68.jpg",
+      "position": null,
+      "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/87/2f/69/eb1a930800ae6adad992521d3e473c68.jpg",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/87/2f/69/eb1a930800ae6adad992521d3e473c68.jpg"
+    },
+    {
+      "base_url": "https://salt.tikicdn.com/ts/product/a3/d9/7e/77cb66768e9f605f279df7f894481d85.jpg",
+      "is_gallery": true,
+      "label": null,
+      "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/a3/d9/7e/77cb66768e9f605f279df7f894481d85.jpg",
+      "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/a3/d9/7e/77cb66768e9f605f279df7f894481d85.jpg",
+      "position": null,
+      "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a3/d9/7e/77cb66768e9f605f279df7f894481d85.jpg",
+      "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a3/d9/7e/77cb66768e9f605f279df7f894481d85.jpg"
+    }
+  ],
+  "warranty_policy": null,
+  "authors": [
+    {
+      "id": 7142,
+      "name": "Napoleon Hill",
+      "slug": "napoleon-hill"
+    }
+  ],
+  "current_seller": {
+    "id": 1,
+    "sku": "9636498065838",
+    "name": "Tiki Trading",
+    "link": "https://tiki.vn/cua-hang/tiki-trading",
+    "logo": "d1/3f/ae/13ce3d83ab6b6c5e77e6377ad61dc4a5.jpg",
+    "price": 107000,
+    "product_id": "103512040",
+    "store_id": 40395,
+    "is_best_store": false,
+    "is_offline_installment_supported": null
+  },
+  "other_sellers": [
+    {
+      "id": 2918,
+      "name": "First News",
+      "link": "https://tiki.vn/cua-hang/first-news",
+      "logo": "22/27/4f/bd8035ded7b80defcc29420662d7e8c3.jpg",
+      "price": 110400,
+      "product_id": "103815232",
+      "store_id": 2870
+    },
+    {
+      "id": 161219,
+      "name": "Nhà Sách Trẻ Online",
+      "link": "https://tiki.vn/cua-hang/nha-sach-tre-online",
+      "logo": "6f/c0/15/6a56eb097a331c384398004ed5bc09ca.jpg",
+      "price": 120060,
+      "product_id": "108968266",
+      "store_id": 148433
+    },
+    {
+      "id": 127989,
+      "name": "Times Books",
+      "link": "https://tiki.vn/cua-hang/times-books",
+      "logo": "a6/11/12/d2b1e40937a3a9953075558b8a80ff2c.png",
+      "price": 119820,
+      "product_id": "113229096",
+      "store_id": 118250
+    },
+    {
+      "id": 54507,
+      "name": "BOOKCITY.VN",
+      "link": "https://tiki.vn/cua-hang/bookcity-vn",
+      "logo": "https://vcdn.tikicdn.com/ts/seller/ae/39/78/e802f9672f2da7e8c12fb85a33899be6.jpg",
+      "price": 138000,
+      "product_id": "120145526",
+      "store_id": 51746
+    },
+    {
+      "id": 60209,
+      "name": "VBooks",
+      "link": "https://tiki.vn/cua-hang/vbooks",
+      "logo": "",
+      "price": 119820,
+      "product_id": "158809783",
+      "store_id": 56771
+    },
+    {
+      "id": 281062,
+      "name": "Bamboo Books",
+      "link": "https://tiki.vn/cua-hang/bamboo-books",
+      "logo": "46/9a/b3/e4fbfd97e7607ea4d2ff8e9ad769121b.jpg",
+      "price": 117300,
+      "product_id": "197411358",
+      "store_id": 268132
+    },
+    {
+      "id": 97533,
+      "name": "Nhà Sách Vĩnh Thụy",
+      "link": "https://tiki.vn/cua-hang/nha-sach-vinh-thuy",
+      "logo": "19/f2/bd/8bda12adffb15edf1b3d8339b0238283.jpg",
+      "price": 124000,
+      "product_id": "225171962",
+      "store_id": 90454
+    },
+    {
+      "id": 53179,
+      "name": "Nhà sách PLV",
+      "link": "https://tiki.vn/cua-hang/nha-sach-plv",
+      "logo": "6e/20/ad/edbf695d6497987e535b42040ab1bb28.png",
+      "price": 138000,
+      "product_id": "242695137",
+      "store_id": 50589
+    },
+    {
+      "id": 126688,
+      "name": "info book",
+      "link": "https://tiki.vn/cua-hang/info-book",
+      "logo": "66/49/ce/c528ff3a6e4022b080c1f8c6fe7bc541.jpg",
+      "price": 124000,
+      "product_id": "273472446",
+      "store_id": 117060
+    },
+    {
+      "id": 295057,
+      "name": "HỆ THỐNG NHÀ SÁCH ABC",
+      "link": "https://tiki.vn/cua-hang/he-thong-nha-sach-abc",
+      "logo": "https://vcdn.tikicdn.com/ts/seller/98/3d/ff/cec0ba0eaa575634616ab4605fccbe6d.jpg",
+      "price": 124200,
+      "product_id": "275064472",
+      "store_id": 282399
+    }
+  ],
+  "specifications": [
+    {
+      "name": "Thông tin chung",
+      "attributes": [
+        {
+          "code": "book_version",
+          "name": "Phiên bản sách",
+          "value": "Phiên bản thường"
+        },
+        {
+          "code": "publisher_vn",
+          "name": "Công ty phát hành",
+          "value": "First News - Trí Việt"
+        },
+        {
+          "code": "publication_date",
+          "name": "Ngày xuất bản",
+          "value": "2021-06-01 00:00:00"
+        },
+        {
+          "code": "dimensions",
+          "name": "Kích thước",
+          "value": "14.5 x 20.5 cm"
+        },
+        {
+          "code": "dich_gia",
+          "name": "Dịch Giả",
+          "value": "First News dịch"
+        },
+        {
+          "code": "book_cover",
+          "name": "Loại bìa",
+          "value": "Bìa mềm"
+        },
+        {
+          "code": "number_of_page",
+          "name": "Số trang",
+          "value": "280"
+        },
+        {
+          "code": "manufacturer",
+          "name": "Nhà xuất bản",
+          "value": "Nhà Xuất Bản Tổng hợp TP.HCM"
+        }
+      ]
+    }
+  ],
+  "price_comparison": {
+    "sub_title": "Giá từ 110.400 ₫",
+    "title": "So sánh 10 nhà bán khác"
+  },
+  "product_links": [],
+  "gift_item_title": "0 quà tặng kèm",
+  "services_and_promotions": [],
+  "promitions": [],
+  "stock_item": {
+    "max_sale_qty": 1000,
+    "min_sale_qty": 1,
+    "preorder_date": null,
+    "qty": 1000
+  },
+  "quantity_sold": {
+    "text": "Đã bán 392",
+    "value": 392
+  },
+  "categories": {
+    "id": 871,
+    "name": "Sách tư duy - Kỹ năng sống",
+    "is_leaf": true
+  },
+  "breadcrumbs": [
+    {
+      "url": "/nha-sach-tiki/c8322",
+      "name": "Nhà Sách Tiki",
+      "category_id": 8322
+    },
+    {
+      "url": "/sach-truyen-tieng-viet/c316",
+      "name": "Sách tiếng Việt",
+      "category_id": 316
+    },
+    {
+      "url": "/sach-ky-nang-song/c870",
+      "name": "Sách kỹ năng sống",
+      "category_id": 870
+    },
+    {
+      "url": "/sach-ky-nang-song/c871",
+      "name": "Sách tư duy - Kỹ năng sống",
+      "category_id": 871
+    },
+    {
+      "url": "https://tiki.vn/sach-duong-den-thanh-cong-napoleon-hill-p103512039.html",
+      "name": "Sách Đường Đến Thành Công - Napoleon Hill",
+      "category_id": 0
+    }
+  ],
+  "installment_info_v2": null,
+  "installment_info_v3": [
+    {
+      "display_text": "Ưu đãi đến 600k với thẻ TikiCard",
+      "icon": "https://salt.tikicdn.com/ts/upload/73/4d/f7/f86e767bffc14aa3d6abed348630100b.png",
+      "summary": "Ưu đãi đến 600k với thẻ TikiCard.",
+      "title": "Ưu đãi đến 600k với thẻ TikiCard",
+      "type": "other",
+      "url": "https://tiki.vn/san-pham-so/the-dong-thuong-hieu-tiki-co-card"
+    },
+    {
+      "display_text": "Mua trước trả sau",
+      "icon": "https://salt.tikicdn.com/ts/upload/2a/27/6a/7bbba1f6c93a1a42a3c314e7b5825f4c.png",
+      "summary": "Duyệt hồ sơ nhanh chóng qua công ty tài chính.",
+      "title": "Mua trước trả sau",
+      "type": "postpaid",
+      "url": "https://tiki.vn/mua-truoc-tra-sau/thanh-toan?src=pdp\u0026masterId=103512039\u0026pid=103512040\u0026seller_id=1\u0026qty=1"
+    }
+  ],
+  "is_seller_in_chat_whitelist": true,
+  "inventory": {
+    "product_virtual_type": null,
+    "fulfillment_type": "tiki_delivery"
+  },
+  "warranty_info": [],
+  "return_and_exchange_policy": "Đổi trả trong\u003cbr\u003e\u003cb\u003e30 ngày\u003c/b\u003e\u003cbr\u003enếu sp lỗi.",
+  "is_tier_pricing_available": false,
+  "is_tier_pricing_eligible": false,
+  "benefits": [
+    {
+      "icon": "https://salt.tikicdn.com/ts/upload/c5/37/ee/76c708d43e377343e82baee8a0340297.png",
+      "text": "Được đồng kiểm khi nhận hàng"
+    },
+    {
+      "icon": "https://salt.tikicdn.com/ts/upload/ea/02/b4/b024e431ec433e6c85d4734aaf35bd65.png",
+      "text": "\u003cb\u003eĐược hoàn tiền 200%\u003c/b\u003e nếu là hàng giả."
+    },
+    {
+      "icon": "https://salt.tikicdn.com/ts/upload/d8/c7/a5/1cd5bd2f27f9bd74b2c340b8e27c4d82.png",
+      "text": "Đổi trả miễn phí trong 30 ngày. Được đổi ý.",
+      "sub_text": [],
+      "cta": {
+        "text": "Chi tiết",
+        "type": "open_policy_return_modal"
+      }
+    }
+  ],
+  "return_policy": {
+    "body": [
+      {
+        "label": "",
+        "content": [
+          "Được đổi ý (sản phẩm phải còn nguyên hộp, tem, phụ kiện, chưa kích hoạt bảo hành, không áp dụng đơn hàng trả góp), hoặc",
+          "Sản phẩm không đúng cam kết (lỗi kỹ thuật, giao sai/thiếu, bể vỡ…)"
+        ]
+      }
+    ],
+    "cta": {
+      "link": "https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham",
+      "text_button": "Tìm hiểu thêm"
+    },
+    "title": "Đổi trả miễn phí trong 30 ngày"
+  }
+}
