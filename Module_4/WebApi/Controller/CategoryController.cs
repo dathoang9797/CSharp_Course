@@ -5,18 +5,35 @@ namespace WebApi.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
-public class CategoryController : ControllerBase
+public class CategoryController : BaseController
 {
+    [HttpGet]
     public IEnumerable<Category> GetCategories()
     {
-        return new List<Category>()
-        {
-            new() { CategoryId = 1, CategoryName = "Mouse" },
-            new() { CategoryId = 2, CategoryName = "Keyboard" },
-            new() { CategoryId = 3, CategoryName = "SSD" },
-            new() { CategoryId = 4, CategoryName = "HDD" },
-            new() { CategoryId = 5, CategoryName = "RAM" },
-            new() { CategoryId = 6, CategoryName = "Desktop" },
-        };
+        return Provider.Category.GetCategories();
+    }
+
+    [HttpGet("{id}")]
+    public Category? GetCategory(int id)
+    {
+        return Provider.Category.GetCategory(id);
+    }
+
+    [HttpPost]
+    public int Add([FromBody] Category obj)
+    {
+        return Provider.Category.Add(obj);
+    }
+    
+    [HttpPut]
+    public int Edit(Category obj)
+    {
+        return Provider.Category.Edit(obj);
+    }
+    
+    [HttpDelete("{id}")]
+    public int Delete(int id)
+    {
+        return Provider.Category.Delete(id);
     }
 }

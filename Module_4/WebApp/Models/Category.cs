@@ -1,4 +1,4 @@
-namespace WebApi.Model;
+namespace WebApp.Models;
 
 public class Category
 {

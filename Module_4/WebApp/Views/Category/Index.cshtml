@@ -1,0 +1,99 @@
+@model IEnumerable<WebApp.Models.Category>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form action="/category/add" method="post" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <labe for="name">Name</labe>
+                    <div>
+                        <input type="text" name="categoryName" id="name"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (TempData["Msg"] != null)
+{
+    <div>
+        @TempData["Msg"]
+    </div>
+}
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Command</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr v="@item.CategoryId">
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+            <td>
+                <i class="fa-solid fa-trash"/>
+                <i class="fa-solid fa-pen-to-square"/>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section scripts {
+    <script type="text/javascript">
+        $(".fa-trash").click(function (){
+            const id = $(this).closest("tr").attr("v");
+            $("#delModal input[name='id']").val(id);
+            $("#delModal").modal("show");
+        })
+    </script>
+}
+
+
+<!-- Modal -->
+<div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="delModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form action="/category/delete" method="post" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="delModalLabel">Delete Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div>
+                        <input type="hidden" name="id"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Delete changes</button>
+            </div>
+        </form>
+    </div>
+</div>
