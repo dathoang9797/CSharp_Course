@@ -25,6 +25,26 @@ public class CategoryController : BaseController
     }
     
     [HttpPost]
+    public async Task<IActionResult> Detail(int id)
+    {
+        return Json(await Provider.Category.GetCategory(id));
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, Category obj)
+    {
+        obj.CategoryId = id;
+        var result = await Provider.Category.Edit(obj);
+        if (result > 0)
+        {
+            TempData["Msg"] = "Update Success";
+            return Redirect("/category");
+        }
+
+        return Redirect("/category/error");
+    }
+    
+    [HttpPost]
     public async Task<IActionResult> Delete(int id)
     {
         var result = await Provider.Category.Delete(id);

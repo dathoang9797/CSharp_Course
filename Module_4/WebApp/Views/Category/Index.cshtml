@@ -16,10 +16,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                <div>
-                    <labe for="name">Name</labe>
-                    <div>
-                        <input type="text" name="categoryName" id="name"/>
+                <div class="row">
+                    <labe class="col-2 form-label" for="name">Name</labe>
+                    <div class="col-10">
+                        <input type="text" class="form-control" name="categoryName" id="name"/>
                     </div>
                 </div>
             </div>
@@ -54,8 +54,8 @@
             <td>@item.CategoryId</td>
             <td>@item.CategoryName</td>
             <td>
-                <i class="fa-solid fa-trash"/>
-                <i class="fa-solid fa-pen-to-square"/>
+                <i class="fa-solid fa-trash"></i>
+                <i class="fa-solid fa-pen-to-square"></i>
             </td>
         </tr>
     }
@@ -68,6 +68,16 @@
             const id = $(this).closest("tr").attr("v");
             $("#delModal input[name='id']").val(id);
             $("#delModal").modal("show");
+        })
+
+        $(".fa-pen-to-square").click(function (){
+            const id = $(this).closest("tr").attr("v");
+            $.post("/category/detail",{id},(data)=>{
+                $("#editModal input[name='id']").val(id);
+                $("#editModal input[name='categoryName']").val(data["categoryName"]);
+                $("#editModal").modal("show");
+            });
+         
         })
     </script>
 }
@@ -93,6 +103,33 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button class="btn btn-primary">Delete changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form action="/category/edit" method="post" class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <labe class="col-2 form-label" for="name">Name</labe>
+                    <div class="col-10">
+                        <input type="hidden" name="id"/>
+                        <input type="text" class="form-control" name="categoryName" id="name"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Edit changes</button>
             </div>
         </form>
     </div>

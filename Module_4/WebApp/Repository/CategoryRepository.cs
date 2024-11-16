@@ -21,12 +21,32 @@ public class CategoryRepository
         client.BaseAddress = BaseUri;
         return await client.GetFromJsonAsync<IEnumerable<Category>>("category");
     }
+    
+    public async Task<Category?> GetCategory(int id)
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        return await client.GetFromJsonAsync<Category>($"category/{id}");
+    }
 
     public async Task<int> Add(Category obj)
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
         var message = await client.PostAsJsonAsync("category", obj);
+        if (message.IsSuccessStatusCode)
+        {
+            return await message.Content.ReadFromJsonAsync<int>();
+        }
+
+        return -1;
+    }
+    
+    public async Task<int> Edit(Category obj)
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var message = await client.PutAsJsonAsync("category", obj);
         if (message.IsSuccessStatusCode)
         {
             return await message.Content.ReadFromJsonAsync<int>();
