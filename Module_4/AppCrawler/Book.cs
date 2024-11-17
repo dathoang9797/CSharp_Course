@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
@@ -6,8 +7,13 @@ namespace AppCrawler;
 [Table("Book")]
 public class Book
 {
-    [Column("BookId")]
-    public int Id { get; set; }
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int BookKey { get; set; }
+    
+    [JsonPropertyName("id")]
+    public int BookId { get; set; }
+    
     [JsonPropertyName("master_id")] public int MasterId { get; set; }
     public string Sku { get; set; } = null!;
     
@@ -21,7 +27,7 @@ public class Book
     [JsonPropertyName("original_price")] 
     public int OriginalPrice { get; set; }
     
-    public string Icon { get; set; } = null!;
+    public string? Icon { get; set; }
     public string Description { get; set; } = null!;
     public List<Image> Images { get; set; } = null!;
     public int Discount { get; set; }

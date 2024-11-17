@@ -1,6 +1,8 @@
-﻿using System.Net.Http.Json;
+﻿using System.Data;
+using System.Net.Http.Json;
 using AppCrawler;
-using Microsoft.EntityFrameworkCore;
+using Dapper;
+using Microsoft.Data.SqlClient;
 using Attribute = AppCrawler.Attribute;
 
 
@@ -30,30 +32,36 @@ var context = new EbookContext();
 //         var book = await GetBook(id);
 //         if (book != null)
 //         {
-//             var keyCategory = book.Categories.Id;
-//             if (!dictCat.ContainsKey(keyCategory))
-//                 dictCat[keyCategory] = book.Categories;
+// var keyCategory = book.Categories.Id;
+// if (!dictCat.ContainsKey(keyCategory))
+//     dictCat[keyCategory] = book.Categories;
 //
-//             if (book.Authors != null)
-//                 foreach (var author in book.Authors)
-//                 {
-//                     var keyAuthor = author.Id;
-//                     if (!dictAuthor.ContainsKey(keyAuthor))
-//                         dictAuthor[keyAuthor] = author;
-//                 }
+// if (book.Authors != null)
+//     foreach (var author in book.Authors)
+//     {
+//         var keyAuthor = author.Id;
+//         if (!dictAuthor.ContainsKey(keyAuthor))
+//             dictAuthor[keyAuthor] = author;
+//     }
 //
-//             foreach (var bookAttribute in book.Specifications)
-//             {
-//                 for (var i = 0; i < bookAttribute.Attributes.Count; i++)
-//                 {
-//                     var keyAttr = bookAttribute.Attributes[i].Code;
-//                     if (!dictAttribute.ContainsKey(keyAttr))
-//                         dictAttribute[keyAttr] = bookAttribute.Attributes[i];
-//                 }
-//             }
-//         }
+// foreach (var bookAttribute in book.Specifications)
+// {
+//     for (var i = 0; i < bookAttribute.Attributes.Count; i++)
+//     {
+//         var keyAttr = bookAttribute.Attributes[i].Code;
+//         if (!dictAttribute.ContainsKey(keyAttr))
+//             dictAttribute[keyAttr] = bookAttribute.Attributes[i];
 //     }
 // }
+// listBook.Add(book);
+// }
+// }
+// }
+
+// const string connect = "server=localhost;user id=sa;password=<YourStrong@Passw0rd>;database=Ebook;Trusted_Connection=false;TrustServerCertificate=true";
+// using IDbConnection connection = new SqlConnection(connect);
+// const string sql1 = "SET IDENTITY_INSERT Author ON; INSERT INTO Author (AuthorId, AuthorName, Slug) VALUES (@Id, @Name, @Slug); SET IDENTITY_INSERT Author OFF;";
+// connection.Execute(sql1, dictAuthor.Values);
 
 // context.Database.ExecuteSqlRaw("SET IDENTITY_INSERT [dbo].[Author] ON");
 // await context.Authors.AddRangeAsync(dictAuthor.Values);
@@ -80,20 +88,17 @@ if (listId.Length != 0)
         var book = await GetBook(id);
         if (book != null)
         {
-            var ebookContext = new EbookContext();
-            await ebookContext.Books.AddAsync(book);
-            await ebookContext.SaveChangesAsync(); 
+            listBook.Add(book);
         }
     }
 }
 
-// if (listBook.Any())
-// {
-//     await context.Books.AddRangeAsync(listBook);
-//     await context.SaveChangesAsync(); // Commit the changes to the database
-//     Console.WriteLine($"{listBook.Count} books added successfully!");
-// }
-
+if (listBook.Any())
+{
+    await context.Books.AddRangeAsync(listBook);
+    await context.SaveChangesAsync(); // Commit the changes to the database
+    Console.WriteLine($"{listBook.Count} books added successfully!");
+}
 
 // var content = await client.GetStringAsync("products/103512039");
 // var filePath = Path.Combine(rootDir, "book.json");

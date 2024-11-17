@@ -53,7 +53,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="up">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" afterDir="false" />
@@ -90,6 +91,13 @@
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/AppCrawler.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/AppCrawler.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Attribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Attribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Author.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Book.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/BookAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/BookAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Image.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +158,9 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/81cabf2857a01351e5ab578947c7403a5b128ad1/src/libraries/System.Private.CoreLib/src/System/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/Microsoft/Win32/SafeHandles/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.Uri/src/System/UriExt.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/01c7b4b3ba204ed69df46e319b9a634b838a0/db/266acf9f/SignInManager`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/06c046bf69aa4f768c77e50706275b1b26a820/40/4514b66c/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
@@ -163,9 +173,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/649f9a5315084d038b64e29ea11b1fb5b908/dd/945e933b/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/883319230301415297768d7d90711348fa830/a2/bc30326e/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/883319230301415297768d7d90711348fa830/de/ba68aa90/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bbaefdbb526e4a9f99725b6af466371c1912a0/6e/34745493/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Buoi1/Buoi1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -219,7 +231,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ToolWindowExplorer.ShowToolbar": "false",
-    "XThreadsFramesViewSplitterKey": "0.2403698",
+    "XThreadsFramesViewSplitterKey": "0.23882897",
     "f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor": "Debug",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -1019,15 +1031,7 @@
       <workItem from="1731140881113" duration="430000" />
       <workItem from="1731600566354" duration="21190000" />
       <workItem from="1731748597563" duration="978000" />
-      <workItem from="1731753683408" duration="14395000" />
-    </task>
-    <task id="LOCAL-00056" summary="up">
-      <option name="closed" value="true" />
-      <created>1729409209471</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1729409209471</updated>
+      <workItem from="1731753683408" duration="20959000" />
     </task>
     <task id="LOCAL-00057" summary="up">
       <option name="closed" value="true" />
@@ -1413,7 +1417,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731834367336</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="up">
+      <option name="closed" value="true" />
+      <created>1731834462904</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1731834462904</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1436,9 +1448,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/.idea.TTTH/.idea/workspace.xml&#10;#&#9;Module_3/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" />
     <MESSAGE value="ip" />
-    <MESSAGE value="up" />
     <MESSAGE value="Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Up" />
+    <MESSAGE value="up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1469,6 +1481,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Module_4/AppCrawler/Program.cs</url>
+          <line>101</line>
+          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\AppCrawler\Program.cs" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="3407" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3407" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
