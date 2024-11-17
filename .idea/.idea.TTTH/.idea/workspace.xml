@@ -54,12 +54,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/UploadController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/Product.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/Upload.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Controllers/AuthController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Customer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Member.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Upload.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Repository/BaseRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Repository/MemberRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Services/Helper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Services/Notification.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
@@ -97,22 +99,89 @@
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Attribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/Attribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/Book.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/BookAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/BookAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/Category.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/EbookContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/EbookContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/AppCrawler/Image.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/AppCrawler/Model/Image.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/WebApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebKoi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/WebAppTiki.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/WebAppTiki.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/css/site.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation/dist/additional-methods.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation/dist/additional-methods.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation/dist/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppTiki/wwwroot/lib/jquery/dist/jquery.min.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/WebProductAPI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/WebProductAPI.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebProductAPI/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/WebAppProduct.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/WebAppProduct.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1048,14 +1117,6 @@
       <workItem from="1731748597563" duration="978000" />
       <workItem from="1731753683408" duration="21645000" />
     </task>
-    <task id="LOCAL-00058" summary="Up">
-      <option name="closed" value="true" />
-      <created>1729411803959</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1729411803959</updated>
-    </task>
     <task id="LOCAL-00059" summary="Up">
       <option name="closed" value="true" />
       <created>1729417190778</created>
@@ -1440,7 +1501,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731844230543</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Up">
+      <option name="closed" value="true" />
+      <created>1731846482453</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1731846482453</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1509,19 +1578,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs</url>
-          <line>59</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApi\Services\Helper.cs" containingFunctionPresentation="Method 'Upload'">
-            <startOffsets>
-              <option value="2024" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2068" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
