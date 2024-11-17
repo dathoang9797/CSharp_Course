@@ -6,7 +6,7 @@ namespace WebApp.Repository;
 
 public class UploadBase64Repository : BaseRepository
 {
-    public UploadBase64Repository(IDbConnection connection) : base(connection)
+    public UploadBase64Repository(IDbConnection connection, IConfiguration configuration) : base(connection,configuration)
     {
     }
 

@@ -9,10 +9,10 @@ public class SiteProvider : BaseProvider
     }
 
     private UploadRepository upload;
-    public UploadRepository Upload => upload ??= new UploadRepository(Connection);
+    public UploadRepository Upload => upload ??= new UploadRepository(Connection, Configuration);
     
     private UploadBase64Repository uploadbase64;
-    public UploadBase64Repository Uploadbase64 => uploadbase64 ??= new UploadBase64Repository(Connection);
+    public UploadBase64Repository Uploadbase64 => uploadbase64 ??= new UploadBase64Repository(Connection, Configuration);
 
     private CategoryRepository _category;
     public CategoryRepository Category => _category ??= new CategoryRepository(Configuration);

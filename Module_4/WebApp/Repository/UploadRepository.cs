@@ -8,7 +8,7 @@ namespace WebApp.Repository;
 
 public class UploadRepository : BaseRepository
 {
-    public UploadRepository(IDbConnection connection) : base(connection)
+    public UploadRepository(IDbConnection connection, IConfiguration configuration) : base(connection, configuration)
     {
     }
 
@@ -35,5 +35,21 @@ public class UploadRepository : BaseRepository
         }
 
         return -1;
+    }
+
+    public async Task<string?> Add(IFormFile file)
+    {
+        var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var content = new MultipartFormDataContent();
+        var streamContent = new StreamContent(file.OpenReadStream());
+        content.Add(streamContent, "file", file.FileName);
+        var message = await client.PostAsync("upload", content);
+        if (message.IsSuccessStatusCode)
+        {
+            return await message.Content.ReadAsStringAsync();
+        }
+
+        return null;
     }
 }

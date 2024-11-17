@@ -13,7 +13,7 @@ public class UploadController : BaseController
         return View(Provider.Upload.GetUploads());
     }
 
-    [HttpPost] 
+    [HttpPost]
     public async Task<IActionResult> UploadUrl(string url)
     {
         var fileName = await Helper.UploadUrl(url, 32);
@@ -140,5 +140,20 @@ public class UploadController : BaseController
     public IActionResult Clipboard()
     {
         return View();
+    }
+
+    public IActionResult Add()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Add(IFormFile? file)
+    {
+        if (file == null)
+            return View();
+
+        var image = await Provider.Upload.Add(file);
+        return image != null ? View(model: image) : View();
     }
 }
