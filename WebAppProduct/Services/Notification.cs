@@ -1,8 +1,7 @@
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using WebAppProduct.Models;
 
-namespace WebKoi.Services;
+namespace WebAppProduct.Services;
 
 public class Notification : Hub
 {
