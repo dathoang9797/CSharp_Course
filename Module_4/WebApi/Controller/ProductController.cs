@@ -7,11 +7,20 @@ namespace WebApi.Controller;
 [Route("api/[controller]")]
 public class ProductController : BaseController
 {
-    [HttpGet]
-    public IEnumerable<Category> GetCategories()
+    [HttpGet("{page?}/{size?}")]
+    public object GetListProducts(int page = 1, int size = 10)
     {
-        return Provider.Category.GetCategories();
+        var total = Provider.Product.Count();
+        return new
+        {
+            Data = Provider.Product.GetProducts(page, size),
+            Pages = (total - 1) / size + 1
+        };
     }
 
-    
+    [HttpPost]
+    public int Add(Product obj)
+    {
+        return Provider.Product.Add(obj);
+    }
 }

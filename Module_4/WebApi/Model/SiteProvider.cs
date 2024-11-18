@@ -14,7 +14,7 @@ public class SiteProvider
         Configuration = configuration;
     }
 
-    protected IDbConnection Connection => connection ??= new SqlConnection(Configuration.GetConnectionString("Store"));
+    protected IDbConnection Connection => connection ??= new SqlConnection(Configuration.GetConnectionString("WebApi"));
 
     private CategoryRepository category;
     public CategoryRepository Category => category ??= new CategoryRepository(Connection);

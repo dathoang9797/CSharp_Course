@@ -10,23 +10,26 @@ public class ProductRepository : BaseRepository
     {
     }
 
-    public IEnumerable<Category> GetProducts()
+    public IEnumerable<Product> GetProducts(int page = 1, int size = 10)
     {
-        return Connection.Query<Category>("SELECT * FROM Product");
+        var sql = "SELECT * FROM Product ORDER BY ProductId DESC OFFSET @Index ROWS FETCH  NEXT @Size ROWS ONLY;";
+        var result = Connection.Query<Product>(sql, new { Index = (page - 1) * size, size });
+        return result;
     }
 
-    public IEnumerable<Product> Add(Product obj)
+    public int Add(Product obj)
     {
         const string query = @"
         INSERT INTO Product 
-        (ProductName, Description, Price, Quantity, ImageUrl, CreatedDate, UpdateDate, Viewed)
+        (CategoryId, ProductName, Description, Price, Quantity, ImageUrl, CreatedDate, UpdateDate, Viewed)
         VALUES 
-        (@ProductName, @Description, @Price, @Quantity, @ImageUrl, @CreatedDate, @UpdateDate, @Viewed);
+        (@CategoryId, @ProductName, @Description, @Price, @Quantity, @ImageUrl, @CreatedDate, @UpdateDate, @Viewed);
     ";
 
         // Execute the query and return the result
-        return Connection.Query<Product>(query, new
+        return Connection.Execute(query, new
         {
+            obj.CategoryId,
             obj.ProductName,
             obj.Description,
             obj.Price,
@@ -36,5 +39,10 @@ public class ProductRepository : BaseRepository
             obj.UpdateDate,
             obj.Viewed
         });
+    }
+
+    public int Count()
+    {
+        return Connection.ExecuteScalar<int>("SELECT COUNT(*) FROM Product");
     }
 }

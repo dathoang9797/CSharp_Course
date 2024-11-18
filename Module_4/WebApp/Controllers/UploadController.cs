@@ -148,12 +148,17 @@ public class UploadController : BaseController
     }
 
     [HttpPost]
-    public async Task<IActionResult> Add(IFormFile? file)
+    public async Task<IActionResult> Add(IFormFile? file, bool isReturnJson = false)
     {
         if (file == null)
             return View();
 
         var image = await Provider.Upload.Add(file);
-        return image != null ? View(model: image) : View();
+        if (isReturnJson)
+        {
+            return Json(image);
+        }
+        else
+            return image != null ? View(model: image) : View();
     }
 }

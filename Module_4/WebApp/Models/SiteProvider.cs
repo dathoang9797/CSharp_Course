@@ -16,4 +16,7 @@ public class SiteProvider : BaseProvider
 
     private CategoryRepository _category;
     public CategoryRepository Category => _category ??= new CategoryRepository(Configuration);
+    
+    private ProductRepository _product;
+    public ProductRepository Product => _product ??= new ProductRepository(Configuration);
 }
