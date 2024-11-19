@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.Extensions.DependencyInjection;
 using WebAppChat.Services;
 
 var builder = WebApplication.CreateBuilder(args);

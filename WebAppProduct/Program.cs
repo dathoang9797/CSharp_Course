@@ -10,19 +10,20 @@ builder.Services.AddRazorPages();
 builder.Services.AddMvc();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<ProjectContext>(
-    p => p.UseSqlServer(builder.Configuration.GetConnectionString("Koi"))
+    p => p.UseSqlServer(builder.Configuration.GetConnectionString("Laptop"))
 );
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(p => { p.LoginPath = "/auth/login"; })
-    .AddGoogle(p =>
+    .AddCookie(p =>
     {
-        p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? string.Empty;
-        p.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? string.Empty;
+        p.LoginPath = "/auth/login";
+        p.LogoutPath = "/auth/logout";
+        p.AccessDeniedPath = "/auth/denined";
+        p.Cookie.Name = "cebnetvn";
+        p.ExpireTimeSpan = TimeSpan.FromDays(30);
     });
 
 var app = builder.Build();
-app.MapHub<Notification>(pattern: "/notify");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.MapDefaultControllerRoute();

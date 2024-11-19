@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
 
 namespace WebAppProduct.Models;
 

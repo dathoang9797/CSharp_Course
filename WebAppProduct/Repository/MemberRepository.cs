@@ -1,5 +1,4 @@
-﻿using WebAppAuthentication.Model;
-using WebAppProduct.Models;
+﻿using WebAppProduct.Models;
 using WebAppProduct.Repository;
 
 namespace WebAppAuthentication.Repository;

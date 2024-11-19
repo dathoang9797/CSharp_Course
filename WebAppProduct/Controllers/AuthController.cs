@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebAppAuthentication.Model;
 using WebAppAuthentication.Repository;
+using WebAppProduct.Models;
 
-namespace WebAppAuthentication;
+namespace WebAppProduct.Controllers;
 
 public class AuthController : Controller
 {
