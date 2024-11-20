@@ -17,6 +17,20 @@ public class ProductRepository : BaseRepository
         return result;
     }
 
+    public Product? GetProduct(int id)
+    {
+        var sql = "SELECT * FROM Product WHERE  ProductId = @Id;";
+        var result = Connection.QuerySingleOrDefault<Product>(sql, new { id });
+        return result;
+    }
+
+    public string? GetImageUrl(int id)
+    {
+        var sql = "SELECT ImageUrl FROM Product WHERE ProductId = @id";
+        var result = Connection.ExecuteScalar<string>(sql, new { id });
+        return result;
+    }
+
     public int Add(Product obj)
     {
         const string query = @"
@@ -41,8 +55,31 @@ public class ProductRepository : BaseRepository
         });
     }
 
+    public int Edit(Product obj)
+    {
+        const string query = @"
+    UPDATE Product
+    SET 
+        CategoryId = @CategoryId,
+        ProductName = @ProductName,
+        Description = @Description,
+        Price = @Price,
+        Quantity = @Quantity,
+        ImageUrl = @ImageUrl,
+        UpdateDate = @UpdateDate,
+        Viewed = @Viewed
+    WHERE ProductId = @ProductId;";
+
+        return Connection.Execute(query, obj);
+    }
+
     public int Count()
     {
         return Connection.ExecuteScalar<int>("SELECT COUNT(*) FROM Product");
+    }
+
+    public int Delete(int id)
+    {
+        return Connection.Execute("DELETE FROM Product WHERE ProductId = @Id", new { id });
     }
 }

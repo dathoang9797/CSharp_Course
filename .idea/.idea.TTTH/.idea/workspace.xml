@@ -54,21 +54,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/Image.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/Image.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppProduct/.idea/.idea.WebAppProduct.dir/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/wwwroot/images/9ou1uljusruoocjrblrntwhxa8pc.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Add.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +143,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/649f9a5315084d038b64e29ea11b1fb5b908/dd/945e933b/ConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/883319230301415297768d7d90711348fa830/a2/bc30326e/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/883319230301415297768d7d90711348fa830/de/ba68aa90/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a390ffc002344f1db073dceb1d5d26e51f930/6e/8f41dfa8/HttpClientJsonExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bbaefdbb526e4a9f99725b6af466371c1912a0/6e/34745493/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Buoi1/Buoi1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -157,8 +153,13 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/Controller/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/Controller/ProductController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/Services/Helper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Product/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebAppClassLib/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -223,7 +224,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: http">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -1000,15 +1001,7 @@
       <workItem from="1731600566354" duration="21190000" />
       <workItem from="1731748597563" duration="978000" />
       <workItem from="1731753683408" duration="21645000" />
-      <workItem from="1731936231506" duration="27414000" />
-    </task>
-    <task id="LOCAL-00064" summary="Up">
-      <option name="closed" value="true" />
-      <created>1729866656369</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1729866656369</updated>
+      <workItem from="1731936231506" duration="30463000" />
     </task>
     <task id="LOCAL-00065" summary="Up">
       <option name="closed" value="true" />
@@ -1394,7 +1387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731948437436</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Up">
+      <option name="closed" value="true" />
+      <created>1732117325495</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1732117325495</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1474,6 +1475,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs</url>
+          <line>54</line>
+          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Controllers\ProductController.cs" containingFunctionPresentation="Method 'Edit'">
+            <startOffsets>
+              <option value="1643" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1662" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,4 +1,6 @@
 @model Product;
+@inject IConfiguration Config;
+
 <form method="post">
     <div>
         <label asp-for="CategoryId">
@@ -38,9 +40,9 @@
     </div>
 
     <div>
-        <label for="file">Image</label>
-        <input type="file" id="file"/>
-        <img id="img" src="" alt="No Image" width="100"/>
+        <label for="file">Image: </label>
+        <input type="file"  class="d-none" id="file"/>
+        <img id="img" src="@Config["UrlService"]/images/@Model.ImageUrl" alt="No Image" width="100"/>
         <input type="hidden" asp-for="ImageUrl"/>
     </div>
     <div>
@@ -51,6 +53,10 @@
 @section Scripts
 {
     <script>
+        $("#img").click(function (){
+            $("#file").click();
+        })
+        
     $("#file").change(function (){
         const fd = new FormData();
         const file = this.files[0];
@@ -71,5 +77,7 @@
             }
         })
     })
+    
+    
     </script>
 }
