@@ -54,17 +54,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Cart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Category.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppProduct/Models/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebAppChat/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppChat/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/Customer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Models/Customer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Models/Member.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/ProjectContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Models/ProjectContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Repository/MemberRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppProduct/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/Image.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Models/Image.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/.idea/.idea.WebAppProduct.dir/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebAppClassLib/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +223,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApi: https">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -996,7 +1000,7 @@
       <workItem from="1731600566354" duration="21190000" />
       <workItem from="1731748597563" duration="978000" />
       <workItem from="1731753683408" duration="21645000" />
-      <workItem from="1731936231506" duration="18397000" />
+      <workItem from="1731936231506" duration="27414000" />
     </task>
     <task id="LOCAL-00064" summary="Up">
       <option name="closed" value="true" />

@@ -102,4 +102,29 @@ public static class Helper
         var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
         return UploadFolder(files, root, folder, len);
     }
+    
+    public static bool Delete(string root, string fileName)
+    {
+        var path = Path.Combine(root, fileName);
+        if (File.Exists(path))
+        {
+            try
+            {
+                File.Delete(path);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+        }
+
+        return false;
+    }
+
+    public static bool Delete(string fileName)
+    {
+        return Delete(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images"), fileName);
+    }
 }

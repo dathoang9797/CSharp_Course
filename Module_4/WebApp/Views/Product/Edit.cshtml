@@ -1,0 +1,75 @@
+@model Product;
+<form method="post">
+    <div>
+        <label asp-for="CategoryId">
+            Category
+        </label>
+        <div>
+            <select class="form-select" asp-items="@ViewBag.Categories" asp-for="CategoryId"></select>
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="ProductName">Name</label>
+        <div>
+            <input type="text" asp-for="ProductName" required=""/>
+        </div>
+
+    </div>
+
+    <div>
+        <label asp-for="Price">Price</label>
+        <div>
+            <input type="number" asp-for="Price" required=""/>
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Quantity">Quantity</label>
+        <div>
+            <input type="number" asp-for="Quantity" required=""/>
+        </div>
+    </div>
+    <div>
+        <label asp-for="Description">Description</label>
+        <div>
+            <textarea asp-for="Description" required=""></textarea>
+        </div>
+    </div>
+
+    <div>
+        <label for="file">Image</label>
+        <input type="file" id="file"/>
+        <img id="img" src="" alt="No Image" width="100"/>
+        <input type="hidden" asp-for="ImageUrl"/>
+    </div>
+    <div>
+        <button>Save Changes</button>
+    </div>
+</form>
+
+@section Scripts
+{
+    <script>
+    $("#file").change(function (){
+        const fd = new FormData();
+        const file = this.files[0];
+        
+        fd.append("file",file,file.name);
+        fd.append("isReturnJson", true); // Add the isReturnJson flag
+        
+        $.ajax({
+            url:"/upload/add",
+            data: fd,
+            method:"post",
+            contentType:false,
+            processData:false,
+            success(data){
+                console.log({data});
+                $("#img").attr("src", `https://localhost:7070/images/${data}`);
+                $('#ImageUrl').val(data);
+            }
+        })
+    })
+    </script>
+}

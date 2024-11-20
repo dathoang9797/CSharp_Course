@@ -1,0 +1,56 @@
+@model Product;
+<form method="post">
+    <div>
+        <label asp-for="CategoryId">
+            Category
+        </label>
+        <div>
+            <select class="form-select" asp-items="@ViewBag.Categories" asp-for="CategoryId"></select>
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="ProductName">Name</label>
+        <div>
+            <input type="text" asp-for="ProductName" required=""/>
+        </div>
+
+    </div>
+
+    <div>
+        <label asp-for="Price">Price</label>
+        <div>
+            <input type="number" asp-for="Price" required=""/>
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Quantity">Quantity</label>
+        <div>
+            <input type="number" asp-for="Quantity" required=""/>
+        </div>
+    </div>
+    <div>
+        <label asp-for="Description">Description</label>
+        <div>
+            <textarea asp-for="Description" required=""></textarea>
+        </div>
+    </div>
+
+    <div>
+        <label for="file">Image</label>
+        <input type="file" id="file"/>
+        <img id="img" src="https://localhost:7070/images/@Model.ImageUrl" alt="No Image" width="100"/>
+        <input type="hidden" asp-for="ImageUrl"/>
+    </div>
+    <div>
+        <button>Delete</button>
+    </div>
+</form>
+
+@section Scripts
+{
+    <script>
+  
+    </script>
+}

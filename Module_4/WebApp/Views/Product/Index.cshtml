@@ -1,4 +1,5 @@
 @model ProductPage;
+@inject IConfiguration config;
 
 <a href="/product/add">Add</a>
 
@@ -22,7 +23,16 @@
                     <td>@item.Quantity</td>
                     <td>@item.CategoryId</td>
                     <td>
-                        <img src="https://localhost:7070/images/@item.ImageUrl" alt="@item.ProductName" width="80"/>
+                        <img src="@config["UrlService"]/images/@item.ImageUrl" alt="@item.ProductName" width="80"/>
+                    </td>
+                    <td>
+                        <a href="/product/delete/@item.ProductId">
+                            Delete
+                        </a>
+
+                        <a href="/product/edit/@item.ProductId">
+                            Edit
+                        </a>
                     </td>
                 </tr>
             }
