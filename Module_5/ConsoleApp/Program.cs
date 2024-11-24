@@ -40,12 +40,84 @@ using ConsoleApp;
 //ViewBag => Dynamic => Tính toán
 
 //Dynamic
-dynamic a = 7;
-dynamic b = 9.6;
-Console.WriteLine(a + b);
+// dynamic a = 7;
+// dynamic b = 9.6;
+// Console.WriteLine(a + b);
 
 //object
-var listObject = new List<PhanSo>()
+// var listObject = new List<PhanSo>()
+// {
+//     new PhanSo() { Tu = 1, Mau = 2 },
+//     new PhanSo() { Tu = 2, Mau = 4 },
+//     new PhanSo() { Tu = 4, Mau = 3 },
+//     new PhanSo() { Tu = 5, Mau = 5 },
+//     new PhanSo() { Tu = 7, Mau = 4 }
+// };
+
+// object listPhanSo = listObject;
+//Ép kiểu
+// foreach (var item in (List<PhanSo>)listPhanSo)
+// {
+//     Console.WriteLine(item);
+// }
+//
+// Console.WriteLine("===========================");
+// dynamic listPhanSo2 = listObject;
+// foreach (var item in listPhanSo2)
+// {
+//     Console.WriteLine(item);
+// }
+//
+// object title = "Web App Store";
+//
+// Console.WriteLine(title);
+//
+// dynamic title2 ="Web App Store";
+// Console.WriteLine(title2);
+
+var a = 7;
+Console.WriteLine(a);
+Console.WriteLine(a.GetType());
+int b;
+b = 99;
+
+// var c;
+object d;
+d = 77;
+
+dynamic e;
+e = 200;
+
+var f = b;
+
+// var Tong(int a, int b)
+// {
+//     return a + b;
+// }
+
+object Tong(int a, int b)
+{
+    return a + b;
+}
+
+void Print(object x)
+{
+    Console.WriteLine(x);
+}
+
+int[] arr = {3,7,8,4,1,5};
+foreach (int item in arr)
+{
+    Console.WriteLine(item);
+}
+
+foreach (var item in arr)
+{
+    Console.WriteLine(item);
+}
+
+
+List<PhanSo> listObject = new List<PhanSo>()
 {
     new PhanSo() { Tu = 1, Mau = 2 },
     new PhanSo() { Tu = 2, Mau = 4 },
@@ -54,23 +126,16 @@ var listObject = new List<PhanSo>()
     new PhanSo() { Tu = 7, Mau = 4 }
 };
 
-object listPhanSo = listObject;
-//Ép kiểu
-foreach (var item in (List<PhanSo>)listPhanSo)
+foreach (var item in listObject)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item.Tu);
+    Console.WriteLine(item.Mau);
 }
 
-Console.WriteLine("===========================");
-dynamic listPhanSo2 = listObject;
-foreach (var item in listPhanSo2)
+dynamic listPhanSo = listObject;
+
+foreach (var item in listPhanSo)
 {
-    Console.WriteLine(item);
+    Console.WriteLine(item.Tu);
+    Console.WriteLine(item.Mau);
 }
-
-object title = "Web App Store";
-
-Console.WriteLine(title);
-
-dynamic title2 ="Web App Store";
-Console.WriteLine(title2);
