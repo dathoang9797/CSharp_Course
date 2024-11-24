@@ -53,18 +53,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/wwwroot/images/9ou1uljusruoocjrblrntwhxa8pc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Add.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Add.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Delete.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Edit.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Product/Index.cshtml" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,8 +171,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.WebApi: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebApp: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebApi: https.executor": "Run",
+    ".NET Launch Settings Profile.WebApp: http.executor": "Run",
     ".NET Launch Settings Profile.WebApp: https.executor": "Debug",
     ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
     ".NET Launch Settings Profile.WebAppChat: https.executor": "Debug",
@@ -1001,15 +990,7 @@
       <workItem from="1731600566354" duration="21190000" />
       <workItem from="1731748597563" duration="978000" />
       <workItem from="1731753683408" duration="21645000" />
-      <workItem from="1731936231506" duration="30463000" />
-    </task>
-    <task id="LOCAL-00065" summary="Up">
-      <option name="closed" value="true" />
-      <created>1729925844860</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1729925844860</updated>
+      <workItem from="1731936231506" duration="30866000" />
     </task>
     <task id="LOCAL-00066" summary="Up">
       <option name="closed" value="true" />
@@ -1395,7 +1376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732117325495</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Up">
+      <option name="closed" value="true" />
+      <created>1732120889803</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1732120889803</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
