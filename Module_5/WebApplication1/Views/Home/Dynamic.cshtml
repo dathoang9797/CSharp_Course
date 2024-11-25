@@ -1,0 +1,14 @@
+@model dynamic
+
+<h2>Model</h2>
+<h1>Total: @Model.Total</h1>
+<table>
+    @foreach (var item in Model.Departments)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+        </tr>
+    }
+</table>

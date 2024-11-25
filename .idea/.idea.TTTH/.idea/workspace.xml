@@ -42,6 +42,9 @@
     <projectFile profileName="http">Module_4/WebAppTiki/WebAppTiki.csproj</projectFile>
     <projectFile profileName="https">Module_4/WebAppTiki/WebAppTiki.csproj</projectFile>
     <projectFile profileName="WorkerService1">Module_4/WorkerService1/WorkerService1.csproj</projectFile>
+    <projectFile profileName="IIS Express">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile profileName="http">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
+    <projectFile profileName="https">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="IIS Express">WebAppProduct/WebAppProduct.csproj</projectFile>
     <projectFile profileName="http">WebAppProduct/WebAppProduct.csproj</projectFile>
     <projectFile profileName="https">WebAppProduct/WebAppProduct.csproj</projectFile>
@@ -54,9 +57,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleApp/PhanSo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/Department.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/DepartmentTotal.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/AddAll.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/DeleteAll.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Dynamic.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +187,7 @@
     ".NET Launch Settings Profile.WebAppClassLib: http.executor": "Debug",
     ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
     ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
+    ".NET Launch Settings Profile.WebApplication1: http.executor": "Debug",
     ".NET Launch Settings Profile.WebKoi: IIS Express.executor": "Debug",
     ".NET Launch Settings Profile.WebKoi: http.executor": "Debug",
     ".NET Launch Settings Profile.WebKoi: https.executor": "Debug",
@@ -213,7 +223,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Project.Module_5\ConsoleApp">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebApplication1: http">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -835,6 +845,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="WebApplication1: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication1: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication1: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebApplication1/WebApplication1.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="WebKoi: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebKoi/WebKoi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -1011,14 +1066,7 @@
       <workItem from="1731753683408" duration="21645000" />
       <workItem from="1731936231506" duration="30866000" />
       <workItem from="1732425288995" duration="5814000" />
-    </task>
-    <task id="LOCAL-00067" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730527071999</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1730527072000</updated>
+      <workItem from="1732538778059" duration="7603000" />
     </task>
     <task id="LOCAL-00068" summary="Up">
       <option name="closed" value="true" />
@@ -1404,7 +1452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732425586838</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="Up">
+      <option name="closed" value="true" />
+      <created>1732538803740</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1732538803741</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
