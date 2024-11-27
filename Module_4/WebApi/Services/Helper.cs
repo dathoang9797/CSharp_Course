@@ -1,9 +1,16 @@
+using System.Security.Cryptography;
+using System.Text;
 using WebApp.Models;
 
 namespace WebApi.Services;
 
 public static class Helper
 {
+    public static byte[] HashPassword(string plainText)
+    {
+        return SHA512.HashData(Encoding.ASCII.GetBytes(plainText));
+    }
+
     public static async Task<string?> UploadUrl(string url, int len)
     {
         var extension = Path.GetExtension(url);
@@ -34,8 +41,8 @@ public static class Helper
 
         return string.Join(string.Empty, arr);
     }
-    
-     private static Upload? Upload(IFormFile? file, string root, string folder = "images", string sub = "", int len = 32)
+
+    private static Upload? Upload(IFormFile? file, string root, string folder = "images", string sub = "", int len = 32)
     {
         if (file == null)
             return null;
@@ -102,7 +109,7 @@ public static class Helper
         var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
         return UploadFolder(files, root, folder, len);
     }
-    
+
     public static bool Delete(string root, string fileName)
     {
         var path = Path.Combine(root, fileName);

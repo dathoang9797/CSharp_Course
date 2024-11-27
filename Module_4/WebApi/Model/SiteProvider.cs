@@ -21,4 +21,7 @@ public class SiteProvider
     
     private ProductRepository product;
     public ProductRepository Product => product ??= new ProductRepository(Connection);
+    
+    private MemberRepository member;
+    public MemberRepository Member => member ??= new MemberRepository(Connection);
 }
