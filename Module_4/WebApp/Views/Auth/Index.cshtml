@@ -1,0 +1,33 @@
+@model Member;
+
+<h2>Welcome: @User.Identity?.Name</h2>
+
+@if (Model != null)
+{
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>@Model.MemberId</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <td>Given Name</td>
+            <td>@Model.GivenName</td>
+        </tr>
+        <tr>
+            <td>Surname</td>
+            <td>@Model.SurName</td>
+        </tr>
+        <tr>
+            <td>Created Date</td>
+            <td>@Model.CreatedDate</td>
+        </tr>
+    </table> 
+}
+else
+{
+    <h3>Not Data</h3>
+}

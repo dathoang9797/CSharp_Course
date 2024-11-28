@@ -1,10 +1,27 @@
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WebApi.Model;
 using WebApp.Models;
 
 namespace WebApp.Controllers;
 
 public class AuthController : BaseController
 {
+    [Authorize]
+    public async Task<IActionResult> Index()
+    {
+        var token = User.FindFirstValue(ClaimTypes.Authentication);
+        if (string.IsNullOrWhiteSpace(token))
+            return Redirect("/auth/login");
+
+        var member = await Provider.Member.GetMember(token);
+        return View(member);
+    }
+
     public async Task<IActionResult> Register()
     {
         var result = await Provider.Category.GetCategories();
@@ -14,9 +31,8 @@ public class AuthController : BaseController
     [HttpPost]
     public async Task<IActionResult> Register(Member obj)
     {
-        obj.CreateDate = DateTime.UtcNow;
-        obj.UpdateDate = DateTime.UtcNow;
-        obj.CreateDate = DateTime.UtcNow;
+        obj.CreatedDate = DateTime.UtcNow;
+        obj.UpdatedDate = DateTime.UtcNow;
         var ret = await Provider.Member.AddAsync(obj);
         if (ret > 0)
         {
@@ -24,5 +40,35 @@ public class AuthController : BaseController
         }
 
         return View(obj);
+    }
+
+    public IActionResult Login()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Login(LoginModel model)
+    {
+        var token = await Provider.Member.Login(model);
+        if (string.IsNullOrWhiteSpace(token))
+        {
+            ModelState.AddModelError("Error", "Login Failed");
+            return View(model);
+        }
+
+        var securityHandle = new JwtSecurityTokenHandler();
+        var securityToken = securityHandle.ReadJwtToken(token);
+        var claims = new List<Claim>(securityToken.Claims)
+        {
+            new(ClaimTypes.Authentication, token)
+        };
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        await HttpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
+        {
+            IsPersistent = false
+        });
+        return Redirect("/auth");
     }
 }

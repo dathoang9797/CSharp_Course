@@ -1,11 +1,25 @@
+using System.Collections;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
 using WebApp.Models;
 
 namespace WebApi.Services;
 
 public static class Helper
 {
+    public static string GenerateToken(IEnumerable<Claim> claims, string secretKey)
+    {
+        var handler = new JwtSecurityTokenHandler();
+        var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
+        var token = new JwtSecurityToken(issuer: "cse.net.vn", audience: "cse.net.vn", claims: claims,
+            signingCredentials: credentials, expires: DateTime.Now.AddMinutes(20));
+        return handler.WriteToken(token);
+    }
+
     public static byte[] HashPassword(string plainText)
     {
         return SHA512.HashData(Encoding.ASCII.GetBytes(plainText));

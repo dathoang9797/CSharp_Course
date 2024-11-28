@@ -7,7 +7,7 @@ public class Member
     public string GivenName { get; set; } = null!;
     public string? SurName { get; set; }
     public string Email { get; set; } = null!;
-    public DateTime CreateDate { get; set; }
-    public DateTime UpdateDate { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
     public DateTime LoginDate { get; set; }
 }

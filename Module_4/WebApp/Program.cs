@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -8,6 +10,13 @@ builder.Services.AddMvc();
 //     p => p.UseSqlServer(builder.Configuration.GetConnectionString("Koi"))
 // );
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
+{
+    p.LoginPath = "/auth/login";
+    p.LogoutPath = "/auth/logout";
+    p.AccessDeniedPath = "/auth/denied";
+    p.ExpireTimeSpan = TimeSpan.FromDays(30);
+});
 var app = builder.Build();
 
 app.UseHttpsRedirection();

@@ -32,7 +32,7 @@ public class MemberRepository : BaseRepository
 
     public Member? GetMember(string id)
     {
-        var sql = "SELECT FROM Member, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE MemberId = @Id";
+        var sql = "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE MemberId = @Id";
         return Connection.QuerySingleOrDefault<Member>(sql, new { id });
     }
 
