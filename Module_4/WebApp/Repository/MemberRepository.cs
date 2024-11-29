@@ -39,6 +39,20 @@ public class MemberRepository : BaseRepository
         return null;
     }
 
+    public async Task<string?> RefreshToken(string token)
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var rsp = await client.PostAsJsonAsync("member/refresh", new { AccessToken = token });
+        if (rsp.IsSuccessStatusCode)
+
+        {
+            return await rsp.Content.ReadAsStringAsync();
+        }
+
+        return null;
+    }
+
     public async Task<Member?> GetMember(string token)
     {
         try
@@ -51,8 +65,9 @@ public class MemberRepository : BaseRepository
         }
         catch (Exception e)
         {
-            Console.WriteLine(e);
-            return null;
+            // Console.WriteLine(e);
+            // return null;
+            throw new Exception(e.Message);
         }
     }
 }

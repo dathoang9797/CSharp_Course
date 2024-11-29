@@ -74,4 +74,13 @@ public class AuthController : BaseController
 
         return Helper.GenerateToken(claims, secretKey);
     }
+
+    [HttpPost("refresh")]
+    public string? RefreshToken(Token obj)
+    {
+        var secretKey = Configuration["Jwt:SecretKey"];
+        if (string.IsNullOrWhiteSpace(secretKey))
+            return null;
+        return Helper.RefreshToken(obj.AccessToken, secretKey);
+    }
 }

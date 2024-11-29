@@ -1,16 +1,30 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 using WebApp.Models;
 
 namespace WebApp.Services;
 
 public static class Helper
 {
+    public static async Task SignIn(HttpContext httpContext, string token)
+    {
+        var securityHandle = new JwtSecurityTokenHandler();
+        var securityToken = securityHandle.ReadJwtToken(token);
+        var claims = new List<Claim>(securityToken.Claims)
+        {
+            new(ClaimTypes.Authentication, token)
+        };
+
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        await httpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
+        {
+            IsPersistent = false
+        });
+    }
+    
     public static async Task<string?> UploadUrl(string url, int len)
     {
         var extension = Path.GetExtension(url);
