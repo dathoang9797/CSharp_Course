@@ -56,14 +56,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Services/Token.cs" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/MemberController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/MemberInRoleController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/RoleController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/MemberInRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/Role.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/RoleChecked.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/MemberInRoleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/RoleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/MemberController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Pages/Member/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Services/Helper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Model/SiteProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/MemberRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/MemberRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,6 +155,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/883319230301415297768d7d90711348fa830/de/ba68aa90/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/a390ffc002344f1db073dceb1d5d26e51f930/6e/8f41dfa8/HttpClientJsonExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bbaefdbb526e4a9f99725b6af466371c1912a0/6e/34745493/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5d6ea4b6bfbfffd9fcd22e9740669aad3a37725b65b2c48fbfcff6165ce8e/SqlMapper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Buoi1/Buoi1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_1/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -154,6 +164,7 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/Controller/AuthController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -1068,15 +1079,7 @@
       <workItem from="1731936231506" duration="30866000" />
       <workItem from="1732425288995" duration="5814000" />
       <workItem from="1732538778059" duration="7912000" />
-      <workItem from="1732625526985" duration="24949000" />
-    </task>
-    <task id="LOCAL-00073" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730547196399</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1730547196399</updated>
+      <workItem from="1732625526985" duration="36078000" />
     </task>
     <task id="LOCAL-00074" summary="Up">
       <option name="closed" value="true" />
@@ -1462,7 +1465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732809508136</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Up">
+      <option name="closed" value="true" />
+      <created>1732889236777</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1732889236777</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1555,19 +1566,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/AuthController.cs</url>
-          <line>28</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Controllers\AuthController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="798" />
-            </startOffsets>
-            <endOffsets>
-              <option value="833" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="81" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

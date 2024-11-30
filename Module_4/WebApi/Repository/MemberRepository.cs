@@ -16,9 +16,13 @@ public class MemberRepository : BaseRepository
         return Helper.HashPassword(Email + "^%$^%$" + Password);
     }
 
+    public IEnumerable<Member> GetMembers()
+    {
+        return Connection.Query<Member>("SELECT MemberId, Givenname, Surname, Email,CreatedDate, UpdatedDate,LoginDate  FROM Member");
+    }
+
     public int Add(Member obj)
     {
-       
         obj.MemberId = Guid.NewGuid().ToString().Replace("-", string.Empty);
         var sql =
             "INSERT INTO Member (MemberId,GivenName, Surname,Email, Password) VALUES (@MemberId, @GivenName, @Surname, @Email, @Password)";
@@ -32,7 +36,8 @@ public class MemberRepository : BaseRepository
 
     public Member? GetMember(string id)
     {
-        var sql = "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE MemberId = @Id";
+        var sql =
+            "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE MemberId = @Id";
         return Connection.QuerySingleOrDefault<Member>(sql, new { id });
     }
 
@@ -40,7 +45,8 @@ public class MemberRepository : BaseRepository
     {
         var sql =
             "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE Email = @Email  AND Password = @Password";
-        var rsp =  Connection.QuerySingleOrDefault<Member>(sql, new { obj.Email, Password = Salt(obj.Email, obj.Password) });
+        var rsp = Connection.QuerySingleOrDefault<Member>(sql,
+            new { obj.Email, Password = Salt(obj.Email, obj.Password) });
         return rsp;
     }
 }

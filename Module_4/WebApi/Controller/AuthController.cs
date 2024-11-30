@@ -7,7 +7,7 @@ using WebApi.Services;
 namespace WebApi.Controller;
 
 [ApiController]
-[Route("api/member")]
+[Route("api/auth")]
 public class AuthController : BaseController
 {
     private IConfiguration Configuration { get; set; }

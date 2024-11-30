@@ -24,4 +24,10 @@ public class SiteProvider
     
     private MemberRepository member;
     public MemberRepository Member => member ??= new MemberRepository(Connection);
+    
+    private RoleRepository role;
+    public RoleRepository Role => role ??= new RoleRepository(Connection);
+    
+    private MemberInRoleRepository memberInRole;
+    public MemberInRoleRepository MemberInRole => memberInRole ??= new MemberInRoleRepository(Connection);
 }

@@ -15,7 +15,7 @@ public class MemberRepository : BaseRepository
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
-        var rsp = await client.PostAsJsonAsync("member/register", obj);
+        var rsp = await client.PostAsJsonAsync("auth/register", obj);
         if (rsp.IsSuccessStatusCode)
 
         {
@@ -29,7 +29,7 @@ public class MemberRepository : BaseRepository
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
-        var rsp = await client.PostAsJsonAsync("member/login", obj);
+        var rsp = await client.PostAsJsonAsync("auth/login", obj);
         if (rsp.IsSuccessStatusCode)
 
         {
@@ -43,7 +43,7 @@ public class MemberRepository : BaseRepository
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
-        var rsp = await client.PostAsJsonAsync("member/refresh", new { AccessToken = token });
+        var rsp = await client.PostAsJsonAsync("auth/refresh", new { AccessToken = token });
         if (rsp.IsSuccessStatusCode)
 
         {
@@ -61,7 +61,7 @@ public class MemberRepository : BaseRepository
             using var client = new HttpClient();
             client.BaseAddress = BaseUri;
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-            return await client.GetFromJsonAsync<Member>("member");
+            return await client.GetFromJsonAsync<Member>("auth");
         }
         catch (Exception e)
         {
@@ -69,5 +69,12 @@ public class MemberRepository : BaseRepository
             // return null;
             throw new Exception(e.Message);
         }
+    }
+
+    public async Task<IEnumerable<Member>?> GetMembers()
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        return await client.GetFromJsonAsync<IEnumerable<Member>>("member");
     }
 }
