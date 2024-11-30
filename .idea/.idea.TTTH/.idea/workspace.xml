@@ -56,7 +56,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="uP">
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Repository/CategoryRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Views/Cart/Checkout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Views/Cart/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppProduct/Views/Home/Shop.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Models/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Models/ProjectContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Models/ProjectContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppProduct/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppProduct/Views/Shared/_Layout.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,12 +158,8 @@
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/Controller/AuthController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApi/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -1064,14 +1071,7 @@
       <workItem from="1732425288995" duration="5814000" />
       <workItem from="1732538778059" duration="7912000" />
       <workItem from="1732625526985" duration="36312000" />
-    </task>
-    <task id="LOCAL-00075" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730727886756</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1730727886757</updated>
+      <workItem from="1732954798355" duration="2455000" />
     </task>
     <task id="LOCAL-00076" summary="Up">
       <option name="closed" value="true" />
@@ -1457,7 +1457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732954564813</updated>
     </task>
-    <option name="localTasksCounter" value="124" />
+    <task id="LOCAL-00124" summary="uP">
+      <option name="closed" value="true" />
+      <created>1732954898452</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1732954898452</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1493,7 +1501,8 @@
     <MESSAGE value="ip" />
     <MESSAGE value="up" />
     <MESSAGE value="Up" />
-    <option name="LAST_COMMIT_MESSAGE" value="Up" />
+    <MESSAGE value="uP" />
+    <option name="LAST_COMMIT_MESSAGE" value="uP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
