@@ -30,9 +30,8 @@ public class AuthController : BaseController
         }
     }
 
-    public async Task<IActionResult> Register()
+    public IActionResult Register()
     {
-        var result = await Provider.Category.GetCategories();
         return View();
     }
 
@@ -65,18 +64,6 @@ public class AuthController : BaseController
             return View(model);
         }
 
-        var securityHandle = new JwtSecurityTokenHandler();
-        var securityToken = securityHandle.ReadJwtToken(token);
-        var claims = new List<Claim>(securityToken.Claims)
-        {
-            new(ClaimTypes.Authentication, token)
-        };
-
-        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        await HttpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
-        {
-            IsPersistent = false
-        });
         await Helper.SignIn(HttpContext, token);
         return Redirect("/auth");
     }

@@ -18,7 +18,7 @@ public class AuthController : BaseController
         Configuration = configuration;
     }
 
-    [Authorize(AuthenticationSchemes = "Bearer")]
+    [Authorize]
     public IActionResult Index()
     {
         return View();
@@ -46,7 +46,8 @@ public class AuthController : BaseController
         {
             new(ClaimTypes.NameIdentifier, member.MemberId),
             new(ClaimTypes.Email, member.Email),
-            new(ClaimTypes.GivenName, member.GivenName)
+            new(ClaimTypes.GivenName, member.GivenName),
+            new(ClaimTypes.Surname, member.Surname),
         };
 
         var name = member.GivenName + " " + member.Surname;
@@ -54,18 +55,14 @@ public class AuthController : BaseController
         claims.Add(new Claim(ClaimTypes.Name, name));
 
         var secretKey = Configuration["Jwt:SecretKey"] ?? string.Empty;
-        if (string.IsNullOrWhiteSpace(secretKey))
-            return View(obj);
-
         var token = Helper.GenerateToken(claims, secretKey);
-        if (string.IsNullOrWhiteSpace(token))
-        {
-            ModelState.AddModelError("Error", "Login Failed");
-            return View(obj);
-        }
+        // claims.Add(new Claim(ClaimTypes.Authentication, token));
 
-        claims.Add(new Claim(ClaimTypes.Authentication, token));
-        await Helper.SignIn(HttpContext, claims);
+        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+        await HttpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
+        {
+            IsPersistent = false
+        });
         return Redirect("/auth");
     }
 
