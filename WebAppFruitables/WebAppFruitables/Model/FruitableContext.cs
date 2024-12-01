@@ -11,5 +11,5 @@ public class FruitableContext : DbContext
     public DbSet<Slide> Slide { get; set; }
     public DbSet<Testimonial> Testimonial { get; set; }
     public DbSet<Product> Product { get; set; }
-
+    public DbSet<MemberEntity> Member { get; set; }
 }

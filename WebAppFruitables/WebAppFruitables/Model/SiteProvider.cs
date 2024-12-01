@@ -5,14 +5,16 @@ namespace WebAppFruitables.Models;
 
 public class SiteProvider
 {
-    private FruitableContext context;
+    private readonly FruitableContext context;
     public SiteProvider(FruitableContext context) => this.context = context;
 
-    private CategoryRepository category = null!;
-    private SlideRepository slide = null!;
-    private TestimonialRepository testimonial = null!;
+    private CategoryRepository _category = null!;
+    private SlideRepository _slide = null!;
+    private TestimonialRepository _testimonial = null!;
+    private MemberRepository _member = null!;
 
-    public CategoryRepository Category => category ??= new CategoryRepository(context);
-    public SlideRepository Slide => slide ??= new SlideRepository(context);
-    public TestimonialRepository Testimonial => testimonial ??= new TestimonialRepository(context);
+    public CategoryRepository Category => _category ??= new CategoryRepository(context);
+    public SlideRepository Slide => _slide ??= new SlideRepository(context);
+    public TestimonialRepository Testimonial => _testimonial ??= new TestimonialRepository(context);
+    public MemberRepository Member => _member ??= new MemberRepository(context);
 }

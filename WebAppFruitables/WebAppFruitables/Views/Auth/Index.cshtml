@@ -1,0 +1,52 @@
+﻿@using System.Security.Claims
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <p>@ClaimTypes.Email</p>
+            <p>@ClaimTypes.GivenName</p>
+            <p>@ClaimTypes.Surname</p>
+            <p>@ClaimTypes.NameIdentifier</p>
+            @if (User.Identity != null)
+            {
+                <p>@User.FindFirstValue(ClaimTypes.Email)</p>
+                <p>@User.FindFirstValue(ClaimTypes.GivenName)</p>
+                <p>@User.FindFirstValue(ClaimTypes.Surname)</p>
+                <p>@User.FindFirstValue(ClaimTypes.NameIdentifier)</p>
+            }
+
+            <h2>Welcome: @User.Identity?.Name</h2>
+
+            @if (Model != null)
+            {
+                <table>
+                    <tr>
+                        <td>Id</td>
+                        <td>@Model.MemberId</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <td>Given Name</td>
+                        <td>@Model.GivenName</td>
+                    </tr>
+                    <tr>
+                        <td>Surname</td>
+                        <td>@Model.SurName</td>
+                    </tr>
+                    <tr>
+                        <td>Created Date</td>
+                        <td>@Model.CreatedDate</td>
+                    </tr>
+                </table>
+            }
+            else
+            {
+                <h3>Not Data</h3>
+            }
+        </div>
+    </div>
+</div>
