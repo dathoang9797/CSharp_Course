@@ -30,4 +30,7 @@ public class SiteProvider
     
     private MemberInRoleRepository memberInRole;
     public MemberInRoleRepository MemberInRole => memberInRole ??= new MemberInRoleRepository(Connection);
+    
+    private AccessRepository _access;
+    public AccessRepository Access => _access ??= new AccessRepository(Connection);
 }

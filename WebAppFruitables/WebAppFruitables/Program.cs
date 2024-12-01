@@ -28,6 +28,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 app.MapDefaultControllerRoute();
+app.MapControllerRoute(name: "dashboard", pattern: "{area:exists}/{controller=home}/{action=index}/{id?}");
 app.UseAuthentication();
 app.UseAuthorization();
 app.Run();

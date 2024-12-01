@@ -17,10 +17,23 @@
                 <td>@item.RoleId</td>
                 <td>@item.RoleName</td>
                 <td>
-                    <input type="checkbox" value="@item.RoleId" @(item.Checked ? "checked" : "")/>
+                    <input class="chk" type="checkbox" value="@item.RoleId" @(item.Checked ? "checked" : "")/>
                 </td>
             </tr>
         }
     }
     </tbody>
 </table>
+
+@section Scripts
+{
+    <script>
+        $("input.chk").click(function () {
+        const roleId = $(this).val();
+        const memberId = `@(ViewContext.RouteData.Values["id"])`;
+         $.post('/member/roles',{roleId:roleId,'memberId':memberId}, (data)=>{
+         console.log(data)
+        })
+        });
+    </script>
+}

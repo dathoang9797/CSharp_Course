@@ -17,7 +17,8 @@ public class CategoryRepository : BaseRepository
 
     public List<CategoryCount> GetCategoryCounts()
     {
-        return Context.Categories.Include(p => p.Products).Select(p => new CategoryCount()
+        var categories = Context.Categories.Include(p => p.Products);
+        return categories.Select(p => new CategoryCount()
         {
             CategoryId = p.CategoryId,
             CategoryName = p.CategoryName,

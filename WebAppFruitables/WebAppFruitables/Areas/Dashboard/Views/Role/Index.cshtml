@@ -1,0 +1,33 @@
+﻿@model List<IdentityRole>
+
+<a href="/dashboard/role/add">Add</a>
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>
+                <a class="btn btn-outline-primary del" href="/dashboard/role/delete/@item.Id">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts
+{
+    <script>
+        $(".del").click(function () {
+          return  confirm("Are you sure delete?");
+        });
+    </script>
+}
