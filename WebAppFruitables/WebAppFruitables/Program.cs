@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using WebAppAuthentication.Model;
 using WebAppFruitables.Models;
@@ -18,6 +19,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 });
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<SiteProvider>();
 
 var app = builder.Build();

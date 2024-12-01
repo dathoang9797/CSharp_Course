@@ -1,21 +1,12 @@
 ﻿@using System.Security.Claims
 
-
 <div class="container">
     <div class="row">
         <div class="col-md-6 offset-md-3">
-            <p>@ClaimTypes.Email</p>
-            <p>@ClaimTypes.GivenName</p>
-            <p>@ClaimTypes.Surname</p>
-            <p>@ClaimTypes.NameIdentifier</p>
             @if (User.Identity != null)
             {
-                <p>@User.FindFirstValue(ClaimTypes.Email)</p>
-                <p>@User.FindFirstValue(ClaimTypes.GivenName)</p>
-                <p>@User.FindFirstValue(ClaimTypes.Surname)</p>
-                <p>@User.FindFirstValue(ClaimTypes.NameIdentifier)</p>
+                <h2>Welcome: @User.Identity?.Name</h2>
             }
-            <h2>Welcome: @User.Identity?.Name</h2>
         </div>
     </div>
 </div>

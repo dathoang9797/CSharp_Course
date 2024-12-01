@@ -1,0 +1,26 @@
+@model System.Collections.Generic.IEnumerable<WebApp.Models.RoleChecked>?
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Checked</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.RoleId</td>
+                <td>@item.RoleName</td>
+                <td>
+                    <input type="checkbox" value="@item.RoleId" @(item.Checked ? "checked" : "")/>
+                </td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>

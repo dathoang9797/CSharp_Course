@@ -10,6 +10,6 @@ public abstract class BaseRepository
     public BaseRepository(IDbConnection connection, IConfiguration configuration)
     {
         Connection = connection;
-        BaseUri = new Uri(configuration["ApiUrl"] ?? throw new Exception("Not foudn ApiUrl"));
+        BaseUri = new Uri(configuration["ApiUrl"] ?? throw new Exception("Not found ApiUrl"));
     }
 }

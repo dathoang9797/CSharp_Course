@@ -24,4 +24,7 @@ public class SiteProvider : BaseProvider
 
     private MemberRepository _member;
     public MemberRepository Member => _member ??= new MemberRepository(Connection, Configuration);
+    
+    private RoleRepository _role;
+    public RoleRepository Role => _role ??= new RoleRepository(Connection, Configuration);
 }

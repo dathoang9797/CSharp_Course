@@ -3,6 +3,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using WebAppFruitables.Model;
 using WebAppFruitables.Services;
@@ -11,11 +12,13 @@ namespace WebAppFruitables.Controllers;
 
 public class AuthController : BaseController
 {
+    private IEmailSender Sender { get; set; }
     private IConfiguration Configuration { get; set; }
 
-    public AuthController(IConfiguration configuration)
+    public AuthController(IConfiguration configuration, IEmailSender sender)
     {
         Configuration = configuration;
+        Sender = sender;
     }
 
     [Authorize]
@@ -56,14 +59,22 @@ public class AuthController : BaseController
 
         var secretKey = Configuration["Jwt:SecretKey"] ?? string.Empty;
         var token = Helper.GenerateToken(claims, secretKey);
-        // claims.Add(new Claim(ClaimTypes.Authentication, token));
+        claims.Add(new Claim(ClaimTypes.Authentication, token));
 
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
         {
             IsPersistent = false
         });
         return Redirect("/auth");
+    }
+
+    [Authorize]
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+        return Redirect("/auth/login");
     }
 
     public IActionResult Register()
@@ -72,7 +83,7 @@ public class AuthController : BaseController
     }
 
     [HttpPost]
-    public IActionResult Register(Member? obj)
+    public async Task<IActionResult> Register(Member? obj)
     {
         if (obj == null)
             return View(obj);
@@ -89,6 +100,13 @@ public class AuthController : BaseController
         var ret = Provider.Member.Add(entity);
         if (ret > 0)
         {
+            if (!string.IsNullOrWhiteSpace(entity.Email))
+            {
+                var body = $"Welcome {entity.GivenName} {entity.Surname}";
+                await Sender.SendEmailAsync(entity.Email, "Register Success", body);
+                TempData["Msg"] = $"Login Success Please check your email: {entity.Email}";
+            }
+
             return Redirect("/");
         }
 
