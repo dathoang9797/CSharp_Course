@@ -1,10 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-
-namespace WebAppStore.Areas.Dashboard;
+namespace WebAppFruitables.Areas.Dashboard.Controller;
 
 [Area("dashboard")]
-public class HomeController : Controller
+public class HomeController : Microsoft.AspNetCore.Mvc.Controller
 {
     public IActionResult Index()
     {

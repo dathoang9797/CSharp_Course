@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebAppFruitables;
+namespace WebAppFruitables.Controllers;
 
 public class HomeController : BaseController
 {
