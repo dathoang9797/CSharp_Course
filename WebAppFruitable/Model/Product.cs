@@ -33,3 +33,9 @@ public class ProductForm
     public byte Rating { get; set; }
     public byte CategoryId { get; set; }
 }
+
+public class ProductFormEdit : ProductForm
+{
+    public int ProductId { get; set; }
+    public string ImageUrl { get; set; }
+}

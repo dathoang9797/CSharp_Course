@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Tokens;
+using WebApp.Models;
 
 namespace WebAppFruitables.Services;
 
@@ -59,21 +60,29 @@ public static class Helper
         return SHA512.HashData(Encoding.ASCII.GetBytes(plainText));
     }
 
-    public static async Task<string?> UploadUrl(string url, int len)
+    private static Upload? Upload(IFormFile? file, string root, string folder = "images", string sub = "", int len = 32)
     {
-        var extension = Path.GetExtension(url);
-        var fileName = RandomString(len - extension.Length) + extension;
-        var client = new HttpClient();
-        var message = await client.GetAsync(url);
-        if (!message.IsSuccessStatusCode)
+        if (file == null)
             return null;
 
-        var stream = await message.Content.ReadAsStreamAsync();
-        var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-        await using Stream fileStream = new FileStream(Path.Combine(root, "images", fileName), FileMode.Create);
-        await stream.CopyToAsync(fileStream);
+        var extension = Path.GetExtension(file.FileName);
+        var fileName = RandomString(len - extension.Length) + extension;
+        using Stream stream = new FileStream(Path.Combine(root, folder, fileName), FileMode.Create);
+        file.CopyTo(stream);
 
-        return fileName;
+        return new Upload()
+        {
+            OriginalName = file.FileName,
+            ImageUrl = string.IsNullOrWhiteSpace(sub) ? fileName : sub + "/" + fileName,
+            Size = file.Length,
+            Type = file.ContentType,
+        };
+    }
+
+    public static Upload? Upload(IFormFile file, string folder = "img", string sub = "", int len = 32)
+    {
+        var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+        return Upload(file, root, folder, sub, len);
     }
 
     static string RandomString(int len)

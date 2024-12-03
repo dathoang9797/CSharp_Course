@@ -57,9 +57,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Controller/ProductController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Product/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Repository/ProductRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Upload.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
@@ -85,14 +83,13 @@
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Model/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Model/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Model/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/.idea/.idea.WebAppFruitables.dir/.idea/git_toolbox_prj.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/.idea/.idea.WebAppFruitables.dir/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +157,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/coreclr/System.Private.CoreLib/src/System/Threading/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/Microsoft/Win32/SafeHandles/SafeFileHandle.Windows.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/Dictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/IO/MemoryStream.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/Runtime/ExceptionServices/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.CoreLib/src/System/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9cb3b725e3ad2b57ddc9fb2dd48d2d170563a8f5/src/libraries/System.Private.Uri/src/System/UriExt.cs" root0="SKIP_HIGHLIGHTING" />
@@ -188,17 +186,9 @@
     <setting file="file://$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebAppStore/Areas/Dashboard/Controller/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebAppStore/Areas/Dashboard/Controller/RoleController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_3/WebAppStore/Areas/Dashboard/Controller/UserController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Controllers/AuthController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Models/SiteProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Controller/RoleController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Controller/UserController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/WebAppFruitables/WebAppFruitables/Areas/Dashboard/Views/Shared/_ValidationScriptsPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -1113,7 +1103,8 @@
       <workItem from="1732625526985" duration="36312000" />
       <workItem from="1732954798355" duration="2455000" />
       <workItem from="1732962826777" duration="31728000" />
-      <workItem from="1733064890307" duration="7371000" />
+      <workItem from="1733064890307" duration="8434000" />
+      <workItem from="1733227984881" duration="4335000" />
     </task>
     <task id="LOCAL-00078" summary="Up">
       <option name="closed" value="true" />
@@ -1575,19 +1566,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/ProductController.cs</url>
-          <line>54</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Controllers\ProductController.cs" containingFunctionPresentation="Method 'Edit'">
-            <startOffsets>
-              <option value="1643" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1662" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/CategoryController.cs</url>

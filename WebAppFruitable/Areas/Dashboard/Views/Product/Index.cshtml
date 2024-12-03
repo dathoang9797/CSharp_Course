@@ -74,7 +74,7 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label"for="Rating">Rating</label>
-                        <input class="form-control" type="number" value="1"  min="1" max="5" id="Rating" name="Rating"/>
+                        <input class="form-control" type="number" value="1" min="1" max="5" id="Rating" name="Rating"/>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="CategoryId">Category</label>
@@ -89,6 +89,56 @@
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="/dashboard/product/update" method="post" enctype="multipart/form-data" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="ProductId" name="ProductId"/>
+                    <div class="mb-3">
+                        <label class="form-label" for="ProductName">ProductName</label>
+                        <input class="form-control" type="text" id="ProductName" name="ProductName"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Image">Image</label>
+                        <input class="form-control" type="file" id="Image" name="File"/>
+                        <input type="hidden" id="ImageUrl" name="ImageUrl"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Price">Price</label>
+                        <input class="form-control" type="text" id="Price" name="Price"/>
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-floating">
+                            <textarea class="form-control" name="Description" placeholder="Leave a comment here" id="Description" style="height: 100px"></textarea>
+                            <label for="Description">Description</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"for="Rating">Rating</label>
+                        <input class="form-control" type="number" value="1" min="1" max="5" id="Rating" name="Rating"/>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="CategoryId">Category</label>
+                        <select class="form-select" name="CategoryId" id="CategoryId">
+                            @foreach (Category item in ViewBag.Categories)
+                            {
+                                <option value="@item.CategoryId">@item.CategoryName</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Update</button>
                 </div>
             </form>
         </div>
@@ -116,17 +166,21 @@
     <script>
         $(".fa-trash").click(function (){
             const id = $(this).closest("tr").attr("product-id");
-            $("#deleteProductModal input[name='id']").val(id);
             $("#deleteProductModal").modal("show");
         })
 
         $(".fa-edit").click(function (){
             const id = $(this).closest("tr").attr("product-id");
-            $.post("/category/edit",{id},(data)=>{
-                $("#editProductModal input[name='id']").val(id);
-                $("#editProductModal input[name='categoryName']").val(data["categoryName"]);
+            $.get(`/dashboard/product/update/${id}`,(data)=> {
+                $("#editProductModal input#ProductId").val(id);
+                $("#editProductModal #ProductName").val(data?.productName);
+                $("#editProductModal #Price").val(data?.price);
+                $("#editProductModal #Rating").val(data?.rating);
+                $("#editProductModal #ImageUrl").val(data?.imageUrl);
+                $("#editProductModal #Description").val(data?.description);
+                $("#editProductModal #CategoryId").val(data?.categoryId);
                 $("#editProductModal").modal("show");
-            });
+             });
             });
 
         $("#create-product").click(function (){
