@@ -56,52 +56,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/.idea/.idea.WebAppFruitable.dir/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/bin/Debug/net6.0/Euro.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/bin/Debug/net6.0/Euro.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/bin/Debug/net6.0/Euro.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/bin/Debug/net6.0/Euro.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.pack.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/staticwebassets.pack.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,6 +93,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Http/Authentication.Abstractions/src/AuthenticationHttpContextExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Http/Authentication.Abstractions/src/AuthenticationProperties.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Identity/Extensions.Core/src/PrincipalExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Mvc/Mvc.Core/src/Builder/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Mvc/Mvc.Core/src/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/aspnetcore/47576478939fdd59b4400ad135f47938af486ab3/src/Mvc/Mvc.Razor/src/RazorPageBase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -1118,23 +1074,7 @@
       <workItem from="1733064890307" duration="8434000" />
       <workItem from="1733227984881" duration="6345000" />
       <workItem from="1733311459112" duration="2650000" />
-      <workItem from="1733467422401" duration="699000" />
-    </task>
-    <task id="LOCAL-00078" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730729773593</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1730729773593</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730730262666</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1730730262666</updated>
+      <workItem from="1733467422401" duration="5518000" />
     </task>
     <task id="LOCAL-00080" summary="Up">
       <option name="closed" value="true" />
@@ -1512,7 +1452,23 @@
       <option name="project" value="LOCAL" />
       <updated>1733064854077</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Up">
+      <option name="closed" value="true" />
+      <created>1733476168872</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1733476168872</updated>
+    </task>
+    <task id="LOCAL-00128" summary="Up">
+      <option name="closed" value="true" />
+      <created>1733476234065</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1733476234065</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1548,9 +1504,9 @@
     <MESSAGE value="ip" />
     <MESSAGE value="up" />
     <MESSAGE value="uP" />
-    <MESSAGE value="Up" />
     <MESSAGE value="UpUp" />
-    <option name="LAST_COMMIT_MESSAGE" value="UpUp" />
+    <MESSAGE value="Up" />
+    <option name="LAST_COMMIT_MESSAGE" value="Up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
