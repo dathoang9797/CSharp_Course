@@ -58,34 +58,37 @@
     </div>
 
     <!-- Nav Item - Pages Collapse Menu -->
-    @foreach (Access item in ViewBag.Accesses)
+    @if (ViewBag.Accesses != null)
     {
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo@(item.AccessId)"
-               aria-expanded="true" aria-controls="@(item.AccessId)">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>@item.AccessName</span>
-            </a>
-            <div id="collapseTwo@(item.AccessId)" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        @foreach (Access item in ViewBag.Accesses)
+        {
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo@(item.AccessId)"
+                   aria-expanded="true" aria-controls="@(item.AccessId)">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>@item.AccessName</span>
+                </a>
+                <div id="collapseTwo@(item.AccessId)" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 
-                <div class="bg-white py-2 collapse-inner rounded">
-                    @if (item.Children != null)
-                    {
-                        foreach (var child in item.Children)
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        @if (item.Children != null)
                         {
-                            <h6 class="collapse-header">@child.AccessName:</h6>
-                            @if (child.Children != null)
+                            foreach (var child in item.Children)
                             {
-                                @foreach (var child2 in child.Children)
+                                <h6 class="collapse-header">@child.AccessName:</h6>
+                                @if (child.Children != null)
                                 {
-                                    <a class="collapse-item" href="@child2.AccessUrl">@child2.AccessName</a>
+                                    @foreach (var child2 in child.Children)
+                                    {
+                                        <a class="collapse-item" href="@child2.AccessUrl">@child2.AccessName</a>
+                                    }
                                 }
                             }
                         }
-                    }
+                    </div>
                 </div>
-            </div>
-        </li>
+            </li>
+        }
     }
     @* <li class="nav-item"> *@
     @*     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" *@

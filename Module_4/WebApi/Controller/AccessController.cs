@@ -1,3 +1,5 @@
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Model;
 
@@ -12,12 +14,14 @@ public class AccessController : BaseController
     {
         var list = Provider.Access.GetAccesses();
         var dictAccess = new Dictionary<int, List<Access>>();
-        var accesses = new List<Access>();
-        foreach (var item in list)
+        var listAccesses = new List<Access>();
+        var listAccessChecked = list.ToList();
+        
+        foreach (var item in listAccessChecked)
         {
             if (item.ParentId is null)
             {
-                accesses.Add(item);
+                listAccesses.Add(item);
             }
             else
             {
@@ -31,12 +35,65 @@ public class AccessController : BaseController
             }
         }
 
-        foreach (var item in list)
+        foreach (var item in listAccessChecked)
         {
-            if (dictAccess.ContainsKey(item.AccessId))
-                item.Children = dictAccess[item.AccessId];
+            if (dictAccess.TryGetValue(item.AccessId, out var value))
+                item.Children = value;
         }
 
-        return accesses;
+        return listAccesses;
+    }
+
+    [HttpPost]
+    public int Add(Access obj)
+    {
+        return Provider.Access.Add(obj);
+    }
+
+    [HttpGet("parents")]
+    public IEnumerable<Access> GetParents()
+    {
+        return Provider.Access.GetParents();
+    }
+    
+    [Authorize]
+    [HttpGet("accesschecked")]
+    public IEnumerable<AccessChecked>? AccessChecked()
+    {
+        // var list = Provider.Access.GetAccesses();
+        var memberId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (string.IsNullOrWhiteSpace(memberId))
+            return null;
+
+        var list = Provider.Access.GetAccessesChecked(memberId);
+        var dictAccess = new Dictionary<int, List<AccessChecked>>();
+        var listAccesses = new List<AccessChecked>();
+        var listAccessChecked = list.ToList();
+        
+        foreach (var item in listAccessChecked)
+        {
+            if (item.ParentId is null)
+            {
+                listAccesses.Add(item);
+            }
+            else
+            {
+                var key = item.ParentId.Value;
+                if (!dictAccess.ContainsKey(key))
+                {
+                    dictAccess[key] = new List<AccessChecked>();
+                }
+
+                dictAccess[key].Add(item);
+            }
+        }
+
+        foreach (var item in listAccessChecked)
+        {
+            if (dictAccess.TryGetValue(item.AccessId, out var value))
+                item.Children = value;
+        }
+
+        return listAccesses;
     }
 }

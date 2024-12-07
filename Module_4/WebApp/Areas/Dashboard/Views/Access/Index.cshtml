@@ -1,0 +1,97 @@
+@model IEnumerable<WebApp.Models.Access>?
+
+
+<form action="/dashboard/access/add" method="post">
+    <div class="row mb-1">
+        <label class="form-label col-3" for="parentId">Parent</label>
+        <div class="col-9">
+            <select
+                class="form-control"
+                name="parentId"
+                id="parentId"
+                asp-items="@ViewBag.Parents">
+                <option value="">--Select Parent--</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-1">
+        <label class="form-label col-3" for="name">Name</label>
+        <div class="col-9">
+            <input class="form-control" type="text" name="accessName" id="name" required/>
+        </div>
+    </div>
+
+    <div class="row mb-1">
+        <label class="form-label col-3" for="url">Url</label>
+        <div class="col-9">
+            <input class="form-control" type="text" name="accessUrl" id="url"/>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead class="table-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Url</th>
+        <th>Parent</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td colspan="3">@item.AccessId</td>
+                <td>@item.AccessName</td>
+                <td>@item.AccessUrl</td>
+                <td>@item.ParentId</td>
+                <td>
+                    <a href="/dashboard/access/delete/@item.AccessId">Delete</a>
+                    <a href="/dashboard/access/edit/@item.AccessId">Edit</a>
+                </td>
+            </tr>
+            if (item.Children != null)
+            {
+                @foreach (var child in item.Children)
+                {
+                    <tr>
+                        <td></td>
+                        <td colspan="2">@child.AccessId</td>
+                        <td>@child.AccessName</td>
+                        <td>@child.AccessUrl</td>
+                        <td>@child.ParentId</td>
+                        <td>
+                            <a href="/dashboard/access/delete/@child.AccessId">Delete</a>
+                            <a href="/dashboard/access/edit/@child.AccessId">Edit</a>
+                        </td>
+                    </tr>
+
+                    if (child.Children != null)
+                    {
+                        @foreach (var child2 in child.Children)
+                        {
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>@child2.AccessId</td>
+                                <td>@child2.AccessName</td>
+                                <td>@child2.AccessUrl</td>
+                                <td>@child2.ParentId</td>
+                                <td>
+                                    <a href="/dashboard/access/delete/@child2.AccessId">Delete</a>
+                                    <a href="/dashboard/access/edit/@child2.AccessId">Edit</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            }
+        }
+    }
+    </tbody>
+</table>

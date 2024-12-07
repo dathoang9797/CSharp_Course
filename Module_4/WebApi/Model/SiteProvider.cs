@@ -33,4 +33,7 @@ public class SiteProvider
     
     private AccessRepository _access;
     public AccessRepository Access => _access ??= new AccessRepository(Connection);
+    
+    private AccessRoleRepository _accessRole;
+    public AccessRoleRepository AccessRole => _accessRole ??= new AccessRoleRepository(Connection);
 }
