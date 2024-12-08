@@ -12,12 +12,22 @@ public class HomeController : BaseController
     [Authorize]
     public async Task<IActionResult> Index()
     {
-        var token = User.FindFirstValue(ClaimTypes.Authentication);
-        if (!string.IsNullOrWhiteSpace(token))
+        try
         {
-            ViewBag.Accesses = await Provider.Access.GetAccesses(token) ?? Array.Empty<Access>();
-        }
+            var token = User.FindFirstValue(ClaimTypes.Authentication);
+            if (string.IsNullOrWhiteSpace(token))
+                return Redirect("/auth/login");
 
-        return View();
+            if (!string.IsNullOrWhiteSpace(token))
+            {
+                ViewBag.Accesses = await Provider.Access.GetAccesses(token) ?? Array.Empty<Access>();
+            }
+
+            return View();
+        }
+        catch (Exception e)
+        {
+            return Redirect("/auth/login");
+        }
     }
 }

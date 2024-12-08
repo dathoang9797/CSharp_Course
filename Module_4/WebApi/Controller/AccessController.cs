@@ -10,6 +10,7 @@ namespace WebApi.Controller;
 public class AccessController : BaseController
 {
     [HttpGet]
+    [Authorize]
     public IEnumerable<Access> GetAccesses()
     {
         var list = Provider.Access.GetAccesses();

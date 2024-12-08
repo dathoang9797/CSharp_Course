@@ -38,14 +38,14 @@ public class MemberRepository : BaseRepository
     {
         var sql =
             "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE MemberId = @Id";
-        return Connection.QuerySingleOrDefault<Member>(sql, new { id });
+        return Connection.QueryFirstOrDefault<Member>(sql, new { id });
     }
 
     public Member? Login(LoginModel obj)
     {
         var sql =
             "SELECT MemberId, GivenName, Surname, Email, CreatedDate, UpdatedDate, LoginDate FROM Member WHERE Email = @Email  AND Password = @Password";
-        var rsp = Connection.QuerySingleOrDefault<Member>(sql,
+        var rsp = Connection.QueryFirstOrDefault<Member>(sql,
             new { obj.Email, Password = Salt(obj.Email, obj.Password) });
         return rsp;
     }

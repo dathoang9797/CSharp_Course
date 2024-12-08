@@ -10,47 +10,55 @@ namespace WebApp.Areas.Dashboard.Controller;
 [Area("dashboard")]
 public class AccessController : BaseController
 {
+    [Authorize]
     public async Task<IActionResult> Index()
     {
-        var token = User.FindFirstValue(ClaimTypes.Authentication);
-        if (!string.IsNullOrWhiteSpace(token))
+        try
         {
-            var listAccess = await Provider.Access.GetAccesses(token);
-            if (listAccess != null)
+            var token = User.FindFirstValue(ClaimTypes.Authentication);
+            if (!string.IsNullOrWhiteSpace(token))
             {
-                // var parents = await Provider.Access.GetParents(token);
-                // if (parents != null)
-                //     ViewBag.Parents = new SelectList(parents);
-
-                var listSelectItems = new List<SelectListItem>();
-                foreach (var item in listAccess)
+                var listAccess = await Provider.Access.GetAccesses(token);
+                if (listAccess != null)
                 {
-                    var group = new SelectListGroup { Name = item.AccessName };
-                    if (item.Children != null)
+                    // var parents = await Provider.Access.GetParents(token);
+                    // if (parents != null)
+                    //     ViewBag.Parents = new SelectList(parents);
+
+                    var listSelectItems = new List<SelectListItem>();
+                    foreach (var item in listAccess)
                     {
-                        foreach (var child in item.Children)
+                        var group = new SelectListGroup { Name = item.AccessName };
+                        if (item.Children != null)
                         {
-                            var selectItem = new SelectListItem()
+                            foreach (var child in item.Children)
                             {
-                                Text = child.AccessName,
-                                Value = child.AccessId.ToString(),
-                                Group = group
-                            };
-                            listSelectItems.Add(selectItem);
+                                var selectItem = new SelectListItem()
+                                {
+                                    Text = child.AccessName,
+                                    Value = child.AccessId.ToString(),
+                                    Group = group
+                                };
+                                listSelectItems.Add(selectItem);
+                            }
+                        }
+
+                        if (listSelectItems.Any())
+                        {
+                            ViewBag.Parents = listSelectItems;
                         }
                     }
 
-                    if (listSelectItems.Any())
-                    {
-                        ViewBag.Parents = listSelectItems;
-                    }
+                    return View(listAccess);
                 }
-
-                return View(listAccess);
             }
-        }
 
-        return View();
+            return View();
+        }
+        catch (Exception e)
+        {
+            return Redirect("/auth/login");
+        }
     }
 
     [HttpPost]

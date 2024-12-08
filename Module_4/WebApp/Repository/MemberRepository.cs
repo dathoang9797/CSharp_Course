@@ -31,7 +31,6 @@ public class MemberRepository : BaseRepository
         client.BaseAddress = BaseUri;
         var rsp = await client.PostAsJsonAsync("auth/login", obj);
         if (rsp.IsSuccessStatusCode)
-
         {
             return await rsp.Content.ReadAsStringAsync();
         }

@@ -45,7 +45,7 @@ public class AuthController : BaseController
     public string? Login(LoginModel obj)
     {
         var member = Provider.Member.Login(obj);
-        if (member == null || member?.MemberId == null)
+        if (member == null || member.MemberId == null)
             return null;
 
         var claims = new List<Claim>()

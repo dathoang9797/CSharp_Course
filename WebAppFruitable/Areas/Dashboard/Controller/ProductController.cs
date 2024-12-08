@@ -1,13 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
+using WebAppFruitables;
 using WebAppFruitables.Model;
 using WebAppFruitables.Services;
 
-namespace WebAppFruitables.Areas.Dashboard.Controller;
+namespace WebApplication1.Areas.Dashboard.Controller;
 
 [Area("dashboard")]
 public class ProductController : BaseController
 {
+    [Authorize]
     public IActionResult Index()
     {
         var listProduct = Provider.Product.GetProducts();
