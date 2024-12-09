@@ -1,14 +1,15 @@
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
-using WebAppFruitables.Model;
+using WebAppFruitable.Model;
+using WebAppFruitable.Services;
+using WebAppFruitables;
 using WebAppFruitables.Services;
 
-namespace WebAppFruitables.Controllers;
+namespace WebAppFruitable.Controllers;
 
 public class AuthController : BaseController
 {

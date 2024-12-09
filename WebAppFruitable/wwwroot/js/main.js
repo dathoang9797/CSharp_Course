@@ -26,17 +26,17 @@
             } else {
                 $('.fixed-top').removeClass('shadow').css('top', 0);
             }
-        } 
+        }
     });
-    
-    
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
+
+
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
     });
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
@@ -52,27 +52,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:1
+            768: {
+                items: 1
             },
-            992:{
-                items:2
+            992: {
+                items: 2
             },
-            1200:{
-                items:2
+            1200: {
+                items: 2
             }
         }
     });
@@ -86,27 +86,27 @@
         dots: true,
         loop: true,
         margin: 25,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="bi bi-arrow-left"></i>',
             '<i class="bi bi-arrow-right"></i>'
         ],
         responsiveClass: true,
         responsive: {
-            0:{
-                items:1
+            0: {
+                items: 1
             },
-            576:{
-                items:1
+            576: {
+                items: 1
             },
-            768:{
-                items:2
+            768: {
+                items: 2
             },
-            992:{
-                items:3
+            992: {
+                items: 3
             },
-            1200:{
-                items:4
+            1200: {
+                items: 4
             }
         }
     });
@@ -118,7 +118,6 @@
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
         });
-        console.log($videoSrc);
 
         $('#videoModal').on('shown.bs.modal', function (e) {
             $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
@@ -128,7 +127,6 @@
             $("#video").attr('src', $videoSrc);
         })
     });
-
 
 
     // Product Quantity
@@ -145,6 +143,67 @@
             }
         }
         button.parent().parent().find('input').val(newVal);
+    });
+
+    $($("#carouselId div.carousel-item")[0]).addClass("active");
+
+    $(".nav-category.nav-item").click(function () {
+        const categoryId = $(this).attr("value");
+        if (!categoryId)
+            return;
+
+        $.ajax({
+            method: "GET",
+            url: `category/${categoryId}`,
+            contentType: "application/json",
+            processData: true,
+            success: function (data, textStatus, xhr) {
+                if (xhr.status === 200 && data?.value?.length > 0) {
+                    const listProduct = data.value;
+                    const elmRow = $(`#tab-${categoryId} .row`);
+                    listProduct.forEach(i => {
+                        if (i != null) {
+                            const formattedPrice = new Intl.NumberFormat('vi-VN').format(i.price) + " ₫";
+
+                            const item = `
+                     <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="rounded position-relative fruite-item">
+                        <div class="fruite-img">
+                            <img 
+                            src="img/${i.imageUrl}" 
+                            class="img-fluid w-100 rounded-top"
+                            alt=""
+                             >
+                        </div>
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                            <h4>${i.productName}</h4>
+                            <p>${i.description}</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">${formattedPrice}</p>
+                                <a href="#" 
+                                class="btn border border-secondary rounded-pill px-3 text-primary">
+                                  <i class="fa fa-shopping-bag me-2 text-primary"></i>
+                                   Add to cart
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    `
+                            elmRow.append(item);
+                        }
+                    })
+
+                }
+            },
+            complete:function(){
+                
+            },
+            error: function (xhr, status, error) {
+                console.error("Error:", status, error); // Handle errors
+            }
+        });
     });
 
 })(jQuery);

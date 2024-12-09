@@ -1,15 +1,22 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
-using WebAppFruitables.Models;
+using WebAppFruitable.Model;
+using WebAppFruitable.Model;
+using WebAppFruitable.VnPayment;
 using WebAppFruitables.Services.Mail;
+using WebApplication1.VnPayment;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FruitableContext>(
     p => p.UseSqlServer(builder.Configuration.GetConnectionString("Fruitables"))
 );
+
+builder.Services.AddHttpContextAccessor();
+builder.Services.Configure<VnPaymentRequest>(builder.Configuration.GetSection("Payments:VnPayment"));
 builder.Services.AddMvc();
+builder.Services.AddControllers().AddNewtonsoftJson();
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
 {
     p.LoginPath = "/auth/login";
@@ -19,7 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 });
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
-
+builder.Services.AddScoped<VnPaymentService>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<SiteProvider>();
 

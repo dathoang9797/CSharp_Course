@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace WebAppFruitables.Model;
+namespace WebAppFruitable.Model;
 
 public class CategoryCount : Category
 {

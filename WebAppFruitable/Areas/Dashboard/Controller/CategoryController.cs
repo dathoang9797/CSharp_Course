@@ -4,11 +4,12 @@ using WebApp.Models;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
 using WebAppFruitables;
+using WebAppFruitables.Services;
 
 namespace WebAppFruitable.Areas.Dashboard.Controller;
 
 [Area("dashboard")]
-public class ProductController : BaseController
+public class CategoryController : BaseController
 {
     [Authorize]
     public IActionResult Index()

@@ -57,14 +57,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Category/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CategoryController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Invoice.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/CartRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/VnPaymentRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/AccessController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/AccessController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/MemberRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/CategoryCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/CategoryCount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Slide.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Slide.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Testimonial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Testimonial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/ErrorViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/BaseRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/CategoryRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/SlideRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/SlideRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/TestimonialRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/TestimonialRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Shop.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Shop.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,54 +224,54 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Euro: WebApp1.executor": "Debug",
-    ".NET Launch Settings Profile.WebApi: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebApi: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebApp: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebApp: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppChat: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppClassLib: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
-    ".NET Launch Settings Profile.WebApplication1: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: IIS Express.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: https.executor": "Debug",
-    ".NET Project.AppTest.executor": "Debug",
-    ".NET Project.Module_1.executor": "Debug",
-    ".NET Project.Module_4\\AppCrawler.executor": "Debug",
-    ".NET Project.Module_5\\ConsoleApp.executor": "Debug",
-    "8d321b14-21df-4f1a-870f-71be3f0a65c1.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowExplorer.ShowToolbar": "false",
-    "XThreadsFramesViewSplitterKey": "0.12352941",
-    "f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propDebugger",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Euro: WebApp1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApp: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppAuthentication.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppChat: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppClassLib: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppFruitables.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppStore.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.AppTest.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_4\\AppCrawler.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_5\\ConsoleApp.executor&quot;: &quot;Debug&quot;,
+    &quot;8d321b14-21df-4f1a-870f-71be3f0a65c1.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.12352941&quot;,
+    &quot;f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\datho\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.WebApp: https">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -1089,6 +1124,7 @@
       <workItem from="1733311459112" duration="2650000" />
       <workItem from="1733467422401" duration="13038000" />
       <workItem from="1733554012135" duration="9972000" />
+      <workItem from="1733746312027" duration="7795000" />
     </task>
     <task id="LOCAL-00082" summary="Up">
       <option name="closed" value="true" />
@@ -1590,32 +1626,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/HomeController.cs</url>
-          <line>29</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Areas\Dashboard\Controller\HomeController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="794" />
-            </startOffsets>
-            <endOffsets>
-              <option value="825" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/HomeController.cs</url>
-          <line>18</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Areas\Dashboard\Controller\HomeController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="492" />
-            </startOffsets>
-            <endOffsets>
-              <option value="523" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/AuthController.cs</url>

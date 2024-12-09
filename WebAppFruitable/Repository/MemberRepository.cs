@@ -1,8 +1,5 @@
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
-using WebAppFruitables.Model;
+using WebAppFruitable.Model;
 
 namespace WebAppFruitables.Repository;
 

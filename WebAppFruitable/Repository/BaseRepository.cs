@@ -1,5 +1,4 @@
-﻿using WebAppAuthentication.Model;
-using WebAppFruitables.Model;
+﻿using WebAppFruitable.Model;
 
 namespace WebAppFruitables.Repository;
 

@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
-using WebAppFruitables.Model;
+using WebAppFruitable.Model;
+using WebAppFruitables.Repository;
 
-namespace WebAppFruitables.Repository;
+namespace WebAppFruitable.Repository;
 
 public class ProductRepository : BaseRepository
 {

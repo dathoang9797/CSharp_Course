@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using WebAppFruitables.Models;
+using WebAppFruitable.Model;
 
 namespace WebAppFruitables;
 

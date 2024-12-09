@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
+using WebAppFruitable.Model;
 
-namespace WebAppFruitables.Model;
+namespace WebAppFruitable.Model;
 
 [Table("Product")]
 public class Product
@@ -22,6 +24,7 @@ public class Product
 
     [Range(1, 5)] public byte Rating { get; set; } = 5;
 
+    [JsonIgnore]
     public virtual Category Category { get; set; }
 }
 

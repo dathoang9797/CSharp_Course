@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using WebAppFruitables;
 
-namespace WebAppFruitables.Controllers;
+namespace WebAppFruitable.Controllers;
 
 public class HomeController : BaseController
 {
@@ -9,6 +10,7 @@ public class HomeController : BaseController
         ViewBag.Slides = Provider.Slide.GetSlide();
         ViewBag.Testimonials = Provider.Testimonial.GetTestimonial();
         ViewBag.Categories = Provider.Category.GetCategories();
+        ViewBag.Products = Provider.Product.GetProducts();
         return View();
     }
 

@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using WebAppAuthentication.Model;
-using WebAppFruitables.Model;
+using WebAppFruitable.Model;
 
 namespace WebAppFruitables.Repository;
 
@@ -13,6 +12,13 @@ public class CategoryRepository : BaseRepository
     public List<Category> GetCategories()
     {
         return Context.Categories.ToList();
+    }
+
+    public Category? GetCategory(int id)
+    {
+        return Context.Categories
+            .Include(p => p.Products)
+            .FirstOrDefault(p => p.CategoryId == id);
     }
 
     public List<CategoryCount> GetCategoryCounts()

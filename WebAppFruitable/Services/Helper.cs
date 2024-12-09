@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.IdentityModel.Tokens;
 using WebApp.Models;
 
-namespace WebAppFruitables.Services;
+namespace WebAppFruitable.Services;
 
 public static class Helper
 {
@@ -85,7 +85,7 @@ public static class Helper
         return Upload(file, root, folder, sub, len);
     }
 
-    static string RandomString(int len)
+    public static string RandomString(int len)
     {
         const string pattern = "qwertyuiopasdfghjklzxcvbnm17890";
         var arr = new char[len];
@@ -97,5 +97,11 @@ public static class Helper
         }
 
         return string.Join(string.Empty, arr);
+    }
+
+    public static string HmaxSha(string key, string plaintext)
+    {
+        using HMACSHA512 hmac = new HMACSHA512(Encoding.ASCII.GetBytes(key));
+        return Convert.ToHexString(hmac.ComputeHash(Encoding.UTF8.GetBytes(plaintext)));
     }
 }

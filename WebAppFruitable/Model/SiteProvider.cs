@@ -1,7 +1,9 @@
-﻿using WebAppAuthentication.Model;
+﻿using WebAppFruitable.Model;
+using WebAppFruitable.Repository;
 using WebAppFruitables.Repository;
+using WebAppVNPayment.Repository;
 
-namespace WebAppFruitables.Models;
+namespace WebAppFruitable.Model;
 
 public class SiteProvider
 {
@@ -19,4 +21,11 @@ public class SiteProvider
     public TestimonialRepository Testimonial => _testimonial ??= new TestimonialRepository(context);
     public MemberRepository Member => _member ??= new MemberRepository(context);
     public ProductRepository Product => _product ??= new ProductRepository(context);
+    
+    private VnPaymentRepository _vnPayment;
+    public VnPaymentRepository VnPayment => _vnPayment ??= new VnPaymentRepository(context);
+
+    private CartRepository _cart;
+    public CartRepository Cart => _cart ??= new CartRepository(context);
+
 }

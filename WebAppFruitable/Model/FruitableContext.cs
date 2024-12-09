@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebAppFruitables.Model;
+using WebAppFruitable.VnPayment;
 
-namespace WebAppAuthentication.Model;
+namespace WebAppFruitable.Model;
 
 public class FruitableContext : DbContext
 {
@@ -12,4 +12,6 @@ public class FruitableContext : DbContext
     public DbSet<Testimonial> Testimonial { get; set; }
     public DbSet<Product> Product { get; set; }
     public DbSet<MemberEntity> Member { get; set; }
+    public DbSet<Cart> Cart { get; set; }
+    public DbSet<VnPaymentResponse> VnPaymentResponses { get; set; }
 }
