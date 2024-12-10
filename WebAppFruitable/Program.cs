@@ -22,7 +22,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     p.LoginPath = "/auth/login";
     p.LogoutPath = "/auth/logout";
     p.AccessDeniedPath = "/auth/denied";
-    p.ExpireTimeSpan = TimeSpan.FromDays(30);
+    p.ExpireTimeSpan = TimeSpan.FromMinutes(10);
 });
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));

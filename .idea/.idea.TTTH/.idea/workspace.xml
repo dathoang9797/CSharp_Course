@@ -57,48 +57,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Category/Index.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CategoryController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Invoice.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/CartRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/VnPaymentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentRequest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Access/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Access/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Category.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Category.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/CategoryCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/CategoryCount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Slide.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Slide.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Testimonial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Testimonial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Models/ErrorViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/ErrorViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/BaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/BaseRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/CategoryRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/CategoryRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/SlideRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/SlideRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/TestimonialRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/TestimonialRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/CartRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/CartRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Shop.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Shop.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1124,7 +1094,7 @@
       <workItem from="1733311459112" duration="2650000" />
       <workItem from="1733467422401" duration="13038000" />
       <workItem from="1733554012135" duration="9972000" />
-      <workItem from="1733746312027" duration="7795000" />
+      <workItem from="1733746312027" duration="19472000" />
     </task>
     <task id="LOCAL-00082" summary="Up">
       <option name="closed" value="true" />
@@ -1599,72 +1569,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Access/Index.cshtml</url>
-          <line>43</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Areas\Dashboard\Views\Access\Index.cshtml" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/AccessController.cs</url>
-          <line>14</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Areas\Dashboard\Controller\AccessController.cs" containingFunctionPresentation="Method 'Index'">
-            <startOffsets>
-              <option value="374" />
-            </startOffsets>
-            <endOffsets>
-              <option value="375" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Controllers/AuthController.cs</url>
-          <line>56</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Controllers\AuthController.cs" containingFunctionPresentation="Method 'Login'">
-            <startOffsets>
-              <option value="1288" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1335" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApp/Repository/MemberRepository.cs</url>
-          <line>32</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApp\Repository\MemberRepository.cs" containingFunctionPresentation="Method 'Login'">
-            <startOffsets>
-              <option value="874" />
-            </startOffsets>
-            <endOffsets>
-              <option value="902" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Module_4/WebApi/Controller/AuthController.cs</url>
-          <line>46</line>
-          <properties documentPath="E:\CShrap-Course\TTTH\Module_4\WebApi\Controller\AuthController.cs" containingFunctionPresentation="Method 'Login'">
-            <startOffsets>
-              <option value="976" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1016" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="103" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

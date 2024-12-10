@@ -128,11 +128,45 @@
         })
     });
 
+    function debounce(func, delay) {
+        let timeout;
+        return function () {
+            const context = this;
+            const args = arguments;
+            clearTimeout(timeout); // Clear the previous timeout
+            timeout = setTimeout(function () {
+                func.apply(context, args);
+            }, delay);
+        };
+    }
+
+    const debouncedUpdateCartQuantity = debounce(function (productId, quantity) {
+        $.ajax({
+            url: '/cart/update',
+            method: 'PUT',
+            data: {
+                productId: productId,
+                quantity: quantity
+            },
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (response) {
+                console.log('Cart updated successfully');
+            },
+            error: function (error) {
+
+                console.log('Error updating cart');
+            }
+        });
+    }, 600);
 
     // Product Quantity
     $('.quantity button').on('click', function () {
         var button = $(this);
-        var oldValue = button.parent().parent().find('input').val();
+        var inputField = button.closest('.quantity').find('input[type="text"]');
+        var productId = button.closest('.quantity').find('input[name="productId"]').val();
+        var oldValue = parseFloat(inputField.val());
         if (button.hasClass('btn-plus')) {
             var newVal = parseFloat(oldValue) + 1;
         } else {
@@ -142,7 +176,24 @@
                 newVal = 0;
             }
         }
-        button.parent().parent().find('input').val(newVal);
+        inputField.val(newVal);
+        debouncedUpdateCartQuantity(productId, newVal);
+    });
+
+    $('.delete.rounded-circle').on('click', function () {
+        var productId = $(this).closest('tr').attr('product-id');
+        var cartCode = $(this).closest('tr').attr('cart-code');
+
+        $.ajax({
+            url: `/cart/${cartCode}/${productId}`,
+            method: 'DELETE',
+            success: function (response) {
+                window.location.reload();
+            },
+            error: function (xhr, status, error) {
+                alert("Error: Some thing wrong" );
+            }
+        });
     });
 
     $($("#carouselId div.carousel-item")[0]).addClass("active");
@@ -158,47 +209,61 @@
             contentType: "application/json",
             processData: true,
             success: function (data, textStatus, xhr) {
-                if (xhr.status === 200 && data?.value?.length > 0) {
-                    const listProduct = data.value;
-                    const elmRow = $(`#tab-${categoryId} .row`);
-                    listProduct.forEach(i => {
-                        if (i != null) {
-                            const formattedPrice = new Intl.NumberFormat('vi-VN').format(i.price) + " ₫";
-
-                            const item = `
+                const elmRow = $(`#tab-${categoryId} .row`);
+                elmRow.empty();
+                if (xhr.status === 200) {
+                    if (data?.value?.length > 0) {
+                        const listProduct = data.value;
+                        listProduct.forEach(i => {
+                            if (i != null) {
+                                const formattedPrice = `${new Intl.NumberFormat('vi-VN').format(i.price)} ₫"`;
+                                const item = `
+                        <div class="col-md-6 col-lg-4 col-xl-3">
+                        <form action="/cart/add" method="post">
+                             <input type="hidden" value="${i.productId}" name="productId"/>
+                             <div class="rounded position-relative fruite-item">
+                            <div class="fruite-img">
+                                <img 
+                                src="img/${i.imageUrl}" 
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                                 >
+                            </div>
+                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>${i.productName}</h4>
+                                <p>${i.description}</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <input class="form-control mr-2" type="number" value="1" min="1" max="20" name="quantity">
+                                    <p class="text-dark fs-5 fw-bold mb-0">${formattedPrice}</p>
+                                    <button class="btn border border-secondary rounded-pill px-3 text-primary">
+                                      <i class="fa fa-shopping-bag me-2 text-primary"></i>
+                                       Add to cart
+                                    </button>
+                                </div>
+                                </div>
+                            </div>
+                    </form>
+                        </div>
+                    `
+                                elmRow.append(item);
+                            }
+                        })
+                    } else {
+                        const item = `
                      <div class="col-md-6 col-lg-4 col-xl-3">
-                    <div class="rounded position-relative fruite-item">
-                        <div class="fruite-img">
-                            <img 
-                            src="img/${i.imageUrl}" 
-                            class="img-fluid w-100 rounded-top"
-                            alt=""
-                             >
-                        </div>
-                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
-                        <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                            <h4>${i.productName}</h4>
-                            <p>${i.description}</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">${formattedPrice}</p>
-                                <a href="#" 
-                                class="btn border border-secondary rounded-pill px-3 text-primary">
-                                  <i class="fa fa-shopping-bag me-2 text-primary"></i>
-                                   Add to cart
-                                </a>
-                            </div>
-                            </div>
-                        </div>
+                         <div class="rounded position-relative fruite-item">
+                        <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">
+                        Data not found
+                     </div>
                     </div>
                     `
-                            elmRow.append(item);
-                        }
-                    })
-
+                        elmRow.append(item);
+                    }
                 }
             },
-            complete:function(){
-                
+            complete: function () {
+
             },
             error: function (xhr, status, error) {
                 console.error("Error:", status, error); // Handle errors

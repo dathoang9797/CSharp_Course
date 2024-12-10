@@ -58,17 +58,12 @@ public class AuthController : BaseController
         claims.Add(new Claim(ClaimTypes.Surname, member.Surname));
         claims.Add(new Claim(ClaimTypes.Name, name));
 
-        // var secretKey = Configuration["Jwt:SecretKey"] ?? string.Empty;
-        // var token = Helper.GenerateToken(claims, secretKey);
-        // claims.Add(new Claim(ClaimTypes.Authentication, token));
-
         var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
         await HttpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
         {
             IsPersistent = false
         });
-        return Redirect("/auth");
+        return Redirect("/home");
     }
 
     [Authorize]
