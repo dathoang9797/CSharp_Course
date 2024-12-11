@@ -133,6 +133,7 @@ public class CartController : BaseController
         if (obj == null)
             return Checkout();
 
+        Response.Cookies.Delete(CartCode);
         var ret = Provider.VnPayment.Add(obj);
         return Redirect(ret > 0 ? "/home" : "/cart/failed");
     }

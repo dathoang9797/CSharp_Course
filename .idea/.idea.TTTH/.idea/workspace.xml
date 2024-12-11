@@ -56,24 +56,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/RoleController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Accesses.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/RoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/RoleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/AccessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/AccessRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/RoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/RoleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/RoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/RoleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Checkout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Checkout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Contact.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
