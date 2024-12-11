@@ -42,13 +42,13 @@ public class AccessController : BaseController
                                 listSelectItems.Add(selectItem);
                             }
                         }
-
-                        if (listSelectItems.Any())
-                        {
-                            ViewBag.Parents = listSelectItems;
-                        }
                     }
-
+                    
+                    if (listSelectItems.Any())
+                    {
+                        ViewBag.Parents = listSelectItems;
+                    }
+                    
                     return View(listAccess);
                 }
             }

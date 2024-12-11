@@ -16,9 +16,9 @@ public class AccessController : BaseController
         var list = Provider.Access.GetAccesses();
         var dictAccess = new Dictionary<int, List<Access>>();
         var listAccesses = new List<Access>();
-        var listAccessChecked = list.ToList();
-        
-        foreach (var item in listAccessChecked)
+        var enumerable = list.ToList();
+
+        foreach (var item in enumerable)
         {
             if (item.ParentId is null)
             {
@@ -36,7 +36,7 @@ public class AccessController : BaseController
             }
         }
 
-        foreach (var item in listAccessChecked)
+        foreach (var item in enumerable)
         {
             if (dictAccess.TryGetValue(item.AccessId, out var value))
                 item.Children = value;
@@ -56,7 +56,7 @@ public class AccessController : BaseController
     {
         return Provider.Access.GetParents();
     }
-    
+
     [Authorize]
     [HttpGet("accesschecked")]
     public IEnumerable<AccessChecked>? AccessChecked()
@@ -70,7 +70,7 @@ public class AccessController : BaseController
         var dictAccess = new Dictionary<int, List<AccessChecked>>();
         var listAccesses = new List<AccessChecked>();
         var listAccessChecked = list.ToList();
-        
+
         foreach (var item in listAccessChecked)
         {
             if (item.ParentId is null)
