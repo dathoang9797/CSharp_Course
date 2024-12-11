@@ -19,4 +19,20 @@ public class RoleRepository : BaseRepository
         var rsp = await client.GetFromJsonAsync<IEnumerable<RoleChecked>>($"role/{id}");
         return rsp;
     }
+
+    public async Task<IEnumerable<Role>?> GetRolesAsync()
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var rsp = await client.GetFromJsonAsync<IEnumerable<Role>>($"role");
+        return rsp;  
+    }
+    
+    public async Task<Role?> GetRoleAsync(int id)
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var rsp = await client.GetFromJsonAsync<Role>($"role/details/{id}");
+        return rsp;  
+    }
 }

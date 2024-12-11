@@ -20,4 +20,11 @@ public class RoleRepository : BaseRepository
     {
         return Connection.Query<RoleChecked>("GetRolesByMember", new { id }, commandType: CommandType.StoredProcedure);
     }
+    
+    public Role? GetRole(int id)
+    {
+        const string sql = "SELECT * FROM Role WHERE RoleId = @Id";
+        var rsp = Connection.QueryFirstOrDefault<Role>(sql, new { id });
+        return rsp;
+    }
 }

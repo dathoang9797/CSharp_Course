@@ -13,6 +13,12 @@ public class RoleController : BaseController
         return Provider.Role.GetRoles();
     }
 
+    [HttpGet("details/{id}")]
+    public Role? GetRole(int id)
+    {
+        return Provider.Role.GetRole(id);
+    }
+
     [HttpGet("{id}")]
     public IEnumerable<Role> GetRoles(string id)
     {

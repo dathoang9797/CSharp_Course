@@ -13,6 +13,11 @@ public class CartController : BaseController
     private const string CartCode = "cart";
     private VnPaymentService? Service { get; set; }
 
+    public CartController(VnPaymentService service)
+    {
+        Service = service;
+    }
+
     [Authorize]
     public IActionResult Index()
     {
@@ -90,24 +95,45 @@ public class CartController : BaseController
             : StatusCode(500, new { message = "Failed to delete the item." });
     }
 
-    public IActionResult Checkout() => View();
+    public IActionResult Checkout()
+    {
+        var code = Request.Cookies[CartCode];
+        if (string.IsNullOrEmpty(code))
+            return Redirect("/");
+
+        var listCart = Provider.Cart.GetList(code);
+        return View(listCart);
+    }
 
     [HttpPost]
+    [Route("cart/checkout")]
     public IActionResult Checkout(Invoice obj)
     {
+        var code = Request.Cookies[CartCode];
+        if (string.IsNullOrEmpty(code))
+            return Redirect("/");
+
+        var listCart = Provider.Cart.GetList(code);
+        var amount = listCart.Sum(item => item.Product != null ? item.Product.Price * item.Quantity : 0);
+        obj.Amount = (int)(amount * 100);
+        
         var random = new Random();
         obj.InvoiceId = random.NextInt64(99999, long.MaxValue);
-        // return Json(obj);
         var url = Service?.ToUrlPayment(obj);
         if (string.IsNullOrWhiteSpace(url))
-            return View(obj);
+        {
+            return Checkout();
+        }
 
         return Redirect(url);
     }
 
-    public IActionResult BackVnPayment(VnPaymentResponse obj)
+    public IActionResult BackVnPayment(VnPaymentResponse? obj)
     {
+        if (obj == null)
+            return Checkout();
+
         var ret = Provider.VnPayment.Add(obj);
-        return Redirect(ret > 0 ? "/cart/success" : "/cart/failed");
+        return Redirect(ret > 0 ? "/home" : "/cart/failed");
     }
 }

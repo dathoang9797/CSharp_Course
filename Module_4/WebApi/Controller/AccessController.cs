@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -57,6 +58,13 @@ public class AccessController : BaseController
         return Provider.Access.GetParents();
     }
 
+    [Authorize]
+    [HttpGet("accesschecked/{id}")]
+    public IEnumerable<AccessChecked> GetAccessChecked(int id)
+    {
+        return Provider.Access.GetAccessCheckedsByRole(id);
+    }
+    
     [Authorize]
     [HttpGet("accesschecked")]
     public IEnumerable<AccessChecked>? AccessChecked()

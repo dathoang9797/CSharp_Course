@@ -1,0 +1,23 @@
+@model IEnumerable<Role>
+
+<table class="table table-dark">
+    <thead class="table-dark">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.RoleId</td>
+            <td>@item.RoleName</td>
+            <td>
+                <a href="/dashboard/role/accesses/@item.RoleId">Accesses</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

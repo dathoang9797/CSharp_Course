@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿using System.Globalization;
+using System.Net;
 using Microsoft.Extensions.Options;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
@@ -19,7 +20,7 @@ public class VnPaymentService
 
     public string ToUrlPayment(Invoice obj)
     {
-        var Url = "";
+        var url = "";
         if (Accessor.HttpContext != null && Accessor.HttpContext.Connection.RemoteIpAddress != null)
         {
             SortedDictionary<string, string> dict = new SortedDictionary<string, string>
@@ -35,18 +36,18 @@ public class VnPaymentService
                     Accessor.HttpContext?.Connection.RemoteIpAddress?.AddressFamily.ToString() ?? string.Empty
                 },
                 { "vnp_Locale", Request.Locale },
-                { "vnp_OrderInfo", $"{obj.Email} Payment with: {obj.Amount}" },
+                { "vnp_OrderInfo", $"Thanh toán đơn hàng" },
                 { "vnp_OrderType", "topup" },
                 { "vnp_ReturnUrl", Request.ReturnUrl },
-                { "vnp_ExpireDate", DateTime.Now.AddHours(1).ToString("yyyyMMddHHmmss") },
+                { "vnp_ExpireDate", DateTime.Now.AddMinutes(15).ToString("yyyyMMddHHmmss") },
                 { "vnp_TxnRef", obj.InvoiceId.ToString() },
             };
 
             var queryString = string.Join("&", dict.Select(p => $"{p.Key}={WebUtility.UrlEncode(p.Value)}"));
             var hash = Helper.HmaxSha(Request.HashSecret, queryString);
-            Url = $"{Request.SandboxUrl}?{queryString}&vnp_SecureHash={hash}";
+            url = $"{Request.SandboxUrl}?{queryString}&vnp_SecureHash={hash}";
         }
 
-        return Url;
+        return url;
     }
 }

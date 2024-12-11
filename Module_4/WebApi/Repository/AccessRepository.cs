@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Data;
 using Dapper;
 using WebApi.Model;
@@ -31,6 +32,12 @@ public class AccessRepository : BaseRepository
     public IEnumerable<AccessChecked> GetAccessesChecked(string memberId)
     {
         return Connection.Query<AccessChecked>("GetAccessesByMemberId", new { MemberId = memberId },
+            commandType: CommandType.StoredProcedure);
+    }
+
+    public IEnumerable<AccessChecked> GetAccessCheckedsByRole(int id)
+    {
+        return Connection.Query<AccessChecked>("GetAccesCheckedsByRole", new { RoleId = id },
             commandType: CommandType.StoredProcedure);
     }
 }
