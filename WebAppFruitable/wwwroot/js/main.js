@@ -222,7 +222,7 @@
                         <form action="/cart/add" method="post">
                              <input type="hidden" value="${i.productId}" name="productId"/>
                              <div class="rounded position-relative fruite-item">
-                            <div class="fruite-img">
+                            <div class="fruite-img h-50 height200px">
                                 <img 
                                 src="img/${i.imageUrl}" 
                                 class="img-fluid w-100 rounded-top"

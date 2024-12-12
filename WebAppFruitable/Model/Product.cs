@@ -42,3 +42,8 @@ public class ProductFormEdit : ProductForm
     public int ProductId { get; set; }
     public string ImageUrl { get; set; }
 }
+
+public class ProductFormDelete : ProductForm
+{
+    public int ProductId { get; set; }
+}

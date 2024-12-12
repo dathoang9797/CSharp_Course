@@ -7,17 +7,8 @@ public class HomeController : BaseController
 {
     public IActionResult Index()
     {
-        ViewBag.Slides = Provider.Slide.GetSlide();
-        ViewBag.Testimonials = Provider.Testimonial.GetTestimonial();
         ViewBag.Categories = Provider.Category.GetCategories();
         ViewBag.Products = Provider.Product.GetProducts();
-        return View();
-    }
-
-    public IActionResult Shop()
-    {
-        // ViewBag.Categories = Provider.Category.GetCategories(); 
-        ViewBag.Categories = Provider.Category.GetCategoryCounts();
         return View();
     }
 

@@ -11,34 +11,6 @@
                     <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-5">
-                <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        @foreach (Slide item in ViewBag.Slides)
-                        {
-                            <div class="carousel-item rounded">
-                                <img
-                                    src="/img/@item.ImageUrl"
-                                    class="img-fluid w-100 h-100 bg-secondary rounded"
-                                    alt="@item.SlideName">
-                                <a
-                                    href="#"
-                                    class="btn px-4 py-2 text-white rounded">
-                                    @item.SlideName
-                                </a>
-                            </div>
-                        }
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -148,7 +120,7 @@
                     <div class="col-md-6 col-lg-4 col-xl-3">
                     <form action="/cart/add" method="post">
                         <div class="rounded position-relative fruite-item">
-                            <div class="fruite-img">
+                            <div class="fruite-img h-50 height200px">
                                 <img
                                     src="img/@product.ImageUrl"
                                     class="img-fluid w-100 rounded-top"
@@ -182,7 +154,7 @@
             <div class="row g-4">
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -198,7 +170,7 @@
                 @* </div> *@
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -222,7 +194,7 @@
             <div class="row g-4">
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -238,7 +210,7 @@
                 @* </div> *@
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-6.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -262,7 +234,7 @@
             <div class="row g-4">
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -278,7 +250,7 @@
                 @* </div> *@
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-4.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -302,7 +274,7 @@
             <div class="row g-4">
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-3.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -318,7 +290,7 @@
                 @* </div> *@
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -334,7 +306,7 @@
                 @* </div> *@
                 @* <div class="col-md-6 col-lg-4 col-xl-3"> *@
                 @*     <div class="rounded position-relative fruite-item"> *@
-                @*         <div class="fruite-img"> *@
+                @*         <div class="fruite-img h-50 height200px"> *@
                 @*             <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt=""> *@
                 @*         </div> *@
                 @*         <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div> *@
@@ -804,133 +776,133 @@
 <!-- Fact Start -->
 
 <!-- Tastimonial Start -->
-<div class="container-fluid testimonial py-5">
-    <div class="container py-5">
-        <div class="testimonial-header text-center">
-            <h4 class="text-primary">Our Testimonial</h4>
-            <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel">
-            @foreach (Testimonial item in ViewBag.Testimonials)
-            {
-                <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                    <div class="position-relative">
-                        <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                        <div class="mb-4 pb-4 border-bottom border-secondary">
-                            <p class="mb-0">
-                                @item.Description
-                            </p>
-                        </div>
-                        <div class="d-flex align-items-center flex-nowrap">
-                            <div class="bg-secondary rounded">
-                                <img src="/img/@item.ImageUrl" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="">
-                            </div>
-                            <div class="ms-4 d-block">
-                                <h4 class="text-dark">@item.FullName</h4>
-                                <p class="m-0 pb-3">@item.Job</p>
-
-                                <div class="d-flex pe-5">
-                                    @for (int i = 1; i <= 5; i++)
-                                    {
-                                        if (i <= item.Rating)
-                                        {
-                                            <i class="fas fa-star text-primary"></i>
-                                        }
-                                        else
-                                        {
-                                            <i class="fas fa-star"></i>
-                                        }
-                                    }
-                                    @* <i class="fas fa-star text-primary"></i> *@
-                                    @* <i class="fas fa-star text-primary"></i> *@
-                                    @* <i class="fas fa-star text-primary"></i> *@
-                                    @* <i class="fas fa-star text-primary"></i> *@
-                                    @* <i class="fas fa-star"></i> *@
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            }
-            @* <div class="testimonial-item img-border-radius bg-light rounded p-4"> *@
-            @*     <div class="position-relative"> *@
-            @*         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> *@
-            @*         <div class="mb-4 pb-4 border-bottom border-secondary"> *@
-            @*             <p class="mb-0"> *@
-            @*                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, *@
-            @*             </p> *@
-            @*         </div> *@
-            @*         <div class="d-flex align-items-center flex-nowrap"> *@
-            @*             <div class="bg-secondary rounded"> *@
-            @*                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> *@
-            @*             </div> *@
-            @*             <div class="ms-4 d-block"> *@
-            @*                 <h4 class="text-dark">Client Name</h4> *@
-            @*                 <p class="m-0 pb-3">Profession</p> *@
-            @*                 <div class="d-flex pe-5"> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star"></i> *@
-            @*                 </div> *@
-            @*             </div> *@
-            @*         </div> *@
-            @*     </div> *@
-            @* </div> *@
-            @* <div class="testimonial-item img-border-radius bg-light rounded p-4"> *@
-            @*     <div class="position-relative"> *@
-            @*         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> *@
-            @*         <div class="mb-4 pb-4 border-bottom border-secondary"> *@
-            @*             <p class="mb-0"> *@
-            @*                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, *@
-            @*             </p> *@
-            @*         </div> *@
-            @*         <div class="d-flex align-items-center flex-nowrap"> *@
-            @*             <div class="bg-secondary rounded"> *@
-            @*                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> *@
-            @*             </div> *@
-            @*             <div class="ms-4 d-block"> *@
-            @*                 <h4 class="text-dark">Client Name</h4> *@
-            @*                 <p class="m-0 pb-3">Profession</p> *@
-            @*                 <div class="d-flex pe-5"> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                 </div> *@
-            @*             </div> *@
-            @*         </div> *@
-            @*     </div> *@
-            @* </div> *@
-            @* <div class="testimonial-item img-border-radius bg-light rounded p-4"> *@
-            @*     <div class="position-relative"> *@
-            @*         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> *@
-            @*         <div class="mb-4 pb-4 border-bottom border-secondary"> *@
-            @*             <p class="mb-0"> *@
-            @*                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, *@
-            @*             </p> *@
-            @*         </div> *@
-            @*         <div class="d-flex align-items-center flex-nowrap"> *@
-            @*             <div class="bg-secondary rounded"> *@
-            @*                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> *@
-            @*             </div> *@
-            @*             <div class="ms-4 d-block"> *@
-            @*                 <h4 class="text-dark">Client Name</h4> *@
-            @*                 <p class="m-0 pb-3">Profession</p> *@
-            @*                 <div class="d-flex pe-5"> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                     <i class="fas fa-star text-primary"></i> *@
-            @*                 </div> *@
-            @*             </div> *@
-            @*         </div> *@
-            @*     </div> *@
-            @* </div> *@
-        </div>
-    </div>
-</div>
+@* <div class="container-fluid testimonial py-5"> *@
+@*     <div class="container py-5"> *@
+@*         <div class="testimonial-header text-center"> *@
+@*             <h4 class="text-primary">Our Testimonial</h4> *@
+@*             <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1> *@
+@*         </div> *@
+@*         <div class="owl-carousel testimonial-carousel"> *@
+@*             @foreach (Testimonial item in ViewBag.Testimonials) *@
+@*             { *@
+@*                 <div class="testimonial-item img-border-radius bg-light rounded p-4"> *@
+@*                     <div class="position-relative"> *@
+@*                         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> *@
+@*                         <div class="mb-4 pb-4 border-bottom border-secondary"> *@
+@*                             <p class="mb-0"> *@
+@*                                 @item.Description *@
+@*                             </p> *@
+@*                         </div> *@
+@*                         <div class="d-flex align-items-center flex-nowrap"> *@
+@*                             <div class="bg-secondary rounded"> *@
+@*                                 <img src="/img/@item.ImageUrl" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> *@
+@*                             </div> *@
+@*                             <div class="ms-4 d-block"> *@
+@*                                 <h4 class="text-dark">@item.FullName</h4> *@
+@*                                 <p class="m-0 pb-3">@item.Job</p> *@
+@* *@
+@*                                 <div class="d-flex pe-5"> *@
+@*                                     @for (int i = 1; i <= 5; i++) *@
+@*                                     { *@
+@*                                         if (i <= item.Rating) *@
+@*                                         { *@
+@*                                             <i class="fas fa-star text-primary"></i> *@
+@*                                         } *@
+@*                                         else *@
+@*                                         { *@
+@*                                             <i class="fas fa-star"></i> *@
+@*                                         } *@
+@*                                     } *@
+@*                                     $1$ <i class="fas fa-star text-primary"></i> #1# *@
+@*                                     $1$ <i class="fas fa-star text-primary"></i> #1# *@
+@*                                     $1$ <i class="fas fa-star text-primary"></i> #1# *@
+@*                                     $1$ <i class="fas fa-star text-primary"></i> #1# *@
+@*                                     $1$ <i class="fas fa-star"></i> #1# *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                         </div> *@
+@*                     </div> *@
+@*                 </div> *@
+@*             } *@
+@*             $1$ <div class="testimonial-item img-border-radius bg-light rounded p-4"> #1# *@
+@*             $1$     <div class="position-relative"> #1# *@
+@*             $1$         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> #1# *@
+@*             $1$         <div class="mb-4 pb-4 border-bottom border-secondary"> #1# *@
+@*             $1$             <p class="mb-0"> #1# *@
+@*             $1$                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, #1# *@
+@*             $1$             </p> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$         <div class="d-flex align-items-center flex-nowrap"> #1# *@
+@*             $1$             <div class="bg-secondary rounded"> #1# *@
+@*             $1$                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$             <div class="ms-4 d-block"> #1# *@
+@*             $1$                 <h4 class="text-dark">Client Name</h4> #1# *@
+@*             $1$                 <p class="m-0 pb-3">Profession</p> #1# *@
+@*             $1$                 <div class="d-flex pe-5"> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star"></i> #1# *@
+@*             $1$                 </div> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$     </div> #1# *@
+@*             $1$ </div> #1# *@
+@*             $1$ <div class="testimonial-item img-border-radius bg-light rounded p-4"> #1# *@
+@*             $1$     <div class="position-relative"> #1# *@
+@*             $1$         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> #1# *@
+@*             $1$         <div class="mb-4 pb-4 border-bottom border-secondary"> #1# *@
+@*             $1$             <p class="mb-0"> #1# *@
+@*             $1$                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, #1# *@
+@*             $1$             </p> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$         <div class="d-flex align-items-center flex-nowrap"> #1# *@
+@*             $1$             <div class="bg-secondary rounded"> #1# *@
+@*             $1$                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$             <div class="ms-4 d-block"> #1# *@
+@*             $1$                 <h4 class="text-dark">Client Name</h4> #1# *@
+@*             $1$                 <p class="m-0 pb-3">Profession</p> #1# *@
+@*             $1$                 <div class="d-flex pe-5"> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                 </div> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$     </div> #1# *@
+@*             $1$ </div> #1# *@
+@*             $1$ <div class="testimonial-item img-border-radius bg-light rounded p-4"> #1# *@
+@*             $1$     <div class="position-relative"> #1# *@
+@*             $1$         <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i> #1# *@
+@*             $1$         <div class="mb-4 pb-4 border-bottom border-secondary"> #1# *@
+@*             $1$             <p class="mb-0"> #1# *@
+@*             $1$                 Lorem Ipsum is simply dummy text of the printing Ipsum has been the industry's standard dummy text ever since the 1500s, #1# *@
+@*             $1$             </p> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$         <div class="d-flex align-items-center flex-nowrap"> #1# *@
+@*             $1$             <div class="bg-secondary rounded"> #1# *@
+@*             $1$                 <img src="img/testimonial-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt=""> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$             <div class="ms-4 d-block"> #1# *@
+@*             $1$                 <h4 class="text-dark">Client Name</h4> #1# *@
+@*             $1$                 <p class="m-0 pb-3">Profession</p> #1# *@
+@*             $1$                 <div class="d-flex pe-5"> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                     <i class="fas fa-star text-primary"></i> #1# *@
+@*             $1$                 </div> #1# *@
+@*             $1$             </div> #1# *@
+@*             $1$         </div> #1# *@
+@*             $1$     </div> #1# *@
+@*             $1$ </div> #1# *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@
 <!-- Tastimonial End -->

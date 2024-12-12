@@ -37,7 +37,7 @@ public class AccessRepository : BaseRepository
 
     public IEnumerable<AccessChecked> GetAccessCheckedsByRole(int id)
     {
-        return Connection.Query<AccessChecked>("GetAccesCheckedsByRole", new { RoleId = id },
+        return Connection.Query<AccessChecked>("GetAccessCheckedsByRole", new { RoleId = id },
             commandType: CommandType.StoredProcedure);
     }
 }

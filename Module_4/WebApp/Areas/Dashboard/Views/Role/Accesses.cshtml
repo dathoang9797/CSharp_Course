@@ -7,6 +7,44 @@
         </div>
     </div>
     <div class="card-body">
-        
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Url</th>
+                <th>Parent</th>
+                <th>Checked</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (AccessChecked item in ViewBag.AccessChecked)
+            {
+                <tr v="@item.AccessId">
+                    <td>@item.AccessName</td>
+                    <td>@item.AccessUrl</td>
+                    <td>@item.ParentId</td>
+                    <td>
+                        <input
+                            class="chk"
+                            type="checkbox" @(item.Checked ? "checked" : "")/>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
     </div>
 </div>
+
+@section Scripts
+{
+    <script>
+        $(".chk").click(function () {
+         const aid = $(this).closest('tr').attr('v');
+         $.post("/dashboard/role/accesses/@Model.RoleId", {
+         accessId:aid,
+         roleId:@Model.RoleId}, (data)=>{
+         console.log({data})
+         })
+        });
+    </script>
+}

@@ -1,4 +1,3 @@
-using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Controllers;
@@ -17,6 +16,13 @@ public class RoleController : BaseController
 
     public async Task<IActionResult> Accesses(int id)
     {
+        ViewBag.AccessChecked = await Provider.Access.GetAccessesCheckedByRole(id) ?? Array.Empty<AccessChecked>();
         return View(await Provider.Role.GetRoleAsync(id));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Accesses(int id, AccessRole obj)
+    {
+        return null;
     }
 }

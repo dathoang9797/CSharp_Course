@@ -58,8 +58,7 @@ public class AccessController : BaseController
         return Provider.Access.GetParents();
     }
 
-    [Authorize]
-    [HttpGet("accesschecked/{id}")]
+    [HttpGet("accesscheckeds/{id}")]
     public IEnumerable<AccessChecked> GetAccessChecked(int id)
     {
         return Provider.Access.GetAccessCheckedsByRole(id);

@@ -1,8 +1,132 @@
-﻿@model System.Collections.Generic.List<WebAppFruitable.Model.Product>
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<WebAppFruitable.Model.Category>
 
-@{
-    ViewBag.Title = "title";
-    Layout = "_Layout";
+<div class="container">
+    @if (TempData["Msg"] != null)
+    {
+        <div class="m-2 alert alert-dismissible fade show" role="alert">
+            <strong>@TempData["Msg"]</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <button class="btn btn-dark mt-2 mb-2" id="create-category">Create Category</button>
+    <table class="table table-bordered">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">CategoryId</th>
+            <th scope="col">CategoryName</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+        <tr category-id="@item.CategoryId" category-name="@item.CategoryName">
+            <td>@item.CategoryName</td>
+            <td>
+                <i class="far fa-edit"></i>
+                <i class="fas fa-trash"></i>
+            </td>
+        </tr>
+        }
+        </tbody>
+    </table>
+
+    <div class="modal fade" id="categoryModal" tabindex="-1" aria-labelledby="categoryModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="/dashboard/category/create" method="post" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="categoryModalLabel">Create Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label" for="CategoryName">CategoryName</label>
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="CategoryName"
+                            name="CategoryName"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade" id="categoryUpdateModal" tabindex="-1" aria-labelledby="categoryUpdateModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="/dashboard/category/update" method="post" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="categoryUpdateModalLabel">Update Category</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="hidden" id="CategoryId" name="CategoryId"/>
+                        <label class="form-label" for="CategoryNameUpdate">CategoryName</label>
+                        <input
+                            class="form-control"
+                            type="text"
+                            id="CategoryNameUpdate"
+                            name="CategoryName"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="deleteProductModal" tabindex="-1" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form action="/dashboard/category/delete" method="post" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteProductModalLabel">
+                        Are you sure delete Product
+                        <span id="name-delete">
+
+                        </span>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <input type="hidden" name="CategoryId"/>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+    $("#create-category").click(function (){
+        $("#categoryModal").modal("show");
+    });
+
+    $(".fa-edit").click(function (){
+        const id = $(this).closest("tr").attr("category-id");
+        $.get(`/dashboard/category/update/${id}`,(data)=> {
+            $("#categoryUpdateModal input#CategoryId").val(id);
+            $("#categoryUpdateModal #CategoryNameUpdate").val(data?.categoryName);
+            $("#categoryUpdateModal").modal("show");
+        });
+    });
+
+    $(".fa-trash").click(function (){
+        const productId = $(this).closest("tr").attr("category-id");
+        const productName = $(this).closest("tr").attr("category-name");
+        $('input[name="CategoryId"]').val(productId);
+        $('#name-delete').text(productName);
+        $("#deleteProductModal").modal("show");
+    })
+</script>
 }
-
-<h2>title</h2>

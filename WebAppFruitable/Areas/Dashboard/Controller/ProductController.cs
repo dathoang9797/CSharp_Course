@@ -30,12 +30,12 @@ public class ProductController : BaseController
 
         var productNew = new Product()
         {
-            ProductName = obj.ProductName,
+            ProductName = obj.ProductName ?? string.Empty,
             ImageUrl = fileUpload?.ImageUrl ?? string.Empty,
             CategoryId = obj.CategoryId,
             Rating = obj.Rating,
             Price = obj.Price,
-            Description = obj.Description,
+            Description = obj.Description ?? string.Empty
         };
 
         var ret = Provider.Product.Add(productNew);
@@ -67,13 +67,12 @@ public class ProductController : BaseController
             TempData["Msg"] = "Param not valid!";
             return Redirect("/dashboard/product");
         }
-          
 
         Upload? fileUpload = null;
         if (file != null)
         {
             fileUpload = Helper.Upload(file);
-            var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot","img");
+            var root = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "img");
             var path = Path.Combine(root, obj.ImageUrl);
             if (System.IO.File.Exists(path))
             {
@@ -106,9 +105,9 @@ public class ProductController : BaseController
     }
 
     [HttpPost]
-    public IActionResult Delete(int id)
+    public IActionResult Delete(ProductFormDelete obj)
     {
-        var ret = Provider.Product.Delete(id);
+        var ret = Provider.Product.Delete(obj.ProductId);
         if (ret > -1)
         {
             TempData["Msg"] = "Deleted successfully!";

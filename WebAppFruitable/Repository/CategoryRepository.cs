@@ -21,14 +21,37 @@ public class CategoryRepository : BaseRepository
             .FirstOrDefault(p => p.CategoryId == id);
     }
 
-    public List<CategoryCount> GetCategoryCounts()
+    public int Add(Category? category)
     {
-        var categories = Context.Categories.Include(p => p.Products);
-        return categories.Select(p => new CategoryCount()
+        if (category != null)
         {
-            CategoryId = p.CategoryId,
-            CategoryName = p.CategoryName,
-            Count = p.Products!.Count()
-        }).ToList();
+            Context.Categories.Add(category);
+            return Context.SaveChanges();
+        }
+
+        return -1;
+    }
+    
+    public int Update(Category? category)
+    {
+        if (category != null)
+        {
+            Context.Categories.Update(category);
+            return Context.SaveChanges();
+        }
+
+        return -1;
+    }
+    
+    public int Delete(byte id)
+    {
+        var category = Context.Categories.Find(id);
+        if (category != null)
+        {
+            Context.Categories.Remove(category);
+            return Context.SaveChanges();
+        }
+
+        return -1;
     }
 }

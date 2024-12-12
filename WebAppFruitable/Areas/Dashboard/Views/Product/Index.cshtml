@@ -5,7 +5,7 @@
 <div class="container">
     @if (TempData["Msg"] != null)
     {
-        <div class="m-2 alert alert-success alert-dismissible fade show" role="alert">
+        <div class="m-2 alert alert-dismissible fade show" role="alert">
             <strong>@TempData["Msg"]</strong>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
@@ -28,7 +28,7 @@
         <tbody>
         @foreach (var item in Model)
         {
-            <tr product-id="@item.ProductId">
+            <tr product-id="@item.ProductId" product-name="@item.ProductName">
                 <th scope="row">@item.ProductId</th>
                 <td>@item.Category.CategoryName</td>
                 <td>@item.ProductName</td>
@@ -75,7 +75,8 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label"for="Rating">Rating</label>
-                        <input class="form-control" type="number" value="1" min="1" max="5" id="Rating" name="Rating"/>
+                        <input class="form-control"
+                               type="number" value="1" min="1" max="5" id="Rating" name="Rating"/>
                     </div>
                     <div class="mb-3">
                         <label class="form-label" for="CategoryId">Category</label>
@@ -147,12 +148,17 @@
 
     <div class="modal fade" id="deleteProductModal" tabindex="-1" aria-labelledby="deleteProductModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-            <form action="/dashboard/product/delete" method="post" class="modal-content">
+            <form action="/dashboard/product/Delete" method="post" class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="deleteProductModalLabel">Delete Product</h5>
+                    <h5 class="modal-title" id="deleteProductModalLabel">
+                        Are you sure delete Product
+                        <span id="name-delete">
+
+                        </span>
+                    </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <input type="hidden" name="id"/>
+                <input type="hidden" name="ProductId"/>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button class="btn btn-primary">Delete</button>
@@ -166,7 +172,10 @@
 {
     <script>
         $(".fa-trash").click(function (){
-            const id = $(this).closest("tr").attr("product-id");
+            const productId = $(this).closest("tr").attr("product-id");
+            const productName = $(this).closest("tr").attr("product-name");
+            $('input[name="ProductId"]').val(productId);
+            $('#name-delete').text(productName);
             $("#deleteProductModal").modal("show");
         })
 
@@ -185,7 +194,6 @@
             });
 
         $("#create-product").click(function (){
-            const id = $(this).closest("tr").attr("product-id");
             $("#createProductModal").modal("show");
         });
     </script>

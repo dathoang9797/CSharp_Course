@@ -10,12 +10,20 @@ public class AccessRepository : BaseRepository
     {
     }
 
-    public async Task<IEnumerable<AccessChecked>?> GetAccessesCheckeds(string token)
+    public async Task<IEnumerable<AccessChecked>?> GetAccessesChecked(string token)
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         var rsp = await client.GetFromJsonAsync<IEnumerable<AccessChecked>>("access/accesscheckeds");
+        return rsp;
+    }
+    
+    public async Task<IEnumerable<AccessChecked>?> GetAccessesCheckedByRole(int id)
+    {
+        using var client = new HttpClient();
+        client.BaseAddress = BaseUri;
+        var rsp = await client.GetFromJsonAsync<IEnumerable<AccessChecked>>($"access/accesscheckeds/{id}");
         return rsp;
     }
 
