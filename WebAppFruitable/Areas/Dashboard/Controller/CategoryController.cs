@@ -80,20 +80,28 @@ public class CategoryController : BaseController
     [HttpPost]
     public IActionResult Delete(CategoryFormDelete? obj)
     {
-        if (obj?.CategoryId == null)
-            return Redirect("/dashboard/category");
-
-        var categoryId = Convert.ToByte(obj.CategoryId);
-        var ret = Provider.Category.Delete(categoryId);
-        if (ret > -1)
+        try
         {
-            TempData["Msg"] = "Deleted successfully!";
+            if (obj?.CategoryId == null)
+                return Redirect("/dashboard/category");
+
+            var categoryId = Convert.ToByte(obj.CategoryId);
+            var ret = Provider.Category.Delete(categoryId);
+            if (ret > -1)
+            {
+                TempData["Msg"] = "Deleted successfully!";
+            }
+            else
+            {
+                TempData["Msg"] = "Delete not successful.";
+            }
+
+            return Redirect("/dashboard/category");
         }
-        else
+        catch (Exception e)
         {
             TempData["Msg"] = "Delete not successful.";
+            return Redirect("/dashboard/category");
         }
-
-        return Redirect("/dashboard/category");
     }
 }
