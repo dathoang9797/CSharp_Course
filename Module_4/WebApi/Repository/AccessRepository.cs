@@ -40,4 +40,9 @@ public class AccessRepository : BaseRepository
         return Connection.Query<AccessChecked>("GetAccessCheckedsByRole", new { RoleId = id },
             commandType: CommandType.StoredProcedure);
     }
+    
+    public IEnumerable<Access> GetAccessesByMember(string id)
+    {
+        return Connection.Query<Access>("GetAccessesByMember", new { id }, commandType: CommandType.StoredProcedure);
+    }
 }

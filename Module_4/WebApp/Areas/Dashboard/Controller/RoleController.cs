@@ -21,8 +21,8 @@ public class RoleController : BaseController
     }
 
     [HttpPost]
-    public async Task<IActionResult> Accesses(int id, AccessRole obj)
+    public async Task<IActionResult> Accesses(AccessRole obj)
     {
-        return null;
+        return Json(await Provider.AccessRole.SaveAsync(obj));
     }
 }

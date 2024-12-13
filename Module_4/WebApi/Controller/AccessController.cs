@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +13,12 @@ public class AccessController : BaseController
     [Authorize]
     public IEnumerable<Access> GetAccesses()
     {
-        var list = Provider.Access.GetAccesses();
+        var memberId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+        if (string.IsNullOrWhiteSpace(memberId))
+            return new List<Access>();
+
+        // var list = Provider.Access.GetAccesses();
+        var list = Provider.Access.GetAccessesByMember(memberId);
         var dictAccess = new Dictionary<int, List<Access>>();
         var listAccesses = new List<Access>();
         var enumerable = list.ToList();
@@ -27,20 +31,22 @@ public class AccessController : BaseController
             }
             else
             {
-                var key = item.ParentId.Value;
-                if (!dictAccess.ContainsKey(key))
+                int k = item.ParentId.Value;
+                if (!dictAccess.ContainsKey(k))
                 {
-                    dictAccess[key] = new List<Access>();
+                    dictAccess[k] = new List<Access>();
                 }
 
-                dictAccess[key].Add(item);
+                dictAccess[k].Add(item);
             }
         }
 
         foreach (var item in enumerable)
         {
-            if (dictAccess.TryGetValue(item.AccessId, out var value))
-                item.Children = value;
+            if (dictAccess.ContainsKey(item.AccessId))
+            {
+                item.Children = dictAccess[item.AccessId];
+            }
         }
 
         return listAccesses;
@@ -63,7 +69,7 @@ public class AccessController : BaseController
     {
         return Provider.Access.GetAccessCheckedsByRole(id);
     }
-    
+
     [Authorize]
     [HttpGet("accesschecked")]
     public IEnumerable<AccessChecked>? AccessChecked()

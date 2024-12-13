@@ -15,7 +15,7 @@ public class AccessRoleRepository : BaseRepository
     {
         using var client = new HttpClient();
         client.BaseAddress = BaseUri;
-        var rsp = await client.PostAsJsonAsync($"accessrole", obj);
+        var rsp = await client.PostAsJsonAsync("accessrole", obj);
         if (rsp.IsSuccessStatusCode)
             return await rsp.Content.ReadFromJsonAsync<int>();
         

@@ -63,13 +63,12 @@
         @foreach (Access item in ViewBag.Accesses)
         {
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo@(item.AccessId)"
-                   aria-expanded="true" aria-controls="@(item.AccessId)">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse@(item.AccessId)"
+                   aria-expanded="true" aria-controls="collapse@(item.AccessId)">
                     <i class="fas fa-fw fa-cog"></i>
                     <span>@item.AccessName</span>
                 </a>
-                <div id="collapseTwo@(item.AccessId)" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-
+                <div id="collapse@(item.AccessId)" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         @if (item.Children != null)
                         {

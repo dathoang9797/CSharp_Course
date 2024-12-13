@@ -1,5 +1,10 @@
+using System.Collections.Generic;
 using System.Data;
+using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using WebApp.Models;
 
 namespace WebApp.Repository;
@@ -18,7 +23,7 @@ public class AccessRepository : BaseRepository
         var rsp = await client.GetFromJsonAsync<IEnumerable<AccessChecked>>("access/accesscheckeds");
         return rsp;
     }
-    
+
     public async Task<IEnumerable<AccessChecked>?> GetAccessesCheckedByRole(int id)
     {
         using var client = new HttpClient();

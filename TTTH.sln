@@ -56,8 +56,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "Module_5\Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "Module_5\WebApplication1\WebApplication1.csproj", "{84BFF0D7-2D63-4EDC-9BF7-78661C837C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppFruitable", "WebAppFruitable\WebAppFruitable.csproj", "{13DCD065-5465-4F3D-A6D1-1E3FBEBAB4EE}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -156,10 +154,6 @@ Global
 		{84BFF0D7-2D63-4EDC-9BF7-78661C837C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84BFF0D7-2D63-4EDC-9BF7-78661C837C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84BFF0D7-2D63-4EDC-9BF7-78661C837C6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13DCD065-5465-4F3D-A6D1-1E3FBEBAB4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13DCD065-5465-4F3D-A6D1-1E3FBEBAB4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13DCD065-5465-4F3D-A6D1-1E3FBEBAB4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13DCD065-5465-4F3D-A6D1-1E3FBEBAB4EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E9F5026B-74A8-4186-A5D0-203ADDC2075A} = {7E097AD7-38CC-4354-9930-76F97AA23FC6}
