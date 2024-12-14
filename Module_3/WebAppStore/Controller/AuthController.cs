@@ -16,20 +16,17 @@ public class AuthController : Controller
 {
     private IEmailSender _Sender { get; set; }
     private UserRepository _UserRepository { get; set; }
-    private MemberRepository _MemberRepository { get; set; }
     private SignInManager<IdentityUser> _SignInManager { get; set; }
 
     public AuthController(
         UserManager<IdentityUser> manager,
         SignInManager<IdentityUser> signInManager,
-        IEmailSender sender,
-        MemberRepository memberRepository
+        IEmailSender sender
     )
     {
         _UserRepository = new UserRepository(manager);
         _SignInManager = signInManager;
         _Sender = sender;
-        _MemberRepository = memberRepository;
     }
 
     public IActionResult ResetPassword() => View();
@@ -141,13 +138,6 @@ public class AuthController : Controller
     }
 
     [Authorize]
-    public async Task<IActionResult> Logout()
-    {
-        await _SignInManager.SignOutAsync();
-        return Redirect("/auth/login");
-    }
-
-    [Authorize]
     public async Task<IActionResult> Change()
     {
         return View();
@@ -232,6 +222,13 @@ public class AuthController : Controller
         string[] arr = { "Username not found", "Password Failed" };
         ModelState.AddModelError("Error", arr[status + 1]);
         return View(obj);
+    }
+
+    [Authorize]
+    public async Task<IActionResult> Logout()
+    {
+        await _SignInManager.SignOutAsync();
+        return Redirect("/auth/login");
     }
 
     public IActionResult ConfirmTwoFactor(string id)

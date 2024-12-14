@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using WebAppFruitable.Model;
+using WebAppFruitable.Repository;
 using WebAppFruitable.Services;
 using WebAppFruitables;
 using WebAppFruitables.Services;
@@ -14,11 +16,20 @@ namespace WebAppFruitable.Controllers;
 
 public class AuthController : BaseController
 {
+    private UserRepository UserRepository { get; set; }
+    private SignInManager<IdentityUser> SignInManager { get; set; }
     private IEmailSender Sender { get; set; }
     private IConfiguration Configuration { get; set; }
 
-    public AuthController(IConfiguration configuration, IEmailSender sender)
+    public AuthController(
+        IConfiguration configuration,
+        IEmailSender sender,
+        UserManager<IdentityUser> manager,
+        SignInManager<IdentityUser> signInManager
+    )
     {
+        UserRepository = new UserRepository(manager);
+        SignInManager = signInManager;
         Configuration = configuration;
         Sender = sender;
     }
@@ -29,7 +40,9 @@ public class AuthController : BaseController
         return View();
     }
 
-    public IActionResult Login() => View();
+    public IActionResult Login()  {
+        return View();
+    }
 
     [HttpPost]
     public async Task<IActionResult> Login(Member? obj)
@@ -110,57 +123,30 @@ public class AuthController : BaseController
         return View(obj);
     }
 
-    public IActionResult GoogleSignIn()
-    {
-        var properties = new AuthenticationProperties()
-        {
-            RedirectUri = "/auth/googleresponse"
-        };
-        return Challenge(properties, GoogleDefaults.AuthenticationScheme);
-    }
+    public IActionResult ResetPassword() => View();
 
-    public async Task<IActionResult> GoogleResponse()
-    {
-        var member = new Member();
-        var results = await HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-        if (results.Principal != null)
-        {
-            foreach (var item in results.Principal.Claims)
-            {
-                switch (item.Type)
-                {
-                    // case ClaimTypes.Name:
-                    //     member. = item.Value;
-                    //     break;
-                    case ClaimTypes.GivenName:
-                        member.GivenName = item.Value;
-                        break;
-                    case ClaimTypes.Surname:
-                        member.SurName = item.Value;
-                        break;
-                    case ClaimTypes.Email:
-                        member.Email = item.Value;
-                        break;
-                    case ClaimTypes.NameIdentifier:
-                        member.MemberId = item.Value;
-                        break;
-                }
-            }
-
-            var entity = new MemberEntity()
-            {
-                MemberId = Guid.NewGuid().ToString().Replace("-", string.Empty),
-                Email = member.Email,
-                Password = Helper.HashPassword(member.Password),
-                Surname = member.SurName ?? string.Empty,
-                GivenName = member.GivenName
-            };
-
-            var ret = Provider.Member.Add(entity);
-            if (ret > 0)
-                return Redirect("/auth");
-        }
-
-        return Json(member);
-    }
+    // [HttpPost]
+    // public async Task<IActionResult> ResetPassword(ResetPassword obj)
+    // {
+    //     var result = await Provider.Member.ResetPassword(obj);
+    //     if (result != null)
+    //     {
+    //         if (result.Succeeded)
+    //         {
+    //             TempData["Msg"] = "Please Login with new Password";
+    //             return Redirect("/auth/login");
+    //         }
+    //
+    //         foreach (var error in result.Errors)
+    //         {
+    //             ModelState.AddModelError(error.Code, error.Description);
+    //         }
+    //     }
+    //     else
+    //     {
+    //         ModelState.AddModelError("Error", "Your token invalid");
+    //     }
+    //
+    //     return View();
+    // }
 }

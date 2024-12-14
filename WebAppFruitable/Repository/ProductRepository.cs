@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
-using WebAppFruitables.Repository;
+using WebAppFruitable.Repository;
 
 namespace WebAppFruitable.Repository;
 

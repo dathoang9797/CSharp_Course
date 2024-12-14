@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
 
-namespace WebAppFruitables.Repository;
+namespace WebAppFruitable.Repository;
 
 public class CategoryRepository : BaseRepository
 {

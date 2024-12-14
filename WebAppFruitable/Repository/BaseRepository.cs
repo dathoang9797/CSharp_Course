@@ -1,6 +1,6 @@
 ﻿using WebAppFruitable.Model;
 
-namespace WebAppFruitables.Repository;
+namespace WebAppFruitable.Repository;
 
 public abstract class BaseRepository
 {

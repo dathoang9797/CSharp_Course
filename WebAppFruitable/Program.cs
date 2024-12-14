@@ -1,8 +1,9 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
-using WebAppFruitable.Model;
+using WebAppFruitable.Repository;
 using WebAppFruitable.VnPayment;
 using WebAppFruitables.Services.Mail;
 using WebApplication1.VnPayment;
@@ -25,15 +26,14 @@ builder.Services
         p.LogoutPath = "/auth/logout";
         p.AccessDeniedPath = "/auth/denied";
         p.ExpireTimeSpan = TimeSpan.FromMinutes(10);
-    })
-    .AddGoogle(p =>
-    {
-        p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? string.Empty;
-        p.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? string.Empty;
     });
-;
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<FruitableContext>()
+    .AddDefaultTokenProviders();
+
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
+builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<VnPaymentService>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
 builder.Services.AddScoped<SiteProvider>();

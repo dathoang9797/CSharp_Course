@@ -1,6 +1,6 @@
 ﻿using WebAppFruitable.Model;
 using WebAppFruitable.Repository;
-using WebAppFruitables.Repository;
+using WebAppFruitable.Repository;
 using WebAppVNPayment.Repository;
 
 namespace WebAppFruitable.Model;
