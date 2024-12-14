@@ -60,14 +60,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Data/yelp_labelled.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentPrediction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -790,6 +783,51 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="WebAppSentimentAnalytic: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebAppSentimentAnalytic: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="WebAppSentimentAnalytic: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="WebAppStore" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebAppStore/WebAppStore.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -1120,6 +1158,9 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue=".NET Launch Settings Profile.WebAppSentimentAnalytic: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.WebAppSentimentAnalytic: http" />
+      <item itemvalue=".NET Launch Settings Profile.WebAppSentimentAnalytic: https" />
       <item itemvalue=".NET Launch Settings Profile.AppCrawler" />
       <item itemvalue=".NET Launch Settings Profile.DependencyInjection: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.DependencyInjection: WebApplication1" />
@@ -1276,15 +1317,7 @@
       <workItem from="1734163104739" duration="197000" />
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
-      <workItem from="1734170442034" duration="1275000" />
-    </task>
-    <task id="LOCAL-00094" summary="up">
-      <option name="closed" value="true" />
-      <created>1731673346279</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1731673346279</updated>
+      <workItem from="1734170442034" duration="1733000" />
     </task>
     <task id="LOCAL-00095" summary="Up">
       <option name="closed" value="true" />
@@ -1670,7 +1703,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734170581906</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734171989665</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1734171989665</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
