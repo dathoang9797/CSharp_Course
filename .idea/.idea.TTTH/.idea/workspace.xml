@@ -42,6 +42,7 @@
     <projectFile profileName="http">Module_4/WebAppTiki/WebAppTiki.csproj</projectFile>
     <projectFile profileName="https">Module_4/WebAppTiki/WebAppTiki.csproj</projectFile>
     <projectFile profileName="WorkerService1">Module_4/WorkerService1/WorkerService1.csproj</projectFile>
+    <projectFile>Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj</projectFile>
     <projectFile profileName="IIS Express">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="http">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="https">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
@@ -59,57 +60,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleApp/Data/Model.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Data/Model.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Data/taxi-fare-test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Data/taxi-fare-train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/TaxiTrip.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/TaxiTripFarePrediction.cs" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Data/yelp_labelled.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentPrediction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleApp/ConsoleApp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleApp/ConsoleApp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleApp/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleApp/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleApp/TaxiTripFarePrediction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleApp/TaxiTripFarePrediction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/WebApplication1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/WebApplication1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -326,6 +283,24 @@
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Module_2/ConsoleApp/ConsoleApp.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="ConsoleAppSentimentAnalytic" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -1191,6 +1166,7 @@
       <item itemvalue=".NET Launch Settings Profile.WebProductAPI: https" />
       <item itemvalue=".NET Launch Settings Profile.WebProductAPI: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WorkerService1" />
+      <item itemvalue=".NET Project.ConsoleAppSentimentAnalytic" />
       <item itemvalue=".NET Project.AppTest" />
       <item itemvalue=".NET Project.ConsoleApp" />
       <item itemvalue=".NET Project.Crawler" />
@@ -1300,14 +1276,7 @@
       <workItem from="1734163104739" duration="197000" />
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
-    </task>
-    <task id="LOCAL-00093" summary="Up">
-      <option name="closed" value="true" />
-      <created>1731601047847</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1731601047847</updated>
+      <workItem from="1734170442034" duration="1275000" />
     </task>
     <task id="LOCAL-00094" summary="up">
       <option name="closed" value="true" />
@@ -1693,7 +1662,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734162711575</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734170581905</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1734170581906</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
