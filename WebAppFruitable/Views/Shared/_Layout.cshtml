@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using WebAppFruitable.Model
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -50,7 +52,7 @@
             </button>
             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a class="nav-item nav-link active" href="/dashboard/home" >Dashboard</a>
+                    <a class="nav-item nav-link active" href="/dashboard/home">Dashboard</a>
                     <a href="/" class="nav-item nav-link active">Home</a>
                     @* <a href="/home/shop" class="nav-item nav-link">Shop</a> *@
                     @* <a href="/home/details" class="nav-item nav-link">Shop Detail</a> *@
@@ -73,7 +75,10 @@
                     </button>
                     <a href="/" class="position-relative me-4 my-auto">
                         <i class="fa fa-shopping-bag fa-2x"></i>
-                        <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                        <span
+                            class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">
+                            @((ViewBag.Carts as List<Cart>)?.Sum(item => item.Quantity))
+                        </span>
                     </a>
                     @if (User.Identity?.Name != null)
                     {

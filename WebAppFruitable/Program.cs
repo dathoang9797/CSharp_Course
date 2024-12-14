@@ -17,13 +17,21 @@ builder.Services.Configure<VnPaymentRequest>(builder.Configuration.GetSection("P
 builder.Services.AddMvc();
 builder.Services.AddControllers().AddNewtonsoftJson();
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(p =>
-{
-    p.LoginPath = "/auth/login";
-    p.LogoutPath = "/auth/logout";
-    p.AccessDeniedPath = "/auth/denied";
-    p.ExpireTimeSpan = TimeSpan.FromMinutes(10);
-});
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(p =>
+    {
+        p.LoginPath = "/auth/login";
+        p.LogoutPath = "/auth/logout";
+        p.AccessDeniedPath = "/auth/denied";
+        p.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+    })
+    .AddGoogle(p =>
+    {
+        p.ClientId = builder.Configuration["Authentication:Google:ClientId"] ?? string.Empty;
+        p.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? string.Empty;
+    });
+;
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddScoped<VnPaymentService>();
