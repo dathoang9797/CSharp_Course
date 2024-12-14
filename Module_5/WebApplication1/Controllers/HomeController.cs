@@ -39,7 +39,7 @@ public class HomeController : Controller
         //     Total = _list.Count
         // };
         // return View(departments);
-        
+
         var taxiTripSample = new TaxiTrip()
         {
             VendorId = "VTS",
@@ -50,8 +50,8 @@ public class HomeController : Controller
             PaymentType = "CRD",
             FareAmount = 0 // To predict. Actual/Observed = 15.5
         };
-        
-        
+
+
         return View(taxiTripSample);
     }
 
@@ -75,6 +75,25 @@ public class HomeController : Controller
         });
 
         ViewBag.Result = prediction.FareAmount;
+        return View(obj);
+    }
+
+    public IActionResult Sentiment()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public IActionResult Sentiment(SentimentData obj)
+    {
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "data", "ModelSentiment.zip");
+        var mlContext = new MLContext();
+        var model = mlContext.Model.Load(path, out DataViewSchema dataView);
+
+        var predictionFunction = mlContext.Model
+            .CreatePredictionEngine<SentimentData, SentimentPrediction>(model);
+        var prediction = predictionFunction.Predict(obj);
+        ViewBag.Result = prediction;
         return View(obj);
     }
 

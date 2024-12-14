@@ -1,0 +1,19 @@
+﻿@model SentimentData;
+
+@if (ViewBag.Result != null)
+{
+    <div>
+        <b>Prediction:</b> @(ViewBag.Result.Prediction ? "Position":"Negative")
+    </div>
+    <div>
+        <b>Probability:</b> @ViewBag.Result.Probability
+    </div>
+    <div>
+        <b>Score:</b> @ViewBag.Result.Score
+    </div>
+}
+
+<form method="post">
+    <input type="text" asp-for="SentimentText" placeholder="Enter your comment">
+    <button>Predict</button>
+</form>

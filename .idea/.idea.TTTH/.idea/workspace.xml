@@ -43,6 +43,9 @@
     <projectFile profileName="https">Module_4/WebAppTiki/WebAppTiki.csproj</projectFile>
     <projectFile profileName="WorkerService1">Module_4/WorkerService1/WorkerService1.csproj</projectFile>
     <projectFile>Module_5/ConsoleAppSentimentAnalytic/ConsoleAppSentimentAnalytic.csproj</projectFile>
+    <projectFile profileName="IIS Express">Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj</projectFile>
+    <projectFile profileName="http">Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj</projectFile>
+    <projectFile profileName="https">Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj</projectFile>
     <projectFile profileName="IIS Express">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="http">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
     <projectFile profileName="https">Module_5/WebApplication1/WebApplication1.csproj</projectFile>
@@ -60,7 +63,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Data/ModelSentiment.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Data/yelp_labelled.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/SentimentData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Models/SentimentPrediction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Sentiment.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/ConsoleAppSentimentAnalytic/SentimentData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Controllers/HomeController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Data/Migrations/00000000000000_CreateIdentitySchema.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Models/ErrorViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Home/Index.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Home/Privacy.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Shared/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Shared/_Layout.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Shared/_Layout.cshtml.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Shared/_LoginPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/Shared/_ValidationScriptsPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/_ViewImports.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/Views/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/WebAppSentimentAnalytic.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/app.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppSentimentAnalytic/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApplication1/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1317,15 +1353,7 @@
       <workItem from="1734163104739" duration="197000" />
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
-      <workItem from="1734170442034" duration="1733000" />
-    </task>
-    <task id="LOCAL-00095" summary="Up">
-      <option name="closed" value="true" />
-      <created>1731673803425</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1731673803425</updated>
+      <workItem from="1734170442034" duration="2727000" />
     </task>
     <task id="LOCAL-00096" summary="Up">
       <option name="closed" value="true" />
@@ -1711,7 +1739,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734171989665</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734172361326</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1734172361326</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
