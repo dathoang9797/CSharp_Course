@@ -1,105 +1,105 @@
-﻿@model DepartmentTotal;
-@{
-    ViewData["Title"] = "Home Page";
-}
-
-@((int)ViewData["a"] + (int)ViewData["b"])
-
-
-<h2>View Bag</h2>
-
-<a href="/home/dynamic">Dynamic</a>
-<a href="/home/JsonData">JsonData</a>
-<form action="/home/addall" method="post">
-    <table>
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-                <input type="number" name="list[0].id"/>
-            </td>
-            <td>
-                <input type="text" name="list[0].name"/>
-            </td>
-            <td>
-                <input type="text" name="list[0].description"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" name="list[1].id"/>
-            </td>
-            <td>
-                <input type="text" name="list[1].name"/>
-            </td>
-            <td>
-                <input type="text" name="list[1].description"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" name="list[2].id"/>
-            </td>
-            <td>
-                <input type="text" name="list[2].name"/>
-            </td>
-            <td>
-                <input type="text" name="list[2].description"/>
-            </td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="3">
-                <button>Save Changes</button>
-            </td>
-        </tr>
-        </tfoot>
-    </table>
-
-</form>
-
-
-<form action="/home/deleteall" method="post">
-    <table>
-        <thead>
-        <tr>
-            <th>
-                <button>Delete</button>
-            </th>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in Model.Departments)
-        {
-            <tr>
-                <td>
-                    <input type="checkbox" name="ids" value="@item.Id"/>
-                </td>
-                <td>@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Description</td>
-            </tr>
-        }
-        </tbody>
-        <tfoot>
-        <tr>
-            <td colspan="3">
-                <button>Save Changes</button>
-            </td>
-        </tr>
-        </tfoot>
-    </table>
-</form>
+﻿@* @model DepartmentTotal; *@
+@* @{ *@
+@*     ViewData["Title"] = "Home Page"; *@
+@* } *@
+@* *@
+@* @((int)ViewData["a"] + (int)ViewData["b"]) *@
+@* *@
+@* *@
+@* <h2>View Bag</h2> *@
+@* *@
+@* <a href="/home/dynamic">Dynamic</a> *@
+@* <a href="/home/JsonData">JsonData</a> *@
+@* <form action="/home/addall" method="post"> *@
+@*     <table> *@
+@*         <thead> *@
+@*         <tr> *@
+@*             <th>Id</th> *@
+@*             <th>Name</th> *@
+@*             <th>Description</th> *@
+@*         </tr> *@
+@*         </thead> *@
+@*         <tbody> *@
+@*         <tr> *@
+@*             <td> *@
+@*                 <input type="number" name="list[0].id"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[0].name"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[0].description"/> *@
+@*             </td> *@
+@*         </tr> *@
+@*         <tr> *@
+@*             <td> *@
+@*                 <input type="number" name="list[1].id"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[1].name"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[1].description"/> *@
+@*             </td> *@
+@*         </tr> *@
+@*         <tr> *@
+@*             <td> *@
+@*                 <input type="number" name="list[2].id"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[2].name"/> *@
+@*             </td> *@
+@*             <td> *@
+@*                 <input type="text" name="list[2].description"/> *@
+@*             </td> *@
+@*         </tr> *@
+@*         </tbody> *@
+@*         <tfoot> *@
+@*         <tr> *@
+@*             <td colspan="3"> *@
+@*                 <button>Save Changes</button> *@
+@*             </td> *@
+@*         </tr> *@
+@*         </tfoot> *@
+@*     </table> *@
+@* *@
+@* </form> *@
+@* *@
+@* *@
+@* <form action="/home/deleteall" method="post"> *@
+@*     <table> *@
+@*         <thead> *@
+@*         <tr> *@
+@*             <th> *@
+@*                 <button>Delete</button> *@
+@*             </th> *@
+@*             <th>Id</th> *@
+@*             <th>Name</th> *@
+@*             <th>Description</th> *@
+@*         </tr> *@
+@*         </thead> *@
+@*         <tbody> *@
+@*         @foreach (var item in Model.Departments) *@
+@*         { *@
+@*             <tr> *@
+@*                 <td> *@
+@*                     <input type="checkbox" name="ids" value="@item.Id"/> *@
+@*                 </td> *@
+@*                 <td>@item.Id</td> *@
+@*                 <td>@item.Name</td> *@
+@*                 <td>@item.Description</td> *@
+@*             </tr> *@
+@*         } *@
+@*         </tbody> *@
+@*         <tfoot> *@
+@*         <tr> *@
+@*             <td colspan="3"> *@
+@*                 <button>Save Changes</button> *@
+@*             </td> *@
+@*         </tr> *@
+@*         </tfoot> *@
+@*     </table> *@
+@* </form> *@
 
 @* @foreach (Department item in ViewBag.Departments) *@
 @* { *@
@@ -128,3 +128,38 @@
 @*     <h1 class="display-4">Welcome</h1> *@
 @*     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p> *@
 @* </div> *@
+
+@model TaxiTrip;
+
+@if (ViewBag.Result != null)
+{
+    <p class="alert alert-success">@ViewBag.Result</p>
+}
+
+<form method="post">
+    <div>
+        <label asp-for="VendorId"></label>
+        <input type="text" asp-for="VendorId"/>
+    </div>
+    <div>
+        <label asp-for="RateCode"></label>
+        <input type="text" asp-for="RateCode"/>
+    </div>
+    <div>
+        <label asp-for="PassengerCount"></label>
+        <input type="text" asp-for="PassengerCount"/>
+    </div>
+    <div>
+        <label asp-for="TripTime"></label>
+        <input type="text" asp-for="TripTime"/>
+    </div>
+    <div>
+        <label asp-for="TripDistance"></label>
+        <input type="text" asp-for="TripDistance"/>
+    </div>
+    <div>
+        <label asp-for="PaymentType"></label>
+        <input type="text" asp-for="PaymentType"/>
+    </div>
+    <button type="submit">Predict</button>
+</form>

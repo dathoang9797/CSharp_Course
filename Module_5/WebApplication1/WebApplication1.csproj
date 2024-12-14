@@ -6,4 +6,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="Microsoft.ML" Version="4.0.0" />
+        <PackageReference Include="Microsoft.ML.FastTree" Version="4.0.0" />
+    </ItemGroup>
+    
 </Project>

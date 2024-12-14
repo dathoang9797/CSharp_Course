@@ -5,7 +5,6 @@
 
 //Lưu được mọi kiểu dữ liệu
 
-using System.Runtime.Intrinsics.X86;
 using ConsoleApp;
 using Microsoft.ML;
 
@@ -158,3 +157,16 @@ var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", input
     .Append(mlContext.Regression.Trainers.FastTree());
 
 var model = pipeline.Fit(dataView);
+var dataViewTest = mlContext.Data.LoadFromTextFile<TaxiTrip>(testDataPath, hasHeader: true, separatorChar: ',');
+var predictions = model.Transform(dataViewTest);
+var metrics = mlContext.Regression.Evaluate(predictions, "Label", "Score");
+
+Console.WriteLine();
+Console.WriteLine($"*************************************************");
+Console.WriteLine($"*       Model quality metrics evaluation         ");
+Console.WriteLine($"*------------------------------------------------");
+
+Console.WriteLine($"*       RSquared Score:      {metrics.RSquared:0.##}");
+Console.WriteLine($"*       Root Mean Squared Error:      {metrics.RootMeanSquaredError:0.##}");
+
+mlContext.Model.Save(model, dataView.Schema, modelPath);

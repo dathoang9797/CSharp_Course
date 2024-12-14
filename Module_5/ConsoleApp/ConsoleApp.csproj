@@ -13,10 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="bin\Debug\net8.0\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <None Include="bin\Debug\net8.0\Data\taxi-fare-test.csv" />
       <None Include="bin\Debug\net8.0\Data\taxi-fare-train.csv" />
     </ItemGroup>
