@@ -59,17 +59,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Controller/AccessController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApi/Repository/AccessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApi/Repository/AccessRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/RoleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Controller/RoleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Accesses.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Accesses.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Role/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Areas/Dashboard/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/AccessRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/AccessRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_4/WebApp/Repository/AccessRoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_4/WebApp/Repository/AccessRoleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/Models/VnPaymentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/Models/VnPaymentService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/VnPayment/VnPaymentService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +175,7 @@
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Areas/Dashboard/Controller/RoleController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Areas/Dashboard/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Areas/Dashboard/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Areas/Dashboard/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://E:/CShrap-Course/TTTH/Module_4/WebApp/Repository/AccessRepository.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/BaseRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_4/WebApp/Repository/UploadRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -213,55 +208,55 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.Euro: WebApp1.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebApi: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebApi: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebApp: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppAuthentication.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppChat: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppClassLib: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppFruitable: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppFruitable: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppFruitables.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebAppStore.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: IIS Express.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: http.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Launch Settings Profile.WebKoi: https.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.AppTest.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.Module_1.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.Module_4\\AppCrawler.executor&quot;: &quot;Debug&quot;,
-    &quot;.NET Project.Module_5\\ConsoleApp.executor&quot;: &quot;Debug&quot;,
-    &quot;8d321b14-21df-4f1a-870f-71be3f0a65c1.executor&quot;: &quot;Debug&quot;,
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.Euro: WebApp1.executor": "Debug",
+    ".NET Launch Settings Profile.WebApi: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebApi: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebApp: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebApp: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppChat: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppClassLib: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppFruitable: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppFruitable: https.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
+    ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
+    ".NET Launch Settings Profile.WebApplication1: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: IIS Express.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: http.executor": "Debug",
+    ".NET Launch Settings Profile.WebKoi: https.executor": "Debug",
+    ".NET Project.AppTest.executor": "Debug",
+    ".NET Project.Module_1.executor": "Debug",
+    ".NET Project.Module_4\\AppCrawler.executor": "Debug",
+    ".NET Project.Module_5\\ConsoleApp.executor": "Debug",
+    "8d321b14-21df-4f1a-870f-71be3f0a65c1.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ToolWindowExplorer.ShowToolbar": "false",
+    "f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;,
-      &quot;repository&quot;
+  "keyToStringList": {
+    "GitStage.ChangesTree.GroupingKeys": [
+      "directory",
+      "module",
+      "repository"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\datho\\AppData\\Local\\Symbols\\src&quot;
+    "rider.external.source.directories": [
+      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\datho\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Multi-Launch.Multi-Launch: TTTH">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -1250,14 +1245,6 @@
       <workItem from="1734009934226" duration="78000" />
       <workItem from="1734010034777" duration="13870000" />
     </task>
-    <task id="LOCAL-00085" summary="Up">
-      <option name="closed" value="true" />
-      <created>1730991407911</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1730991407911</updated>
-    </task>
     <task id="LOCAL-00086" summary="Up">
       <option name="closed" value="true" />
       <created>1731127004387</created>
@@ -1642,7 +1629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734021502020</updated>
     </task>
-    <option name="localTasksCounter" value="134" />
+    <task id="LOCAL-00134" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734094532260</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1734094532260</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

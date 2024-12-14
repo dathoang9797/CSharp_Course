@@ -153,6 +153,7 @@
             },
             success: function (response) {
                 console.log('Cart updated successfully');
+                window.location.reload();
             },
             error: function (error) {
 

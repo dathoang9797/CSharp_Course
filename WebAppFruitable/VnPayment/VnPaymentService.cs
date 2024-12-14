@@ -36,7 +36,10 @@ public class VnPaymentService
                     Accessor.HttpContext?.Connection.RemoteIpAddress?.AddressFamily.ToString() ?? string.Empty
                 },
                 { "vnp_Locale", Request.Locale },
-                { "vnp_OrderInfo", $"Thanh toán đơn hàng" },
+                {
+                    "vnp_OrderInfo",
+                    $"Thanh toán đơn hàng cho {obj.FirstName} {obj.LastName}-{obj.Email}-{obj.Mobile}-{obj.Address}-{obj.City}"
+                },
                 { "vnp_OrderType", "topup" },
                 { "vnp_ReturnUrl", Request.ReturnUrl },
                 { "vnp_ExpireDate", DateTime.Now.AddMinutes(15).ToString("yyyyMMddHHmmss") },
