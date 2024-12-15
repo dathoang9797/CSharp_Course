@@ -12,8 +12,10 @@ public class SiteProvider
 
     private CategoryRepository _category = null!;
     public CategoryRepository Category => _category ??= new CategoryRepository(context);
+  
     private MemberRepository _member = null!;
     public MemberRepository Member => _member ??= new MemberRepository(context);
+   
     private ProductRepository _product = null!;
     public ProductRepository Product => _product ??= new ProductRepository(context);
     

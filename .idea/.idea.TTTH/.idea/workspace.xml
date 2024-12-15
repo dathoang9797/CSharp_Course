@@ -63,7 +63,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/ResetForgotPassword.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/ForgotPassword.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/ResetForgotPassword.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/ResetPassword.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/Controller/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/Controller/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/bin/Debug/net8.0/WebAppStore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/ref/WebAppStore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/ref/WebAppStore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/refint/WebAppStore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/refint/WebAppStore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Data/Migrations/00000000000000_CreateIdentitySchema.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Cart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/User/Change.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/User/Login.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/User/Register.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/User/ResetPassword.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Services/Helper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Auth/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/app.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1324,7 +1366,7 @@
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
-      <workItem from="1734174275582" duration="7789000" />
+      <workItem from="1734174275582" duration="12284000" />
     </task>
     <task id="LOCAL-00098" summary="Up">
       <option name="closed" value="true" />

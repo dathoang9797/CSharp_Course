@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
-@model WebAppFruitable.Model.Member;
+@model WebAppFruitable.Model.MemberBody;
 
 <div class="container">
     <div class="row">
@@ -7,6 +7,12 @@
             <h2 class="text-center text-dark mt-5">Register</h2>
             <div class="card my-5">
                 <form method="post" class="card-body cardbody-color p-lg-5">
+                    @if (ViewData["ErrorMessage"] != null)
+                    {
+                    <div class="alert alert-danger text-center">
+                        @ViewData["ErrorMessage"]
+                    </div>
+                    }
                     <div class="text-center">
                         <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
                              width="200px" alt="profile">

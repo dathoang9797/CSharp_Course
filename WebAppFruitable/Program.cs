@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
-using WebAppFruitable.Repository;
 using WebAppFruitable.VnPayment;
 using WebAppFruitables.Services.Mail;
 using WebApplication1.VnPayment;
@@ -27,10 +26,6 @@ builder.Services
         p.AccessDeniedPath = "/auth/denied";
         p.ExpireTimeSpan = TimeSpan.FromMinutes(10);
     });
-
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<FruitableContext>()
-    .AddDefaultTokenProviders();
-
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddScoped<VnPaymentService>();

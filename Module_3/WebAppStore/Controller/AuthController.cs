@@ -64,7 +64,8 @@ public class AuthController : Controller
         var obj = await _UserRepository.GeneratePasswordResetToken(email);
         if (obj != null)
         {
-            var url = Url.Action("resetpassword", "auth", new { id = obj.Id, token = obj.Token },
+            var url = Url.Action
+            ("resetpassword", "auth", new { id = obj.Id, token = obj.Token },
                 protocol: Request.Scheme);
             if (!string.IsNullOrEmpty(url))
             {

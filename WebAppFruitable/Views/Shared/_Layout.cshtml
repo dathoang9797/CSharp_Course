@@ -57,7 +57,13 @@
                     @* <a href="/home/shop" class="nav-item nav-link">Shop</a> *@
                     @* <a href="/home/details" class="nav-item nav-link">Shop Detail</a> *@
                     <a href="/cart" class="nav-item nav-link">Cart</a>
-                    <a href="/cart/checkout" class="nav-item nav-link">Checkout</a>
+                    @{
+                        var carts = ViewBag.Carts as List<Cart>;
+                        if (carts != null && carts.Sum(item => item.Quantity) > 0)
+                        {
+                            <a href="/cart/checkout" class="nav-item nav-link">Checkout</a>
+                        }
+                    }
                     @* <div class="nav-item dropdown"> *@
                     @*     <a href="/" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a> *@
                     @*     <div class="dropdown-menu m-0 bg-secondary rounded-0"> *@
@@ -92,7 +98,11 @@
 
                     @if (User.Identity?.Name != null)
                     {
-                        <h6 class="me-2">@User.Identity?.Name</h6>
+                        <h6 class="me-2">
+                            <a asp-controller="Auth" asp-action="Index">
+                                @User.Identity?.Name
+                            </a>
+                        </h6>
                         <a asp-controller="Auth" asp-action="Logout">
                             Logout
                         </a>

@@ -11,50 +11,6 @@ namespace WebAppFruitable.Services;
 
 public static class Helper
 {
-    public static async Task SignIn(HttpContext httpContext, List<Claim> claims)
-    {
-        var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-        await httpContext.SignInAsync(new ClaimsPrincipal(identity), new AuthenticationProperties()
-        {
-            IsPersistent = false
-        });
-    }
-
-    public static string GenerateToken(IEnumerable<Claim> claims, string secretKey)
-    {
-        var handler = new JwtSecurityTokenHandler();
-        var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
-        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature);
-        var token = new JwtSecurityToken(
-            issuer: "cse.net.vn",
-            audience: "cse.net.vn",
-            claims: claims,
-            signingCredentials: credentials,
-            expires: DateTime.Now.AddMinutes(1));
-        return handler.WriteToken(token);
-    }
-
-    public static string? RefreshToken(string accessToken, string secretKey)
-    {
-        var handler = new JwtSecurityTokenHandler();
-        var parameters = new TokenValidationParameters
-        {
-            ValidIssuer = "cse.net.vn",
-            ValidAudience = "cse.net.vn",
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey)),
-            ValidateLifetime = false
-        };
-        var principal = handler.ValidateToken(accessToken, parameters, out SecurityToken token);
-        if (principal != null && token != null && token is JwtSecurityToken jwtSecurity &&
-            jwtSecurity.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature))
-        {
-            return GenerateToken(principal.Claims, secretKey);
-        }
-
-        return null;
-    }
-
     public static byte[] HashPassword(string plainText)
     {
         return SHA512.HashData(Encoding.ASCII.GetBytes(plainText));
@@ -103,5 +59,10 @@ public static class Helper
     {
         using HMACSHA512 hmac = new HMACSHA512(Encoding.ASCII.GetBytes(key));
         return Convert.ToHexString(hmac.ComputeHash(Encoding.UTF8.GetBytes(plaintext)));
+    }
+
+    public static string GeneratorToken()
+    {
+        return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
     }
 }

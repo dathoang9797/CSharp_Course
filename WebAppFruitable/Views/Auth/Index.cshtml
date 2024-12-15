@@ -1,12 +1,46 @@
-﻿@using System.Security.Claims
+﻿@model WebAppFruitable.Model.Member;
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            @if (User.Identity != null)
-            {
-                <h2>Welcome: @User.Identity?.Name</h2>
-            }
+<div class="container-fluid py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-12 col-lg-7">
+                @if (User.Identity != null)
+                {
+                    <h2>Welcome: @User.Identity?.Name</h2>
+                }
+                <div>
+                    <a
+                        asp-controller="Auth"
+                        asp-action="Register">
+                        Register
+                    </a>
+                </div>
+                <div>
+                    <a
+                        asp-controller="Auth"
+                        asp-action="ResetPassword">
+                        Reset Password
+                    </a>
+                </div>
+                @if (User.Identity == null)
+                {
+                    <div>
+                        <a
+                            asp-controller="Auth"
+                            asp-action="ForgotPassword">
+                            Forgot Password
+                        </a>
+                    </div>
+                }
+                @if (User.Identity?.Name != null)
+                {
+                    <div>
+                        <a asp-controller="Auth" asp-action="Logout">
+                           Logout
+                        </a>
+                    </div>
+                }
+            </div>
         </div>
     </div>
 </div>

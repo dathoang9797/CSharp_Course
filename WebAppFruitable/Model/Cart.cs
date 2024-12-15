@@ -12,7 +12,7 @@ public class Cart
     public short Quantity { get; set; }
     [MaxLength(32)] public string? MemberId { get; set; }
     public Product? Product { get; set; }
-    public MemberEntity? Member { get; set; }
+    public Member? Member { get; set; }
 }
 
 public class CartFrom
