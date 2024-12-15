@@ -39,6 +39,8 @@
 </div>
 <!-- Spinner End -->
 
+<!-- Container for the custom alert -->
+<div id="alert-container"></div>
 
 <!-- Navbar start -->
 <div class="container-fluid fixed-top">
@@ -55,7 +57,7 @@
                     <a class="nav-item nav-link active" href="/dashboard/home">Dashboard</a>
                     <a href="/" class="nav-item nav-link active">Home</a>
                     @* <a href="/home/shop" class="nav-item nav-link">Shop</a> *@
-                    @* <a href="/home/details" class="nav-item nav-link">Shop Detail</a> *@
+                    @* <a href="/home/details" class="nav-item nav-link">Detail</a> *@
                     @{
                         var carts = ViewBag.Carts as List<Cart>;
                         if (carts != null && carts.Sum(item => item.Quantity) > 0)
@@ -92,6 +94,7 @@
                             <a href="/cart" class="position-relative me-4 my-auto">
                                 <i class="fa fa-shopping-bag fa-2x"></i>
                                 <span
+                                    id="total-quantity-cart"
                                     class="position-absolute 
                                     bg-secondary rounded-circle 
                                     d-flex

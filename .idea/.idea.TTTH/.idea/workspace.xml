@@ -64,8 +64,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +197,8 @@
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Repository/CategoryRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/WebAppFruitable/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -1327,15 +1338,7 @@
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
-      <workItem from="1734174275582" duration="14757000" />
-    </task>
-    <task id="LOCAL-00098" summary="Up">
-      <option name="closed" value="true" />
-      <created>1731741257296</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1731741257296</updated>
+      <workItem from="1734174275582" duration="16411000" />
     </task>
     <task id="LOCAL-00099" summary="Up">
       <option name="closed" value="true" />
@@ -1721,7 +1724,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734246740419</updated>
     </task>
-    <option name="localTasksCounter" value="147" />
+    <task id="LOCAL-00147" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734268211295</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1734268211295</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -20,6 +20,18 @@ public class CartController : BaseController
         if (string.IsNullOrEmpty(code))
             return Redirect("/");
 
+        if (!string.IsNullOrEmpty(code))
+        {
+            var cart = Provider.Cart.GetList(code);
+            if (cart.Count == 0)
+            {
+                Response.Cookies.Delete(CartCode);
+                return Redirect("/home");
+            }
+
+            ViewBag.Carts = cart;
+        }
+
         var listCart = Provider.Cart.GetList(code);
         return View(listCart);
     }
@@ -36,7 +48,7 @@ public class CartController : BaseController
             Response.Cookies.Append(CartCode, code);
         }
 
-        var cart = new Cart()
+        var cart = new Cart
         {
             MemberId = memberId,
             ProductId = obj.ProductId,
@@ -45,7 +57,9 @@ public class CartController : BaseController
         };
 
         var ret = Provider.Cart.Add(cart);
-        return Redirect(ret > 0 ? "/cart" : "/cart/error");
+        return ret > 0
+            ? Ok(new { message = "Item deleted successfully." })
+            : StatusCode(500, new { message = "Failed to delete the item." });
     }
 
     [HttpPut]
@@ -85,6 +99,16 @@ public class CartController : BaseController
             return Redirect("/cart/error");
 
         var ret = Provider.Cart.Delete(cartCode, Convert.ToInt16(productId));
+        if (ret > 0)
+        {
+            var cart = Provider.Cart.GetList(cartCode);
+            if (cart.Count == 0)
+            {
+                Response.Cookies.Delete(CartCode);
+                return Redirect("/home");
+            }
+        }
+
         return ret > 0
             ? Ok(new { message = "Item deleted successfully." })
             : StatusCode(500, new { message = "Failed to delete the item." });
@@ -111,7 +135,7 @@ public class CartController : BaseController
         var listCart = Provider.Cart.GetList(code);
         var amount = listCart.Sum(item => item.Product != null ? item.Product.Price * item.Quantity : 0);
         obj.Amount = (int)(amount * 100);
-        
+
         var random = new Random();
         obj.InvoiceId = random.NextInt64(99999, long.MaxValue);
         var url = Service?.ToUrlPayment(obj);

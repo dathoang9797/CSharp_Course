@@ -17,9 +17,5 @@ public class HomeController : BaseController
 
         return View();
     }
-
-    public IActionResult Details() => View();
-    public IActionResult Contact() => View();
-    public IActionResult Testimonial() => View();
     public IActionResult Error404() => View();
 }

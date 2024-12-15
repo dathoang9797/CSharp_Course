@@ -118,7 +118,7 @@
                 @foreach (Product product in ViewBag.Products)
                 {
                     <div class="col-md-6 col-lg-4 col-xl-3">
-                    <form action="/cart/add" method="post">
+                        @* <form action="/cart/add" method="post"> *@
                         <div class="rounded position-relative fruite-item">
                             <div class="fruite-img h-50 height200px">
                                 <img
@@ -131,17 +131,25 @@
                                 <h4>@product.ProductName</h4>
                                 <p>@product.Description</p>
                                 <div class="d-flex justify-content-between flex-lg-wrap">
-                                    <input type="hidden" value="@product.ProductId" name="productId"/>
-                                    <input class="form-control mr-2" type="number" value="1" min="1" max="20" name="quantity">
+                                    <input
+                                        type="hidden"
+                                        value="@product.ProductId"
+                                        name="ProductId"/>
+                                    <input
+                                        class="form-control mr-2 mb-2"
+                                        type="number"
+                                        value="1" min="1"
+                                        max="20"
+                                        name="ProductQuantity">
                                     <p class="text-dark fs-5 fw-bold mb-0">@product.Price.ToString("#,0.00") đ</p>
-                                    <button class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <button add-to-cart="add-to-cart" class="btn border border-secondary rounded-pill px-3 text-primary">
                                         <i class="fa fa-shopping-bag me-2 text-primary"></i>
                                         Add to cart
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                        @* </form> *@
                     </div>
                 }
             </div>

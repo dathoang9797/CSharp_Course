@@ -13,21 +13,21 @@
 
 
     // Fixed Navbar
-    $(window).scroll(function () {
-        if ($(window).width() < 992) {
-            if ($(this).scrollTop() > 100) {
-                $('.fixed-top').addClass('shadow');
-            } else {
-                $('.fixed-top').removeClass('shadow');
-            }
-        } else {
-            if ($(this).scrollTop() > 100) {
-                $('.fixed-top').addClass('shadow').css('top', -100);
-            } else {
-                $('.fixed-top').removeClass('shadow').css('top', 0);
-            }
-        }
-    });
+    // $(window).scroll(function () {
+    //     if ($(window).width() < 992) {
+    //         if ($(this).scrollTop() > 100) {
+    //             $('.fixed-top').addClass('shadow');
+    //         } else {
+    //             $('.fixed-top').removeClass('shadow');
+    //         }
+    //     } else {
+    //         if ($(this).scrollTop() > 100) {
+    //             $('.fixed-top').addClass('shadow').css('top', -100);
+    //         } else {
+    //             $('.fixed-top').removeClass('shadow').css('top', 0);
+    //         }
+    //     }
+    // });
 
 
     // Back to top button
@@ -162,17 +162,20 @@
         });
     }, 600);
 
-    // Product Quantity
     $('.quantity button').on('click', function () {
-        var button = $(this);
-        var inputField = button.closest('.quantity').find('input[type="text"]');
-        var productId = button.closest('.quantity').find('input[name="productId"]').val();
-        var oldValue = parseFloat(inputField.val());
+        const button = $(this);
+        const inputField = button.closest('.quantity').find('input[type="text"]');
+        const productId = button.closest('.quantity').find('input[name="productId"]').val();
+        const oldValue = parseFloat(inputField.val());
+        if(oldValue === 1)
+            return;
+        
+        let newVal = 0;
         if (button.hasClass('btn-plus')) {
-            var newVal = parseFloat(oldValue) + 1;
+            newVal = parseFloat(oldValue) + 1;
         } else {
             if (oldValue > 0) {
-                var newVal = parseFloat(oldValue) - 1;
+                newVal = parseFloat(oldValue) - 1;
             } else {
                 newVal = 0;
             }
@@ -180,6 +183,49 @@
         inputField.val(newVal);
         debouncedUpdateCartQuantity(productId, newVal);
     });
+
+    $('[add-to-cart="add-to-cart"]').on('click', function () {
+        const btnAddToCart = $(this);
+        const quantity = btnAddToCart.siblings('input[name="ProductQuantity"]');
+        const productId = btnAddToCart.siblings('input[name="ProductId"]');
+        const quantityValue = quantity.val();
+        const productIdValue = productId.val();
+        const totalQuantityCart = $("#total-quantity-cart");
+        
+        if (!quantityValue || !productIdValue || !totalQuantityCart) {
+            showDynamicAlert("Có gì đó không ổn", "danger");
+            return;
+        }
+
+        let currentQuantity = parseInt(totalQuantityCart.text()) || 0;
+        let quantityUpdate = parseInt(quantityValue) || 0;
+        currentQuantity += quantityUpdate;
+        totalQuantityCart.text(currentQuantity);
+        debouncedAddToCart(productIdValue, quantityUpdate);
+    });
+
+    const debouncedAddToCart = debounce(function (productId, quantity) {
+        $.ajax({
+            url: '/cart/add',
+            method: 'POST',
+            data: {
+                productId: productId,
+                quantity: quantity
+            },
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function (response) {
+                if (response) {
+                    showDynamicAlert("Add Successful!", "success");
+                }
+            },
+            error: function (error) {
+
+                console.log('Error updating cart');
+            }
+        });
+    }, 600);
 
     $('.delete.rounded-circle').on('click', function () {
         var productId = $(this).closest('tr').attr('product-id');
@@ -192,10 +238,26 @@
                 window.location.reload();
             },
             error: function (xhr, status, error) {
-                alert("Error: Some thing wrong" );
+                alert("Error: Some thing wrong");
             }
         });
     });
+
+    function showDynamicAlert(message, alertType) {
+        const alertDiv = document.createElement('div');
+        alertDiv.className = `alert alert-${alertType} alert-dismissible fade show`;
+        alertDiv.innerHTML = `${message} <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>`;
+
+        const alertContainer = document.getElementById('alert-container');
+        if (alertContainer) {
+            alertContainer.appendChild(alertDiv);
+
+            setTimeout(() => {
+                const bootstrapAlert = new bootstrap.Alert(alertDiv); // Bootstrap alert object
+                bootstrapAlert.close();
+            }, 3000);
+        }
+    }
 
     $($("#carouselId div.carousel-item")[0]).addClass("active");
 

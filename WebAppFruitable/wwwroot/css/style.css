@@ -521,3 +521,10 @@ a{
 .height200px img{
     height: 200px !important;
 }
+
+#alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+}
