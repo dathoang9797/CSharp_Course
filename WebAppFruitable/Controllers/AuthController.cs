@@ -16,20 +16,14 @@ namespace WebAppFruitable.Controllers;
 
 public class AuthController : BaseController
 {
-    private UserRepository UserRepository { get; set; }
-    private SignInManager<IdentityUser> SignInManager { get; set; }
     private IEmailSender Sender { get; set; }
     private IConfiguration Configuration { get; set; }
 
     public AuthController(
         IConfiguration configuration,
-        IEmailSender sender,
-        UserManager<IdentityUser> manager,
-        SignInManager<IdentityUser> signInManager
+        IEmailSender sender
     )
     {
-        UserRepository = new UserRepository(manager);
-        SignInManager = signInManager;
         Configuration = configuration;
         Sender = sender;
     }
@@ -40,7 +34,8 @@ public class AuthController : BaseController
         return View();
     }
 
-    public IActionResult Login()  {
+    public IActionResult Login()
+    {
         return View();
     }
 
@@ -124,29 +119,5 @@ public class AuthController : BaseController
     }
 
     public IActionResult ResetPassword() => View();
-
-    // [HttpPost]
-    // public async Task<IActionResult> ResetPassword(ResetPassword obj)
-    // {
-    //     var result = await Provider.Member.ResetPassword(obj);
-    //     if (result != null)
-    //     {
-    //         if (result.Succeeded)
-    //         {
-    //             TempData["Msg"] = "Please Login with new Password";
-    //             return Redirect("/auth/login");
-    //         }
-    //
-    //         foreach (var error in result.Errors)
-    //         {
-    //             ModelState.AddModelError(error.Code, error.Description);
-    //         }
-    //     }
-    //     else
-    //     {
-    //         ModelState.AddModelError("Error", "Your token invalid");
-    //     }
-    //
-    //     return View();
-    // }
+    
 }
