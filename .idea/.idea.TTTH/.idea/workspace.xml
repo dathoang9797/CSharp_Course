@@ -64,17 +64,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1338,7 +1332,7 @@
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
-      <workItem from="1734174275582" duration="16411000" />
+      <workItem from="1734174275582" duration="17574000" />
     </task>
     <task id="LOCAL-00099" summary="Up">
       <option name="closed" value="true" />

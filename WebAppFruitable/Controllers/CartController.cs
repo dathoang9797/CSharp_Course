@@ -12,6 +12,13 @@ public class CartController : BaseController
 {
     private const string CartCode = "cart";
     private VnPaymentService? Service { get; set; }
+    
+    public CartController(
+        VnPaymentService service
+    )
+    {
+        Service = service;
+    }
 
     [Authorize]
     public IActionResult Index()

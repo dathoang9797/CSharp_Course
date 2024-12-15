@@ -14,12 +14,12 @@ public class ProductRepository : BaseRepository
     {
         return Context.Product.Include(p => p.Category).ToList();
     }
-    
+
     public Product? GetProduct(int id)
     {
         return Context.Product.FirstOrDefault(p => p.ProductId == id);
     }
-    
+
     public int Add(Product? product)
     {
         if (product != null)
@@ -30,7 +30,7 @@ public class ProductRepository : BaseRepository
 
         return -1;
     }
-    
+
     public int Update(Product? product)
     {
         if (product != null)
@@ -52,5 +52,12 @@ public class ProductRepository : BaseRepository
         }
 
         return -1;
+    }
+
+    public Product? GetProductByExactName(string name)
+    {
+        return Context.Product
+            .Include(p => p.Category)
+            .FirstOrDefault(p => p.ProductName.ToLower() == name.ToLower());
     }
 }
