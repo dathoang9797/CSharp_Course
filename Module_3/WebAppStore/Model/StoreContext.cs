@@ -6,6 +6,4 @@ namespace WebAppStore.Model;
 public class StoreContext : IdentityDbContext
 {
     public StoreContext(DbContextOptions options) : base(options) { }
-
-    public DbSet<Member> Members { get; set; }
 }
