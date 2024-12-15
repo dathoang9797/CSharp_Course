@@ -65,7 +65,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Home/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +258,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebKoi: http">
+  <component name="RunManager" selected=".NET Launch Settings Profile.WebKoi: https">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -1049,10 +1048,10 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebKoi: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+    <configuration name="WebKoi: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebKoi/WebKoi.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -1211,7 +1210,6 @@
       <item itemvalue=".NET Launch Settings Profile.WebAppTiki: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebAppVNPayment" />
       <item itemvalue=".NET Launch Settings Profile.WebAppVNPayment: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebKoi: http" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: https" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebProductAPI: http" />
@@ -1329,7 +1327,7 @@
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
-      <workItem from="1734174275582" duration="18157000" />
+      <workItem from="1734174275582" duration="19561000" />
     </task>
     <task id="LOCAL-00099" summary="Up">
       <option name="closed" value="true" />
