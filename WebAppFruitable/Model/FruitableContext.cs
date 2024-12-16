@@ -13,5 +13,6 @@ public class FruitableContext : DbContext
     public DbSet<Product> Product { get; set; }
     public DbSet<Member> Member { get; set; }
     public DbSet<Cart> Cart { get; set; }
+    public DbSet<Invoice> Invoice { get; set; }
     public DbSet<VnPaymentResponse> VnPaymentResponses { get; set; }
 }

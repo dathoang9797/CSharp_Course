@@ -24,5 +24,8 @@ public class SiteProvider
 
     private CartRepository _cart;
     public CartRepository Cart => _cart ??= new CartRepository(context);
+    
+    private InvoiceRepository _invoice;
+    public InvoiceRepository Invoice => _invoice ??= new InvoiceRepository(context);
 
 }

@@ -12,7 +12,7 @@ public class CartController : BaseController
 {
     private const string CartCode = "cart";
     private VnPaymentService? Service { get; set; }
-    
+
     public CartController(
         VnPaymentService service
     )
@@ -47,26 +47,37 @@ public class CartController : BaseController
     [Authorize]
     public IActionResult Add(CartFrom obj)
     {
-        var memberId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        var code = Request.Cookies[CartCode];
-        if (string.IsNullOrEmpty(code))
+        try
         {
-            code = Helper.RandomString(32);
-            Response.Cookies.Append(CartCode, code);
+            if (User.Identity?.IsAuthenticated == false)
+                return Redirect("/auth/login");
+
+            var memberId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var code = Request.Cookies[CartCode];
+            if (string.IsNullOrEmpty(code))
+            {
+                code = Helper.RandomString(32);
+                Response.Cookies.Append(CartCode, code);
+            }
+
+            var cart = new Cart
+            {
+                MemberId = memberId,
+                ProductId = obj.ProductId,
+                Quantity = obj.Quantity,
+                CartCode = code
+            };
+
+            var ret = Provider.Cart.Add(cart);
+            return ret > 0
+                ? Ok(new { message = "Item deleted successfully." })
+                : StatusCode(500, new { message = "Failed to add the item." });
         }
-
-        var cart = new Cart
+        catch (Exception e)
         {
-            MemberId = memberId,
-            ProductId = obj.ProductId,
-            Quantity = obj.Quantity,
-            CartCode = code
-        };
-
-        var ret = Provider.Cart.Add(cart);
-        return ret > 0
-            ? Ok(new { message = "Item deleted successfully." })
-            : StatusCode(500, new { message = "Failed to delete the item." });
+            Console.WriteLine(e);
+            return StatusCode(500, new { message = "Failed to add the item." });
+        }
     }
 
     [HttpPut]
@@ -132,26 +143,55 @@ public class CartController : BaseController
     }
 
     [HttpPost]
+    [Authorize]
     [Route("cart/checkout")]
     public IActionResult Checkout(Invoice obj)
     {
+        if (User.Identity?.IsAuthenticated == false)
+            return Redirect("/auth/login");
+
         var code = Request.Cookies[CartCode];
         if (string.IsNullOrEmpty(code))
             return Redirect("/");
 
-        var listCart = Provider.Cart.GetList(code);
-        var amount = listCart.Sum(item => item.Product != null ? item.Product.Price * item.Quantity : 0);
-        obj.Amount = (int)(amount * 100);
-
-        var random = new Random();
-        obj.InvoiceId = random.NextInt64(99999, long.MaxValue);
-        var url = Service?.ToUrlPayment(obj);
-        if (string.IsNullOrWhiteSpace(url))
+        if (obj.PaymentMethod == "VnPaypal")
         {
-            return Checkout();
-        }
+            var id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            obj.MemberId = id;
 
-        return Redirect(url);
+            var listCart = Provider.Cart.GetList(code);
+            var amount = listCart.Sum(item => item.Product != null ? item.Product.Price * item.Quantity : 0);
+            obj.Amount = (int)(amount * 100);
+            obj.InvoiceDate = DateTime.UtcNow;
+
+            var random = new Random();
+            obj.InvoiceId = random.NextInt64(99999, long.MaxValue);
+            var url = Service?.ToUrlPayment(obj);
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                return Checkout();
+            }
+
+            Provider.Invoice.Add(obj);
+            return Redirect(url);
+        }
+        else
+        {
+            var id = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            obj.MemberId = id;
+            obj.InvoiceDate = DateTime.UtcNow;
+            var listCart = Provider.Cart.GetList(code);
+            var amount = listCart.Sum(item => item.Product != null ? item.Product.Price * item.Quantity : 0);
+            obj.Amount = (int)(amount * 100);
+            obj.InvoiceId = new Random().NextInt64(99999, long.MaxValue);
+            var ret = Provider.Invoice.Add(obj);
+            if (ret > 0)
+            {
+                Response.Cookies.Delete(CartCode);
+            }
+
+            return Redirect(ret > 0 ? "/home" : "/cart/failed");
+        }
     }
 
     public IActionResult BackVnPayment(VnPaymentResponse? obj)

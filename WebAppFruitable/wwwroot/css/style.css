@@ -526,5 +526,5 @@ a{
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 1050;
+    z-index: 9999;
 }

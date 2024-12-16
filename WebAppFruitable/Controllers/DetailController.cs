@@ -21,6 +21,7 @@ public class DetailController : BaseController
 
             ViewBag.Carts = cart;
         }
+
         return View();
     }
 
@@ -31,7 +32,7 @@ public class DetailController : BaseController
         {
             if (string.IsNullOrWhiteSpace(productName))
                 return Redirect("/home");
-            
+
             var code = Request.Cookies[CartCode];
             if (!string.IsNullOrEmpty(code))
             {
@@ -45,18 +46,18 @@ public class DetailController : BaseController
                 ViewBag.Carts = cart;
             }
 
-            var product = Provider.Product.GetProductByExactName(productName);
-            if (product == null)
+            var listProduct = Provider.Product.GetProductByExactName(productName);
+            if (listProduct == null || listProduct.Count <= 0)
             {
-                TempData["ProductNotFound"] ="Product not found";
+                TempData["ProductNotFound"] = "Product not found";
                 return Redirect("/home");
             }
 
-            return View(product);
+            return View(listProduct);
         }
         catch (Exception e)
         {
-            TempData["ProductNotFound"] ="Product not found";
+            TempData["ProductNotFound"] = "Product not found";
             return Redirect("/home");
         }
     }

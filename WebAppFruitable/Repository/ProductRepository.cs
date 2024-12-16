@@ -54,10 +54,11 @@ public class ProductRepository : BaseRepository
         return -1;
     }
 
-    public Product? GetProductByExactName(string name)
+    public List<Product>? GetProductByExactName(string name)
     {
         return Context.Product
             .Include(p => p.Category)
-            .FirstOrDefault(p => p.ProductName.ToLower() == name.ToLower());
+            .Where(p => EF.Functions.Like(p.ProductName, $"%{name}%"))
+            .ToList();
     }
 }

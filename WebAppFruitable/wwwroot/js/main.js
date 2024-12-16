@@ -167,19 +167,17 @@
         const inputField = button.closest('.quantity').find('input[type="text"]');
         const productId = button.closest('.quantity').find('input[name="productId"]').val();
         const oldValue = parseFloat(inputField.val());
-        if(oldValue === 1)
-            return;
-        
+
         let newVal = 0;
         if (button.hasClass('btn-plus')) {
             newVal = parseFloat(oldValue) + 1;
         } else {
-            if (oldValue > 0) {
-                newVal = parseFloat(oldValue) - 1;
-            } else {
-                newVal = 0;
-            }
+            newVal = parseFloat(oldValue) - 1;
         }
+
+        if (newVal === 0)
+            return;
+        
         inputField.val(newVal);
         debouncedUpdateCartQuantity(productId, newVal);
     });
@@ -191,7 +189,7 @@
         const quantityValue = quantity.val();
         const productIdValue = productId.val();
         const totalQuantityCart = $("#total-quantity-cart");
-        
+
         if (!quantityValue || !productIdValue || !totalQuantityCart) {
             showDynamicAlert("Có gì đó không ổn", "danger");
             return;
@@ -199,12 +197,16 @@
 
         let currentQuantity = parseInt(totalQuantityCart.text()) || 0;
         let quantityUpdate = parseInt(quantityValue) || 0;
+        let isReload = false;
+        if (currentQuantity === 0)
+            isReload = true;
+
         currentQuantity += quantityUpdate;
         totalQuantityCart.text(currentQuantity);
-        debouncedAddToCart(productIdValue, quantityUpdate);
+        debouncedAddToCart(productIdValue, quantityUpdate, isReload);
     });
 
-    const debouncedAddToCart = debounce(function (productId, quantity) {
+    const debouncedAddToCart = debounce(function (productId, quantity, isReload) {
         $.ajax({
             url: '/cart/add',
             method: 'POST',
@@ -218,11 +220,20 @@
             success: function (response) {
                 if (response) {
                     showDynamicAlert("Add Successful!", "success");
+                    isReload && setTimeout(() => {
+                        window.location.reload();
+                    }, 1000)
                 }
             },
             error: function (error) {
-
-                console.log('Error updating cart');
+                if (error.status === 401) {
+                    showDynamicAlert('Bạn cần phải đăng nhập', "warning");
+                    setTimeout(() => {
+                        window.location.href = 'auth/login';
+                    }, 1000)
+                } else {
+                    showDynamicAlert('Có lỗi trong quá trình xử lý', "danger");
+                }
             }
         });
     }, 600);

@@ -1,70 +1,74 @@
-﻿@model WebAppFruitable.Model.Product?;
+﻿@model List<WebAppFruitable.Model.Product?>;
 
-@if (Model != null)
+@if (Model != null && Model.Any())
 {
-    <div class="container-fluid py-5 mt-5">
-        <div class="container py-5">
-            <div class="row g-4 mb-5">
-                <div class="col-lg-8 col-xl-9">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="border rounded">
-                                <a href="#">
-                                    <img
-                                        src="/img/@Model.ImageUrl"
-                                        class="img-fluid rounded"
-                                        alt="Image">
-                                </a>
+    foreach (var item in Model)
+    {
+        <div class="container-fluid py-5 mt-5">
+            <div class="container py-5">
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="row g-4">
+                            <div class="col-lg-6">
+                                <div class="border rounded">
+                                    <a href="#">
+                                        <img
+                                            src="/img/@item?.ImageUrl"
+                                            class="img-fluid rounded"
+                                            alt="Image">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <h4 class="fw-bold mb-3">@Model.ProductName</h4>
-                            <p class="mb-3">Category: @Model.Category.CategoryName</p>
-                            <h5 class="fw-bold mb-3">
-                                @Model.Price.ToString("#,0.00") đ
-                            </h5>
-                            <div class="d-flex mb-4">
-                                @for (var i = 1; i <= 5; i++)
-                                {
-                                    if (i <= Model.Rating)
+                            <div class="col-lg-6">
+                                <h4 class="fw-bold mb-3">@item?.ProductName</h4>
+                                <p class="mb-3">Category: @item?.Category.CategoryName</p>
+                                <h5 class="fw-bold mb-3">
+                                    @item?.Price.ToString("#,0.00") đ
+                                </h5>
+                                <div class="d-flex mb-4">
+                                    @for (var i = 1; i <= 5; i++)
                                     {
-                                        <i class="fa fa-star text-warning"></i>
-                                        <!-- Filled star -->
+                                        if (i <= @item?.Rating)
+                                        {
+                                            <i class="fa fa-star text-warning"></i>
+                                            <!-- Filled star -->
+                                        }
+                                        else
+                                        {
+                                            <i class="fa fa-star text-secondary"></i>
+                                            <!-- Empty star -->
+                                        }
                                     }
-                                    else
-                                    {
-                                        <i class="fa fa-star text-secondary"></i>
-                                        <!-- Empty star -->
-                                    }
-                                }
-                            </div>
-                            <p class="mb-4">
-                                @Model.Description
-                            </p>
-                            <div class="input-group quantity mb-5" style="width: 100px;">
-                                <input
-                                    type="hidden"
-                                    value="@Model.ProductId"
-                                    name="ProductId"/>
-                                <input
-                                    class="form-control mr-2 mb-2"
-                                    type="number"
-                                    value="1" min="1"
-                                    max="20"
-                                    name="ProductQuantity">
-                                <a
-                                    add-to-cart="add-to-cart"
-                                    href="#"
-                                    class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
-                                    <i class="fa fa-shopping-bag me-2 text-primary"></i>
-                                    Add to cart
-                                </a>
-                            </div>
+                                </div>
+                                <p class="mb-4">
+                                    @item?.Description
+                                </p>
+                                <div class="input-group quantity mb-5" style="width: 100px;">
+                                    <input
+                                        type="hidden"
+                                        value="@item?.ProductId"
+                                        name="ProductId"/>
+                                    <input
+                                        class="form-control mr-2 mb-2"
+                                        type="number"
+                                        value="1" min="1"
+                                        max="20"
+                                        name="ProductQuantity">
+                                    <a
+                                        add-to-cart="add-to-cart"
+                                        href="#"
+                                        class="btn border border-secondary rounded-pill px-4 py-2 mb-4 text-primary">
+                                        <i class="fa fa-shopping-bag me-2 text-primary"></i>
+                                        Add to cart
+                                    </a>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <hr/>
+    }
 }
