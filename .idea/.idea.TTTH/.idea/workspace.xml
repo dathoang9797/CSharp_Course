@@ -73,11 +73,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/RoleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Role/Add.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Role/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Role/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/RoleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/RoleRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1127,7 +1123,7 @@
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
       <workItem from="1734174275582" duration="29356000" />
-      <workItem from="1734330164858" duration="10949000" />
+      <workItem from="1734330164858" duration="11044000" />
     </task>
     <task id="LOCAL-00102" summary="Up">
       <option name="closed" value="true" />
