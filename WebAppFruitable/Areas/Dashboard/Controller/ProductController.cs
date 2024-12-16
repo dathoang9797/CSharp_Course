@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApp.Models;
+using WebAppFruitable.Controllers;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
 using WebAppFruitables;

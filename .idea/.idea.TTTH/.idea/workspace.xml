@@ -73,50 +73,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Model/MemberInRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberInRoleRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/RoleRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/RoleController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/MemberController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/User/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/MemberController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/MemberController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/ProductController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Roles.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Roles.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Member.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Role.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Role.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/RoleChecked.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/RoleChecked.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/InvoiceRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/InvoiceRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1166,7 +1140,7 @@
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
       <workItem from="1734174275582" duration="29356000" />
-      <workItem from="1734330164858" duration="4448000" />
+      <workItem from="1734330164858" duration="10334000" />
     </task>
     <task id="LOCAL-00102" summary="Up">
       <option name="closed" value="true" />
@@ -1644,13 +1618,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs</url>
-          <line>46</line>
+          <line>47</line>
           <properties documentPath="E:\CShrap-Course\TTTH\WebAppFruitable\Areas\Dashboard\Controller\CategoryController.cs" containingFunctionPresentation="Method 'Update'">
             <startOffsets>
-              <option value="1202" />
+              <option value="1237" />
             </startOffsets>
             <endOffsets>
-              <option value="1251" />
+              <option value="1286" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="106" />

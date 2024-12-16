@@ -13,6 +13,12 @@
                             @TempData["ProductNotFound"]
                         </div>
                     }
+                    @if (TempData["NotAllow"] != null)
+                    {
+                    <div class="alert alert-warning text-center">
+                        @TempData["NotAllow"]
+                    </div>
+                    }
                     <div class="position-relative mx-auto">
                         <input
                             name="ProductName"

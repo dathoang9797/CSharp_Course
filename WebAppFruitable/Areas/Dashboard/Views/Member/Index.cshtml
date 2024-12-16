@@ -1,10 +1,13 @@
 ﻿@model List<WebAppFruitable.Model.Member>
 
+@{
+    var index = 1;
+}
 
 <table class="table table-bordered">
     <thead>
     <tr>
-        <td>Id</td>
+        <td>Stt</td>
         <th>FullName</th>
         <th>Email</th>
         <th>CreatedDate</th>
@@ -16,12 +19,12 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.MemberId</td>
+            <td>@index</td>
             <td>@(item.GivenName + item.Surname)</td>
             <td>@item.Email</td>
             <td>@item.CreatedDate.ToString("dd/MM/yyyy hh:mm:ss")</td>
             <td>
-                <a href="/member/roles/@item.MemberId">Roles</a>
+                <a href="/dashboard/member/roles/@item.MemberId">Roles</a>
             </td>
             <td>
                 <a class="btn btn-outline-primary del" href="/dashboard/user/delete/@item.MemberId">
@@ -32,6 +35,7 @@
                 </a>
             </td>
         </tr>
+        index++;
     }
     </tbody>
 </table>

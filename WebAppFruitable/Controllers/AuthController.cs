@@ -54,7 +54,6 @@ public class AuthController : BaseController
         if (member == null)
             return Redirect("/auth/register");
 
-        var role = "Admin";
         var claims = new List<Claim>()
         {
             new(ClaimTypes.NameIdentifier, member.MemberId),
@@ -62,8 +61,20 @@ public class AuthController : BaseController
             new(ClaimTypes.GivenName, member.GivenName),
             new(ClaimTypes.Surname, member.Surname),
             new(ClaimTypes.Name, member.GivenName + " " + member.Surname),
-            new(ClaimTypes.Role, role)
         };
+
+        var listRole = Provider.Role.GetRolesByMember(member.MemberId);
+        if (listRole.Count > 0)
+        {
+            foreach (var role in listRole)
+            {
+                if (role.Checked == 1)
+                    claims.Add(new Claim(ClaimTypes.Role, role.RoleName));
+            }
+        }
+        else
+            claims.Add(new Claim(ClaimTypes.Role, "Admin"));
+
 
         var name = member.GivenName + " " + member.Surname;
         claims.Add(new Claim(ClaimTypes.Surname, member.Surname));

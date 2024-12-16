@@ -4,5 +4,5 @@ namespace WebAppFruitable.Model;
 
 public class RoleChecked : Role
 {
-    public bool Checked { get; set; }
+    public int Checked { get; set; }
 }

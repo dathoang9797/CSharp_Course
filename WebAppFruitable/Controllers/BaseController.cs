@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using WebAppFruitable.Model;
 
-namespace WebAppFruitables;
+namespace WebAppFruitable.Controllers;
 
 public abstract class BaseController : Controller
 {
-    private SiteProvider? provicer;
-    protected SiteProvider Provider => provicer ??= HttpContext.RequestServices.GetRequiredService<SiteProvider>();
+    private SiteProvider? _provider;
+    protected SiteProvider Provider => _provider ??= HttpContext.RequestServices.GetRequiredService<SiteProvider>();
 }

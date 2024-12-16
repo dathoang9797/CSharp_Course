@@ -1,4 +1,4 @@
-namespace WebApp.Models;
+namespace WebAppFruitable.Model;
 
 public class Role
 {

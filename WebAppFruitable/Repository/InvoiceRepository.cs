@@ -13,7 +13,7 @@ public class InvoiceRepository : BaseRepository
         return Context.Invoice.ToList();
     }
 
-    public List<Invoice>? GetInvoice(string id)
+    public List<Invoice> GetInvoice(string id)
     {
         return Context.Invoice.Where(p => p.MemberId == id).ToList();
     }

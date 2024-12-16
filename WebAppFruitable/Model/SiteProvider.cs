@@ -28,4 +28,9 @@ public class SiteProvider
     private InvoiceRepository _invoice;
     public InvoiceRepository Invoice => _invoice ??= new InvoiceRepository(context);
 
+    private RoleRepository _role;
+    public RoleRepository Role => _role ??= new RoleRepository(context);
+
+    private MemberInRoleRepository _memberInRole;
+    public MemberInRoleRepository MemberInRole => _memberInRole ??= new MemberInRoleRepository(context);
 }

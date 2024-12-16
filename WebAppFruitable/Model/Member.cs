@@ -24,16 +24,13 @@ public class Member
     [MaxLength(64)]
     [Column(TypeName = "varchar(64)")]
     public string Email { get; set; } = string.Empty;
-
-    [Required]
-    public DateTime CreatedDate { get; set; }
+    [Required] public DateTime CreatedDate { get; set; }
     public DateTime? UpdatedDate { get; set; }
     public DateTime? LoginDate { get; set; }
-    
-    [MaxLength(128)]
-    public string? ResetToken { get; set; }
+
+    [MaxLength(128)] public string? ResetToken { get; set; }
     public DateTime? ResetTokenExpiry { get; set; }
-    public byte[] Password { get; set; } = []; 
+    public byte[] Password { get; set; } = [];
 }
 
 public class MemberBody
@@ -43,7 +40,7 @@ public class MemberBody
     public string GivenName { get; set; } = null!;
     public string? SurName { get; set; }
     public string Email { get; set; } = null!;
-    
+
     public DateTime CreatedDate { get; set; }
     public DateTime? UpdatedDate { get; set; }
     public DateTime? LoginDate { get; set; }
