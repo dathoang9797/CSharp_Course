@@ -80,5 +80,6 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
       <_ContentIncludedByDefault Remove="Areas\Dashboard\Views\Category\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Member\Index.cshtml" />
     </ItemGroup>
 </Project>

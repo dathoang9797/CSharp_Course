@@ -1,14 +1,16 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WebAppFruitables;
 
 namespace WebAppFruitable.Areas.Dashboard.Controller;
 
 [Area("dashboard")]
-public class HomeController : Microsoft.AspNetCore.Mvc.Controller
+public class MemberController : BaseController
 {
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public IActionResult Index()
     {
-        return View();
+        var listMember = Provider.Member.GetMembers();
+        return View(listMember);
     }
 }

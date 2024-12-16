@@ -54,12 +54,15 @@ public class AuthController : BaseController
         if (member == null)
             return Redirect("/auth/register");
 
+        var role = "Admin";
         var claims = new List<Claim>()
         {
             new(ClaimTypes.NameIdentifier, member.MemberId),
             new(ClaimTypes.Email, member.Email),
             new(ClaimTypes.GivenName, member.GivenName),
             new(ClaimTypes.Surname, member.Surname),
+            new(ClaimTypes.Name, member.GivenName + " " + member.Surname),
+            new(ClaimTypes.Role, role)
         };
 
         var name = member.GivenName + " " + member.Surname;
@@ -166,7 +169,7 @@ public class AuthController : BaseController
             return View(obj);
         }
 
-        
+
         TempData["Msg"] = "Please Login with new Password";
         return await Logout();
     }
@@ -218,7 +221,7 @@ public class AuthController : BaseController
 
         return View(new ResetForgotPassword { Token = token });
     }
-    
+
     [HttpPost]
     public async Task<IActionResult> ResetForgotPassword(ResetForgotPassword model)
     {

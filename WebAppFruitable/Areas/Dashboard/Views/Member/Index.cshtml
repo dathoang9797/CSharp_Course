@@ -1,0 +1,46 @@
+﻿@model List<WebAppFruitable.Model.Member>
+
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <th>FullName</th>
+        <th>Email</th>
+        <th>CreatedDate</th>
+        <th>Roles</th>
+        <th>Command</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MemberId</td>
+            <td>@(item.GivenName + item.Surname)</td>
+            <td>@item.Email</td>
+            <td>@item.CreatedDate.ToString("dd/MM/yyyy hh:mm:ss")</td>
+            <td>
+                <a href="/member/roles/@item.MemberId">Roles</a>
+            </td>
+            <td>
+                <a class="btn btn-outline-primary del" href="/dashboard/user/delete/@item.MemberId">
+                    Update
+                </a>
+                <a class="btn btn-outline-primary del" href="/dashboard/user/delete/@item.MemberId">
+                    Delete
+                </a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts
+{
+    <script>
+        $(".del").click(function () {
+          return  confirm("Are you sure delete?");
+        });
+    </script>
+}

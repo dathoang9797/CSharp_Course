@@ -72,22 +72,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/InvoiceController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/InvoiceRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Invoice/Index.cshtml" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/CartController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/DetailController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/FruitableContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/Invoice.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/Invoice.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Model/SiteProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/ProductRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Checkout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Cart/Checkout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Detail/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/wwwroot/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_1/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/ConsoleApp/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/Debug/net6.0/Crawler.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Crawler/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/Debug/net6.0/DependencyInjection.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/DependencyInjection/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/Debug/net6.0/Euro.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Euro/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/Debug/net6.0/Extension.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/Extension/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/Debug/net6.0/WebAppVNPayment.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_2/WebAppVNPayment/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/Debug/net6.0/TaiLieuSachGiaoKhoa.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/TaiLieuSachGiaoKhoa/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/Debug/net6.0/WebAppAuthentication.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppAuthentication/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/obj/Debug/net6.0/WebAppFruitables.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/RoleController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/MemberController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/User/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Member/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/Repository/MemberRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,60 +267,60 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.Euro: WebApp1.executor": "Debug",
-    ".NET Launch Settings Profile.WebApi: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebApi: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebApiGraphql: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebApp: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebApp: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppAuthentication.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppChat: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppClassLib: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppFruitable: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppFruitable: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppFruitables.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppGraphql: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppGraphql: https.executor": "Debug",
-    ".NET Launch Settings Profile.WebAppStore.executor": "Debug",
-    ".NET Launch Settings Profile.WebApplication1: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: IIS Express.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: http.executor": "Debug",
-    ".NET Launch Settings Profile.WebKoi: https.executor": "Debug",
-    ".NET Project.AppTest.executor": "Debug",
-    ".NET Project.Module_1.executor": "Debug",
-    ".NET Project.Module_4\\AppCrawler.executor": "Debug",
-    ".NET Project.Module_5\\ConsoleApp.executor": "Debug",
-    "8d321b14-21df-4f1a-870f-71be3f0a65c1.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowExplorer.ShowToolbar": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor": "Debug",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Console",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Euro: WebApp1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApi: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApiGraphql: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApp: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApp: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppAuthentication.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppChat: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppClassLib: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppFruitable: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppFruitable: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppFruitables.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppGraphql: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppGraphql: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebAppStore.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebApplication1: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: IIS Express.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: http.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Launch Settings Profile.WebKoi: https.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.AppTest.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_1.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_4\\AppCrawler.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Project.Module_5\\ConsoleApp.executor&quot;: &quot;Debug&quot;,
+    &quot;8d321b14-21df-4f1a-870f-71be3f0a65c1.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowExplorer.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;f0d5f2aa-a637-4e51-ad8c-3137faeeee26.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Console&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "GitStage.ChangesTree.GroupingKeys": [
-      "directory",
-      "module",
-      "repository"
+  &quot;keyToStringList&quot;: {
+    &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;,
+      &quot;repository&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
-      "C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
-      "C:\\Users\\datho\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\datho\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebKoi: https">
+}</component>
+  <component name="RunManager" selected="Multi-Launch.Multi-Launch: TTTH">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -736,51 +765,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebAppFruitable: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppFruitable: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppFruitable: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppFruitable/WebAppFruitable.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <configuration name="WebAppFruitables" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebAppFruitables/WebAppFruitables/WebAppFruitables.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -811,54 +795,9 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebAppProduct: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppProduct/WebAppProduct.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppProduct: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppProduct/WebAppProduct.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppProduct: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebAppProduct/WebAppProduct.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <configuration name="WebAppStore" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebAppStore/WebAppStore.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="WebAppStore" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -875,51 +814,6 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_3/WebAppStore/WebAppStore.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
       <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppTiki: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppTiki/WebAppTiki.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppTiki: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppTiki/WebAppTiki.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebAppTiki: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WebAppTiki/WebAppTiki.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -1096,66 +990,6 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebProductAPI: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebProductAPI/WebProductAPI.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebProductAPI: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebProductAPI/WebProductAPI.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WebProductAPI: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/WebProductAPI/WebProductAPI.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
-    <configuration name="WorkerService1" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_4/WorkerService1/WorkerService1.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="WorkerService1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="0" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
-      <option name="SEND_DEBUG_REQUEST" value="1" />
-      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
-      <method v="2">
-        <option name="Build" />
-      </method>
-    </configuration>
     <configuration name="Multi-Launch: TTTH" type="com.intellij.execution.configurations.multilaunch" factoryName="MultiLaunchConfiguration">
       <rows>
         <ExecutableRowSnapshot>
@@ -1209,30 +1043,17 @@
       <item itemvalue=".NET Launch Settings Profile.WebAppClassLib: http" />
       <item itemvalue=".NET Launch Settings Profile.WebAppClassLib: https" />
       <item itemvalue=".NET Launch Settings Profile.WebAppClassLib: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppFruitable: http" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppFruitable: https" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppFruitable: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebAppFruitables" />
       <item itemvalue=".NET Launch Settings Profile.WebAppFruitables: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: http" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: https" />
       <item itemvalue=".NET Launch Settings Profile.WebApplication1: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppProduct: http" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppProduct: https" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppProduct: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebAppStore" />
       <item itemvalue=".NET Launch Settings Profile.WebAppStore: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppTiki: http" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppTiki: https" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppTiki: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebAppVNPayment" />
       <item itemvalue=".NET Launch Settings Profile.WebAppVNPayment: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: https" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebProductAPI: http" />
-      <item itemvalue=".NET Launch Settings Profile.WebProductAPI: https" />
-      <item itemvalue=".NET Launch Settings Profile.WebProductAPI: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WorkerService1" />
       <item itemvalue=".NET Project.ConsoleAppSentimentAnalytic" />
       <item itemvalue=".NET Project.AppTest" />
       <item itemvalue=".NET Project.ConsoleApp" />
@@ -1344,7 +1165,8 @@
       <workItem from="1734163316195" duration="111000" />
       <workItem from="1734163441241" duration="6862000" />
       <workItem from="1734170442034" duration="3599000" />
-      <workItem from="1734174275582" duration="28430000" />
+      <workItem from="1734174275582" duration="29356000" />
+      <workItem from="1734330164858" duration="4448000" />
     </task>
     <task id="LOCAL-00102" summary="Up">
       <option name="closed" value="true" />

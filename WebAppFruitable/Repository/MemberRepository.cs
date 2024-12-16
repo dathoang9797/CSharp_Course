@@ -10,6 +10,11 @@ public class MemberRepository : BaseRepository
     {
     }
 
+    public List<Member> GetMembers()
+    {
+        return Context.Member.ToList();
+    }
+
     public int Add(Member obj)
     {
         Context.Member.Add(obj);
