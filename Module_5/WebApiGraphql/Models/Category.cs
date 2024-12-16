@@ -6,7 +6,7 @@ namespace WebApiGraphql.Models;
 public class Category
 {
     [Column("CategoryId")]
-    public short Id { get; set; }
+    public int Id { get; set; }
     [Column("CategoryName")]
     public string? Name { get; set; }
 }
