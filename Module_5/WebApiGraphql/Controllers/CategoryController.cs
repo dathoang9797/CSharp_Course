@@ -11,4 +11,15 @@ public class CategoryController : ControllerBase
 
     [HttpGet]
     public List<Category> GetCategories() => Context.Categories.ToList();
+
+    [HttpPost]
+    public int Add(CategoryModel obj)
+    {
+        var category = new Category()
+        {
+            Name = obj.Name,
+        };
+        Context.Categories.Add(category);
+        return Context.SaveChanges();
+    }
 }

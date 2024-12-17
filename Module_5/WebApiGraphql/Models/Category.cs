@@ -10,3 +10,8 @@ public class Category
     [Column("CategoryName")]
     public string? Name { get; set; }
 }
+
+public class CategoryModel
+{
+    public string? Name { get; set; }
+}
