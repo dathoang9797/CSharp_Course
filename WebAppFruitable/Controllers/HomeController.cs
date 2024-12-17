@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using WebAppFruitables;
 
 namespace WebAppFruitable.Controllers;
 

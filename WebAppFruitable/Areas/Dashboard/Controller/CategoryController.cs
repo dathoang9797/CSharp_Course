@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WebAppFruitable.Controllers;
 using WebAppFruitable.Model;
-using WebAppFruitables;
 
 namespace WebAppFruitable.Areas.Dashboard.Controller;
 

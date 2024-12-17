@@ -8,7 +8,6 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
-using WebAppFruitables;
 
 namespace WebAppFruitable.Controllers;
 

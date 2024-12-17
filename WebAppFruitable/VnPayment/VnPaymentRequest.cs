@@ -1,4 +1,4 @@
-﻿namespace WebApplication1.VnPayment;
+﻿namespace WebAppFruitable.VnPayment;
 
 public class VnPaymentRequest
 {

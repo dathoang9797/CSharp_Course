@@ -1,6 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using WebApp.Models;
 using WebAppFruitable.Model;
 using WebAppFruitable.Repository;
 

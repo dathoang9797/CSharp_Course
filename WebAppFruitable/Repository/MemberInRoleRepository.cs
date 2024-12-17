@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using WebApp.Models;
 using WebAppFruitable.Model;
 
 namespace WebAppFruitable.Repository;

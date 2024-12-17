@@ -1,5 +1,3 @@
-using WebApp.Models;
-
 namespace WebAppFruitable.Model;
 
 public class RoleChecked : Role

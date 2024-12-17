@@ -2,7 +2,7 @@
 
 namespace WebAppFruitable.Model;
 
-public class Invoice : IEnumerable
+public class Invoice
 {
     public long InvoiceId { get; set; }
     public decimal Amount { get; set; }
@@ -15,8 +15,4 @@ public class Invoice : IEnumerable
     public virtual string? MemberId { get; set; }
     public string PaymentMethod { get; set; } = null!;
     public DateTime InvoiceDate { get; set; }
-    public IEnumerator GetEnumerator()
-    {
-        throw new NotImplementedException();
-    }
 }

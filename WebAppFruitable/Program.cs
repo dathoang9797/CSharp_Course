@@ -3,9 +3,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using WebAppFruitable.Model;
+using WebAppFruitable.Services.Mail;
 using WebAppFruitable.VnPayment;
-using WebAppFruitables.Services.Mail;
-using WebApplication1.VnPayment;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<FruitableContext>(

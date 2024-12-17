@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApp.Models;
 using WebAppFruitable.Controllers;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
-using WebAppFruitables;
 
 namespace WebAppFruitable.Areas.Dashboard.Controller;
 
@@ -84,12 +82,12 @@ public class ProductController : BaseController
         var productUpdate = new Product()
         {
             ProductId = obj.ProductId,
-            ProductName = obj.ProductName,
-            ImageUrl = fileUpload?.ImageUrl ?? obj.ImageUrl,
+            ProductName = obj.ProductName ?? string.Empty,
+            ImageUrl = fileUpload?.ImageUrl ?? obj.ImageUrl ?? string.Empty,
             CategoryId = obj.CategoryId,
             Rating = obj.Rating,
             Price = obj.Price,
-            Description = obj.Description,
+            Description = obj.Description ?? string.Empty,
         };
 
         var ret = Provider.Product.Update(productUpdate);

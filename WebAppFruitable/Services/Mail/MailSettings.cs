@@ -1,4 +1,4 @@
-﻿namespace WebAppFruitables.Services.Mail;
+﻿namespace WebAppFruitable.Services.Mail;
 
 public class MailSettings
 {

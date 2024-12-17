@@ -1,8 +1,7 @@
 ﻿using WebAppFruitable.Model;
 using WebAppFruitable.VnPayment;
-using WebAppFruitable.Repository;
 
-namespace WebAppVNPayment.Repository;
+namespace WebAppFruitable.Repository;
 
 public class VnPaymentRepository : BaseRepository
 {

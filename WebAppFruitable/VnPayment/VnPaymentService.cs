@@ -1,9 +1,7 @@
-﻿using System.Globalization;
-using System.Net;
+﻿using System.Net;
 using Microsoft.Extensions.Options;
 using WebAppFruitable.Model;
 using WebAppFruitable.Services;
-using WebApplication1.VnPayment;
 
 namespace WebAppFruitable.VnPayment;
 
