@@ -45,3 +45,18 @@ public class MemberBody
     public DateTime? UpdatedDate { get; set; }
     public DateTime? LoginDate { get; set; }
 }
+
+public class MemberCreate
+{
+    public string GivenName { get; set; } = null!;
+    public string SurName { get; set; } = null!;
+    public string Email { get; set; } = null!;
+    public int RoleId { get; set; }
+}
+
+public class MemberUpdate
+{
+    public string GivenName { get; set; } = null!;
+    public string SurName { get; set; } = null!;
+    public string Email { get; set; } = null!;
+}

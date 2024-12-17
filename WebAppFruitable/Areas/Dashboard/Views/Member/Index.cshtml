@@ -1,9 +1,20 @@
-﻿@model List<WebAppFruitable.Model.Member>
+﻿@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<WebAppFruitable.Model.Member>
+@using WebAppFruitable.Model
 
 @{
     var index = 1;
 }
 
+<button class="btn btn-primary mt-2 mb-2" id="create-member">
+    Create Member
+</button>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger text-center">
+        @TempData["ErrorMessage"]
+    </div>
+}
 <table class="table table-bordered">
     <thead>
     <tr>
@@ -18,7 +29,7 @@
     <tbody>
     @foreach (var item in Model)
     {
-        <tr>
+        <tr member-id="@item.MemberId">
             <td>@index</td>
             <td>@(item.GivenName + item.Surname)</td>
             <td>@item.Email</td>
@@ -27,12 +38,15 @@
                 <a href="/dashboard/member/roles/@item.MemberId">Roles</a>
             </td>
             <td>
-                <a class="btn btn-outline-primary del" href="/dashboard/user/delete/@item.MemberId">
+                <button class="btn btn-outline-primary update-member">
                     Update
-                </a>
-                <a class="btn btn-outline-primary del" href="/dashboard/user/delete/@item.MemberId">
-                    Delete
-                </a>
+                </button>
+                <form method="post" action="/dashboard/member/delete/@item.MemberId">
+                    <button class="btn btn-outline-primary del">
+                        Delete
+                    </button>
+                </form>
+
             </td>
         </tr>
         index++;
@@ -40,11 +54,98 @@
     </tbody>
 </table>
 
+<div class="modal fade" id="createMemberModal" tabindex="-1" aria-labelledby="createMemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="/dashboard/member/create"
+              method="post"
+              class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createMemberModalLabel">
+                    Create Member
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="form-label" for="GivenName">GivenName</label>
+                    <input class="form-control" type="text" id="GivenName" name="GivenName"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Surname">Surname</label>
+                    <input class="form-control" type="text" id="Surname" name="Surname"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Email">Email</label>
+                    <input class="form-control" type="text" id="Email" name="Email"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="RoleId">Role</label>
+                    <select class="form-select" name="RoleId" id="RoleId">
+                        @foreach (Role item in ViewBag.Roles)
+                        {
+                            <option value="@item.RoleId">@item.RoleName</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="updateMemberModal" tabindex="-1" aria-labelledby="updateMemberModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form action="/dashboard/member/update"
+              method="post"
+              class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateMemberModalLabel">
+                    Update Member
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="MemberId" name="MemberId"/>
+                <div class="mb-3">
+                    <label class="form-label" for="GivenName">GivenName</label>
+                    <input class="form-control" type="text" id="GivenName" name="GivenName"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Surname">Surname</label>
+                    <input class="form-control" type="text" id="Surname" name="Surname"/>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="Email">Email</label>
+                    <input class="form-control" type="text" id="Email" name="Email"/>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Update</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 @section Scripts
 {
     <script>
-        $(".del").click(function () {
-          return  confirm("Are you sure delete?");
-        });
+        $("#create-member").click(function (){
+            $("#createMemberModal").modal("show");
+        })
+
+        $(".update-member").click(function (){
+            const id = $(this).closest("tr").attr("member-id");
+            $.get(`/dashboard/member/${id}`, (data) => {
+                $("#updateMemberModal input#MemberId").val(id);
+                $("#updateMemberModal #GivenName").val(data?.givenName);
+                $("#updateMemberModal #Surname").val(data?.surName);
+                $("#updateMemberModal #Email").val(data?.email);
+                $("#updateMemberModal").modal("show");
+            });
+        })
     </script>
 }

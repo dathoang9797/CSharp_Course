@@ -98,4 +98,42 @@ public class MemberRepository : BaseRepository
         var member = await Context.Member.FirstOrDefaultAsync(m => m.Email == email);
         return member;
     }
+
+    public async Task<MemberUpdate?> GetMemberById(string memberId)
+    {
+        var member = await Context.Member
+            .Where(m => m.MemberId == memberId)
+            .Select(m => new MemberUpdate()
+            {
+                SurName = m.Surname,
+                GivenName = m.GivenName,
+                Email = m.Email
+            })
+            .FirstOrDefaultAsync();
+
+        return member;
+    }
+
+    public int Delete(string id)
+    {
+        var member = Context.Member.Find(id);
+        if (member != null)
+        {
+            Context.Member.Remove(member);
+            return Context.SaveChanges();
+        }
+
+        return -1;
+    }
+    
+    public int Update(Member? member)
+    {
+        if (member != null)
+        {
+            Context.Member.Update(member);
+            return Context.SaveChanges();
+        }
+
+        return -1;
+    }
 }

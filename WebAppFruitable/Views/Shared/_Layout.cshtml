@@ -67,7 +67,8 @@
                         }
                     }
 
-                    @{
+                    @if (User.Identity?.Name != null)
+                    {
                         if (carts != null && carts.Sum(item => item.Quantity) > 0)
                         {
                             <a href="/cart/checkout" class="nav-item nav-link">Checkout</a>
