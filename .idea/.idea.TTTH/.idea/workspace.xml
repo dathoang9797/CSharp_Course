@@ -72,11 +72,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/AppSchema.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryInputType.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryMutation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" afterDir="false" />
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Controllers/HomeController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/Category.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoryResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/ErrorViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Properties/launchSettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Index.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Privacy.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/Error.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_ValidationScriptsPartial.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/_ViewImports.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/_ViewStart.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/app.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.Development.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_1/obj/Debug/net6.0/ConsoleApp.AssemblyInfoInputs.cache" afterDir="false" />
@@ -114,9 +134,6 @@
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/Debug/net8.0/WebAppStore.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Module_3/WebAppStore/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/WebApiGraphql.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/WebApiGraphql.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TTTH.sln" beforeDir="false" afterPath="$PROJECT_DIR$/TTTH.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,8 +252,13 @@
     <setting file="file://$PROJECT_DIR$/Module_5/ConsoleApp/TaxiTripFarePrediction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Controllers/CategoryController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Models/Category.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://E:/CShrap-Course/TTTH/Module_5/WebApiGraphql/Models/Category.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Models/WebStoreContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/AppSchema.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryInputType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryMutation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Category/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -1169,15 +1191,7 @@
       <workItem from="1734330164858" duration="11658000" />
       <workItem from="1734357313500" duration="2521000" />
       <workItem from="1734445334854" duration="591000" />
-      <workItem from="1734448004966" duration="9615000" />
-    </task>
-    <task id="LOCAL-00103" summary="Up">
-      <option name="closed" value="true" />
-      <created>1731753730768</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1731753730769</updated>
+      <workItem from="1734448004966" duration="10666000" />
     </task>
     <task id="LOCAL-00104" summary="Up">
       <option name="closed" value="true" />
@@ -1563,7 +1577,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734434018989</updated>
     </task>
-    <option name="localTasksCounter" value="152" />
+    <task id="LOCAL-00152" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734533581048</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1734533581049</updated>
+    </task>
+    <option name="localTasksCounter" value="153" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

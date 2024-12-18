@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAppVNPayment")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45686a60a26f4b8a5192948898f8487090e94768")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2410bc4193240bb304d20344f901f4b44ec0051b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAppVNPayment")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAppVNPayment")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
