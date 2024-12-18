@@ -1,13 +1,22 @@
+using GraphQL.Server;
 using Microsoft.EntityFrameworkCore;
 using WebApiGraphql.Models;
+using WebApiGraphql.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddControllers();
+
 builder.Services.AddDbContext<WebStoreContext>(
     p => p.UseSqlServer(builder.Configuration.GetConnectionString("WebAppGraphql"))
 );
+
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<CategoryMutation>();
+builder.Services.AddScoped<CategoryQuery>();
+builder.Services.AddScoped<AppSchema>();
+builder.Services.AddGraphQL().AddSystemTextJson();
 
 var app = builder.Build();
 if (app.Environment.IsDevelopment())
@@ -16,7 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseGraphQL<AppSchema>();
+app.UseGraphQLGraphiQL("/ui/graphql");
 app.MapControllers();
-app.UseStaticFiles();
 app.Run();
