@@ -29,6 +29,32 @@ public class CategoryMutation : ObjectGraphType<Category>
 
                 return null;
             });
+        Field<IntGraphType>(name: "addCategory2", arguments: new QueryArguments(
+            new QueryArgument<NonNullGraphType<ShortGraphType>>
+            {
+                Name = "id",
+                Description = "Id Field"
+            },
+            new QueryArgument<NonNullGraphType<StringGraphType>>
+            {
+                Name = "name",
+                Description = "Name Field"
+            }
+        ), resolve: p =>
+        {
+            string? name = p.GetArgument<string>("name");
+            if (!string.IsNullOrEmpty(name))
+            {
+                context.Categories.Add(new Category
+                {
+                    Id = p.GetArgument<short>("id"),
+                    Name = name
+                });
+            }
+
+            ;
+            return context.SaveChanges();
+        });
         Field<CategoryType>(
             name: "editCategory",
             arguments: new QueryArguments(

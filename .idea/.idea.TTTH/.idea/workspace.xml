@@ -73,9 +73,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoriesResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Details.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/ApplicationDbContext.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoryResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoryResponse.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_LoginPartial.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,6 +189,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afa6983712384498b90978d768a8579383928/20/075041e4/IEmailSender.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/afa6983712384498b90978d768a8579383928/92/2a5274ae/SignInManager`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bbaefdbb526e4a9f99725b6af466371c1912a0/6e/34745493/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bd5227acfcfb4847b8a2b341e3b921652e00/d0/09b5ac2a/GraphQLResponse`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/c98b4147ab194fdaa4f8efd8742b459318318/7c/10f3f64b/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/da46462c94e34c02a5141d1a98fb6d5915938/3e/94f2239f/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5d6ea4b6bfbfffd9fcd22e9740669aad3a37725b65b2c48fbfcff6165ce8e/SqlMapper.cs" root0="SKIP_HIGHLIGHTING" />
@@ -202,6 +217,7 @@
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryMutation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://E:/CShrap-Course/TTTH/Module_5/WebAppGraphql/appsettings.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Controller/CategoryController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Category/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/WebAppFruitable/Areas/Dashboard/Views/Product/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
@@ -286,7 +302,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.WebAppGraphql: http">
+  <component name="RunManager" selected="Multi-Launch.GraphqlTTTH">
     <configuration name="AppTest" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -536,10 +552,10 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebApiGraphql: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+    <configuration name="WebApiGraphql: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebApiGraphql/WebApiGraphql.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -554,7 +570,7 @@
     <configuration name="WebApiGraphql: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebApiGraphql/WebApiGraphql.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -761,7 +777,7 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="WebAppGraphql: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
+    <configuration name="WebAppGraphql: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile" temporary="true">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
@@ -971,6 +987,35 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="GraphqlTTTH" type="com.intellij.execution.configurations.multilaunch" factoryName="MultiLaunchConfiguration">
+      <rows>
+        <ExecutableRowSnapshot>
+          <option name="condition">
+            <ConditionSnapshot>
+              <option name="type" value="immediately" />
+            </ConditionSnapshot>
+          </option>
+          <option name="executable">
+            <ExecutableSnapshot>
+              <option name="id" value="runConfig:.NET Launch Settings Profile.WebApiGraphql: https" />
+            </ExecutableSnapshot>
+          </option>
+        </ExecutableRowSnapshot>
+        <ExecutableRowSnapshot>
+          <option name="condition">
+            <ConditionSnapshot>
+              <option name="type" value="afterPreviousStarted" />
+            </ConditionSnapshot>
+          </option>
+          <option name="executable">
+            <ExecutableSnapshot>
+              <option name="id" value="runConfig:.NET Launch Settings Profile.WebAppGraphql: https" />
+            </ExecutableSnapshot>
+          </option>
+        </ExecutableRowSnapshot>
+      </rows>
+      <method v="2" />
+    </configuration>
     <configuration name="Multi-Launch: TTTH" type="com.intellij.execution.configurations.multilaunch" factoryName="MultiLaunchConfiguration">
       <rows>
         <ExecutableRowSnapshot>
@@ -1002,7 +1047,6 @@
     </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.WebApiGraphql: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebApiGraphql: http" />
       <item itemvalue=".NET Launch Settings Profile.WebApiGraphql: https" />
       <item itemvalue=".NET Launch Settings Profile.DependencyInjection: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.DependencyInjection: WebApplication1" />
@@ -1035,7 +1079,7 @@
       <item itemvalue=".NET Launch Settings Profile.WebAppVNPayment: IIS Express" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: https" />
       <item itemvalue=".NET Launch Settings Profile.WebKoi: IIS Express" />
-      <item itemvalue=".NET Launch Settings Profile.WebAppGraphql: http" />
+      <item itemvalue=".NET Launch Settings Profile.WebAppGraphql: https" />
       <item itemvalue=".NET Project.ConsoleAppSentimentAnalytic" />
       <item itemvalue=".NET Project.AppTest" />
       <item itemvalue=".NET Project.ConsoleApp" />
@@ -1044,11 +1088,12 @@
       <item itemvalue=".NET Project.TaiLieuSachGiaoKhoa" />
       <item itemvalue=".NET Project.Module_4\AppCrawler" />
       <item itemvalue=".NET Project.Module_5\ConsoleApp" />
+      <item itemvalue="Multi-Launch.GraphqlTTTH" />
       <item itemvalue="Multi-Launch.Multi-Launch: TTTH" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue=".NET Launch Settings Profile.WebAppGraphql: http" />
+        <item itemvalue=".NET Launch Settings Profile.WebAppGraphql: https" />
         <item itemvalue=".NET Project.Module_5\ConsoleApp" />
         <item itemvalue=".NET Project.Module_4\AppCrawler" />
       </list>
@@ -1152,15 +1197,7 @@
       <workItem from="1734330164858" duration="11658000" />
       <workItem from="1734357313500" duration="2521000" />
       <workItem from="1734445334854" duration="591000" />
-      <workItem from="1734448004966" duration="11122000" />
-    </task>
-    <task id="LOCAL-00105" summary="up">
-      <option name="closed" value="true" />
-      <created>1731834462904</created>
-      <option name="number" value="00105" />
-      <option name="presentableId" value="LOCAL-00105" />
-      <option name="project" value="LOCAL" />
-      <updated>1731834462904</updated>
+      <workItem from="1734448004966" duration="18291000" />
     </task>
     <task id="LOCAL-00106" summary="Up">
       <option name="closed" value="true" />
@@ -1546,7 +1583,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734534608901</updated>
     </task>
-    <option name="localTasksCounter" value="154" />
+    <task id="LOCAL-00154" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734534978918</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1734534978919</updated>
+    </task>
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

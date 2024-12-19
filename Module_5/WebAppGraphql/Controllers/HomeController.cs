@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using GraphQL;
 using GraphQL.Client.Abstractions;
 using Microsoft.AspNetCore.Mvc;
@@ -11,7 +10,10 @@ public class HomeController : Controller
     private IGraphQLClient Client { get; set; }
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger, IGraphQLClient client)
+    public HomeController(
+        ILogger<HomeController> logger,
+        IGraphQLClient client
+    )
     {
         Client = client;
         _logger = logger;
@@ -21,32 +23,38 @@ public class HomeController : Controller
     {
         var query = new GraphQLRequest
         {
-            Query = @"
-                query ownersQuery{
-                  owners {
-                    id
-                    name
-                    address
-                    accounts {
-                      id
-                      type
-                      description
-                    }
-                  }
-                }"
+            Query = @"{
+             categories{
+                        id,
+                         name
+                }
+            }"
         };
-        var response = await Client.SendQueryAsync<CategoryResponse>(query);
+        var response = await Client.SendQueryAsync<CategoriesResponse>(query);
         return View(response.Data.Categories);
     }
 
-    public IActionResult Privacy()
+    public async Task<IActionResult> Details(int id)
     {
-        return View();
-    }
+        var query = new GraphQLRequest
+        {
+            Query = @"
+        query($id: Int!){
+            category(id: $id){
+                id
+                name
+            }
+        }",
+            Variables = new { id }
+        };
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        var response = await Client.SendQueryAsync<CategoryResponse>(query);
+
+        if (response.Errors != null && response.Errors.Any())
+        {
+            return BadRequest(response.Errors);
+        }
+
+        return View(response.Data.Category);
     }
 }

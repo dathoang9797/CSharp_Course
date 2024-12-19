@@ -15,7 +15,7 @@ namespace WebApiGraphql.Services
             Field<CategoryType>(
                 name: "category",
                 arguments: new QueryArguments(
-                    new QueryArgument<NonNullGraphType<ShortGraphType>>
+                    new QueryArgument<NonNullGraphType<IntGraphType>>
                     {
                         Name = "id",
                         Description = "Category Id"

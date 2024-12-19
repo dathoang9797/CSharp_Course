@@ -2,5 +2,5 @@ namespace WebAppGraphql.Models;
 
 public class CategoryResponse
 {
-    public List<Category> Categories { get; set; }
+    public Category Category { get; set; } = null!;
 }
