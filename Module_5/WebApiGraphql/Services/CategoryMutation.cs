@@ -30,7 +30,7 @@ public class CategoryMutation : ObjectGraphType<Category>
                 return null;
             });
         Field<IntGraphType>(name: "addCategory2", arguments: new QueryArguments(
-            new QueryArgument<NonNullGraphType<ShortGraphType>>
+            new QueryArgument<NonNullGraphType<IntGraphType>>
             {
                 Name = "id",
                 Description = "Id Field"
@@ -42,17 +42,16 @@ public class CategoryMutation : ObjectGraphType<Category>
             }
         ), resolve: p =>
         {
-            string? name = p.GetArgument<string>("name");
-            if (!string.IsNullOrEmpty(name))
-            {
-                context.Categories.Add(new Category
-                {
-                    Id = p.GetArgument<short>("id"),
-                    Name = name
-                });
-            }
+            var name = p.GetArgument<string>("name");
+            if (string.IsNullOrEmpty(name))
+                return -1;
 
-            ;
+            context.Categories.Add(new Category
+            {
+                Id = p.GetArgument<int>("id"),
+                Name = name
+            });
+
             return context.SaveChanges();
         });
         Field<CategoryType>(

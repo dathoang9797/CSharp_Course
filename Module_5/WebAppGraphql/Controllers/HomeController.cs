@@ -57,4 +57,36 @@ public class HomeController : Controller
 
         return View(response.Data.Category);
     }
+
+    public IActionResult Add()
+    {
+        return View();
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> Add(Category obj)
+    {
+        var query = new GraphQLRequest
+        {
+            Query = @"
+        mutation($id: Int!, $name: String!){
+            addCategory2(id: $id, name: $name)
+        }",
+            Variables = new { id = obj.Id, name = obj.Name }
+        };
+
+        var response = await Client.SendMutationAsync<dynamic>(query);
+
+        if (response.Errors != null)
+        {
+            Console.WriteLine("****************");
+            foreach (var item in response.Errors)
+            {
+                Console.WriteLine(item);
+            }
+            return View();
+        }
+
+        return Redirect("/");
+    }
 }
