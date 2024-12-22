@@ -72,26 +72,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="Up">
-      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoriesResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TTTH/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryQuery.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebApiGraphql/Services/CategoryType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Areas/Identity/Pages/_ViewStart.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/00000000000000_CreateIdentitySchema.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Data/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoryResponse.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Models/CategoryResponse.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/Views/Shared/_LoginPartial.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/WebAppGraphql.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Module_5/WebAppGraphql/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="1ecb9099-a64f-4182-96d6-575ef19ed7a4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1197,15 +1178,7 @@
       <workItem from="1734330164858" duration="11658000" />
       <workItem from="1734357313500" duration="2521000" />
       <workItem from="1734445334854" duration="591000" />
-      <workItem from="1734448004966" duration="18291000" />
-    </task>
-    <task id="LOCAL-00106" summary="Up">
-      <option name="closed" value="true" />
-      <created>1731844230543</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1731844230543</updated>
+      <workItem from="1734448004966" duration="19870000" />
     </task>
     <task id="LOCAL-00107" summary="Up">
       <option name="closed" value="true" />
@@ -1591,7 +1564,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734534978919</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Up">
+      <option name="closed" value="true" />
+      <created>1734619197845</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1734619197845</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
