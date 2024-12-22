@@ -1,50 +1,68 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+﻿<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
 <link rel="stylesheet" href="/css/site.css">
-
-<div class="ui-widget">
-    <label for="cat">Birds: </label>
-    <input id="cat">
-</div>
-
-<div id="result"></div>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
 <script>
-  $( function() {
-    function log( message ) {
-      $( "<div>" ).text( message ).prependTo( "#log" );
-      $( "#log" ).scrollTop( 0 );
-    }
+    $( function() {
+      function split( val ) {
+        return val.split( /,\s*/ );
+      }
+      function extractLast( term ) {
+        return split( term ).pop();
+      }
 
-    $("#cat").autocomplete({
-      source: function (request, response) {
-        $.ajax({
-          url: "/home/loaddata",
-          dataType: "json",
-          data: {
-            q: request.term
+      $( "#birds" )
+        // don't navigate away from the field on tab when selecting an item
+        .on( "keydown", function( event ) {
+          if ( event.keyCode === $.ui.keyCode.TAB &&
+            $( this ).autocomplete( "instance" ).menu.active ) {
+            event.preventDefault();
+          }
+        })
+        .autocomplete({
+          source: function( request, response ) {
+          @*  $.getJSON( "search.json", {
+              term: extractLast( request.term )
+            }, response ); *@
+            $.ajax({
+              url: "/home/loaddata",
+              dataType: "json",
+              data: {
+                q: extractLast(request.term)
+              },
+              success: function (data) {
+                console.log(data);
+                response(data);
+              }
+            });
           },
-          success: function (data) {
-            console.log(data);
-            response(data);
+          search: function() {
+            // custom minLength
+            var term = extractLast( this.value );
+            if ( term.length < 2 ) {
+              return false;
+            }
+          },
+          focus: function() {
+            // prevent value inserted on focus
+            return false;
+          },
+          select: function( event, ui ) {
+            var terms = split( this.value );
+            // remove the current input
+            terms.pop();
+            // add the selected item
+            terms.push( ui.item.value );
+            // add placeholder to get the comma-and-space at the end
+            terms.push( "" );
+            this.value = terms.join( ", " );
+            return false;
           }
         });
-      },
-      minLength: 2,
-      select: function(event, ui) {
-        $(result).html("Result: Label <b>" + ui.item.label + "</b>, Value: <b>" + ui.item.value + "</b>, Id: <b>" + ui.item.id + "</b>");
-      },
-      open: function () {
-        $(this).removeClass("ui-corner-all").addClass("ui-corner-top");
-      },
-      close: function () {
-        $(this).removeClass("ui-corner-top").addClass("ui-corner-all");
-      }
-    });
-  });
+    } );
   </script>
-<script src="../search.js"></script>
+
+<div class="ui-widget">
+    <label for="birds">Birds: </label>
+    <input id="birds" size="50">
+</div>

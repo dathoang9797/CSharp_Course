@@ -23,6 +23,11 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    public IActionResult Multiple()
+    {
+        return View();
+    }
 
     public IActionResult LoadData(string q)
     {
