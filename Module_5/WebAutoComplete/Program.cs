@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using WebAutoComplete.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<StoreContext>(
+    p => p.UseSqlServer(builder.Configuration.GetConnectionString("WebAppGraphql"))
+);
 
 var app = builder.Build();
 

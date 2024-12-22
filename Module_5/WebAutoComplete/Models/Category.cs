@@ -1,7 +1,17 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace WebAutoComplete.Models;
 
+[Table("Category")]
 public class Category
 {
+    [Column("CategoryId")]
     public int Id { get; set; }
-    public string Name { get; set; } = null!;
+    [Column("CategoryName")]
+    public string? Name { get; set; }
+}
+
+public class CategoryModel
+{
+    public string? Name { get; set; }
 }
