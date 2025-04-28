@@ -139,34 +139,37 @@ using Microsoft.ML;
 //     Console.WriteLine(item.Mau);
 // }
 
-var trainDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "taxi-fare-train.csv");
-var testDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "taxi-fare-test.csv");
-var modelPath = Path.Combine(Environment.CurrentDirectory, "Data", "Model.zip");
+// var trainDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "taxi-fare-train.csv");
+// var testDataPath = Path.Combine(Environment.CurrentDirectory, "Data", "taxi-fare-test.csv");
+// var modelPath = Path.Combine(Environment.CurrentDirectory, "Data", "Model.zip");
+//
+// var mlContext = new MLContext();
+// var dataView = mlContext.Data.LoadFromTextFile<TaxiTrip>(trainDataPath, hasHeader: true, separatorChar: ',');
+// var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount")
+//     .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded",
+//         inputColumnName: "VendorId"))
+//     .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "RateCodeEncoded",
+//         inputColumnName: "RateCode"))
+//     .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "PaymentTypeEncoded",
+//         inputColumnName: "PaymentType"))
+//     .Append(mlContext.Transforms.Concatenate("Features", "VendorIdEncoded", "RateCodeEncoded", "PassengerCount",
+//         "TripDistance", "PaymentTypeEncoded"))
+//     .Append(mlContext.Regression.Trainers.FastTree());
+//
+// var model = pipeline.Fit(dataView);
+// var dataViewTest = mlContext.Data.LoadFromTextFile<TaxiTrip>(testDataPath, hasHeader: true, separatorChar: ',');
+// var predictions = model.Transform(dataViewTest);
+// var metrics = mlContext.Regression.Evaluate(predictions, "Label", "Score");
+//
+// Console.WriteLine();
+// Console.WriteLine($"*************************************************");
+// Console.WriteLine($"*       Model quality metrics evaluation         ");
+// Console.WriteLine($"*------------------------------------------------");
+//
+// Console.WriteLine($"*       RSquared Score:      {metrics.RSquared:0.##}");
+// Console.WriteLine($"*       Root Mean Squared Error:      {metrics.RootMeanSquaredError:0.##}");
+//
+// mlContext.Model.Save(model, dataView.Schema, modelPath);
 
-var mlContext = new MLContext();
-var dataView = mlContext.Data.LoadFromTextFile<TaxiTrip>(trainDataPath, hasHeader: true, separatorChar: ',');
-var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount")
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded",
-        inputColumnName: "VendorId"))
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "RateCodeEncoded",
-        inputColumnName: "RateCode"))
-    .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "PaymentTypeEncoded",
-        inputColumnName: "PaymentType"))
-    .Append(mlContext.Transforms.Concatenate("Features", "VendorIdEncoded", "RateCodeEncoded", "PassengerCount",
-        "TripDistance", "PaymentTypeEncoded"))
-    .Append(mlContext.Regression.Trainers.FastTree());
-
-var model = pipeline.Fit(dataView);
-var dataViewTest = mlContext.Data.LoadFromTextFile<TaxiTrip>(testDataPath, hasHeader: true, separatorChar: ',');
-var predictions = model.Transform(dataViewTest);
-var metrics = mlContext.Regression.Evaluate(predictions, "Label", "Score");
-
-Console.WriteLine();
-Console.WriteLine($"*************************************************");
-Console.WriteLine($"*       Model quality metrics evaluation         ");
-Console.WriteLine($"*------------------------------------------------");
-
-Console.WriteLine($"*       RSquared Score:      {metrics.RSquared:0.##}");
-Console.WriteLine($"*       Root Mean Squared Error:      {metrics.RootMeanSquaredError:0.##}");
-
-mlContext.Model.Save(model, dataView.Schema, modelPath);
+var time = DateTime.UtcNow;
+Console.WriteLine(time);
