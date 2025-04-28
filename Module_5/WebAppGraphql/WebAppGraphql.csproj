@@ -25,4 +25,12 @@
       <_ContentIncludedByDefault Remove="Areas\Identity\Pages\_ViewStart.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Remove="wwwroot\lib\jquery\dist\jquery.min.map" />
+      <Content Remove="wwwroot\lib\jquery\dist\jquery.min.js" />
+      <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+      <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css" />
+      <Content Remove="wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    </ItemGroup>
+
 </Project>
