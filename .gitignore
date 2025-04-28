@@ -1,41 +1,17 @@
-# Thư mục build và output
-bin/
-obj/
-
-# Thư mục của Visual Studio
-.vs/
-.vscode/
-
-# File cấu hình của Visual Studio
+/.vs
+/src/*/bin
+/src/*/obj
+/test/*/bin
+/test/*/obj
+/src/*/*/bin
+/src/*/*/obj
+*/*/*/bin
+*/*/*/obj
 *.user
-*.userosscache
-*.suo
-*.sln.docstates
-
-# File của JetBrains Rider
-.idea/
-
-# File logs và thông báo lỗi
-log/
-*.log
-
-# File cấu hình của NuGet
-.nuget/
-
-# Thư mục của ASP.NET
-App_Data/
-
-# File cài đặt của NPM (nếu có)
-node_modules/
-
-# Thư mục và file của .NET Core
-project.lock.json
-project.fragment.lock.json
-
-# Thư mục của Docker (nếu có)
-docker-compose.override.yml
-
-# File cấu hình Test (nếu có)
-test/
-
-# Các thư mục khác cần bỏ qua tùy vào yêu cầu dự án
+/ngrok.exe
+/localtunnel_server.bat
+.DS_Store
+antifacts
+BenchmarkDotNet.Artifacts
+/.idea
+global.json
