@@ -5,6 +5,7 @@
 
 //Lưu được mọi kiểu dữ liệu
 
+using System;
 using ConsoleApp;
 using Microsoft.ML;
 
